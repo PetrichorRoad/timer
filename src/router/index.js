@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { BookOutline, PersonOutline, WineOutline } from "@vicons/ionicons5";
 import { getToken } from "@/utils/lib";
+import { menuListByOther } from "@/utils/lib/menu";
 export const routes = [
   {
     path: "/",
@@ -23,7 +24,9 @@ export const routes = [
   {
     path: '/index',
     name: 'index',
-    redirect: '/index/main',
+    icon: "BookOutline",
+    redirect: '/index/main/test',
+    label: '六合萧条',
     meta: {
       Auth: true,
       title: '首页', icon: BookOutline,
@@ -33,6 +36,7 @@ export const routes = [
       {
         path: 'main',
         name: 'main',
+        icon: "BookOutline", label: '万径踪灭',
         component: () => import("@/views/main/index.vue"),
         meta: {
           Auth: true,
@@ -42,6 +46,7 @@ export const routes = [
           {
             path: 'setting',
             name: 'setting',
+            icon: "BookOutline", label: '九洲冰封',
             component: () => import("@/views/main/setting/index.vue"),
             meta: {
               Auth: true, title: '首页', icon: BookOutline
@@ -49,7 +54,7 @@ export const routes = [
           },
           {
             path: 'test',
-            name: 'test',
+            name: 'test', icon: "BookOutline", label: '血刃仇敌',
             component: () => import("@/views/main/test/test1.vue"),
             meta: {
               Auth: true,
@@ -58,7 +63,7 @@ export const routes = [
           },
           {
             path: 'test2',
-            name: 'test2',
+            name: 'test2', icon: "BookOutline", label: '听雨书',
             component: () => import("@/views/main/test/test2.vue"),
             meta: {
               Auth: true, title: '首页', icon: BookOutline
@@ -66,16 +71,8 @@ export const routes = [
           },
           {
             path: 'question',
-            name: 'question',
+            name: 'question', icon: "BookOutline", label: '望天湖',
             component: () => import("@/views/main/question/index.vue"),
-            meta: {
-              Auth: true, title: '首页', icon: BookOutline
-            }
-          },
-          {
-            path: 'url',
-            name: 'url',
-            component: () => import("@/views/main/other/index.vue"),
             meta: {
               Auth: true, title: '首页', icon: BookOutline
             }
@@ -84,8 +81,7 @@ export const routes = [
       },
       {
         path: 'home',
-        name: 'home',
-        // redirect: '/index/home/test',
+        name: 'home', icon: "BookOutline", label: '回忆斑斑',
         component: () => import("@/views/home/index.vue"),
         meta: {
           Auth: true, title: '首页', icon: BookOutline
@@ -100,7 +96,9 @@ export const router = createRouter({
   history: createWebHistory(),
   routes,
 });
-
+menuListByOther.forEach((item) => {
+  router.addRoute('main',item);
+});
 router.beforeEach((to, from, next) => {
   const login = getToken(); // 检查用户是否已登录
   if (to.meta.Auth && !login) {

@@ -11,6 +11,7 @@
       style="height: 100%"
     >
       <n-menu
+        :indent="12"
         :inverted="inverted"
         :collapsed-width="64"
         :collapsed-icon-size="22"
@@ -20,7 +21,7 @@
         @update:value="handleUpdateValue"
       />
     </n-layout-sider>
-    <div class="flex-1 overflow-y-auto box-border">
+    <div class="flex-1 box-border overflow-hidden">
       <!-- 组件自己的路由入口 -->
       <router-view></router-view>
     </div>
@@ -36,15 +37,14 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 const store = useStore();
 const { setActiveMenu } = store;
+const { activeMenu } = storeToRefs(store);
 const inverted = computed(() => {
   return store.theme === "dark";
 })
 const routeName = computed(() => {
-  console.log(route);
   return store.activeMenu?.key;
 });
 const menuOptions = computed(() => {
-  console.log(menuList());
   return menuList();
 });
 const renderLabel = (item) => {

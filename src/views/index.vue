@@ -25,7 +25,6 @@ const themeMap = { light: lightTheme  , dark:darkTheme , overrides1 };
 
 const themeOverrides = computed(() => {
   const { theme } = store;
-  console.log(themeMap[theme]);
   return themeMap[theme];
 });
 </script>

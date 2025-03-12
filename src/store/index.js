@@ -18,12 +18,8 @@ export const useStore = defineStore('storeId', {
         },
         setActiveMenu(activeMenu) {
             this.activeMenu = activeMenu
-            router.push({ name: activeMenu.name })
+            router.push({ name: activeMenu.name|| activeMenu.key })
             // 切记顺序不可反
-            // let includes = this.tabList.find(item => item.key === activeMenu.key)
-            // if (!includes) {
-            //     this.tabList.push(activeMenu)
-            // }
         },
     }
 })

@@ -110,7 +110,6 @@ const init = ref({
     "tableprops tabledelete | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol",
   setup: (editor) => {
     editor.on("init", (e) => {
-      console.log("init");
     });
   },
   init_instance_callback: (editor) => {
