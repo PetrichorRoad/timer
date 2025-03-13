@@ -45,9 +45,9 @@
               </n-form-item>
             </n-grid-item>
             <n-grid-item>
-              <n-form-item label="用户状态" path="state">
+              <n-form-item label="用户状态" path="status">
                 <n-input
-                  v-model:value="userParam.state"
+                  v-model:value="userParam.status"
                   placeholder="用户状态"
                 />
               </n-form-item>
@@ -68,7 +68,6 @@
           :columns="columns"
           :data="data"
           :row-key="rowKey"
-          default-expand-all
         />
       </n-card>
       <n-card title="大卡片" size="large"> 卡片内容 </n-card>
@@ -79,29 +78,67 @@
 
 <script setup lang="jsx">
 import { computed, reactive, watch, ref,h, nextTick, onMounted } from "vue";
-import { routes } from "@/router/index";
+import { organization } from "@/utils/mock/data";
 const userParam = ref({
   phone: "",
   position: "",
   nickname: "",
   email: "",
-  state: ""
+  status: ""
 });
 const rowKey = (row) => row.path
-const data = ref(routes)
-console.log(routes);
+const data = ref(organization)
+const findUsers = (nodes) => {
+    return nodes.reduce((acc, node) => {
+        // 如果当前节点是 user，添加到结果中
+        if (node.type === 'user') {
+          acc.push(node);
+        }
+        // 如果当前节点有子节点，递归处理子节点
+        if (node.children && node.children.length > 0) {
+            acc = acc.concat(findUsers(node.children));
+        }
+        return acc;
+    }, []);
+}
+const userList = computed(() => {
+  return findUsers(organization)
+})
+console.log(userList.value);
 const columns = [
       {
         type: "selection"
       },
       {
-        title: "name",
-        key: "name"
+        title: "头像",
+        key: "avatar",
+        slot:"avatar"
       },
       {
-        title: "index",
-        key: "index"
-      }
+        title: "昵称",
+        key: "nickname"
+      },
+      {
+        title: "邮箱",
+        key: "email",
+      },
+      {
+        title: "职位",
+        key: "position"
+      },
+      {
+        title: "电话号码",
+        key: "phone"
+      },
+      {
+        title: "用户状态",
+        key: "status"
+      },
+      {
+        title: "操作",
+        key: "action",
+        slot: "action"
+      },
 ];
 const positionOptions = [
   { label: "前端工程师", value: "frontend" },
@@ -110,7 +147,7 @@ const positionOptions = [
   { label: "产品经理", value: "product" },
   { label: "UI设计师", value: "designer" },
   { label: "测试工程师", value: "tester" },
-  { label: "项目经理", value: "manager" },
+  { label: "部门经理", value: "manager" },
 ];
 const search = () => {
   console.log(userParam.value);
@@ -121,7 +158,7 @@ const reset = () => {
     position: "",
     nickname: "",
     email: "",
-    state: ""
+    status: ""
   }
 }
 </script>
