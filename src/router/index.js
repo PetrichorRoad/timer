@@ -53,8 +53,8 @@ export const routes = [
             }
           },
           {
-            path: 'test',
-            name: 'test', icon: "BookOutline", label: '血刃仇敌',
+            path: 'data',
+            name: 'data', icon: "BookOutline", label: '血刃仇敌',
             component: () => import("@/views/main/test/test1.vue"),
             meta: {
               Auth: true,
@@ -62,8 +62,8 @@ export const routes = [
             }
           },
           {
-            path: 'test2',
-            name: 'test2', icon: "BookOutline", label: '听雨书',
+            path: 'workbench',
+            name: 'workbench', icon: "BookOutline", label: '听雨书',
             component: () => import("@/views/main/test/test2.vue"),
             meta: {
               Auth: true, title: '首页', icon: BookOutline

@@ -12,11 +12,9 @@
 <script setup>
 import { storeToRefs } from "pinia";
 import { useStore } from "@/store/index";
-import { watch, ref, computed } from "vue";
+import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute();
-const store = useStore();
-const { tabList, activeMenu } = storeToRefs(store);
 const loading = ref(null);
 const link = computed(() => {
   loading.value = true;

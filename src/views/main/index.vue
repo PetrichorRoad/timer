@@ -42,7 +42,7 @@ const inverted = computed(() => {
   return store.theme === "dark";
 })
 const routeName = computed(() => {
-  return store.activeMenu?.key;
+  return route.name;
 });
 const menuOptions = computed(() => {
   return menuList();
