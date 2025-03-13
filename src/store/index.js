@@ -17,8 +17,7 @@ export const useStore = defineStore('storeId', {
             document.documentElement.className = theme;
         },
         setActiveMenu(activeMenu) {
-            this.activeMenu = activeMenu
-            router.push({ name: activeMenu.name|| activeMenu.key })
+            router.push({ name: activeMenu.name})
             // 切记顺序不可反
         },
     }
