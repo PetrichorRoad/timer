@@ -64,11 +64,7 @@
         </n-form>
       </n-card>
       <n-card title="用户列表">
-        <n-data-table
-          :columns="columns"
-          :data="data"
-          :row-key="rowKey"
-        />
+        <n-data-table :columns="columns" :data="userList" :row-key="rowKey" />
       </n-card>
       <n-card title="大卡片" size="large"> 卡片内容 </n-card>
       <n-card title="超大卡片" size="huge"> 卡片内容 </n-card>
@@ -78,7 +74,9 @@
 
 <script setup lang="jsx">
 import { computed, reactive, watch, ref,h, nextTick, onMounted } from "vue";
+import { BookOutline } from '@vicons/ionicons5'
 import { organization } from "@/utils/mock/data";
+import { render } from "less";
 const userParam = ref({
   phone: "",
   position: "",
@@ -86,8 +84,8 @@ const userParam = ref({
   email: "",
   status: ""
 });
-const rowKey = (row) => row.path
-const data = ref(organization)
+const rowKey = (row) => {
+  return row.email}
 const findUsers = (nodes) => {
     return nodes.reduce((acc, node) => {
         // 如果当前节点是 user，添加到结果中
@@ -104,7 +102,11 @@ const findUsers = (nodes) => {
 const userList = computed(() => {
   return findUsers(organization)
 })
-console.log(userList.value);
+const renderAvatar = (row) => {
+  return <n-avatar
+      src={row.avatar|| 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'}
+    />
+}
 const columns = [
       {
         type: "selection"
@@ -112,20 +114,41 @@ const columns = [
       {
         title: "头像",
         key: "avatar",
-        slot:"avatar"
+        width: 80,
+        render:renderAvatar
       },
       {
         title: "昵称",
-        key: "nickname"
+        key: "title",
+        width: 100,
+        ellipsis: true,
+        // render: (row) => {
+        //   return <n-tooltip trigger="hover">
+        //           <template v-slot={"trigger"}>
+        //             <span>{ row.title.slice(0, 10) }</span>
+        //           </template>
+        //           {row.title}
+        //         </n-tooltip>;
+        // }
+      },
+      {
+        title: "职位",
+        key: "position",
+        render: (row) => {
+          return <n-tag type="warning">
+                  {row.position}
+                  <template v-slots={{
+                    icon: () => (<n-icon component={BookOutline} />),
+                  }}>
+                  </template>
+                </n-tag>
+        }
       },
       {
         title: "邮箱",
         key: "email",
       },
-      {
-        title: "职位",
-        key: "position"
-      },
+      
       {
         title: "电话号码",
         key: "phone"
@@ -140,6 +163,7 @@ const columns = [
         slot: "action"
       },
 ];
+
 const positionOptions = [
   { label: "前端工程师", value: "frontend" },
   { label: "后端工程师", value: "backend" },

@@ -18,7 +18,6 @@ export const useStore = defineStore('storeId', {
         },
         setActiveMenu(activeMenu) {
             router.push({ name: activeMenu.name})
-            // 切记顺序不可反
         },
     }
 })
