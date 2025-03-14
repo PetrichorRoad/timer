@@ -12,7 +12,7 @@
 <script setup>
 import { storeToRefs } from "pinia";
 import { useStore } from "@/store/index";
-import { ref, computed } from "vue";
+import { watch, ref, computed } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute();
 const loading = ref(null);

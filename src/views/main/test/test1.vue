@@ -168,7 +168,7 @@ import {
   CloudyOutline,
 } from "@vicons/ionicons5";
 import { weatherImagesList } from "@/utils/assets/index";
-import { option } from "@/utils/mork/data";
+import { option } from "@/utils/mock/data";
 import { ref, h, onMounted, computed } from "vue";
 import { getWeather } from "@/api/index";
 import * as echarts from "echarts";

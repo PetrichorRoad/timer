@@ -44,10 +44,19 @@ export const routes = [
         },
         children: [
           {
-            path: 'setting',
-            name: 'setting',
-            icon: "BookOutline", label: '九洲冰封',
-            component: () => import("@/views/main/setting/index.vue"),
+            path: 'user',
+            name: 'user',
+            icon: "BookOutline", label: '用户管理',
+            component: () => import("@/views/main/setting/user.vue"),
+            meta: {
+              Auth: true, title: '首页', icon: BookOutline
+            }
+          },
+          {
+            path: 'power',
+            name: 'power',
+            icon: "BookOutline", label: '用户管理',
+            component: () => import("@/views/main/setting/power.vue"),
             meta: {
               Auth: true, title: '首页', icon: BookOutline
             }
