@@ -1,7 +1,7 @@
 import * as echarts from "echarts";
 export const option = {
     color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
-    title: {
+    label: {
         // text: 'Gradient Stacked Area Chart'
     },
     tooltip: {
@@ -201,22 +201,25 @@ export const option = {
     ]
 };
 export const organization = [{
-    title: '研发中心',
+    label: '研发中心',
+    value: Math.random().toString(36).substring(7),
     type: 'organization',
     level: 1,
     children: [
         {
-            title: "基础研发部",
+            label: "基础研发部",
             type: "department",
+            value: Math.random().toString(36).substring(7),
             level: 2,
             children: [
                 {
-                    title: "前端组",
+                    label: "前端组",
                     type: "group",
                     level: 3,
+                    value: Math.random().toString(36).substring(7),
                     children: [
                         {
-                            title: "疾风知劲草",
+                            label: "疾风知劲草",
                             type: "user",
                             position: "frontend",
                             sex: "man",
@@ -225,9 +228,10 @@ export const organization = [{
                             status: "active",
                             admin: true,
                             grade: 1,
+                            value: Math.random().toString(36).substring(7),
                         },
                         {
-                            title: "小羊君",
+                            label: "小羊君",
                             type: "user",
                             position: "frontend",
                             sex: "man",
@@ -235,9 +239,10 @@ export const organization = [{
                             email: "123@qq.com",
                             status: "active",
                             grade: 2,
+                            value: Math.random().toString(36).substring(7),
                         },
                         {
-                            title: "忆长安",
+                            label: "忆长安",
                             type: "user",
                             position: "frontend",
                             sex: "woman",
@@ -245,16 +250,18 @@ export const organization = [{
                             email: "123@qq.com",
                             status: "active",
                             grade: 2,
+                            value: Math.random().toString(36).substring(7),
                         },
                     ]
                 },
                 {
-                    title: "后端组",
+                    label: "后端组",
                     type: "group",
                     level: 3,
+                    value: Math.random().toString(36).substring(7),
                     children: [
                         {
-                            title: "明天你好",
+                            label: "明天你好",
                             type: "user",
                             position: "backend",
                             sex: "man",
@@ -263,9 +270,10 @@ export const organization = [{
                             status: "active",
                             admin: true,
                             grade: 2,
+                            value: Math.random().toString(36).substring(7),
                         },
                         {
-                            title: "当昨天的我们走远了",
+                            label: "当昨天的我们走远了",
                             type: "user",
                             position: "backend",
                             sex: "man",
@@ -273,31 +281,35 @@ export const organization = [{
                             email: "123@qq.com",
                             status: "active",
                             grade: 3,
+                            value: Math.random().toString(36).substring(7),
                         }
                     ]
                 },
                 {
-                    title: "测试组",
+                    label: "测试组",
                     type: "group",
                     level: 3,
+                    value: Math.random().toString(36).substring(7),
                     children: [
                         {
-                            title: "长大以后",
+                            label: "长大以后",
                             type: "user",
                             position: "tester",
                             sex: "man",
                             phone: "123456789",
+                            value: Math.random().toString(36).substring(7),
                             email: "123@qq.com",
                             status: "active",
                             admin: true,
                             grade: 3,
                         },
                         {
-                            title: "当昨天的我们走远了",
+                            label: "当昨天的我们走远了",
                             type: "user",
                             position: "tester",
                             sex: "man",
                             phone: "123456789",
+                            value: Math.random().toString(36).substring(7),
                             email: "123@qq.com",
                             status: "active",
                             grade: 3,
@@ -305,22 +317,24 @@ export const organization = [{
                     ]
                 },
                 {
-                    title: "我只能奔跑",
+                    label: "我只能奔跑",
                     type: "user",
                     position: "product",
                     sex: "man",
                     phone: "123456789",
+                    value: Math.random().toString(36).substring(7),
                     email: "123@qq.com",
                     status: "dead",
                     grade: 3,
                 },
                 {
-                    title: "一边失去，一边寻找",
+                    label: "一边失去，一边寻找",
                     type: "user",
                     position: "manager",
                     sex: "man",
                     phone: "123456789",
                     email: "123@qq.com",
+                    value: Math.random().toString(36).substring(7),
                     status: "dead",
                     grade: 3,
                     admin: true,
@@ -328,17 +342,20 @@ export const organization = [{
             ]
         },
         {
-            title: "PMS研发部",
+            label: "PMS研发部",
             type: "group",
+            value: Math.random().toString(36).substring(7),
             level: 2,
             children: [
                 {
-                    title: "前端组",
+                    label: "前端组",
                     type: "group",
+                    value: Math.random().toString(36).substring(7),
                     level: 3,
                     children: [
                         {
-                            title: "疾风知劲草",
+                            label: "疾风知劲草",
+                            value: Math.random().toString(36).substring(7),
                             type: "user",
                             position: "frontend",
                             sex: "man",
@@ -349,9 +366,10 @@ export const organization = [{
                             grade: 2,
                         },
                         {
-                            title: "忆长安",
+                            label: "忆长安",
                             type: "user",
                             position: "frontend",
+                            value: Math.random().toString(36).substring(7),
                             sex: "woman",
                             phone: "123456789",
                             email: "123@qq.com",
@@ -361,15 +379,17 @@ export const organization = [{
                     ]
                 },
                 {
-                    title: "后端组",
+                    label: "后端组",
+                    value: Math.random().toString(36).substring(7),
                     type: "group",
                     level: 3,
                     children: [
                         {
-                            title: "明天你好",
+                            label: "明天你好",
                             type: "user",
                             position: "backend",
                             sex: "man",
+                            value: Math.random().toString(36).substring(7),
                             phone: "123456789",
                             email: "123@qq.com",
                             status: "active",
@@ -379,13 +399,15 @@ export const organization = [{
                     ]
                 },
                 {
-                    title: "测试组",
+                    label: "测试组",
                     type: "group",
+                    value: Math.random().toString(36).substring(7),
                     level: 3,
                     children: [
                         {
-                            title: "长大以后",
+                            label: "长大以后",
                             type: "user",
+                            value: Math.random().toString(36).substring(7),
                             position: "tester",
                             sex: "man",
                             phone: "123456789",
@@ -397,9 +419,10 @@ export const organization = [{
                     ]
                 },
                 {
-                    title: "举杯祝福",
+                    label: "举杯祝福",
                     type: "user",
                     position: "designer",
+                    value: Math.random().toString(36).substring(7),
                     sex: "man",
                     phone: "123456789",
                     email: "123@qq.com",
@@ -407,11 +430,12 @@ export const organization = [{
                     grade: 3,
                 },
                 {
-                    title: "我是佬哒",
+                    label: "我是佬哒",
                     type: "user",
                     position: "manager",
                     sex: "man",
                     phone: "123456789",
+                    value: Math.random().toString(36).substring(7),
                     email: "123@qq.com",
                     status: "dead",
                     grade: 3,
@@ -419,93 +443,118 @@ export const organization = [{
                 },
             ]
         },
+        // {
+        //     label: "餐饮研发部",
+        //     type: "group",
+        //     level: 2,
+        //     children: [
+        //         {
+        //             label: "前端组",
+        //             type: "group",
+        //             level: 3,
+        //             children: [
+        //                 {
+        //                     label: "忆长安",
+        //                     type: "user",
+        //                     position: "frontend",
+        //                     sex: "woman",
+        //                     phone: "123456789",
+        //                     email: "123@qq.com",
+        //                     status: "active",
+        //                     grade: 3,
+        //                     admin: true,
+        //                 },
+        //             ]
+        //         },
+        //         {
+        //             label: "后端组",
+        //             type: "group",
+        //             level: 3,
+        //             children: [
+        //                 {
+        //                     label: "明天你好",
+        //                     type: "user",
+        //                     position: "backend",
+        //                     sex: "man",
+        //                     phone: "123456789",
+        //                     email: "123@qq.com",
+        //                     status: "active",
+        //                     admin: true,
+        //                     grade: 2,
+        //                 },
+        //             ]
+        //         },
+        //         {
+        //             label: "测试组",
+        //             type: "group",
+        //             level: 3,
+        //             children: [
+        //                 {
+        //                     label: "长大以后",
+        //                     type: "user",
+        //                     position: "tester",
+        //                     sex: "man",
+        //                     phone: "123456789",
+        //                     email: "123@qq.com",
+        //                     status: "active",
+        //                     admin: true,
+        //                     grade: 3,
+        //                 },
+        //             ]
+        //         },
+        //         {
+        //             label: "举杯祝福",
+        //             type: "user",
+        //             position: "fullstack",
+        //             sex: "man",
+        //             phone: "123456789",
+        //             email: "123@qq.com",
+        //             status: "active",
+        //             grade: 3,
+        //         },
+        //         {
+        //             label: "我是佬哒",
+        //             type: "user",
+        //             position: "manager",
+        //             sex: "man",
+        //             phone: "123456789",
+        //             email: "123@qq.com",
+        //             status: "dead",
+        //             grade: 3,
+        //             admin: true,
+        //         },
+        //     ]
+        // },
         {
-            title: "餐饮研发部",
+            label: "文旅研发部",
             type: "group",
-            level: 2,
-            children: [
-                {
-                    title: "前端组",
-                    type: "group",
-                    level: 3,
-                    children: [
-                        {
-                            title: "忆长安",
-                            type: "user",
-                            position: "frontend",
-                            sex: "woman",
-                            phone: "123456789",
-                            email: "123@qq.com",
-                            status: "active",
-                            grade: 3,
-                            admin: true,
-                        },
-                    ]
-                },
-                {
-                    title: "后端组",
-                    type: "group",
-                    level: 3,
-                    children: [
-                        {
-                            title: "明天你好",
-                            type: "user",
-                            position: "backend",
-                            sex: "man",
-                            phone: "123456789",
-                            email: "123@qq.com",
-                            status: "active",
-                            admin: true,
-                            grade: 2,
-                        },
-                    ]
-                },
-                {
-                    title: "测试组",
-                    type: "group",
-                    level: 3,
-                    children: [
-                        {
-                            title: "长大以后",
-                            type: "user",
-                            position: "tester",
-                            sex: "man",
-                            phone: "123456789",
-                            email: "123@qq.com",
-                            status: "active",
-                            admin: true,
-                            grade: 3,
-                        },
-                    ]
-                },
-                {
-                    title: "举杯祝福",
-                    type: "user",
-                    position: "fullstack",
-                    sex: "man",
-                    phone: "123456789",
-                    email: "123@qq.com",
-                    status: "active",
-                    grade: 3,
-                },
-                {
-                    title: "我是佬哒",
-                    type: "user",
-                    position: "manager",
-                    sex: "man",
-                    phone: "123456789",
-                    email: "123@qq.com",
-                    status: "dead",
-                    grade: 3,
-                    admin: true,
-                },
-            ]
-        },
-        {
-            title: "文旅研发部",
-            type: "group",
+            value: Math.random().toString(36).substring(7),
             level: 2,
         },
     ]
 }
 ]
+const removeUserLeaves = (nodes) => {
+    return nodes
+        .filter(node => {
+            // 如果当前节点是叶子节点且 type 为 'user'，则过滤掉
+            if (node.type === 'user') {
+                return false;
+            }
+            return true; // 保留其他节点
+        })
+        .map(node => {
+            // 如果当前节点有子节点，递归处理子节点
+            if (node.children && node.children.length > 0) {
+                node.children = removeUserLeaves(node.children);
+                if (node.children.length === 0) {
+                    delete node.children;
+                }
+            }
+            return node;
+        });
+}
+export const getOrganization = () => {
+    let tree = JSON.parse(JSON.stringify(organization))
+    return removeUserLeaves(tree)
+}

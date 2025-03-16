@@ -25,7 +25,7 @@ export const routes = [
     path: '/index',
     name: 'index',
     icon: "BookOutline",
-    redirect: '/index/main/test',
+    redirect: '/index/main/user',
     label: '六合萧条',
     meta: {
       Auth: true,
@@ -55,7 +55,7 @@ export const routes = [
           {
             path: 'power',
             name: 'power',
-            icon: "BookOutline", label: '用户管理',
+            icon: "BookOutline", label: '权限管理',
             component: () => import("@/views/main/setting/power.vue"),
             meta: {
               Auth: true, title: '首页', icon: BookOutline
@@ -63,19 +63,19 @@ export const routes = [
           },
           {
             path: 'data',
-            name: 'data', icon: "BookOutline", label: '血刃仇敌',
+            name: 'data', icon: "BookOutline", label: '数据看板',
             component: () => import("@/views/main/test/test1.vue"),
             meta: {
               Auth: true,
-              title: '主体', icon: BookOutline
+              title: '数据看板', icon: BookOutline
             }
           },
           {
             path: 'workbench',
-            name: 'workbench', icon: "BookOutline", label: '听雨书',
+            name: 'workbench', icon: "BookOutline", label: '工作台',
             component: () => import("@/views/main/test/test2.vue"),
             meta: {
-              Auth: true, title: '首页', icon: BookOutline
+              Auth: true, title: '工作台', icon: BookOutline
             }
           },
           {
