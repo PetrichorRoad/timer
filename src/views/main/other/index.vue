@@ -1,5 +1,5 @@
 <template>
-  <div class="page relative" v-loading="loading">
+  <div class="page relative" v-loading="{loading,type:'book'}">
     <iframe
       frameborder="0"
       class="w-full h-full box-border"
@@ -10,12 +10,13 @@
 </template>
 
 <script setup>
-import { storeToRefs } from "pinia";
-import { useStore } from "@/store/index";
-import { watch, ref, computed } from "vue";
+import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute();
-const loading = ref(null);
+const loading = ref({
+  load: false,
+  type:'card'
+});
 const link = computed(() => {
   loading.value = true;
   return route.meta.link

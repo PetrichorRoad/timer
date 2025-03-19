@@ -26,13 +26,7 @@
       <li></li>
     </ul>
   </div>
-  <a
-    class="dribbble"
-    href="https://dribbble.com/shots/7199149-Book-Loader"
-    target="_blank"
-    ><img
-      src="https://dribbble.com/assets/logo-small-2x-9fe74d2ad7b25fba0f50168523c15fda4c35534f9ea0b1011179275383035439.png"
-  /></a>
+  <a class="dribbble" href="https://dribbble.com/shots/7199149-Book-Loader" target="_blank"></a>
 </template>
 
 <script>
@@ -48,6 +42,7 @@
   margin: 32px 0 0 0;
   //Demo
   zoom: 1.5;
+
   .inner {
     width: 32px;
     height: 12px;
@@ -55,6 +50,7 @@
     transform-origin: 2px 2px;
     transform: rotateZ(-90deg);
     animation: book var(--duration) ease infinite;
+
     .left,
     .right {
       width: 60px;
@@ -63,6 +59,7 @@
       border-radius: 2px;
       background: var(--color);
       position: absolute;
+
       &:before {
         content: "";
         width: 48px;
@@ -74,18 +71,21 @@
         left: 6px;
       }
     }
+
     .left {
       right: 28px;
       transform-origin: 58px 2px;
       transform: rotateZ(90deg);
       animation: left var(--duration) ease infinite;
     }
+
     .right {
       left: 28px;
       transform-origin: 2px 2px;
       transform: rotateZ(-90deg);
       animation: right var(--duration) ease infinite;
     }
+
     .middle {
       width: 32px;
       height: 12px;
@@ -95,6 +95,7 @@
       transform: translateY(2px);
     }
   }
+
   ul {
     margin: 0;
     padding: 0;
@@ -102,6 +103,7 @@
     position: absolute;
     left: 50%;
     top: 0;
+
     li {
       height: 4px;
       border-radius: 2px;
@@ -116,10 +118,12 @@
       animation-timing-function: ease;
       animation-iteration-count: infinite;
       $i: 0;
+
       @while $i < 19 {
         &:nth-child(#{$i}) {
           animation-name: page-#{$i};
         }
+
         $i: $i + 1;
       }
     }
@@ -129,13 +133,17 @@
 @for $i from 0 through 18 {
   $delay: $i * 1.86;
   $delay-after: $i * 1.74;
+
   @keyframes page-#{$i} {
     #{4 + $delay}% {
       transform: rotateZ(0deg) translateX(-18px);
     }
-    #{13 + $delay-after}%, #{54 + $delay}% {
+
+    #{13 + $delay-after}%,
+    #{54 + $delay}% {
       transform: rotateZ(180deg) translateX(-18px);
     }
+
     #{63 + $delay-after}% {
       transform: rotateZ(0deg) translateX(-18px);
     }
@@ -146,18 +154,22 @@
   4% {
     transform: rotateZ(90deg);
   }
+
   10%,
   40% {
     transform: rotateZ(0deg);
   }
+
   46%,
   54% {
     transform: rotateZ(90deg);
   }
+
   60%,
   90% {
     transform: rotateZ(0deg);
   }
+
   96% {
     transform: rotateZ(90deg);
   }
@@ -167,18 +179,22 @@
   4% {
     transform: rotateZ(-90deg);
   }
+
   10%,
   40% {
     transform: rotateZ(0deg);
   }
+
   46%,
   54% {
     transform: rotateZ(-90deg);
   }
+
   60%,
   90% {
     transform: rotateZ(0deg);
   }
+
   96% {
     transform: rotateZ(-90deg);
   }
@@ -188,24 +204,29 @@
   4% {
     transform: rotateZ(-90deg);
   }
+
   10%,
   40% {
     transform: rotateZ(0deg);
     transform-origin: 2px 2px;
   }
+
   40.01%,
   59.99% {
     transform-origin: 30px 2px;
   }
+
   46%,
   54% {
     transform: rotateZ(90deg);
   }
+
   60%,
   90% {
     transform: rotateZ(0deg);
     transform-origin: 2px 2px;
   }
+
   96% {
     transform: rotateZ(-90deg);
   }
@@ -218,10 +239,10 @@ html {
 
 * {
   box-sizing: inherit;
+
   &:before,
   &:after {
     box-sizing: inherit;
   }
 }
-
 </style>

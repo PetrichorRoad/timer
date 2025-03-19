@@ -1,6 +1,6 @@
 <template>
   <div class="page box-border p-3 bg-my-bg-2">
-    <div class="w-[650px] h-[650px] bg-[pink]" v-loading="loading"></div>
+    <div class="w-[650px] h-[650px] bg-[pink]" v-loading="{loading,type:'card'}"></div>
     <n-button @click="changeLoading">start</n-button>
   </div>
 </template>
