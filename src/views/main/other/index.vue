@@ -1,5 +1,5 @@
 <template>
-  <div class="page relative" v-loading="{loading,type:'book'}">
+  <div class="page relative" v-loading="{loading,type:'card'}">
     <iframe
       frameborder="0"
       class="w-full h-full box-border"
