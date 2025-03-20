@@ -86,6 +86,39 @@ export const routes = [
               Auth: true, title: '首页', icon: BookOutline
             }
           },
+          {
+            path: 'menu',
+            name: 'menu', icon: "BookOutline", label: '菜单管理',
+            component: () => import("@/views/main/setting/menu.vue"),
+            meta: {
+              Auth: true, title: '菜单管理', icon: BookOutline
+            }
+          },
+        ]
+      },
+      {
+        path: 'work',
+        name: 'work',
+        icon: "BookOutline", label: '工作',
+        component: () => import("@/views/main/index.vue"),
+        meta: {
+          Auth: true,
+          title: '工作', icon: BookOutline
+        },
+        children: [
+          {
+            path: 'task',
+            name: 'task',
+            icon: "BookOutline", label: '任务安排',
+            component: () => import("@/views/main/task/work.vue"),
+            meta: {
+              Auth: true, title: '首页', icon: BookOutline
+            }
+          },
+          {
+            path: 'power',
+            name: 'power',
+          }
         ]
       },
       {

@@ -1,7 +1,7 @@
 <template>
   <div class="page p-2 box-border overflow-y-auto">
     <n-space vertical>
-      <n-card label="搜索">
+      <n-card title="搜索">
         <n-form
           ref="formRef"
           inline
@@ -76,10 +76,10 @@
           </n-grid>
         </n-form>
       </n-card>
-      <n-card label="用户列表">
+      <n-card title="用户列表">
         <n-data-table :columns="columns" :data="userList" :row-key="rowKey" />
       </n-card>
-      <n-card label="大卡片" size="large">
+      <n-card title="大卡片" size="large">
         <n-tag round :bordered="false" type="success">
           Checked
           <template #icon>
@@ -87,7 +87,6 @@
           </template>
         </n-tag>
       </n-card>
-      <n-card label="超大卡片" size="huge"> 卡片内容 </n-card>
     </n-space>
 
     <n-modal

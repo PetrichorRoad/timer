@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router";
 import { useStore } from "@/store/index";
 import { BookOutline, PersonOutline, WineOutline } from "@vicons/ionicons5";
 import { router } from "@/router/index";
-const iconMap = {
+export const iconMap = {
     BookOutline,
     PersonOutline,
     WineOutline,
@@ -25,6 +25,7 @@ const getMenuList = (routes) => {
                 name: item.name,
                 icon: renderIcon(iconMap[item.icon]),
                 label: item.label,
+                path: item.path,
                 children: getMenuList(item.children),
             };
         } else {
@@ -34,6 +35,7 @@ const getMenuList = (routes) => {
                 name: item.name,
                 icon: renderIcon(iconMap[item.icon]),
                 label: item.label,
+                path: item.path,
             };
         }
     });
@@ -116,6 +118,23 @@ export const menuListBySelf = [
         name: 'power',
         icon: "BookOutline", label: '权限管理',
         component: () => import("@/views/main/setting/power.vue"),
+        meta: {
+            Auth: true, title: '首页', icon: BookOutline
+        }
+    },
+    {
+        path: 'menu',
+        name: 'menu', icon: "BookOutline", label: '菜单管理',
+        component: () => import("@/views/main/setting/menu.vue"),
+        meta: {
+            Auth: true, title: '菜单管理', icon: BookOutline
+        }
+    },
+    {
+        path: 'task',
+        name: 'task',
+        icon: "BookOutline", label: '任务安排',
+        component: () => import("@/views/main/task/work.vue"),
         meta: {
             Auth: true, title: '首页', icon: BookOutline
         }
