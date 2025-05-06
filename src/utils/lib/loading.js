@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 
 //含有loading样式的组件
-import loadingWrapper from "@/components/loading/loading.vue";
+import loadingWrapper from "@/components/loading/loading1.vue";
 import bookingWrapper from "@/components/loading/booking.vue";
 //存储每个元素的loading状态
 const map = new WeakMap();
