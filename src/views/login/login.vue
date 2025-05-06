@@ -15,7 +15,7 @@
         <div class="login-box h-full" v-show="scene">
           <h1>login</h1>
           <div class="w-full h-[46%] flex flex-col items-center">
-            <input type="text" v-model="login.username" placeholder="邮箱" />
+            <input type="text" v-model="login.email" placeholder="邮箱" />
             <input
               type="password"
               v-model="login.password"
@@ -46,21 +46,24 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import request from "@/api/base";
 let router = useRouter();
 let scene = ref(true);
 let register = ref({
-  username: "",
+  email: "",
   email: "",
   prepare_password: "",
   confirm_password: "",
 });
 let login = ref({
-  username: "越是拼命向前伸手",
-  password: "渴望之物越是渐行渐远",
+  email: "123@qq.com",
+  password: "123456",
 });
-const loginSubmit = () => {
-  let token = "admin";
+const loginSubmit = async () => {
+  let res = await request.login(login.value);
+  let { data:{ token } } = res
   localStorage.setItem("token", token);
+  localStorage.setItem("userInfo", JSON.stringify(res.data));
   router.push("/");
 };
 const trigger = () => {

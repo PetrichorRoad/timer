@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // 创建axios实例
 const service = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'https://restapi.amap.com/v3/', // 设置请求的基地址
+    // baseURL: import.meta.env.VITE_API_BASE_URL || 'https://restapi.amap.com/v3/', // 设置请求的基地址
     timeout: 5000, // 请求超时时间
 });
 
@@ -13,10 +13,10 @@ service.interceptors.request.use(
     config => {
         // 在发送请求之前做些什么
         // 例如：添加token到header中
-        // const token = localStorage.getItem('token');
-        // if (token) {
-        //     config.headers['Authorization'] = `Bearer ${token}`;
-        // }
+        const token = localStorage.getItem('token');
+        if (token) {
+            config.headers['Authorization'] = token;
+        }
         return config;
     },
     error => {

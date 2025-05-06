@@ -17,6 +17,7 @@ export const useStore = defineStore('storeId', {
             document.documentElement.className = theme;
         },
         setActiveMenu(activeMenu) {
+            console.log(activeMenu);
             router.push({ name: activeMenu.name})
         },
     }

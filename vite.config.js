@@ -17,8 +17,20 @@ export default defineConfig({
   },
   server:{
     host:'0.0.0.0',
-    port:8080,
+    port:8081,
     open:true,
     cors:true,
+    proxy:{
+      '/timer': { // 代理前缀（可自定义）
+        target: 'http://192.168.9.18:8080', // 后端地址
+        changeOrigin: true, // 启用跨域
+        // rewrite: (path) => path.replace(/^\/api/, '') // 移除路径中的 /api
+      },
+      '/weather': { // 代理前缀（可自定义）
+        target: 'https://restapi.amap.com/v3', // 后端地址
+        changeOrigin: true, // 启用跨域
+        // rewrite: (path) => path.replace(/^\/api/, '') // 移除路径中的 /api
+      }
+    }
   }
 })

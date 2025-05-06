@@ -114,10 +114,6 @@ export const routes = [
             meta: {
               Auth: true, title: '首页', icon: BookOutline
             }
-          },
-          {
-            path: 'power',
-            name: 'power',
           }
         ]
       },
