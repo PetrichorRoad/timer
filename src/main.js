@@ -13,5 +13,6 @@ import { createPinia } from 'pinia'
 import { router } from "./router/index";
 import naive from 'naive-ui'
 import { loading } from './utils/lib/loading'
+import { context } from './directive/context'  
 window.lottie = lottie;
-createApp(App).use(router).use(createPinia()).use(naive).directive('loading',loading).mount('#app')
+createApp(App).use(router).use(createPinia()).use(naive).directive('loading',loading).directive('context',context).mount('#app')
