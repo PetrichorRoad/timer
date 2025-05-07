@@ -245,7 +245,7 @@ let columns = [
     width: 80,
     render: (row) => {
       return (<div class="flex items-center justify-center">
-        <span class="w-[5px] h-[5px] rounded" class={row.status == 'active' ? 'bg-[#67c23a]' : 'bg-[#f56c6c]'}></span>
+        <span class={`${row.status == 'active' ? 'bg-[#67c23a]' : 'bg-[#f56c6c]'} w-[5px] h-[5px] rounded`}></span>
       </div>)
     }
   },
@@ -270,24 +270,25 @@ const reset = () => {
   }
 }
 onMounted(() => {
-  // function infiniteCurry(fn) {
-  //   return function curried(...args) {
-  //     console.log(args.length);
-  //     if (args.length === 0) {
-  //       // 空调用时触发计算
-        
-        
-  //       return fn();
-  //     }
-  //     // 返回新函数继续收集参数
-  //     return (...newArgs) => curried(...args, ...newArgs);
-  //   };
-  // }
-  // const curriedAdd = infiniteCurry((...num)=> {
-  //   return num.reduce((a, b) => a + b,0)
-  // });
+  function infiniteCurry(fn) {
+    return function curried(...args) {
+      console.log(args);
+      
+      if (args.length === 0) {
+        // 空调用时触发计算
+        return fn();
+      }
+      // 返回新函数继续收集参数
+      // console.log();
+      
+      return (...newArgs) => curried(...args, ...newArgs);
+    };
+  }
+  const curriedAdd = infiniteCurry((...num)=> {
+    return num.reduce((a, b) => a + b,0)
+  });
   // const submit = curriedAdd(5)(10)(12)();
-  // console.log(submit);
+  console.log(curriedAdd(5)());
 
 })
 </script>

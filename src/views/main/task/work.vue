@@ -3,13 +3,12 @@
     <FullCalendar :options="calendarOptions" ref="calendarRef">
       <h1>213123</h1>
       <template #eventContent="{ event }">
-        <n-popover trigger="click" content-class="w-[600px] h-[400px]">
-          <template #trigger>
-            {{ event.title }}
-          </template>
-          <template #header>
-            <n-text strong depth="1"> {{ taskMap[currentEvent.type] }} </n-text>
-          </template>
+        <div class="flex flex-col gap-2">
+          <n-text strong depth="1"> {{ event.title }} </n-text>
+        </div>
+      </template>
+    </FullCalendar>
+    <n-modal v-model:show="showModal" preset="dialog" :show-icon="false" title="任务">
           <div class="w-full h-full">
             <n-form
               ref="formRef"
@@ -22,9 +21,9 @@
               <n-form-item label="责任人" path="title">
                 <n-select
                   v-model:value="currentEvent.person"
-                  placeholder="任务标题"
+                  placeholder="责任人"
+                  :options="[{label:'离南江',value:'离南江'}]"
                 >
-                  <!-- <n-option v-for="item in 5" :key="item" :label="item" :value="item">{{ item }}</n-option> -->
                 </n-select>
               </n-form-item>
               <n-form-item label="任务标题" path="title">
@@ -46,9 +45,9 @@
                   v-model:value="currentEvent.content"
                   placeholder="任务标题"
                 />
-                <!-- <editor api-key="no-api-key" ref="editorRef"></editor> -->
+                
               </n-form-item>
-              <n-form-item label="任务附件" path="title">
+              <!-- <n-form-item label="任务附件" path="title">
                 <n-upload
                   action="https://www.mocky.io/v2/5e4bafc63100007100d8b70f"
                   :default-file-list="currentEvent.attachment"
@@ -56,10 +55,10 @@
                 >
                   点击上传
                 </n-upload>
-              </n-form-item>
+              </n-form-item> -->
             </n-form>
           </div>
-          <template #footer>
+          <template #action>
             <div class="flex gap-2">
               <n-button strong secondary round type="warning">
                 <template #icon>
@@ -81,9 +80,7 @@
               </n-button>
             </div>
           </template>
-        </n-popover>
-      </template>
-    </FullCalendar>
+        </n-modal>
   </div>
 </template>
 
@@ -107,6 +104,7 @@ let taskMap = {
   'defect':'缺陷'
 }
 const calendarRef = ref(null);
+let showModal = ref(false)
 let currentEvent = ref({});
 const getTaskList = async () => {
   let data = [
@@ -117,8 +115,8 @@ const getTaskList = async () => {
       state:'finish',
       person:'离南江',
       type:'task',
-      start: "2025-03-01",
-      end: "2025-03-03",
+      start: "2025-05-05",
+      end: "2025-05-10",
       resourceId: "a",
     },
     {
@@ -127,26 +125,24 @@ const getTaskList = async () => {
       content:'今日摸鱼，不必理会2',
       person:'离南江',
       type:'defect',
-      start: "2025-03-22",
-      end: "2025-03-26",
+      start: "2025-05-07",
+      end: "2025-05-12",
     }
   ]
   calendarOptions.value.events = data
 }
 
 const handleEventMouseEnter = (info) => {
-  // console.log(info);
 };
 const handleDateSelect = (info) => {
-  
-};
-const handleDateClick = (info) => {
-  console.log(info);
+  let {start,end} = info
+  currentEvent.value = {title:'',timeRange:[moment(start).valueOf(),moment(end).valueOf()],type:0,person:"",content:"",state:0,attachment:['https://picsum.photos/200/300']}
+  showModal.value = true
 };
 const handleEventClick = (info) => {
   let {event:{title,start,end,extendedProps:{type,person,content,state}}} = info
   currentEvent.value = {title,timeRange:[moment(start).valueOf(),moment(end).valueOf()],type,person,content,state,attachment:['https://picsum.photos/200/300']}
-  console.log(currentEvent.value );
+  showModal.value = true
 };
 const calendarOptions = ref({
   plugins: [dayGridPlugin, interactionPlugin, timeGridPlugin,resourceTimelinePlugin,listPlugin],
@@ -171,7 +167,7 @@ const calendarOptions = ref({
   // selectMirror: true,
   dayMaxEvents: true,
   select: handleDateSelect,
-  eventClick: handleDateClick, // 日程点击事件
+  // eventClick: handleDateClick, // 日程点击事件
   eventMouseEnter: handleEventMouseEnter, // 用户将鼠标悬停在事件上时触发
   eventClick: handleEventClick, //日程点击事件
   locale: zhCnLocale,
