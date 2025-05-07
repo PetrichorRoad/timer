@@ -157,6 +157,7 @@ const calendarOptions = ref({
     // right: 'dayGridMonth'
   },
   // headerToolbar:false,
+  aspectRatio:3,
   handleWindowResize: true, //随浏览器窗口变化
   // initialDate:""//初始化日期
   // initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
