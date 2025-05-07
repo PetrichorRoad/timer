@@ -2,9 +2,11 @@
   <div class="page p-2 box-border overflow-y-auto">
     <FullCalendar :options="calendarOptions" ref="calendarRef">
       <h1>213123</h1>
-      <template #eventContent="{ event }">
-        <div class="flex flex-col gap-2">
-          <n-text strong depth="1"> {{ event.title }} </n-text>
+      <template #eventContent="{ event:{title,extendedProps:{state} }}">
+        <div class="flex gap-2 h-[24px] items-center" :style={backgroundColor:bcColorMap[state]}>
+          <span class="text-[12px] w-[10px] h-full" :style={backgroundColor:colorMap[state]}></span>
+          <n-text strong depth="1"> {{ title }} </n-text>
+          <!-- <n-text strong depth="1"> {{ event.title+event.state }} </n-text> -->
         </div>
       </template>
     </FullCalendar>
@@ -106,6 +108,18 @@ let taskMap = {
 const calendarRef = ref(null);
 let showModal = ref(false)
 let currentEvent = ref({});
+let colorMap = {
+  0:'#3399CC',
+  1:'#99CCFF',
+  2:'#CCFFFF',
+  3:'#eaf7f7',
+}
+let bcColorMap = {
+  0: '#FFCCCC',
+  1: '#FF9999',
+  2: '#FF6666',
+  3: '#FF0033',
+}
 const getTaskList = async () => {
   let data = [
     {
@@ -118,15 +132,42 @@ const getTaskList = async () => {
       start: "2025-05-05",
       end: "2025-05-10",
       resourceId: "a",
+      state:1,
+    },
+    {
+      id: 3,
+      title: "Task 3",
+      content:'今日摸鱼，不必理会',
+      state:'finish',
+      person:'离南江',
+      type:'task',
+      start: "2025-05-05",
+      end: "2025-05-10",
+      resourceId: "a",
+      state:3,
+    },
+    {
+      id: 0,
+      title: "Task 4",
+      content:'今日摸鱼，不必理会',
+      state:'finish',
+      person:'离南江',
+      type:'task',
+      start: "2025-05-14",
+      end: "2025-05-18",
+      resourceId: "a",
+      state:0,
     },
     {
       id: 2,
       title: "Task 2",
       content:'今日摸鱼，不必理会2',
+      state:0,
       person:'离南江',
       type:'defect',
-      start: "2025-05-07",
-      end: "2025-05-12",
+      start: "2025-05-22",
+      end: "2025-05-23",
+      state:2,
     }
   ]
   calendarOptions.value.events = data
