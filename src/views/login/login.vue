@@ -10,27 +10,27 @@
             <input type="password" placeholder="请输入密码" />
             <input type="password" placeholder="请确认密码" />
           </div>
-          <button>注册</button>
+          <button>{{ $t('注册') }}</button>
         </div>
         <div class="login-box h-full" v-show="scene">
           <h1>login</h1>
           <div class="w-full h-[46%] flex flex-col items-center">
-            <input type="text" v-model="login.username" placeholder="邮箱" />
+            <input type="text" v-model="login.username" placeholder='邮箱' />
             <input
               type="password"
               v-model="login.password"
-              placeholder="密码"
+              :placeholder="$t('密码')"
             />
           </div>
-          <button @click="loginSubmit">登录</button>
+          <button @click="loginSubmit">{{ $t('登录') }}</button>
         </div>
       </div>
       <div class="con-box left py-8">
-        <h2>欢迎来的 <span>前端世界</span></h2>
+        <h2>欢迎来的 <span>{{ $t('前端世界') }}</span></h2>
         <p>快快滴</p>
         <div class="w-[150px] h-[150px]"></div>
         <p>已有帐号</p>
-        <button @click="trigger">去登录</button>
+        <button @click="trigger">{{ $t('去登录') }}</button>
       </div>
       <div class="con-box right py-8">
         <h2>欢迎来的 <span>前端世界</span></h2>
@@ -55,8 +55,8 @@ let register = ref({
   confirm_password: "",
 });
 let login = ref({
-  username: "越是拼命向前伸手",
-  password: "渴望之物越是渐行渐远",
+  username: $t('越是拼命向前伸手'),
+  password: $t('渴望之物越是渐行渐远'),
 });
 const loginSubmit = () => {
   let token = "admin";

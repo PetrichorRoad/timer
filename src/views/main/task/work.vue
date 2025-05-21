@@ -6,7 +6,6 @@
         <div class="flex gap-2 h-[24px] items-center" :style={backgroundColor:bcColorMap[state]}>
           <span class="text-[12px] w-[10px] h-full" :style={backgroundColor:colorMap[state]}></span>
           <n-text strong depth="1"> {{ title }} </n-text>
-          <!-- <n-text strong depth="1"> {{ event.title+event.state }} </n-text> -->
         </div>
       </template>
     </FullCalendar>
@@ -195,7 +194,6 @@ const calendarOptions = ref({
     left: "prev,next today",
     center: "title",
     right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
-    // right: 'dayGridMonth'
   },
   // headerToolbar:false,
   aspectRatio:3,
