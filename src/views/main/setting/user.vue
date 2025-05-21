@@ -1,6 +1,9 @@
 <template>
   <div class="page p-2 box-border overflow-y-auto">
     <n-space vertical>
+      <n-card title="绩效标杆" size="large">
+        <div></div>
+      </n-card>
       <n-card title="搜索">
         <n-form ref="formRef" inline :model="userParam" label-placement="left" label-width="80">
           <n-grid :x-gap="12" :y-gap="8" :cols="4" responsive="screen">
@@ -49,14 +52,6 @@
       <n-card title="用户列表">
         <n-data-table :columns="columns" :data="userList" :row-key="rowKey" />
       </n-card>
-      <n-card title="大卡片" size="large">
-        <n-tag round :bordered="false" type="success">
-          Checked
-          <template #icon>
-            <n-icon :component="CheckmarkCircle" />
-          </template>
-        </n-tag>
-      </n-card>
     </n-space>
 
     <n-modal v-model:show="showModal" title="用户信息" preset="dialog" :show-icon="false" :auto-focus="false">
@@ -88,9 +83,9 @@
 <script setup lang="jsx">
 import { computed, reactive, watch, ref, h, nextTick, onMounted } from "vue";
 import { Person, CheckmarkCircle } from '@vicons/ionicons5'
-import { organization,getOrganization } from "@/utils/mock/data";
-import request from "@/api/base";
+import { organization, getOrganization } from "@/utils/mock/data";
 import { useDialog } from 'naive-ui'
+import request from "@/api/base";
 let dialog = useDialog()
 let userParam = ref({
   phone: "",
@@ -125,22 +120,11 @@ const handleUpdateValue = (value) => {
 const rowKey = (row) => {
   return row.email
 }
-const findUsers = (nodes) => {
-  return nodes.reduce((acc, node) => {
-    // 如果当前节点是 user，添加到结果中
-    if (node.type === 'user') {
-      acc.push(node);
-    }
-    // 如果当前节点有子节点，递归处理子节点
-    if (node.children && node.children.length > 0) {
-      acc = acc.concat(findUsers(node.children));
-    }
-    return acc;
-  }, []);
+const userList = ref([])
+const getUserList = async () => {
+  let {data} = await request.getUserList()
+  userList.value = data
 }
-const userList = computed(() => {
-  return findUsers(organization)
-})
 const renderAvatar = (row) => {
   return <n-avatar
     src={row.avatar || 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'}
@@ -187,9 +171,6 @@ const tag = (row) => {
     2: "中级",
     3: "初级"
   }
-  // console.log(row);
-  // let pos = positionOptions.value.find(item => item.value === position).label
-  // return `${levelMap[grade]}${pos}`
 };
 let columns = computed(() => {
   return [
@@ -238,7 +219,7 @@ let columns = computed(() => {
       width: 80,
       render: (row) => {
         return (<div class="flex items-center justify-center">
-          <span class="w-[5px] h-[5px] rounded" class={row.status == 'active' ? 'bg-[#67c23a]' : 'bg-[#f56c6c]'}></span>
+          <span class={`w-[5px] h-[5px] rounded ${row.status == 'active' ? 'bg-[#67c23a]' : 'bg-[#f56c6c]'}`}></span>
         </div>)
       }
     },
@@ -281,6 +262,7 @@ const reset = () => {
 onMounted(() => {
   getPositionList()
   getOrganizationTree()
+  getUserList()
 })
 </script>
 

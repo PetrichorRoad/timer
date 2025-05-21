@@ -1,21 +1,28 @@
-.page{
-    width:100%;
-    height:100%;
+.page {
+  width: 100%;
+  height: 100%;
 }
-.n-tag{
-    background-color: transparent !important;
+.n-tag {
+  background-color: transparent !important;
 }
-.loading-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.5);
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.loading-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.n-config-provider{
-    height:100%;
+.n-config-provider {
+  height: 100%;
+}
+/* 隐藏容器内所有滚动条（仍可滚动） */
+html::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }

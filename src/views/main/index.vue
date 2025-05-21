@@ -1,5 +1,6 @@
 <template>
   <div class="page flex">
+    <web-socket-container />
     <n-layout-sider
       bordered
       show-trigger
@@ -28,6 +29,7 @@
   </div>
 </template>
 <script setup lang="jsx">
+import WebSocketContainer from "@/views/main/websocket/websocket.vue";
 import { computed } from "vue";
 import { menuList } from "@/utils/lib/menu.js";
 import { useStore } from "@/store/index";

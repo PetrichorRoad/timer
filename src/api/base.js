@@ -46,7 +46,21 @@ export const getPositionList = (params) => {
     params
   })
 }
-
+export const getUserList = (params) => {
+  return request({
+    url: '/timer/user/list',
+    method: 'get',
+    params
+  })
+}
+// /timer/project/list
+export const getProjectList = (params) => {
+  return request({
+    url: '/timer/project/list',
+    method: 'get',
+    params
+  })
+}
 export default {
-  login,getTaskList,createTask,updateTask,getOrganizationTree,getPositionList
+  login, getTaskList, createTask, updateTask, getOrganizationTree, getPositionList, getUserList, getProjectList
 }
