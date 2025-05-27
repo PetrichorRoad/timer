@@ -102,7 +102,7 @@
                   v-if="baseInfoVisible"
                   v-model:value="userInfo.position"
                 >
-                  <n-option
+                  <!-- <n-option
                     v-for="item in positionList"
                     :value="item.value"
                     :label="item.label"
@@ -111,7 +111,7 @@
                   >
                   <n-option value="front-end" label="前端开发工程师">{{
                     "前端开发工程师"
-                  }}</n-option>
+                  }}</n-option> -->
                 </n-select>
                 <div v-else>{{ userInfo.position }}</div>
               </n-form-item>

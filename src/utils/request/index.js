@@ -1,7 +1,7 @@
 // src/utils/request.js
 
 import axios from 'axios';
-
+import {router} from '@/router';
 // 创建axios实例
 const service = axios.create({
     // baseURL: import.meta.env.VITE_API_BASE_URL || 'https://restapi.amap.com/v3/', // 设置请求的基地址
@@ -38,6 +38,8 @@ service.interceptors.response.use(
                 case 401:
                     // 处理未授权的错误
                     console.error('未授权，请重新登录');
+                    console.log(router);
+                    router.push('/login');
                     break;
                 case 404:
                     // 处理资源不存在的错误

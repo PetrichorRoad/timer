@@ -1,5 +1,6 @@
 import '@/assets/css/style.css'
 import '@/assets/css/common.css'
+import '@/assets/css/calendar.less'
 // main.ts
 import 'virtual:uno.css'
 // 通用字体

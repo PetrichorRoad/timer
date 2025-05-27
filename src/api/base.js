@@ -61,6 +61,20 @@ export const getProjectList = (params) => {
     params
   })
 }
+export const updateProject = (data) => {
+  return request({
+    url: '/timer/project/updateProject',
+    method: 'post',
+    data
+  })
+}
+export const createProject = (data) => {
+  return request({
+    url: '/timer/project/createProject',
+    method: 'post',
+    data
+  })
+}
 export default {
-  login, getTaskList, createTask, updateTask, getOrganizationTree, getPositionList, getUserList, getProjectList
+  login, getTaskList, createTask, updateTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, createProject
 }

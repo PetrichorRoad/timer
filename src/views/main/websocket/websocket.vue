@@ -47,7 +47,7 @@ const sendNotice = (data) => {
 const createWebSocket = () => {
     let userInfo = JSON.parse(localStorage.getItem('userInfo')||{})
     let clientId = userInfo.accountId
-    let socketUrl =  `ws://192.168.9.15:8080/timer/ws/${clientId}`
+    let socketUrl =  `ws://127.0.0.1:8080/timer/ws/${clientId}`
     if (typeof WebSocket == 'undefined') {
       
     } else {
