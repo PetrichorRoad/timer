@@ -3,20 +3,45 @@
     <div class="flex gap-2">
       <div class="flex gap-2 flex-col">
         <n-card title="数据报表" class="flex-1">
-            <task-report></task-report>
+          <task-report :counts="taskCount"></task-report>
         </n-card>
-        <n-card title="今日任务" class="flex-1">
-          <n-checkbox-group
-            v-model:value="searchParams.task"
-            @update:value="handleUpdateValue"
-          >
-            <n-space vertical>
-              <n-checkbox value="Beijing" label="新版PMS研发与应用" />
-              <n-checkbox value="Shanghai" label="消息中心2.3版本" />
-              <n-checkbox value="Guangzhou" label="用户中心3.3.4版本需求更新" />
-              <n-checkbox value="Shenzen" label="宏坤测试项目" />
-            </n-space>
-          </n-checkbox-group>
+        <n-card title="筛选" class="flex-1">
+          <div class="flex gap-8 flex-col">
+            <div class="card-title flex flex-col">
+              项目
+              <n-radio-group
+                class="card-title"
+                v-model:value="searchParams.projectId"
+                @update:value="handleUpdateValue"
+              >
+                <n-space vertical>
+                  <n-radio
+                    v-for="item in projectList"
+                    :key="item.id"
+                    :value="item.projectId"
+                    :label="item.projectName"
+                  />
+                </n-space>
+              </n-radio-group>
+            </div>
+
+            <div class="card-title flex flex-col">
+              状态
+              <n-radio-group
+                v-model:value="searchParams.status"
+                @update:value="handleUpdateValue"
+              >
+                <n-space vertical>
+                  <n-radio
+                    v-for="item in statusList"
+                    :key="item.value"
+                    :value="item.value"
+                    :label="item.label"
+                  />
+                </n-space>
+              </n-radio-group>
+            </div>
+          </div>
         </n-card>
       </div>
       <n-card class="flex-1 relative">
@@ -43,12 +68,10 @@
           </template>
         </FullCalendar>
 
-        <div class="absolute top-[25px] right-[20%] transform-translate-y-[0px] z-999">
-          <img
-            src="@/assets/images/common/long.png"
-            class="w-[200px]"
-            alt=""
-          />
+        <div
+          class="absolute top-[25px] right-[20%] transform-translate-y-[0px] z-999"
+        >
+          <img src="@/assets/images/common/long.png" class="w-[200px]" alt="" />
         </div>
         <div
           ref="animationRef"
@@ -157,10 +180,9 @@ import { CashOutline } from '@vicons/ionicons5'
 import "tippy.js/dist/tippy.css"; // optional for styling
 import animationData from '@/assets/animation/move.json';
 let searchParams = ref({
-  date: moment().valueOf(),
-  task:[]
+  status:null,
+  projectId:''
 })
-let task = ref([])
 let taskMap = {
   'task': '任务',
   'meeting': '会议',
@@ -183,13 +205,49 @@ let colorMap = {
   3:'#eaf7f7',
 }
 let bcColorMap = {
-  0: '#FFCCCC',
-  1: '#FF9999',
-  2: '#FF6666',
-  3: '#FF0033',
+  1: '#5470C6',
+  2: '#91CC75',
+  3: '#FAC858',
+  4: '#EE6666',
+  5: '#73C0DE'
 }
 let userList = ref([])
 let events = ref([])
+let projectList = ref([])
+
+const taskCount = computed(() => {
+  const countTasksByStatus = (tasks) => {
+  // 使用reduce进行统计
+    const statusCounts = {
+    "1": 0, // 待开始
+    "2": 0, // 进行中
+    "3": 0, // 已完成
+    "4": 0, // 已延期
+    "5": 0  // 已取消
+  };
+  const STATUS_MAPPING = {
+    "1": "待开始",
+    "2": "进行中", 
+    "3": "已完成",
+    "4": "已延期",
+    "5": "已取消"
+  };
+  // 2. 统计各状态数量
+  tasks.forEach(task => {
+    const status = task.status.toString(); // 确保status是字符串
+    if (statusCounts.hasOwnProperty(status)) {
+      statusCounts[status]++;
+    }
+  });
+  // 3. 转换为目标格式
+  return Object.entries(statusCounts).map(([status, count]) => ({
+    value: count,
+    name: STATUS_MAPPING[status]
+  }))||[];
+  }
+  return countTasksByStatus(events.value)
+})
+// 任务状态(1:待开始 2:进行中 3:已完成 4:已延期 5:已取消)
 const confirm = async () => { 
   console.log(currentEvent.value);
   let {id,timeRange} = currentEvent.value
@@ -199,17 +257,19 @@ const confirm = async () => {
   console.log(currentEvent.value);
   if(id){
     let res = await request.updateTask({startTime,endTime,...currentEvent.value})
-    console.log(res);
+    getTaskList()
   }else{
     let res = await request.createTask({startTime,endTime,...currentEvent.value})
-    console.log(res);
+    getTaskList()
   }
   showModal.value = false
 };
+const getProjectList = async () => {
+  let {data} = await request.getProjectList({companyId:1})
+  projectList.value = data
+}
 const handleUpdateValue = (event) => {
-  console.log(event,moment(event).toDate());
-  calendarRef.value.currentData = moment(event).toDate()
-  console.log(calendarRef.value.getApi());
+  getTaskList()
 };
 const cancel = () => {
   showModal.value = false
@@ -224,7 +284,8 @@ const getUserList = async () => {
   })
 }
 const getTaskList = async () => {
-  let {data} = await request.getTaskList({companyId:1})
+  let {projectId,status} = searchParams.value
+  let {data} = await request.getTaskList({companyId:1,projectId,status})
   events.value = data.map((item) => {
     return {
       id: item.id,
@@ -283,9 +344,14 @@ const calendarOptions = computed(()=>{
     locale: zhCnLocale,
     nextDayThreshold: "01:00:00",
     events: events.value,
+    datesSet:handleDateChange
   }
 });
 const animationRef = ref(null);
+const handleDateChange = (info) => {
+  let {start,end} = info
+  console.log(moment(start).format("YYYY-MM-DD HH:mm:ss") ,moment(end).format("YYYY-MM-DD HH:mm:ss"));
+};
 const loadAnimation = (callback) => {
   lottie.loadAnimation({
     container: animationRef.value,
@@ -297,7 +363,8 @@ const loadAnimation = (callback) => {
 }
 onMounted(() => {
   getTaskList();
-  getUserList()
+  getUserList();
+  getProjectList();
   loadAnimation()
 });
 </script>
