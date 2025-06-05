@@ -20,6 +20,7 @@ export const useStore = defineStore('storeId', {
             this.lang = lang
         },
         setActiveMenu(activeMenu) {
+            console.log(activeMenu);
             router.push({ name: activeMenu.name})
         },
     }

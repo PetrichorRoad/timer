@@ -42,6 +42,73 @@ const getMenuList = (routes) => {
 };
 export const menuListByOther = [
     {
+        path: "report",
+        name: "report",
+        icon: "BookOutline",
+        label: "公司热点",
+        component: () => import("@/views/main/report/index.vue"),
+        meta: {
+            Auth: true,
+            title: "公司热点",
+        },
+    },
+    {
+        path: "project",
+        name: "project",
+        icon: "BookOutline",
+        label: "项目管理",
+        meta: {
+            Auth: true,
+            title: "项目管理",
+        },
+        children: [
+            {
+                path: "my-project",
+                name: "my-project",
+                icon: "BookOutline",
+                label: "我的项目",
+                component: () => import("@/views/main/project/my-project.vue"),
+                meta: {Auth: true,title: "我的项目"},
+            },
+            {
+                path: "project-detail",
+                name: "project-detail",
+                icon: "BookOutline",
+                label: "项目详情",
+                component: () => import("@/views/main/project/project-detail.vue"),
+                meta: { Auth: true, title: "项目详情" },
+            },
+            {
+                path: "create-project",
+                name: "create-project",
+                icon: "BookOutline",
+                label: "创建项目",
+                component: () => import("@/views/main/project/create-project.vue"),
+                meta: { Auth: true, title: "创建项目" },
+            },
+        ],
+    },
+    {
+        path: "personal",
+        name: "personal",
+        icon: "BookOutline",
+        label: "个人中心",
+        meta: {
+            Auth: true,
+            title: "个人中心",
+        },
+        children: [
+            {
+                path: "personal-center",
+                name: "personal-center",
+                icon: "BookOutline",
+                label: "工作台",
+                component: () => import("@/views/main/personal/workbenches.vue"),
+                meta: { Auth: true, title: "工作台" },
+            },
+        ],
+    },
+    {
         path: "document",
         name: "document",
         icon: "BookOutline",
@@ -133,7 +200,7 @@ export const menuListBySelf = [
     {
         path: 'task',
         name: 'task',
-        icon: "BookOutline", label: '任务安排',
+        icon: "BookOutline", label: '日程待办',
         component: () => import("@/views/main/task/work.vue"),
         meta: {
             Auth: true, title: '首页', icon: BookOutline

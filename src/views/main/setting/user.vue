@@ -1,6 +1,9 @@
 <template>
   <div class="page p-2 box-border overflow-y-auto">
     <n-space vertical>
+      <n-card title="绩效标杆" size="large">
+        <div></div>
+      </n-card>
       <n-card title="搜索">
         <n-form ref="formRef" inline :model="userParam" label-placement="left" label-width="80">
           <n-grid :x-gap="12" :y-gap="8" :cols="4" responsive="screen">
@@ -49,14 +52,6 @@
       <n-card title="用户列表">
         <n-data-table :columns="columns" :data="userList" :row-key="rowKey" />
       </n-card>
-      <n-card title="大卡片" size="large">
-        <n-tag round :bordered="false" type="success">
-          Checked
-          <template #icon>
-            <n-icon :component="CheckmarkCircle" />
-          </template>
-        </n-tag>
-      </n-card>
     </n-space>
 
     <n-modal v-model:show="showModal" title="用户信息" preset="dialog" :show-icon="false" :auto-focus="false">
@@ -90,6 +85,7 @@ import { computed, reactive, watch, ref, h, nextTick, onMounted } from "vue";
 import { Person, CheckmarkCircle } from '@vicons/ionicons5'
 import { organization, getOrganization } from "@/utils/mock/data";
 import { useDialog } from 'naive-ui'
+import request from "@/api/base";
 let dialog = useDialog()
 let userParam = ref({
   phone: "",
@@ -100,7 +96,7 @@ let userParam = ref({
   department: null
 });
 let showModal = ref(false)
-let organizationTree = getOrganization()
+let organizationTree = ref([])
 let userSetting = ref({
   avatar: "",
   nickname: "",
@@ -124,23 +120,11 @@ const handleUpdateValue = (value) => {
 const rowKey = (row) => {
   return row.email
 }
-const findUsers = (nodes) => {
-  return nodes.reduce((acc, node) => {
-    // 如果当前节点是 user，添加到结果中
-    if (node.type === 'user') {
-      acc.push(node);
-    }
-    // 如果当前节点有子节点，递归处理子节点
-    if (node.children && node.children.length > 0) {
-      acc = acc.concat(findUsers(node.children));
-    }
-    return acc;
-  }, []);
+const userList = ref([])
+const getUserList = async () => {
+  let {data} = await request.getUserList()
+  userList.value = data
 }
-
-const userList = computed(() => {
-  return findUsers(organization)
-})
 const renderAvatar = (row) => {
   return <n-avatar
     src={row.avatar || 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'}
@@ -180,83 +164,89 @@ const handleDelete = (event, value) => {
     }
   })
 }
-const positionOptions = [
-  { label: "前端工程师", value: "frontend" },
-  { label: "后端工程师", value: "backend" },
-  { label: "全栈架构师", value: "fullstack" },
-  { label: "产品经理", value: "product" },
-  { label: "UI设计师", value: "designer" },
-  { label: "测试工程师", value: "tester" },
-  { label: "部门经理", value: "manager" },
-];
-const tag = (grade, position) => {
+const positionOptions = ref([])
+const tag = (row) => {
   let levelMap = {
     1: "高级",
     2: "中级",
     3: "初级"
   }
-  let pos = positionOptions.find(item => item.value === position).label
-  return `${levelMap[grade]}${pos}`
 };
-let columns = [
-  // {
-  //   type: "selection"
-  // },
-  {
-    title: "头像",
-    key: "avatar",
-    render: renderAvatar,
-    align: "center",
-  },
-  {
-    title: "昵称",
-    key: "label",
-    ellipsis: true,
-    align: "center",
-  },
-  {
-    title: "职位",
-    key: "position",
-    align: "center",
-    render: (row) => {
-      return <n-tag type="warning">
-        <div class="flex items-center gap-[10px] text-[12px]">
-          <span>{tag(row.grade, row.position)}</span>
-          <n-icon color={row.sex == 'man' ? '#67c23a' : '#f56c6c'} component={Person} />
-        </div>
-      </n-tag>
+let columns = computed(() => {
+  return [
+    // {
+    //   type: "selection"
+    // },
+    {
+      title: "头像",
+      key: "avatar",
+      render: renderAvatar,
+      align: "center",
+    },
+    {
+      title: "昵称",
+      key: "label",
+      ellipsis: true,
+      align: "center",
+    },
+    {
+      title: "职位",
+      key: "position",
+      align: "center",
+      render: (row) => {
+        return <n-tag type="warning">
+          <div class="flex items-center gap-[10px] text-[12px]">
+            <span>{tag(row)}</span>
+            <n-icon color={row.sex == 'man' ? '#67c23a' : '#f56c6c'} component={Person} />
+          </div>
+        </n-tag>
+      }
+    },
+    {
+      title: "邮箱",
+      key: "email",
+    },
+    {
+      title: "电话号码",
+      align: "center",
+      key: "phone",
+      align: "center",
+    },
+    {
+      title: "用户状态",
+      key: "status",
+      align: "center",
+      width: 80,
+      render: (row) => {
+        return (<div class="flex items-center justify-center">
+          <span class={`w-[5px] h-[5px] rounded ${row.status == 'active' ? 'bg-[#67c23a]' : 'bg-[#f56c6c]'}`}></span>
+        </div>)
+      }
+    },
+    {
+      title: "操作",
+      key: "action",
+      align: "center",
+      width: 200,
+      render: renderAction
+    },
+  ];
+})
+const getPositionList = async () => {
+  let { data } = await request.getPositionList()
+  positionOptions.value = data.map(item => {
+    return {
+      label: item.name,
+      value: item.code,
+      ...item
     }
-  },
-  {
-    title: "邮箱",
-    key: "email",
-  },
-
-  {
-    title: "电话号码",
-    align: "center",
-    key: "phone",
-    align: "center",
-  },
-  {
-    title: "用户状态",
-    key: "status",
-    align: "center",
-    width: 80,
-    render: (row) => {
-      return (<div class="flex items-center justify-center">
-        <span class={`${row.status == 'active' ? 'bg-[#67c23a]' : 'bg-[#f56c6c]'} w-[5px] h-[5px] rounded`}></span>
-      </div>)
-    }
-  },
-  {
-    title: "操作",
-    key: "action",
-    align: "center",
-    width: 200,
-    render: renderAction
-  },
-];
+  })
+}
+const getOrganizationTree = async () => {
+  let { data } = await request.getOrganizationTree({companyId: 1})
+  console.log([data],getOrganization());
+  organizationTree.value = [data]
+}
 const search = () => {
   console.log(userParam.value);
 }
@@ -270,26 +260,9 @@ const reset = () => {
   }
 }
 onMounted(() => {
-  function infiniteCurry(fn) {
-    return function curried(...args) {
-      console.log(args);
-      
-      if (args.length === 0) {
-        // 空调用时触发计算
-        return fn();
-      }
-      // 返回新函数继续收集参数
-      // console.log();
-      
-      return (...newArgs) => curried(...args, ...newArgs);
-    };
-  }
-  const curriedAdd = infiniteCurry((...num)=> {
-    return num.reduce((a, b) => a + b,0)
-  });
-  // const submit = curriedAdd(5)(10)(12)();
-  console.log(curriedAdd(5)());
-
+  getPositionList()
+  getOrganizationTree()
+  getUserList()
 })
 </script>
 

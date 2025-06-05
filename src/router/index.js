@@ -73,7 +73,7 @@ export const routes = [
           {
             path: 'workbench',
             name: 'workbench', icon: "BookOutline", label: '工作台',
-            component: () => import("@/views/main/test/test2.vue"),
+            component: () => import("@/views/main/personal/work-page.vue"),
             meta: {
               Auth: true, title: '工作台', icon: BookOutline
             }
@@ -114,10 +114,6 @@ export const routes = [
             meta: {
               Auth: true, title: '首页', icon: BookOutline
             }
-          },
-          {
-            path: 'power',
-            name: 'power',
           }
         ]
       },
