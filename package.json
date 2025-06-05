@@ -28,6 +28,7 @@
     "tinymce": "^7.6.1",
     "tippy.js": "^6.3.7",
     "vue": "^3.5.13",
+    "vue-i18n": "^11.1.5",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
