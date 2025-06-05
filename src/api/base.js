@@ -61,6 +61,13 @@ export const getProjectList = (params) => {
     params
   })
 }
+export const getProjects = (params) => {
+  return request({
+    url: '/timer/project/list',
+    method: 'post',
+    params
+  })
+}
 export const updateProject = (data) => {
   return request({
     url: '/timer/project/updateProject',

@@ -1,63 +1,15 @@
 <template>
   <div class="page p-2 box-border overflow-y-auto">
-    <n-space vertical>
-      <div class="flex gap-4">
-        <n-card title="绩效标杆" class="flex-1">
-          <div class="h-[300px] card-container">
-            <div
-              v-for="(item, index) in 8"
-              :key="index"
-              class="bg-my-bg-2 flex items-center py-2 px-4 gap-4 justify-center"
-            >
-              <n-avatar
-                round
-                :size="64"
-                src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"
-              />
-              <div class="flex flex-col gap-2">
-                <div class="flex justify-between">
-                  <span class="text-lg"> 张伟成 </span>
-                  <n-tag size="small" class="round-2" type="primary"
-                    >中级</n-tag
-                  >
-                </div>
-                <div class="">用户界面/UI设计师</div>
-              </div>
-            </div>
-          </div>
-        </n-card>
-        <n-card title="最新公告" class="w-[500px]">
-          <div
-            class="bg-my-bg-2 h-[300px] p-1 gap-4 flex flex-col justify-between"
-          >
-            <div
-              class="flex gap-4 flex-1"
-              v-for="(item, index) in 3"
-              :key="index"
-            >
-              <div class="tips bg-[#bb2649]"></div>
-              <div class="flex flex-col gap-2">
-                <div>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  omnis hic architecto temporibus!
-                </div>
-                <div>
-                  <span>今天 | 下午 5：00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </n-card>
-      </div>
-      <div class="flex gap-4">
+    <div class="flex gap-4">
+      <div class="flex gap-4 flex-1">
         <n-card title="热门项目" class="flex-1">
           <div class="flex flex-col gap-2">
             <div
-              v-for="(item, index) in 3"
+              v-for="(item, index) in projectList"
               :key="index"
               class="bg-my-bg-2 p-4 rounded-xl flex flex-col relative"
             >
-              <div class="absolute tag px-2 py-1 bg-my-bg-3 text-[12px]">PN0001265</div>
+              <div class="absolute tag px-2 py-1 bg-my-bg-3 text-[12px]">{{ item.projectId }}</div>
               <div
                 class="flex items-center justify-between flex-1 h-[72px] gap-4 box-border"
               >
@@ -73,17 +25,17 @@
                   class="flex flex-col h-[72px] justify-between gap-1 flex-1"
                 >
                   <div>
-                    <span class="text-[16px] font-400">新版PMS研发与应用</span>
+                    <span class="text-[16px] font-400">{{ item.projectName }}</span>
                   </div>
                   <div class="flex gap-2 h-full justify-between">
                     <div class="flex flex-col h-full justify-between">
                       <div class="flex gap-2 items-center">
                         <span class="w-[80px]"> 承担部门 </span>
-                        <span class=""> 研发中心/基础研发部 </span>
+                        <span class=""> {{ item.creatorDept }} </span>
                       </div>
                       <div class="flex gap-2 items-center">
                         <span class="w-[80px]"> 负责人 </span>
-                        <span class=""> 研发中心/基础研发部 </span>
+                        <span class=""> {{ item.projectManager }} </span>
                       </div>
                     </div>
                   </div>
@@ -128,6 +80,8 @@
             </div>
           </div>
         </n-card>
+      </div>
+      <div class="flex flex-col gap-4">
         <n-card title="进度详情" class="w-[500px]">
           <div class="bg-my-bg-2 h-full py-2 px-4 justify-between flex flex-col">
             <template v-for="(item, index) in 3" :key="index">
@@ -155,12 +109,35 @@
             </template>
           </div>
         </n-card>
+        <n-card title="最新公告" class="w-[500px]">
+          <div
+            class="bg-my-bg-2 h-[300px] p-1 gap-4 flex flex-col justify-between"
+          >
+            <div
+              class="flex gap-4 flex-1"
+              v-for="(item, index) in 3"
+              :key="index"
+            >
+              <div class="tips bg-[#bb2649]"></div>
+              <div class="flex flex-col gap-2">
+                <div>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  omnis hic architecto temporibus!
+                </div>
+                <div>
+                  <span>今天 | 下午 5：00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </n-card>
       </div>
-    </n-space>
+    </div>
   </div>
 </template>
 
 <script setup lang="jsx">
+import { getProjects } from "@/api/base";
 import { computed, reactive, watch, ref, h, nextTick, onMounted } from "vue";
 import { CashOutline } from '@vicons/ionicons5'
 let options = ref([
@@ -193,11 +170,20 @@ let options = ref([
     src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
   }
 ])
+let projectList = ref([]);
+
+const getProjectListData = async () => {
+  const res = await getProjects({companyId:1});
+  projectList.value = res.data;
+};
 const createDropdownOptions = (options) =>
   options.map(option => ({
     key: option.name,
     label: option.name
-  }))
+}))
+onMounted(() => {
+  getProjectListData();
+});
 </script>
 
 <style lang="less" scoped>
