@@ -5,7 +5,7 @@ export const useStore = defineStore('storeId', {
     state: () => {
         return {
             theme:'overrides1',
-            lang:'en',
+            lang:'zh-CN',
             activeMenu: null,
             tabList:[]
         }

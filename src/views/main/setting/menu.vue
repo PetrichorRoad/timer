@@ -4,7 +4,7 @@
       <n-card title="菜单列表">
         <template #header-extra>
           <div class="flex gap-2">
-            <n-button type="primary" size="small">{{ $t('system.title') }}</n-button>
+            <n-button type="primary" size="small">{{ $t('greeting') }}</n-button>
           </div>
         </template>
         <n-data-table :columns="columns" :data="dataList" :row-key="rowKey" />

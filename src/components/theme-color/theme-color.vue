@@ -25,9 +25,9 @@
 import { computed } from "vue";
 import { useStore } from "@/store/index";
 import { useI18n } from 'vue-i18n'
-const { locale, availableLocales } = useI18n()
+const { locale, availableLocales,messages } = useI18n()
 const store = useStore();
-const { setTheme } = store;
+const { setTheme,setLangs } = store;
 const computedTheme = computed(() => {
   return store.theme;
 });
@@ -36,7 +36,7 @@ const computedLocale = computed(() => {
 });
 // 切换语言方法
 const changeLanguage = (newLocale) => {
-  console.log(newLocale,locale)
+  console.log(messages.value)
   locale.value = newLocale
   setLangs(newLocale)
 }
@@ -44,17 +44,17 @@ const songs = [
   {
     value: "light",
     label: "明亮",
-    lang: "zh",
+    lang: "zh-CN",
   },
   {
     value: "dark",
     label: "黑暗",
-    lang: "en",
+    lang: "en-US",
   },
   {
     value: "overrides1",
     label: "主题",
-    lang: "tw",
+    lang: "zh-TW",
   }
 ];
 </script>
