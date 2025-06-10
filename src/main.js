@@ -19,7 +19,6 @@ import { context } from './directive/context'
 // import { $t , i18n } from './il8n/index'
 window.lottie = lottie;
 const app = createApp(App)
-console.log('睢县执行');
 // window.$t = $t;
 //app.config.globalProperties.$t = $t;
 

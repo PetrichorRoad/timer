@@ -30,7 +30,6 @@ export const i18n = createI18n({
   locale: 'zh-CN',
   fallbackLocale: 'zh-CN',
   messages: await formatData(),
-  // messages: messages,
   legacy: false
 });
 export const $t = i18n.global.t;

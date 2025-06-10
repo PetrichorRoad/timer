@@ -1,22 +1,11 @@
 <script setup>
 import { useStore } from "@/store/index";
+import langJSON from '../lang/index.json';
+// import {i18nDB} from "@/database/index";
 const { theme } = useStore();
 document.documentElement.className = theme;
-
-
-// import { onMounted } from "vue";
-// i18nDB.open();
-// i18nDB.save("greeting", {
-//   "zh-CN": "你好",
-//   "zh-TW": "你好",
-//   "en-US": "Hello",
-//   "ja-JP": "こんにちは",
-// });
-// i18nDB.save("greeting1", {
-//   "zh-CN": "你好",
-//   "zh-TW": "你好",
-//   "en-US": "Hello",
-//   "ja-JP": "こんにちは",
+// Object.keys(langJSON).forEach(async (lang) => {
+//   await i18nDB.save(lang, langJSON[lang]);
 // });
 </script>
 

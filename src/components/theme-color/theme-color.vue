@@ -31,7 +31,7 @@ const computedTheme = computed(() => {
   return store.theme;
 });
 const computedLocale = computed(() => {
-  return store.lang;
+  return localStorage.getItem("lang") || "zhcn";
 });
 // 切换语言方法
 const changeLanguage = (newLocale) => {

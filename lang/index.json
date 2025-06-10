@@ -83,6 +83,1536 @@
 		"ko": "추억이 얼룩지다",
 		"ja": "思い出斑です"
 	},
+	"amjzw84": {
+		"zh-cn": "公司热点",
+		"en": "Company Hotspots",
+		"ko": "회사 인기",
+		"ja": "企業ホットスポットです"
+	},
+	"jqcb164": {
+		"zh-cn": "项目管理",
+		"en": "Project Management",
+		"ko": "프로젝트 관리",
+		"ja": "プロジェクトマネジメントです"
+	},
+	"cvdobs4": {
+		"zh-cn": "我的项目",
+		"en": "My project",
+		"ko": "제 프로젝트는",
+		"ja": "私のプロジェクトです"
+	},
+	"jqeyus4": {
+		"zh-cn": "项目详情",
+		"en": "Project Details",
+		"ko": "항목 정보",
+		"ja": "プロジェクトの詳細です"
+	},
+	"argjkk4": {
+		"zh-cn": "创建项目",
+		"en": "Create a project",
+		"ko": "프로젝트 만들기",
+		"ja": "プロジェクトを立ち上げます"
+	},
+	"a6ttl24": {
+		"zh-cn": "个人中心",
+		"en": "Personal Center",
+		"ko": "개인 센터",
+		"ja": "個人センターです"
+	},
+	"hubg2": {
+		"zh-cn": "文档",
+		"en": "Document",
+		"ko": "문서",
+		"ja": "ドキュメント"
+	},
+	"4x9k3o8": {
+		"zh-cn": "Vchart文档",
+		"en": "Vchart document",
+		"ko": "vchart 파일",
+		"ja": "Vchartドキュメントです"
+	},
+	"smw62o6": {
+		"zh-cn": "Vite文档",
+		"en": "Vite documentation",
+		"ko": "vite 문서",
+		"ja": "Viteドキュメントです"
+	},
+	"2z4q9h9": {
+		"zh-cn": "NaiveUI文档",
+		"en": "NaiveUI documentation",
+		"ko": "naiveui 문서",
+		"ja": "NaiveUIドキュメントです"
+	},
+	"dd054v4": {
+		"zh-cn": "日程待办",
+		"en": "Schedule to be done",
+		"ko": "일정 업무",
+		"ja": "日程待ちです"
+	},
+	"osqi6ya7": {
+		"zh-cn": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-4ca33632><input type=\"text\" placeholder=\"昵称\" data-v-4ca33632><input type=\"text\" placeholder=\"邮箱\" data-v-4ca33632><input type=\"password\" placeholder=\"请输入密码\" data-v-4ca33632><input type=\"password\" placeholder=\"请确认密码\" data-v-4ca33632></div><button data-v-4ca33632>注册</button>",
+		"en": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-4ca33632><input type=\"text\" placeholder=\" Nickname \"data-v-4ca33632><input type=\"text\" placeholder=\" Email\" data-v-4ca33632><input type=\"password\" placeholder=\" Please enter the password\" data-v-4ca33632><input type=\"password\" placeholder=\" Please confirm the password\" data-v-4ca33632></div><button data-v-4ca33632> Register </button>",
+		"ko": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex data-col items-center\"data-v-4ca33632><inputtype=\"text\"placeholder=\"data-v-4ca33632\"<input type=\"text\"placeholder=\"메일박스\"data-v-4ca33632><input type=\"password\"placeholder=\"비밀번호를 입력해주세요\"data-v-4ca33632><input type=\"password\"placeholder=\"비밀번호를 확인해주세요\"data-v-4ca33632></div><buttondata-v-4ca33632> 등록 </button>",
+		"ja": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col item-center \" data-v-4ca33632><input >type=\"text\" placeholder=\"ニックネーム\" data-v-4ca33632><input type=\"text\" placeholder=\"メールボックス\" data-v-4ca33632><input type=\"password\"placeholder=\"パスワードをご入力ください\" data-v-4ca33632><input type=\"password\" placeholder=\"パスワードをご確認ください\" data-v-4ca33632></div><button >data-v-4ca33632>登録します</button>"
+	},
+	"padf2": {
+		"zh-cn": "邮箱",
+		"en": "Email address",
+		"ko": "메일 박스",
+		"ja": "メールボックスです"
+	},
+	"g9ob2": {
+		"zh-cn": "密码",
+		"en": "Password",
+		"ko": "암호",
+		"ja": "パスワードです"
+	},
+	"e40otn4": {
+		"zh-cn": "欢迎来的",
+		"en": "Welcome!",
+		"ko": "어서 오세요",
+		"ja": "ようこそいらっしゃいました"
+	},
+	"aw383c4": {
+		"zh-cn": "前端世界",
+		"en": "Front-end world",
+		"ko": "프론트엔드 세계",
+		"ja": "フロントエンドの世界です"
+	},
+	"eip3o3": {
+		"zh-cn": "快快滴",
+		"en": "Hurry up!",
+		"ko": "빠른방울",
+		"ja": "早くします"
+	},
+	"ca49z24": {
+		"zh-cn": "已有帐号",
+		"en": "Existing account",
+		"ko": "계정 있음",
+		"ja": "既に口座番号があります"
+	},
+	"cu6np3": {
+		"zh-cn": "去登录",
+		"en": "Log in",
+		"ko": "로그인하기",
+		"ja": "登録します"
+	},
+	"e4shnz4": {
+		"zh-cn": "没有帐号",
+		"en": "No account",
+		"ko": "계정 없음",
+		"ja": "口座番号がありません。"
+	},
+	"cshb33": {
+		"zh-cn": "去注册",
+		"en": "Register",
+		"ko": "등록하러 가다",
+		"ja": "登録します"
+	},
+	"py2u01a7": {
+		"zh-cn": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-a9fada1c><input type=\"text\" placeholder=\"昵称\" data-v-a9fada1c><input type=\"text\" placeholder=\"邮箱\" data-v-a9fada1c><input type=\"password\" placeholder=\"请输入密码\" data-v-a9fada1c><input type=\"password\" placeholder=\"请确认密码\" data-v-a9fada1c></div><button data-v-a9fada1c>注册</button>",
+		"en": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-a9fada1c><input type=\"text\" placeholder=\" Nickname \"data-v-a9fada1c><input type=\"text\" placeholder=\" Email\" data-v-a9fada1c><input type=\"password\" placeholder=\" Please enter the password\" data-v-a9fada1c><input type=\"password\" placeholder=\" Please confirm the password\" data-v-a9fada1c></div><button data-v-a9fada1c> Register </button>",
+		"ko": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\"data-v-a9fada1c><inputtype=\"text\"placeholder=\"data-v-a9fada1c\"<input type=\"text\"placeholder=\"메일박스\"data-v-a9fada1c\"<input type=\"password\"placeholder=\"비밀번호를 입력해주세요\"data-v-a9fada1c><input type=\"password\"placeholder=\"비밀번호를 확인해주세요\"data-v-a9fada1c></div><buttondata-v-a9fada1c> 등록 </button>",
+		"ja": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col item-center \" data-v-a9fada1c><input >type=\"text\" placeholder=\"ニックネーム\" data-v-a9fada1c><input type=\"text\" placeholder=\"メールボックス\" data-v-a9fada1c><input type=\"password\"placeholder=\"パスワードをご入力ください\" data-v-a9fada1c><input type=\"password\" placeholder=\"パスワードをご確認ください\" data-v-a9fada1c></div><button >data-v-a9fada1c>登録します</button>"
+	},
+	"fgkxx3": {
+		"zh-cn": "星期日",
+		"en": "Sunday",
+		"ko": "일요일",
+		"ja": "日曜日です"
+	},
+	"fgg803": {
+		"zh-cn": "星期一",
+		"en": "Monday",
+		"ko": "월요일",
+		"ja": "月曜日です"
+	},
+	"fggbw3": {
+		"zh-cn": "星期二",
+		"en": "Tuesday",
+		"ko": "화요일",
+		"ja": "火曜日です"
+	},
+	"fgg893": {
+		"zh-cn": "星期三",
+		"en": "Wednesday",
+		"ko": "수요일",
+		"ja": "水曜日です"
+	},
+	"fghyz3": {
+		"zh-cn": "星期四",
+		"en": "Thursday",
+		"ko": "목요일",
+		"ja": "木曜日です"
+	},
+	"fggc43": {
+		"zh-cn": "星期五",
+		"en": "Friday",
+		"ko": "금요일",
+		"ja": "金曜日です"
+	},
+	"fggwd3": {
+		"zh-cn": "星期六",
+		"en": "Saturday",
+		"ko": "토요일",
+		"ja": "土曜日です"
+	},
+	"fljd2": {
+		"zh-cn": "复制",
+		"en": "Copy",
+		"ko": "복사",
+		"ja": "複製します"
+	},
+	"eslg2": {
+		"zh-cn": "删除",
+		"en": "Delete",
+		"ko": "삭제",
+		"ja": "削除します"
+	},
+	"l76hs3": {
+		"zh-cn": "访问量",
+		"en": "Visit volume",
+		"ko": "방문객 수",
+		"ja": "アクセス量です"
+	},
+	"ea3j2v4": {
+		"zh-cn": "温度 ：",
+		"en": "Temperature",
+		"ko": "온도:",
+		"ja": "温度です"
+	},
+	"jlyssn4": {
+		"zh-cn": "风力 ：",
+		"en": "Wind force",
+		"ko": "바람 크기:",
+		"ja": "風力です"
+	},
+	"jm6i4d4": {
+		"zh-cn": "风向 ：",
+		"en": "Wind direction:",
+		"ko": "풍향:",
+		"ja": "風向きです。"
+	},
+	"mekb2": {
+		"zh-cn": "编辑",
+		"en": "Editor",
+		"ko": "편집",
+		"ja": "編集します"
+	},
+	"eb7w2": {
+		"zh-cn": "停用",
+		"en": "Stop using",
+		"ko": "정지",
+		"ja": "停止します"
+	},
+	"o6902": {
+		"zh-cn": "警告",
+		"en": "Warning",
+		"ko": "경고",
+		"ja": "警告します"
+	},
+	"aiitlf4": {
+		"zh-cn": "你确定？",
+		"en": "Are you sure?",
+		"ko": "확실해요?",
+		"ja": "確かですか?"
+	},
+	"kzjg2": {
+		"zh-cn": "确定",
+		"en": "\"Sure\"",
+		"ko": "확정",
+		"ja": "確定です"
+	},
+	"c0jp53": {
+		"zh-cn": "不确定",
+		"en": "Uncertain",
+		"ko": "불확정성",
+		"ja": "確かではありません"
+	},
+	"r1732": {
+		"zh-cn": "高级",
+		"en": "Advanced",
+		"ko": "고급",
+		"ja": "高級です"
+	},
+	"dzq22": {
+		"zh-cn": "中级",
+		"en": "Intermediate",
+		"ko": "중급",
+		"ja": "中級です"
+	},
+	"enu22": {
+		"zh-cn": "初级",
+		"en": "Beginner",
+		"ko": "초급",
+		"ja": "初級です"
+	},
+	"fm6z2": {
+		"zh-cn": "头像",
+		"en": "Profile picture",
+		"ko": "얼굴을",
+		"ja": "アイコン"
+	},
+	"i1y32": {
+		"zh-cn": "昵称",
+		"en": "Nickname",
+		"ko": "닉네임",
+		"ja": "ニックネームです"
+	},
+	"m9a92": {
+		"zh-cn": "职位",
+		"en": "Position",
+		"ko": "직위",
+		"ja": "ポジションです"
+	},
+	"fd3d4i4": {
+		"zh-cn": "电话号码",
+		"en": "Telephone number",
+		"ko": "전화 번호",
+		"ja": "電話番号です"
+	},
+	"f6wjtm4": {
+		"zh-cn": "用户状态",
+		"en": "User status",
+		"ko": "사용자 상태",
+		"ja": "ユーザーステータス"
+	},
+	"hkxb2": {
+		"zh-cn": "操作",
+		"en": "Operation",
+		"ko": "조작",
+		"ja": "操作します"
+	},
+	"gflc664": {
+		"zh-cn": "绩效标杆",
+		"en": "Performance benchmark",
+		"ko": "실적 기준",
+		"ja": "業績基準です"
+	},
+	"hpqe2": {
+		"zh-cn": "搜索",
+		"en": "Search",
+		"ko": "검색",
+		"ja": "検索します"
+	},
+	"igc7pp4": {
+		"zh-cn": "输入昵称",
+		"en": "Enter the nickname",
+		"ko": "닉네임 입력",
+		"ja": "ニックネームを入力します。"
+	},
+	"pgxs2": {
+		"zh-cn": "部门",
+		"en": "Department",
+		"ko": "부문",
+		"ja": "部署です"
+	},
+	"ig9wek4": {
+		"zh-cn": "输入姓名",
+		"en": "Enter the name",
+		"ko": "이름 입력",
+		"ja": "名前を入力します"
+	},
+	"phz52": {
+		"zh-cn": "重置",
+		"en": "Reset",
+		"ko": "초기화",
+		"ja": "リセットします"
+	},
+	"f6r81s4": {
+		"zh-cn": "用户列表",
+		"en": "User list",
+		"ko": "사용자 목록",
+		"ja": "ユーザーリストです"
+	},
+	"f6qmm54": {
+		"zh-cn": "用户信息",
+		"en": "User information",
+		"ko": "사용자 정보",
+		"ja": "ユーザー情報です"
+	},
+	"ev022": {
+		"zh-cn": "取消",
+		"en": "Cancel",
+		"ko": "취소",
+		"ja": "取り消します"
+	},
+	"kpc82": {
+		"zh-cn": "电话",
+		"en": "Telephone",
+		"ko": "전화",
+		"ja": "電話です"
+	},
+	"cv3tgn4": {
+		"zh-cn": "我的应用",
+		"en": "My application",
+		"ko": "내 앱",
+		"ja": "私の応用です"
+	},
+	"7plf716": {
+		"zh-cn": "你一共处理了",
+		"en": "You've dealt with it all",
+		"ko": "모두 처리하세요",
+		"ja": "あなたは全部処理しました"
+	},
+	"dkmr9m4": {
+		"zh-cn": "条群消息",
+		"en": "A group message",
+		"ko": "단편적 메시지",
+		"ja": "グループメッセージです。"
+	},
+	"gqx52": {
+		"zh-cn": "已读",
+		"en": "Read",
+		"ko": "읽은",
+		"ja": "既読です"
+	},
+	"ecpz2": {
+		"zh-cn": "全屏",
+		"en": "Full screen",
+		"ko": "전체 화면",
+		"ja": "全画面です"
+	},
+	"gzj3ft4": {
+		"zh-cn": "菜单类型",
+		"en": "Menu type",
+		"ko": "메뉴 종류",
+		"ja": "メニュータイプです。"
+	},
+	"mvw92": {
+		"zh-cn": "菜单",
+		"en": "Menu",
+		"ko": "메뉴",
+		"ja": "メニューです"
+	},
+	"kr3b2": {
+		"zh-cn": "目录",
+		"en": "Table of Contents",
+		"ko": "목록",
+		"ja": "目次"
+	},
+	"fd8p2": {
+		"zh-cn": "图标",
+		"en": "Icon",
+		"ko": "아이콘",
+		"ja": "アイコンです"
+	},
+	"gzcenw4": {
+		"zh-cn": "菜单名称",
+		"en": "Menu name",
+		"ko": "메뉴 이름",
+		"ja": "メニュー名です"
+	},
+	"ie1p9h4": {
+		"zh-cn": "路由名称",
+		"en": "Route name",
+		"ko": "라우팅 이름",
+		"ja": "ルート名です"
+	},
+	"iebehj4": {
+		"zh-cn": "路由路径",
+		"en": "Routing path",
+		"ko": "라우팅 경로",
+		"ja": "経路を指定します"
+	},
+	"en9ick5": {
+		"zh-cn": "添加子菜单",
+		"en": "Add submenus",
+		"ko": "하위 메뉴 추가",
+		"ja": "サブメニューを追加します。"
+	},
+	"gzc5ii4": {
+		"zh-cn": "菜单列表",
+		"en": "Menu list",
+		"ko": "메뉴 목록",
+		"ja": "メニューリストです"
+	},
+	"i820g84": {
+		"zh-cn": "超大卡片",
+		"en": "Super large card",
+		"ko": "슈퍼 카드",
+		"ja": "でかいカード"
+	},
+	"dvye2": {
+		"zh-cn": "任务",
+		"en": "Task",
+		"ko": "임무",
+		"ja": "任務です"
+	},
+	"e7ys2": {
+		"zh-cn": "会议",
+		"en": "Meeting",
+		"ko": "회의",
+		"ja": "会議です"
+	},
+	"mgsd2": {
+		"zh-cn": "缺陷",
+		"en": "Defect",
+		"ko": "결함",
+		"ja": "欠陥です"
+	},
+	"e93e93": {
+		"zh-cn": "带开始",
+		"en": "Start!",
+		"ko": "시작하다",
+		"ja": "バンドが始まります"
+	},
+	"lq5q43": {
+		"zh-cn": "进行中",
+		"en": "In progress",
+		"ko": "진행 중",
+		"ja": "進行中です"
+	},
+	"e7hbq3": {
+		"zh-cn": "已完成",
+		"en": "Completed",
+		"ko": "완료",
+		"ja": "完成しました"
+	},
+	"e838b3": {
+		"zh-cn": "已延期",
+		"en": "Postponed",
+		"ko": "이미 연기하였다",
+		"ja": "延期になりました"
+	},
+	"e61qk3": {
+		"zh-cn": "已关闭",
+		"en": "Closed",
+		"ko": "닫힘",
+		"ja": "閉鎖されました"
+	},
+	"egbo03": {
+		"zh-cn": "待开始",
+		"en": "Wait to start",
+		"ko": "시작 대기",
+		"ja": "これからです"
+	},
+	"e68dg3": {
+		"zh-cn": "已取消",
+		"en": "Cancelled",
+		"ko": "취소됨",
+		"ja": "キャンセルしました"
+	},
+	"d7n0td4": {
+		"zh-cn": "数据报表",
+		"en": "Data report",
+		"ko": "데이터 보고서",
+		"ja": "データレポートです。"
+	},
+	"lrta2": {
+		"zh-cn": "筛选",
+		"en": "Screening",
+		"ko": "압축",
+		"ja": "選別します"
+	},
+	"ql5h2": {
+		"zh-cn": "项目",
+		"en": "Project",
+		"ko": "프로젝트",
+		"ja": "プロジェクトです"
+	},
+	"k1e32": {
+		"zh-cn": "状态",
+		"en": "Status",
+		"ko": "상태",
+		"ja": "状態です"
+	},
+	"l22rm3": {
+		"zh-cn": "责任人",
+		"en": "Responsible person",
+		"ko": "책임자",
+		"ja": "責任者です"
+	},
+	"ab8k534": {
+		"zh-cn": "任务标题",
+		"en": "Task Title",
+		"ko": "작업 제목",
+		"ja": "ミッションタイトルです"
+	},
+	"ab86ys4": {
+		"zh-cn": "任务时间",
+		"en": "Task time",
+		"ko": "작업 시간",
+		"ja": "任務時間です"
+	},
+	"tnwvfc6": {
+		"zh-cn": "选择日期时间",
+		"en": "Select the date and time",
+		"ko": "날짜, 시간을 선택하다",
+		"ja": "日時を選びます。"
+	},
+	"ab4eai4": {
+		"zh-cn": "任务内容",
+		"en": "Task content",
+		"ko": "작업 내용",
+		"ja": "任務内容です"
+	},
+	"eqym605": {
+		"zh-cn": "删除了任务",
+		"en": "Deleted the task",
+		"ko": "작업 삭제",
+		"ja": "タスクを削除しました。"
+	},
+	"ltbp1v5": {
+		"zh-cn": "创建了任务",
+		"en": "Created the task",
+		"ko": "작업 생성",
+		"ja": "ミッションを作成しました"
+	},
+	"ahgss05": {
+		"zh-cn": "更新了任务",
+		"en": "Updated the task",
+		"ko": "작업 업데이트됨",
+		"ja": "タスクを更新しました。"
+	},
+	"li85qk6": {
+		"zh-cn": "即将结束项目",
+		"en": "The project is about to end.",
+		"ko": "프로젝트가 끝나가다",
+		"ja": "まもなくプロジェクト終了です"
+	},
+	"jq586m4": {
+		"zh-cn": "项目动态",
+		"en": "Project Dynamics",
+		"ko": "프로젝트 동향",
+		"ja": "プロジェクトの動きです"
+	},
+	"iki6mh4": {
+		"zh-cn": "近期代办",
+		"en": "Recent agency services",
+		"ko": "근일 대행 공사",
+		"ja": "近いうちに代行します"
+	},
+	"cueobq4": {
+		"zh-cn": "承担部门",
+		"en": "Undertaking department",
+		"ko": "담당 부서",
+		"ja": "担当部署です"
+	},
+	"jso34na": {
+		"zh-cn": "研发中心/基础研发部",
+		"en": "R&d Center/Basic R&D Department",
+		"ko": "연구 개발 센터",
+		"ja": "開発センター/基礎開発部です"
+	},
+	"lckeu3": {
+		"zh-cn": "负责人",
+		"en": "Person in charge",
+		"ko": "책임자",
+		"ja": "責任者です"
+	},
+	"jq8fv74": {
+		"zh-cn": "项目数据",
+		"en": "Project data",
+		"ko": "프로젝트 데이터",
+		"ja": "プロジェクトデータです"
+	},
+	"ctlcwf4": {
+		"zh-cn": "所有任务",
+		"en": "All tasks",
+		"ko": "모든 작업",
+		"ja": "すべての任務"
+	},
+	"idvsdd4": {
+		"zh-cn": "负责团队",
+		"en": "Be responsible for the team",
+		"ko": "팀을 책임지다",
+		"ja": "チームを担当します"
+	},
+	"49d43i6": {
+		"zh-cn": "项目状态统计",
+		"en": "Project status statistics",
+		"ko": "항목 상태 통계",
+		"ja": "プロジェクトステータス統計です"
+	},
+	"328s0p6": {
+		"zh-cn": "项目类型统计",
+		"en": "Project type statistics",
+		"ko": "항목 종류 통계",
+		"ja": "項目種別統計"
+	},
+	"jq4r9f4": {
+		"zh-cn": "项目信息",
+		"en": "Project Information",
+		"ko": "프로젝트 정보",
+		"ja": "プロジェクト情報です"
+	},
+	"abboy34": {
+		"zh-cn": "任务管理",
+		"en": "Task Management",
+		"ko": "작업 관리",
+		"ja": "タスク管理です"
+	},
+	"aygs5l4": {
+		"zh-cn": "合同管理",
+		"en": "Contract Management",
+		"ko": "계약 관리",
+		"ja": "契約管理です"
+	},
+	"f4s8d5a": {
+		"zh-cn": "新版PMS研发与应用",
+		"en": "Research and Application of the New Version of PMS",
+		"ko": "새로운 pms 개발 및 적용",
+		"ja": "PMSの開発と応用の新版です"
+	},
+	"cj49bw4": {
+		"zh-cn": "形目类型",
+		"en": "Order type",
+		"ko": "카테고리 유형",
+		"ja": "目型です"
+	},
+	"ih5oei8": {
+		"zh-cn": "软件开发现场交付",
+		"en": "On-site delivery of software development",
+		"ko": "소프트웨어 개발 라이브 배급",
+		"ja": "ソフトウェア開発現場での引き渡しです"
+	},
+	"ei7p9v8": {
+		"zh-cn": "智能仓储系统开发",
+		"en": "Development of intelligent warehousing systems",
+		"ko": "지능형 창고 시스템 개발",
+		"ja": "スマート倉庫システムの開発です"
+	},
+	"ifayk84": {
+		"zh-cn": "软件开发",
+		"en": "Software development",
+		"ko": "소프트웨어 개발",
+		"ja": "ソフトウェア開発です"
+	},
+	"jhw5xo4": {
+		"zh-cn": "需求分析",
+		"en": "Demand analysis",
+		"ko": "수요분석",
+		"ja": "ニーズ分析です"
+	},
+	"40l1yp6": {
+		"zh-cn": "未来物流集团",
+		"en": "Future Logistics Group",
+		"ko": "웨이라이물류그룹",
+		"ja": "未来物流グループです"
+	},
+	"ffx1": {
+		"zh-cn": "中",
+		"en": "In the",
+		"ko": "가운데",
+		"ja": "中です"
+	},
+	"rpgriz5": {
+		"zh-cn": "技术交付部",
+		"en": "Technology Delivery Department",
+		"ko": "기술 인도부",
+		"ja": "技術納入部です"
+	},
+	"eem1i3": {
+		"zh-cn": "张总监",
+		"en": "Director Zhang",
+		"ko": "장 총감독",
+		"ja": "張総監です"
+	},
+	"fiphw3": {
+		"zh-cn": "李主管",
+		"en": "Manager Li",
+		"ko": "이 주관장",
+		"ja": "李主幹です"
+	},
+	"eyzamv4": {
+		"zh-cn": "王工程师",
+		"en": "Engineer Wang",
+		"ko": "왕기사",
+		"ja": "王技師です"
+	},
+	"fhw10z4": {
+		"zh-cn": "研发中心",
+		"en": "Research and Development Center",
+		"ko": "연구개발센터",
+		"ja": "研究開発センターです"
+	},
+	"gy1yrbp": {
+		"zh-cn": "开发智能仓储管理系统，实现自动化库存调度与AI预测",
+		"en": "Develop an intelligent warehouse management system to achieve automated inventory scheduling and AI prediction",
+		"ko": "지능창고관리시스템을 개발하여 자동화된 재고관리와 ai 예측을 실현한다",
+		"ja": "在庫の自動化とAI予測を可能にするスマート倉庫管理システムを開発しました"
+	},
+	"eds3c3": {
+		"zh-cn": "已结项",
+		"en": "Completed project",
+		"ko": "기결산",
+		"ja": "契約済みです"
+	},
+	"femab3": {
+		"zh-cn": "暂停中",
+		"en": "On pause",
+		"ko": "일시 정지 중",
+		"ja": "一時停止中です"
+	},
+	"ul41": {
+		"zh-cn": "高",
+		"en": "high",
+		"ko": "높은",
+		"ja": "高いです"
+	},
+	"fny1": {
+		"zh-cn": "低",
+		"en": "low",
+		"ko": "낮",
+		"ja": "低いです"
+	},
+	"j4lypm8": {
+		"zh-cn": "项目编号不能为空",
+		"en": "The project number cannot be empty",
+		"ko": "아이템 번호는 비어 있으면 안 됩니다",
+		"ja": "プロジェクト番号は空ではいけません。"
+	},
+	"rb3ppk8": {
+		"zh-cn": "项目名称不能为空",
+		"en": "The project name cannot be empty",
+		"ko": "항목 이름은 비어 있을 수 없습니다",
+		"ja": "プロジェクト名を空にしてはいけません。"
+	},
+	"vi7l617": {
+		"zh-cn": "请选择项目状态",
+		"en": "Please select the project status",
+		"ko": "아이템 상태를 선택하십시오",
+		"ja": "アイテムステータスの選択をお願いします。"
+	},
+	"kv38ora": {
+		"zh-cn": "请输入有效的预算金额",
+		"en": "Please enter the valid budget amount",
+		"ko": "올바른 예산 금액을 입력하십시오",
+		"ja": "有効な予算額を入力願います。"
+	},
+	"pqqucx6": {
+		"zh-cn": "表单验证通过",
+		"en": "The form validation was passed.",
+		"ko": "폼 인증 통과",
+		"ja": "フォーム検証はパスしました"
+	},
+	"fovc7e7": {
+		"zh-cn": "请完善表单信息",
+		"en": "Please complete the form information",
+		"ko": "양식 정보를 수정하십시오",
+		"ja": "フォーム情報の補完をお願いします。"
+	},
+	"jqcpva4": {
+		"zh-cn": "项目编号",
+		"en": "Project Number",
+		"ko": "아이템 번호",
+		"ja": "プロジェクト番号です"
+	},
+	"dsqazl7": {
+		"zh-cn": "请输入项目编号",
+		"en": "Please enter the project number",
+		"ko": "아이템 번호를 입력하십시오",
+		"ja": "項目番号をお願いします。"
+	},
+	"jq5lug4": {
+		"zh-cn": "项目名称",
+		"en": "Project Name",
+		"ko": "프로젝트 이름",
+		"ja": "プロジェクト名です"
+	},
+	"dsxf0f7": {
+		"zh-cn": "请输入项目名称",
+		"en": "Please enter the project name",
+		"ko": "항목명을 입력하십시오",
+		"ja": "項目名を入力願います。"
+	},
+	"jqaogw4": {
+		"zh-cn": "项目状态",
+		"en": "Project status",
+		"ko": "프로젝트 상태",
+		"ja": "プロジェクトの状態です"
+	},
+	"bzkvr3": {
+		"zh-cn": "优先级",
+		"en": "Priority",
+		"ko": "우선 순위",
+		"ja": "優先順位です"
+	},
+	"3lzz8g6": {
+		"zh-cn": "请选择优先级",
+		"en": "Please select the priority",
+		"ko": "우선 순위를 선택하십시오",
+		"ja": "優先順位をお願いします"
+	},
+	"2xmpeu6": {
+		"zh-cn": "计划开始时间",
+		"en": "Planned start time",
+		"ko": "스케줄 시작 시간",
+		"ja": "予定開始時間です"
+	},
+	"14uy7v6": {
+		"zh-cn": "计划结束时间",
+		"en": "Planned end time",
+		"ko": "프로젝트 마감 시간",
+		"ja": "予定終了時間です"
+	},
+	"fbz80g6": {
+		"zh-cn": "实际开始时间",
+		"en": "Actual start time",
+		"ko": "실제 시작 시간",
+		"ja": "実際の開始時間です"
+	},
+	"b9hkdr6": {
+		"zh-cn": "实际结束时间",
+		"en": "Actual end time",
+		"ko": "실제 종료 시간",
+		"ja": "実際の終了時間です"
+	},
+	"jqh9ew4": {
+		"zh-cn": "项目预算",
+		"en": "Project budget",
+		"ko": "프로젝트 예산",
+		"ja": "プロジェクト予算です"
+	},
+	"drr5947": {
+		"zh-cn": "请输入预算金额",
+		"en": "Please enter the budget amount",
+		"ko": "예상 금액을 입력해 주십시오",
+		"ja": "見積もりをお願いします。"
+	},
+	"hyhcea4": {
+		"zh-cn": "计划工时",
+		"en": "Planned working hours",
+		"ko": "노동시간을 계획하다.",
+		"ja": "工数を計画します。"
+	},
+	"fklogl7": {
+		"zh-cn": "请输入计划工时",
+		"en": "Please enter the planned working hours",
+		"ko": "근무 계획 시간을 입력하세요",
+		"ja": "予定工数を入力願います。"
+	},
+	"c6guoo4": {
+		"zh-cn": "实际工时",
+		"en": "Actual working hours",
+		"ko": "실제 노동시간",
+		"ja": "実際の工数"
+	},
+	"lcm6677": {
+		"zh-cn": "请输入实际工时",
+		"en": "Please enter the actual working hours",
+		"ko": "실제 노동시간을 입력하시오",
+		"ja": "実際の工数を入力願います。"
+	},
+	"jqcui44": {
+		"zh-cn": "项目经理",
+		"en": "Project Manager",
+		"ko": "프로젝트 매니저",
+		"ja": "プロジェクトマネージャーです"
+	},
+	"mxqdnz9": {
+		"zh-cn": "请输入项目经理姓名",
+		"en": "Please enter the name of the project manager",
+		"ko": "프로젝트 관리자의 이름을 입력하십시오",
+		"ja": "プロジェクトマネジャーの名前をお願いします。"
+	},
+	"arffcv4": {
+		"zh-cn": "创建部门",
+		"en": "Establish a department",
+		"ko": "부서를 만들다",
+		"ja": "部門を創設します。"
+	},
+	"mrnli07": {
+		"zh-cn": "请输入创建部门",
+		"en": "Please enter the department to be created",
+		"ko": "생성 부서를 입력하십시오",
+		"ja": "作成部と入力をお願いします。"
+	},
+	"jq8eom4": {
+		"zh-cn": "项目描述",
+		"en": "Project Description",
+		"ko": "프로젝트 설명",
+		"ja": "項目記述です"
+	},
+	"dsum697": {
+		"zh-cn": "请输入项目描述",
+		"en": "Please enter the project description",
+		"ko": "항목 설명을 입력하십시오",
+		"ja": "項目記述をお願いします。"
+	},
+	"heqc2": {
+		"zh-cn": "提交",
+		"en": "Submit",
+		"ko": "제출",
+		"ja": "提出します"
+	},
+	"l7tjo3": {
+		"zh-cn": "赵晨宇",
+		"en": "Zhao Chenyu",
+		"ko": "자오천위",
+		"ja": "チェンウです"
+	},
+	"8gd4qzf": {
+		"zh-cn": "人生若只如初见，何事秋风悲画扇",
+		"en": "If life were always like the first encounter, why would the autumn wind grieve over the painted fan",
+		"ko": "인생이 단지 처음 본 것 같다면, 무슨 일이니 가을 바람이 화선을 슬프게 하랴",
+		"ja": "人生は初見の如し何事も秋風は扇をかくのです"
+	},
+	"m1a62": {
+		"zh-cn": "繁星",
+		"en": "Stars",
+		"ko": "별",
+		"ja": "たくさんの星です"
+	},
+	"hgfmgw5": {
+		"zh-cn": "前端工程师",
+		"en": "Front-end engineer",
+		"ko": "프론트엔드 엔지니어",
+		"ja": "フロントエンド・エンジニアです"
+	},
+	"cnkqq3": {
+		"zh-cn": "前端组",
+		"en": "Front-end Group",
+		"ko": "프론트엔드 그룹",
+		"ja": "フロントエンド群です"
+	},
+	"blnt4z4": {
+		"zh-cn": "基础研发",
+		"en": "Basic research and development",
+		"ko": "기초 연구 개발",
+		"ja": "基礎研究開発です"
+	},
+	"cv17cx4": {
+		"zh-cn": "我的信息",
+		"en": "My information",
+		"ko": "내 메시지",
+		"ja": "私の情報です"
+	},
+	"123vlo6": {
+		"zh-cn": "查看个人信息",
+		"en": "View personal information",
+		"ko": "개인 정보 확인",
+		"ja": "個人情報を見ます"
+	},
+	"cdfpc44": {
+		"zh-cn": "常用应用",
+		"en": "Common applications",
+		"ko": "상용 응용",
+		"ja": "よく使われる応用です。"
+	},
+	"c6csg54": {
+		"zh-cn": "工作信息",
+		"en": "Job information",
+		"ko": "직업 정보",
+		"ja": "仕事情報です"
+	},
+	"a6u45a4": {
+		"zh-cn": "个人信息",
+		"en": "Personal information",
+		"ko": "개인 정보",
+		"ja": "個人情報です"
+	},
+	"dbn5jk4": {
+		"zh-cn": "教育经历",
+		"en": "Educational experience",
+		"ko": "교육 경력",
+		"ja": "教育経験です"
+	},
+	"c6kp9q4": {
+		"zh-cn": "工作经历",
+		"en": "Work Experience",
+		"ko": "근무 경력",
+		"ja": "職務経歴書です"
+	},
+	"ay98du4": {
+		"zh-cn": "合同信息",
+		"en": "Contract information",
+		"ko": "계약 정보",
+		"ja": "契約情報です"
+	},
+	"hg490f4": {
+		"zh-cn": "薪资档案",
+		"en": "Salary file",
+		"ko": "급여 파일",
+		"ja": "給与記録です"
+	},
+	"jab8al4": {
+		"zh-cn": "附件存档",
+		"en": "File the attachment",
+		"ko": "첨부 파일",
+		"ja": "添付ファイルアーカイブです"
+	},
+	"czu3bo4": {
+		"zh-cn": "成长记录",
+		"en": "Growth Record",
+		"ko": "성장 기록",
+		"ja": "成長記録です"
+	},
+	"dvhp2": {
+		"zh-cn": "上海",
+		"en": "Shanghai",
+		"ko": "상하이",
+		"ja": "上海です"
+	},
+	"iscs2": {
+		"zh-cn": "正式",
+		"en": "Formal",
+		"ko": "공식",
+		"ja": "正式です"
+	},
+	"hgwrhp5": {
+		"zh-cn": "高级工程师",
+		"en": "Senior Engineer",
+		"ko": "고급 기사",
+		"ja": "上級エンジニアです"
+	},
+	"2jaekd5": {
+		"zh-cn": "请输入姓名",
+		"en": "Please enter your name.",
+		"ko": "이름을 입력하십시오",
+		"ja": "お名前をお願いします"
+	},
+	"2j9pnp5": {
+		"zh-cn": "请输入工号",
+		"en": "Please enter the employee number",
+		"ko": "작업 번호를 입력하십시오",
+		"ja": "勤務番号の入力をお願いします。"
+	},
+	"2j4oeg5": {
+		"zh-cn": "请输入签名",
+		"en": "Please enter the signature.",
+		"ko": "서명을 입력하십시오",
+		"ja": "署名をお願いします。"
+	},
+	"2j83985": {
+		"zh-cn": "请输入昵称",
+		"en": "Please enter the nickname.",
+		"ko": "닉네임을 입력해 주세요",
+		"ja": "ニックネーム入力お願いします。"
+	},
+	"2j3vx25": {
+		"zh-cn": "请输入职位",
+		"en": "Please enter the position.",
+		"ko": "직위를 입력하십시오",
+		"ja": "ポジション入力をお願いします。"
+	},
+	"2j3vx05": {
+		"zh-cn": "请输入组织",
+		"en": "Please enter the organization.",
+		"ko": "조직을 입력하십시오",
+		"ja": "組織入力をお願いします。"
+	},
+	"2j0o9j5": {
+		"zh-cn": "请输入部门",
+		"en": "Please enter the department.",
+		"ko": "입력부",
+		"ja": "部署入力お願いします。"
+	},
+	"7ji3y96": {
+		"zh-cn": "请输入手机号",
+		"en": "Please enter your mobile phone number",
+		"ko": "핸드폰 번호를 입력하세요",
+		"ja": "携帯番号の入力をお願いします。"
+	},
+	"2j0utw5": {
+		"zh-cn": "请输入邮箱",
+		"en": "Please enter your email address.",
+		"ko": "편지함을 입력하십시오",
+		"ja": "メールをお願いします。"
+	},
+	"2jau2v5": {
+		"zh-cn": "请输入地址",
+		"en": "Please enter the address.",
+		"ko": "주소를 입력하십시오",
+		"ja": "住所を入力願います。"
+	},
+	"oxvu2": {
+		"zh-cn": "返回",
+		"en": "Return",
+		"ko": "돌아가",
+		"ja": "戻ります"
+	},
+	"a9n8wm4": {
+		"zh-cn": "人事调动",
+		"en": "Personnel transfer",
+		"ko": "인사 이동",
+		"ja": "人事異動です"
+	},
+	"g3ge2": {
+		"zh-cn": "导出",
+		"en": "Export",
+		"ko": "내보 내기",
+		"ja": "導出します"
+	},
+	"dd0d3p4": {
+		"zh-cn": "更多操作",
+		"en": "More operations",
+		"ko": "추가 작업",
+		"ja": "もっと操作します"
+	},
+	"blh1h04": {
+		"zh-cn": "基础信息",
+		"en": "Basic information",
+		"ko": "기초 정보",
+		"ja": "基礎情報です"
+	},
+	"e32z2": {
+		"zh-cn": "保存",
+		"en": "Save",
+		"ko": "저장",
+		"ja": "保存します"
+	},
+	"fqmy2": {
+		"zh-cn": "姓名",
+		"en": "Name",
+		"ko": "이름",
+		"ja": "名前です"
+	},
+	"gfjm2": {
+		"zh-cn": "工号",
+		"en": "Employee number",
+		"ko": "GongHao",
+		"ja": "勤務番号です"
+	},
+	"iwjeyr4": {
+		"zh-cn": "部门组织",
+		"en": "Departmental organization",
+		"ko": "부문 조직",
+		"ja": "部門組織です"
+	},
+	"ewbd43": {
+		"zh-cn": "手机号",
+		"en": "Mobile phone number",
+		"ko": "핸드폰 번호",
+		"ja": "携帯電話番号です"
+	},
+	"e6rl2": {
+		"zh-cn": "位置",
+		"en": "Location",
+		"ko": "위치",
+		"ja": "位置です"
+	},
+	"2eo91k5": {
+		"zh-cn": "请选择位置",
+		"en": "Please select the location.",
+		"ko": "위치를 선택하십시오.",
+		"ja": "位置をお願いします"
+	},
+	"c6ipnm4": {
+		"zh-cn": "工作状态",
+		"en": "Working status",
+		"ko": "작업 상태",
+		"ja": "仕事ぶりです"
+	},
+	"glwp2": {
+		"zh-cn": "张三",
+		"en": "Zhang SAN",
+		"ko": "장삼",
+		"ja": "張三さんです"
+	},
+	"i1ql2": {
+		"zh-cn": "李四",
+		"en": "Li Si",
+		"ko": "리",
+		"ja": "リー四"
+	},
+	"k31l2": {
+		"zh-cn": "王五",
+		"en": "Wang Wu",
+		"ko": "왕 씨",
+		"ja": "王五です"
+	},
+	"oiag2": {
+		"zh-cn": "赵六",
+		"en": "Zhao Liu",
+		"ko": "조 6",
+		"ja": "趙六です"
+	},
+	"dp9t2": {
+		"zh-cn": "七仔",
+		"en": "\"七仔\"",
+		"ko": "7. 새끼",
+		"ja": "七の仔です"
+	},
+	"evg5804": {
+		"zh-cn": "热门项目",
+		"en": "Popular projects",
+		"ko": "인기 종목",
+		"ja": "人気プロジェクトです"
+	},
+	"ijqcju4": {
+		"zh-cn": "进度详情",
+		"en": "Progress details",
+		"ko": "진행 정보",
+		"ja": "進捗状況の詳細。"
+	},
+	"ebl693": {
+		"zh-cn": "张伟成",
+		"en": "Zhang Weicheng",
+		"ko": "장웨이청",
+		"ja": "張偉成"
+	},
+	"50dtyxa": {
+		"zh-cn": "用户界面/UI设计师",
+		"en": "User interface /UI designer",
+		"ko": "사용자 인터페이스 디자이너",
+		"ja": "ユーザーインターフェース/UIデザイナーです"
+	},
+	"dez4em4": {
+		"zh-cn": "最新公告",
+		"en": "Latest Announcement",
+		"ko": "최신 공고",
+		"ja": "最新の発表です"
+	},
+	"vr63nnc": {
+		"zh-cn": "今天 | 下午 5：00",
+		"en": "Today | 5:00 p.m",
+		"ko": "오늘 오후 5시 | 된",
+		"ja": "|今日午后5:00"
+	},
+	"jqcamd4": {
+		"zh-cn": "项目类型",
+		"en": "Project type",
+		"ko": "항목 형식",
+		"ja": "プロジェクトタイプです"
+	},
+	"jqgs5w4": {
+		"zh-cn": "项目阶段",
+		"en": "Project stage",
+		"ko": "프로젝트 단계",
+		"ja": "プロジェクトフェーズです"
+	},
+	"byvcwo4": {
+		"zh-cn": "客户名称",
+		"en": "Customer name",
+		"ko": "고객 이름",
+		"ja": "顧客名です"
+	},
+	"abnfkk4": {
+		"zh-cn": "优先级别",
+		"en": "Priority level",
+		"ko": "우선 순위",
+		"ja": "優先順位です。"
+	},
+	"hyhgrg4": {
+		"zh-cn": "计划开始",
+		"en": "Plan to begin",
+		"ko": "계획 시작",
+		"ja": "計画開始です"
+	},
+	"hymybh4": {
+		"zh-cn": "计划结束",
+		"en": "The plan is over.",
+		"ko": "계획이 끝나다",
+		"ja": "計画終了です"
+	},
+	"c6gz1u4": {
+		"zh-cn": "实际开始",
+		"en": "Actually begins",
+		"ko": "실제로 시작하다",
+		"ja": "実際に始めます"
+	},
+	"c6mglv4": {
+		"zh-cn": "实际结束",
+		"en": "Actually over",
+		"ko": "실질적 결말",
+		"ja": "実際に終わります"
+	},
+	"rlek805": {
+		"zh-cn": "项目管理人",
+		"en": "Project Manager",
+		"ko": "프로젝트 관리자",
+		"ja": "プロジェクトマネージャーです"
+	},
+	"rm6q0h5": {
+		"zh-cn": "项目监控人",
+		"en": "Project monitor",
+		"ko": "프로젝트 모니터",
+		"ja": "監視役です"
+	},
+	"jqf08f4": {
+		"zh-cn": "项目说明",
+		"en": "Project Description",
+		"ko": "아이템 설명",
+		"ja": "プロジェクトの説明です"
+	},
+	"lsz1id5": {
+		"zh-cn": "创建人部门",
+		"en": "The creator department",
+		"ko": "설립자 부문",
+		"ja": "創設者部門です"
+	},
+	"ar84e54": {
+		"zh-cn": "创建时间",
+		"en": "Creation time",
+		"ko": "만든 시간",
+		"ja": "作成時間です"
+	},
+	"chizf3": {
+		"zh-cn": "创建人",
+		"en": "Founder",
+		"ko": "창립자",
+		"ja": "設立者です"
+	},
+	"o2coryd": {
+		"zh-cn": "1,275,000.00元",
+		"en": "1,275,000.00 yuan",
+		"ko": "1,275,000.00 위안",
+		"ja": "1,275,000.00円です"
+	},
+	"ssgk95d": {
+		"zh-cn": "1,202,830.00元",
+		"en": "1,202,830.00 yuan",
+		"ko": "1,202,830.00 위안",
+		"ja": "1,202,830.00元です"
+	},
+	"xkm50rb": {
+		"zh-cn": "849,120.00元",
+		"en": "849,120.00 yuan",
+		"ko": "849,120.00 위안",
+		"ja": "849,120.00元です"
+	},
+	"g24n8na": {
+		"zh-cn": "89,120.00元",
+		"en": "89,120.00 yuan",
+		"ko": "89,120.00 위안",
+		"ja": "89,120.00元です"
+	},
+	"n80vneb": {
+		"zh-cn": "353,709.00元",
+		"en": "353,709.00 yuan",
+		"ko": "353,709.00 위안",
+		"ja": "353,709.00円です"
+	},
+	"4x2hyu7": {
+		"zh-cn": "还有 31 天",
+		"en": "There are still 31 days.",
+		"ko": "아직 31일 남았습니다.",
+		"ja": "あと31日です"
+	},
+	"jqfmo04": {
+		"zh-cn": "项目进度",
+		"en": "Project progress",
+		"ko": "프로젝트 진행 상황",
+		"ja": "プロジェクトの進捗状況です"
+	},
+	"jqcs3l4": {
+		"zh-cn": "项目结束",
+		"en": "The project is over.",
+		"ko": "프로젝트 종료",
+		"ja": "プロジェクト終了です"
+	},
+	"dhmgdl4": {
+		"zh-cn": "时间进度",
+		"en": "Time schedule",
+		"ko": "시간 진도",
+		"ja": "時間の進み具合です"
+	},
+	"gz20n94": {
+		"zh-cn": "自评进度",
+		"en": "Self-assessed progress",
+		"ko": "진행 상황을 스스로 평가하다.",
+		"ja": "進捗状況を自己評価します"
+	},
+	"2l9kxj6": {
+		"zh-cn": "项目经营数据",
+		"en": "Project operation data",
+		"ko": "프로젝트경영데이터",
+		"ja": "事業データです"
+	},
+	"aykr8w4": {
+		"zh-cn": "合同金额",
+		"en": "Contract amount",
+		"ko": "계약 금액",
+		"ja": "契約金額です"
+	},
+	"cgq7j3": {
+		"zh-cn": "净收入",
+		"en": "Net income",
+		"ko": "순수입",
+		"ja": "純収入"
+	},
+	"h8v02": {
+		"zh-cn": "成本",
+		"en": "Cost",
+		"ko": "원가",
+		"ja": "コストです"
+	},
+	"lpggmb6": {
+		"zh-cn": "风险预估成本",
+		"en": "Risk estimation cost",
+		"ko": "리스크 예측 비용",
+		"ja": "リスク見積もりコストです"
+	},
+	"ekrh2": {
+		"zh-cn": "利润",
+		"en": "Profit",
+		"ko": "이윤",
+		"ja": "利益です"
+	},
+	"ckih63": {
+		"zh-cn": "利润率",
+		"en": "Profit margin",
+		"ko": "이윤율",
+		"ja": "利益率です"
+	},
+	"hsgw2": {
+		"zh-cn": "明亮",
+		"en": "Bright",
+		"ko": "밝은",
+		"ja": "明るいです"
+	},
+	"rkrq2": {
+		"zh-cn": "黑暗",
+		"en": "Darkness",
+		"ko": "어둠",
+		"ja": "暗いです"
+	},
+	"e56l2": {
+		"zh-cn": "主题",
+		"en": "Theme",
+		"ko": "테마",
+		"ja": "テーマです"
+	},
+	"ab4zrd4": {
+		"zh-cn": "任务名称",
+		"en": "Task Name",
+		"ko": "작업 이름",
+		"ja": "ミッション名です"
+	},
+	"ab7slj4": {
+		"zh-cn": "任务描述",
+		"en": "Task Description",
+		"ko": "작업 설명",
+		"ja": "ミッション記述です"
+	},
+	"aba2dt4": {
+		"zh-cn": "任务状态",
+		"en": "Task status",
+		"ko": "작업 상태",
+		"ja": "タスク状態です"
+	},
+	"abf0kx4": {
+		"zh-cn": "任务进度",
+		"en": "Task progress",
+		"ko": "작업 진도",
+		"ja": "タスクの進捗状況です"
+	},
+	"zb5f4f6": {
+		"zh-cn": "任务开始时间",
+		"en": "Task start time",
+		"ko": "작업 시작 시간",
+		"ja": "任務開始時間です"
+	},
+	"vngz806": {
+		"zh-cn": "任务结束时间",
+		"en": "Task end time",
+		"ko": "작업 종료 시간",
+		"ja": "任務終了時間です"
+	},
+	"e5fv2": {
+		"zh-cn": "修改",
+		"en": "Modify",
+		"ko": "수정",
+		"ja": "修正します"
+	},
+	"ar3udh4": {
+		"zh-cn": "创建任务",
+		"en": "Create a task",
+		"ko": "작업 만들기",
+		"ja": "タスクを作成します"
+	},
 	"j6y5gcc": {
 		"zh-cn": "Soybean 管理系统",
 		"en": "Soybean Management System",
@@ -113,12 +1643,6 @@
 		"ko": "나중에 다시 봅시다",
 		"ja": "あとでお話しします"
 	},
-	"hkxb2": {
-		"zh-cn": "操作",
-		"en": "Operation",
-		"ko": "조작",
-		"ja": "操作します"
-	},
 	"hs6m2": {
 		"zh-cn": "新增",
 		"en": "New added",
@@ -142,12 +1666,6 @@
 		"en": "Batch deletion",
 		"ko": "일괄 삭제",
 		"ja": "一括削除です"
-	},
-	"ev022": {
-		"zh-cn": "取消",
-		"en": "Cancel",
-		"ko": "취소",
-		"ja": "取り消します"
 	},
 	"eod62": {
 		"zh-cn": "关闭",
@@ -185,12 +1703,6 @@
 		"ko": "확인",
 		"ja": "確認します"
 	},
-	"eslg2": {
-		"zh-cn": "删除",
-		"en": "Delete",
-		"ko": "삭제",
-		"ja": "削除します"
-	},
 	"azeh8z4": {
 		"zh-cn": "删除成功",
 		"en": "Deletion successful",
@@ -202,18 +1714,6 @@
 		"en": "Is the deletion confirmed?",
 		"ko": "삭제를 확인하시겠습니까?",
 		"ja": "削除を確認しますか?"
-	},
-	"mekb2": {
-		"zh-cn": "编辑",
-		"en": "Editor",
-		"ko": "편집",
-		"ja": "編集します"
-	},
-	"o6902": {
-		"zh-cn": "警告",
-		"en": "Warning",
-		"ko": "경고",
-		"ja": "警告します"
 	},
 	"q4mu2": {
 		"zh-cn": "错误",
@@ -251,12 +1751,6 @@
 		"ko": "기대하시길 바랍니다",
 		"ja": "ご期待願います"
 	},
-	"e5fv2": {
-		"zh-cn": "修改",
-		"en": "Modify",
-		"ko": "수정",
-		"ja": "修正します"
-	},
 	"ai8d7e4": {
 		"zh-cn": "修改成功",
 		"en": "The modification was successful.",
@@ -280,18 +1774,6 @@
 		"en": "Refresh",
 		"ko": "새로 고침",
 		"ja": "リフレッシュします"
-	},
-	"phz52": {
-		"zh-cn": "重置",
-		"en": "Reset",
-		"ko": "초기화",
-		"ja": "リセットします"
-	},
-	"hpqe2": {
-		"zh-cn": "搜索",
-		"en": "Search",
-		"ko": "검색",
-		"ja": "検索します"
 	},
 	"ehx72": {
 		"zh-cn": "切换",
@@ -322,12 +1804,6 @@
 		"en": "Update successful",
 		"ko": "업데이트 성공",
 		"ja": "更新成功です"
-	},
-	"a6ttl24": {
-		"zh-cn": "个人中心",
-		"en": "Personal Center",
-		"ko": "개인 센터",
-		"ja": "個人センターです"
 	},
 	"k6n1": {
 		"zh-cn": "是",
@@ -779,12 +2255,6 @@
 		"ko": "외부 링크 페이지",
 		"ja": "外部リンクのページです"
 	},
-	"hubg2": {
-		"zh-cn": "文档",
-		"en": "Document",
-		"ko": "문서",
-		"ja": "ドキュメント"
-	},
 	"jq8he94": {
 		"zh-cn": "项目文档",
 		"en": "Project document",
@@ -802,12 +2272,6 @@
 		"en": "Vue documentation",
 		"ko": "vue 문서",
 		"ja": "Vueドキュメントです"
-	},
-	"smw62o6": {
-		"zh-cn": "Vite文档",
-		"en": "Vite documentation",
-		"ko": "vite 문서",
-		"ja": "Viteドキュメントです"
 	},
 	"1nyuk78": {
 		"zh-cn": "UnoCSS文档",
@@ -856,12 +2320,6 @@
 		"en": "alova Request",
 		"ko": "알로바 요청",
 		"ja": "alovaお願いします"
-	},
-	"f6r81s4": {
-		"zh-cn": "用户列表",
-		"en": "User list",
-		"ko": "사용자 목록",
-		"ja": "ユーザーリストです"
 	},
 	"tnwlw5": {
 		"zh-cn": "场景化请求",
@@ -1007,12 +2465,6 @@
 		"ko": "md 편집기",
 		"ja": "MDエディタ"
 	},
-	"fd8p2": {
-		"zh-cn": "图标",
-		"en": "Icon",
-		"ko": "아이콘",
-		"ja": "アイコンです"
-	},
 	"fb2m2": {
 		"zh-cn": "地图",
 		"en": "Map",
@@ -1079,12 +2531,6 @@
 		"ko": "사용자 이름을 입력하십시오",
 		"ja": "ユーザー名の入力をお願いします"
 	},
-	"7ji3y96": {
-		"zh-cn": "请输入手机号",
-		"en": "Please enter your mobile phone number",
-		"ko": "핸드폰 번호를 입력하세요",
-		"ja": "携帯番号の入力をお願いします。"
-	},
 	"7b32n16": {
 		"zh-cn": "请输入验证码",
 		"en": "Please enter the verification code",
@@ -1108,18 +2554,6 @@
 		"en": "Verification code login",
 		"ko": "인증 로그인",
 		"ja": "認証コード登録です"
-	},
-	"kzjg2": {
-		"zh-cn": "确定",
-		"en": "\"Sure\"",
-		"ko": "확정",
-		"ja": "確定です"
-	},
-	"oxvu2": {
-		"zh-cn": "返回",
-		"en": "Return",
-		"ko": "돌아가",
-		"ja": "戻ります"
 	},
 	"k2omx04": {
 		"zh-cn": "验证成功",
@@ -1253,12 +2687,6 @@
 		"ko": "soybeanadmin은 vue3, vite5, typescript, pinia 및 unocss와 같은 최신 프론트엔드 기술 스택들을 기반으로 한 우아하고 강력한 백그라운드 관리 템플릿이다.풍부한 테마배치와 구성요소를 내장하였으며 코드가 엄격하고 자동화된 문서라우팅시스템을 실현하였다.또한, apifox 기반의 온라인 mock 데이터 방식을 사용한다.soybeanadmin은 추가 설정 없이 즉시 사용할 수 있는 원스톱 백그라운드 관리 솔루션을 제공합니다.최첨단기술을 빨리 배울 수 있는 모범 사례이기도 합니다.",
 		"ja": "SoybeanAdminは、Vue3、Vite5、TypeScript、Pinia、UnoCSSなどの最新のフロントエンド技術スタックをベースとした、エレガントで高機能なバックエンド管理テンプレートです。それは豊富なテーマの構成とコンポーネントを内蔵して、コードの仕様は厳格で、自働化のファイルのルーティングシステムを実現します。また、ApiFoxによるオンラインモックデータスキームも採用しています。SoybeanAdminは、ワンストップのバックオフィス管理ソリューションを提供しています。最先端の技術を素早く習得するための最良の実践です"
 	},
-	"jq4r9f4": {
-		"zh-cn": "项目信息",
-		"en": "Project Information",
-		"ko": "프로젝트 정보",
-		"ja": "プロジェクト情報です"
-	},
 	"k06c2": {
 		"zh-cn": "版本",
 		"en": "Version",
@@ -1367,12 +2795,6 @@
 		"ko": "오락",
 		"ja": "娯楽です"
 	},
-	"l76hs3": {
-		"zh-cn": "访问量",
-		"en": "Visit volume",
-		"ko": "방문객 수",
-		"ja": "アクセス量です"
-	},
 	"eramh3": {
 		"zh-cn": "成交额",
 		"en": "Transaction amount",
@@ -1384,12 +2806,6 @@
 		"en": "Trading volume",
 		"ko": "거래량",
 		"ja": "出来高です"
-	},
-	"jq586m4": {
-		"zh-cn": "项目动态",
-		"en": "Project Dynamics",
-		"ko": "프로젝트 동향",
-		"ja": "プロジェクトの動きです"
 	},
 	"dcxda74": {
 		"zh-cn": "更多动态",
@@ -1727,30 +3143,6 @@
 		"ko": "성별",
 		"ja": "性別です"
 	},
-	"i1y32": {
-		"zh-cn": "昵称",
-		"en": "Nickname",
-		"ko": "닉네임",
-		"ja": "ニックネームです"
-	},
-	"ewbd43": {
-		"zh-cn": "手机号",
-		"en": "Mobile phone number",
-		"ko": "핸드폰 번호",
-		"ja": "携帯電話番号です"
-	},
-	"padf2": {
-		"zh-cn": "邮箱",
-		"en": "Email address",
-		"ko": "메일 박스",
-		"ja": "メールボックスです"
-	},
-	"f6wjtm4": {
-		"zh-cn": "用户状态",
-		"en": "User status",
-		"ko": "사용자 상태",
-		"ja": "ユーザーステータス"
-	},
 	"f70o4v4": {
 		"zh-cn": "用户角色",
 		"en": "User role",
@@ -1762,18 +3154,6 @@
 		"en": "Please select the gender.",
 		"ko": "성별을 선택하십시오",
 		"ja": "性別をお願いします"
-	},
-	"2j83985": {
-		"zh-cn": "请输入昵称",
-		"en": "Please enter the nickname.",
-		"ko": "닉네임을 입력해 주세요",
-		"ja": "ニックネーム入力お願いします。"
-	},
-	"2j0utw5": {
-		"zh-cn": "请输入邮箱",
-		"en": "Please enter your email address.",
-		"ko": "편지함을 입력하십시오",
-		"ja": "メールをお願いします。"
 	},
 	"yzic5t7": {
 		"zh-cn": "请选择用户状态",
@@ -1811,41 +3191,11 @@
 		"ko": "여자",
 		"ja": "女です"
 	},
-	"gzc5ii4": {
-		"zh-cn": "菜单列表",
-		"en": "Menu list",
-		"ko": "메뉴 목록",
-		"ja": "メニューリストです"
-	},
 	"7d1ll16": {
 		"zh-cn": "父级菜单ID",
 		"en": "Parent menu ID",
 		"ko": "상위 메뉴 id입니다",
 		"ja": "親メニューIDです"
-	},
-	"gzj3ft4": {
-		"zh-cn": "菜单类型",
-		"en": "Menu type",
-		"ko": "메뉴 종류",
-		"ja": "メニュータイプです。"
-	},
-	"gzcenw4": {
-		"zh-cn": "菜单名称",
-		"en": "Menu name",
-		"ko": "메뉴 이름",
-		"ja": "メニュー名です"
-	},
-	"ie1p9h4": {
-		"zh-cn": "路由名称",
-		"en": "Route name",
-		"ko": "라우팅 이름",
-		"ja": "ルート名です"
-	},
-	"iebehj4": {
-		"zh-cn": "路由路径",
-		"en": "Routing path",
-		"ko": "라우팅 경로",
-		"ja": "経路を指定します"
 	},
 	"iav8rn4": {
 		"zh-cn": "路径参数",
@@ -2123,18 +3473,6 @@
 		"ko": "하위 메뉴 추가",
 		"ja": "サブメニューを追加します"
 	},
-	"kr3b2": {
-		"zh-cn": "目录",
-		"en": "Table of Contents",
-		"ko": "목록",
-		"ja": "目次"
-	},
-	"mvw92": {
-		"zh-cn": "菜单",
-		"en": "Menu",
-		"ko": "메뉴",
-		"ja": "メニューです"
-	},
 	"mu55as9": {
 		"zh-cn": "iconify图标",
 		"en": "iconify icon",
@@ -2219,12 +3557,6 @@
 		"ko": "언어 전환",
 		"ja": "言語を切り替えます"
 	},
-	"ecpz2": {
-		"zh-cn": "全屏",
-		"en": "Full screen",
-		"ko": "전체 화면",
-		"ja": "全画面です"
-	},
 	"ii96jl4": {
 		"zh-cn": "退出全屏",
 		"en": "Exit full screen",
@@ -2260,1337 +3592,5 @@
 		"en": "A total of {total} items",
 		"ko": "총 {total} 조항",
 		"ja": "{total}条です"
-	},
-	"amjzw84": {
-		"zh-cn": "公司热点",
-		"en": "Company Hotspots",
-		"ko": "회사 인기",
-		"ja": "企業ホットスポットです"
-	},
-	"jqcb164": {
-		"zh-cn": "项目管理",
-		"en": "Project Management",
-		"ko": "프로젝트 관리",
-		"ja": "プロジェクトマネジメントです"
-	},
-	"cvdobs4": {
-		"zh-cn": "我的项目",
-		"en": "My project",
-		"ko": "제 프로젝트는",
-		"ja": "私のプロジェクトです"
-	},
-	"jqeyus4": {
-		"zh-cn": "项目详情",
-		"en": "Project Details",
-		"ko": "항목 정보",
-		"ja": "プロジェクトの詳細です"
-	},
-	"argjkk4": {
-		"zh-cn": "创建项目",
-		"en": "Create a project",
-		"ko": "프로젝트 만들기",
-		"ja": "プロジェクトを立ち上げます"
-	},
-	"4x9k3o8": {
-		"zh-cn": "Vchart文档",
-		"en": "Vchart document",
-		"ko": "vchart 파일",
-		"ja": "Vchartドキュメントです"
-	},
-	"2z4q9h9": {
-		"zh-cn": "NaiveUI文档",
-		"en": "NaiveUI documentation",
-		"ko": "naiveui 문서",
-		"ja": "NaiveUIドキュメントです"
-	},
-	"dd054v4": {
-		"zh-cn": "日程待办",
-		"en": "Schedule to be done",
-		"ko": "일정 업무",
-		"ja": "日程待ちです"
-	},
-	"gflc664": {
-		"zh-cn": "绩效标杆",
-		"en": "Performance benchmark",
-		"ko": "실적 기준",
-		"ja": "業績基準です"
-	},
-	"igc7pp4": {
-		"zh-cn": "输入昵称",
-		"en": "Enter the nickname",
-		"ko": "닉네임 입력",
-		"ja": "ニックネームを入力します。"
-	},
-	"m9a92": {
-		"zh-cn": "职位",
-		"en": "Position",
-		"ko": "직위",
-		"ja": "ポジションです"
-	},
-	"pgxs2": {
-		"zh-cn": "部门",
-		"en": "Department",
-		"ko": "부문",
-		"ja": "部署です"
-	},
-	"ig9wek4": {
-		"zh-cn": "输入姓名",
-		"en": "Enter the name",
-		"ko": "이름 입력",
-		"ja": "名前を入力します"
-	},
-	"fd3d4i4": {
-		"zh-cn": "电话号码",
-		"en": "Telephone number",
-		"ko": "전화 번호",
-		"ja": "電話番号です"
-	},
-	"f6qmm54": {
-		"zh-cn": "用户信息",
-		"en": "User information",
-		"ko": "사용자 정보",
-		"ja": "ユーザー情報です"
-	},
-	"kpc82": {
-		"zh-cn": "电话",
-		"en": "Telephone",
-		"ko": "전화",
-		"ja": "電話です"
-	},
-	"eb7w2": {
-		"zh-cn": "停用",
-		"en": "Stop using",
-		"ko": "정지",
-		"ja": "停止します"
-	},
-	"aiitlf4": {
-		"zh-cn": "你确定？",
-		"en": "Are you sure?",
-		"ko": "확실해요?",
-		"ja": "確かですか?"
-	},
-	"c0jp53": {
-		"zh-cn": "不确定",
-		"en": "Uncertain",
-		"ko": "불확정성",
-		"ja": "確かではありません"
-	},
-	"r1732": {
-		"zh-cn": "高级",
-		"en": "Advanced",
-		"ko": "고급",
-		"ja": "高級です"
-	},
-	"dzq22": {
-		"zh-cn": "中级",
-		"en": "Intermediate",
-		"ko": "중급",
-		"ja": "中級です"
-	},
-	"enu22": {
-		"zh-cn": "初级",
-		"en": "Beginner",
-		"ko": "초급",
-		"ja": "初級です"
-	},
-	"fm6z2": {
-		"zh-cn": "头像",
-		"en": "Profile picture",
-		"ko": "얼굴을",
-		"ja": "アイコン"
-	},
-	"gqx52": {
-		"zh-cn": "已读",
-		"en": "Read",
-		"ko": "읽은",
-		"ja": "既読です"
-	},
-	"hsgw2": {
-		"zh-cn": "明亮",
-		"en": "Bright",
-		"ko": "밝은",
-		"ja": "明るいです"
-	},
-	"rkrq2": {
-		"zh-cn": "黑暗",
-		"en": "Darkness",
-		"ko": "어둠",
-		"ja": "暗いです"
-	},
-	"e56l2": {
-		"zh-cn": "主题",
-		"en": "Theme",
-		"ko": "테마",
-		"ja": "テーマです"
-	},
-	"osqi6ya7": {
-		"zh-cn": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-4ca33632><input type=\"text\" placeholder=\"昵称\" data-v-4ca33632><input type=\"text\" placeholder=\"邮箱\" data-v-4ca33632><input type=\"password\" placeholder=\"请输入密码\" data-v-4ca33632><input type=\"password\" placeholder=\"请确认密码\" data-v-4ca33632></div><button data-v-4ca33632>注册</button>",
-		"en": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-4ca33632><input type=\"text\" placeholder=\" Nickname \"data-v-4ca33632><input type=\"text\" placeholder=\" Email\" data-v-4ca33632><input type=\"password\" placeholder=\" Please enter the password\" data-v-4ca33632><input type=\"password\" placeholder=\" Please confirm the password\" data-v-4ca33632></div><button data-v-4ca33632> Register </button>",
-		"ko": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex data-col items-center\"data-v-4ca33632><inputtype=\"text\"placeholder=\"data-v-4ca33632\"<input type=\"text\"placeholder=\"메일박스\"data-v-4ca33632><input type=\"password\"placeholder=\"비밀번호를 입력해주세요\"data-v-4ca33632><input type=\"password\"placeholder=\"비밀번호를 확인해주세요\"data-v-4ca33632></div><buttondata-v-4ca33632> 등록 </button>",
-		"ja": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col item-center \" data-v-4ca33632><input >type=\"text\" placeholder=\"ニックネーム\" data-v-4ca33632><input type=\"text\" placeholder=\"メールボックス\" data-v-4ca33632><input type=\"password\"placeholder=\"パスワードをご入力ください\" data-v-4ca33632><input type=\"password\" placeholder=\"パスワードをご確認ください\" data-v-4ca33632></div><button >data-v-4ca33632>登録します</button>"
-	},
-	"g9ob2": {
-		"zh-cn": "密码",
-		"en": "Password",
-		"ko": "암호",
-		"ja": "パスワードです"
-	},
-	"e40otn4": {
-		"zh-cn": "欢迎来的",
-		"en": "Welcome!",
-		"ko": "어서 오세요",
-		"ja": "ようこそいらっしゃいました"
-	},
-	"aw383c4": {
-		"zh-cn": "前端世界",
-		"en": "Front-end world",
-		"ko": "프론트엔드 세계",
-		"ja": "フロントエンドの世界です"
-	},
-	"eip3o3": {
-		"zh-cn": "快快滴",
-		"en": "Hurry up!",
-		"ko": "빠른방울",
-		"ja": "早くします"
-	},
-	"ca49z24": {
-		"zh-cn": "已有帐号",
-		"en": "Existing account",
-		"ko": "계정 있음",
-		"ja": "既に口座番号があります"
-	},
-	"cu6np3": {
-		"zh-cn": "去登录",
-		"en": "Log in",
-		"ko": "로그인하기",
-		"ja": "登録します"
-	},
-	"e4shnz4": {
-		"zh-cn": "没有帐号",
-		"en": "No account",
-		"ko": "계정 없음",
-		"ja": "口座番号がありません。"
-	},
-	"cshb33": {
-		"zh-cn": "去注册",
-		"en": "Register",
-		"ko": "등록하러 가다",
-		"ja": "登録します"
-	},
-	"py2u01a7": {
-		"zh-cn": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-a9fada1c><input type=\"text\" placeholder=\"昵称\" data-v-a9fada1c><input type=\"text\" placeholder=\"邮箱\" data-v-a9fada1c><input type=\"password\" placeholder=\"请输入密码\" data-v-a9fada1c><input type=\"password\" placeholder=\"请确认密码\" data-v-a9fada1c></div><button data-v-a9fada1c>注册</button>",
-		"en": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-a9fada1c><input type=\"text\" placeholder=\" Nickname \"data-v-a9fada1c><input type=\"text\" placeholder=\" Email\" data-v-a9fada1c><input type=\"password\" placeholder=\" Please enter the password\" data-v-a9fada1c><input type=\"password\" placeholder=\" Please confirm the password\" data-v-a9fada1c></div><button data-v-a9fada1c> Register </button>",
-		"ko": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\"data-v-a9fada1c><inputtype=\"text\"placeholder=\"data-v-a9fada1c\"<input type=\"text\"placeholder=\"메일박스\"data-v-a9fada1c\"<input type=\"password\"placeholder=\"비밀번호를 입력해주세요\"data-v-a9fada1c><input type=\"password\"placeholder=\"비밀번호를 확인해주세요\"data-v-a9fada1c></div><buttondata-v-a9fada1c> 등록 </button>",
-		"ja": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col item-center \" data-v-a9fada1c><input >type=\"text\" placeholder=\"ニックネーム\" data-v-a9fada1c><input type=\"text\" placeholder=\"メールボックス\" data-v-a9fada1c><input type=\"password\"placeholder=\"パスワードをご入力ください\" data-v-a9fada1c><input type=\"password\" placeholder=\"パスワードをご確認ください\" data-v-a9fada1c></div><button >data-v-a9fada1c>登録します</button>"
-	},
-	"fgkxx3": {
-		"zh-cn": "星期日",
-		"en": "Sunday",
-		"ko": "일요일",
-		"ja": "日曜日です"
-	},
-	"fgg803": {
-		"zh-cn": "星期一",
-		"en": "Monday",
-		"ko": "월요일",
-		"ja": "月曜日です"
-	},
-	"fggbw3": {
-		"zh-cn": "星期二",
-		"en": "Tuesday",
-		"ko": "화요일",
-		"ja": "火曜日です"
-	},
-	"fgg893": {
-		"zh-cn": "星期三",
-		"en": "Wednesday",
-		"ko": "수요일",
-		"ja": "水曜日です"
-	},
-	"fghyz3": {
-		"zh-cn": "星期四",
-		"en": "Thursday",
-		"ko": "목요일",
-		"ja": "木曜日です"
-	},
-	"fggc43": {
-		"zh-cn": "星期五",
-		"en": "Friday",
-		"ko": "금요일",
-		"ja": "金曜日です"
-	},
-	"fggwd3": {
-		"zh-cn": "星期六",
-		"en": "Saturday",
-		"ko": "토요일",
-		"ja": "土曜日です"
-	},
-	"fljd2": {
-		"zh-cn": "复制",
-		"en": "Copy",
-		"ko": "복사",
-		"ja": "複製します"
-	},
-	"ea3j2v4": {
-		"zh-cn": "温度 ：",
-		"en": "Temperature",
-		"ko": "온도:",
-		"ja": "温度です"
-	},
-	"jlyssn4": {
-		"zh-cn": "风力 ：",
-		"en": "Wind force",
-		"ko": "바람 크기:",
-		"ja": "風力です"
-	},
-	"jm6i4d4": {
-		"zh-cn": "风向 ：",
-		"en": "Wind direction:",
-		"ko": "풍향:",
-		"ja": "風向きです。"
-	},
-	"cv3tgn4": {
-		"zh-cn": "我的应用",
-		"en": "My application",
-		"ko": "내 앱",
-		"ja": "私の応用です"
-	},
-	"7plf716": {
-		"zh-cn": "你一共处理了",
-		"en": "You've dealt with it all",
-		"ko": "모두 처리하세요",
-		"ja": "あなたは全部処理しました"
-	},
-	"dkmr9m4": {
-		"zh-cn": "条群消息",
-		"en": "A group message",
-		"ko": "단편적 메시지",
-		"ja": "グループメッセージです。"
-	},
-	"eqym605": {
-		"zh-cn": "删除了任务",
-		"en": "Deleted the task",
-		"ko": "작업 삭제",
-		"ja": "タスクを削除しました。"
-	},
-	"ltbp1v5": {
-		"zh-cn": "创建了任务",
-		"en": "Created the task",
-		"ko": "작업 생성",
-		"ja": "ミッションを作成しました"
-	},
-	"ahgss05": {
-		"zh-cn": "更新了任务",
-		"en": "Updated the task",
-		"ko": "작업 업데이트됨",
-		"ja": "タスクを更新しました。"
-	},
-	"li85qk6": {
-		"zh-cn": "即将结束项目",
-		"en": "The project is about to end.",
-		"ko": "프로젝트가 끝나가다",
-		"ja": "まもなくプロジェクト終了です"
-	},
-	"iki6mh4": {
-		"zh-cn": "近期代办",
-		"en": "Recent agency services",
-		"ko": "근일 대행 공사",
-		"ja": "近いうちに代行します"
-	},
-	"cueobq4": {
-		"zh-cn": "承担部门",
-		"en": "Undertaking department",
-		"ko": "담당 부서",
-		"ja": "担当部署です"
-	},
-	"jso34na": {
-		"zh-cn": "研发中心/基础研发部",
-		"en": "R&d Center/Basic R&D Department",
-		"ko": "연구 개발 센터",
-		"ja": "開発センター/基礎開発部です"
-	},
-	"lckeu3": {
-		"zh-cn": "负责人",
-		"en": "Person in charge",
-		"ko": "책임자",
-		"ja": "責任者です"
-	},
-	"jq8fv74": {
-		"zh-cn": "项目数据",
-		"en": "Project data",
-		"ko": "프로젝트 데이터",
-		"ja": "プロジェクトデータです"
-	},
-	"ctlcwf4": {
-		"zh-cn": "所有任务",
-		"en": "All tasks",
-		"ko": "모든 작업",
-		"ja": "すべての任務"
-	},
-	"idvsdd4": {
-		"zh-cn": "负责团队",
-		"en": "Be responsible for the team",
-		"ko": "팀을 책임지다",
-		"ja": "チームを担当します"
-	},
-	"49d43i6": {
-		"zh-cn": "项目状态统计",
-		"en": "Project status statistics",
-		"ko": "항목 상태 통계",
-		"ja": "プロジェクトステータス統計です"
-	},
-	"328s0p6": {
-		"zh-cn": "项目类型统计",
-		"en": "Project type statistics",
-		"ko": "항목 종류 통계",
-		"ja": "項目種別統計"
-	},
-	"en9ick5": {
-		"zh-cn": "添加子菜单",
-		"en": "Add submenus",
-		"ko": "하위 메뉴 추가",
-		"ja": "サブメニューを追加します。"
-	},
-	"i820g84": {
-		"zh-cn": "超大卡片",
-		"en": "Super large card",
-		"ko": "슈퍼 카드",
-		"ja": "でかいカード"
-	},
-	"dvye2": {
-		"zh-cn": "任务",
-		"en": "Task",
-		"ko": "임무",
-		"ja": "任務です"
-	},
-	"e7ys2": {
-		"zh-cn": "会议",
-		"en": "Meeting",
-		"ko": "회의",
-		"ja": "会議です"
-	},
-	"mgsd2": {
-		"zh-cn": "缺陷",
-		"en": "Defect",
-		"ko": "결함",
-		"ja": "欠陥です"
-	},
-	"e93e93": {
-		"zh-cn": "带开始",
-		"en": "Start!",
-		"ko": "시작하다",
-		"ja": "バンドが始まります"
-	},
-	"lq5q43": {
-		"zh-cn": "进行中",
-		"en": "In progress",
-		"ko": "진행 중",
-		"ja": "進行中です"
-	},
-	"e7hbq3": {
-		"zh-cn": "已完成",
-		"en": "Completed",
-		"ko": "완료",
-		"ja": "完成しました"
-	},
-	"e838b3": {
-		"zh-cn": "已延期",
-		"en": "Postponed",
-		"ko": "이미 연기하였다",
-		"ja": "延期になりました"
-	},
-	"e61qk3": {
-		"zh-cn": "已关闭",
-		"en": "Closed",
-		"ko": "닫힘",
-		"ja": "閉鎖されました"
-	},
-	"egbo03": {
-		"zh-cn": "待开始",
-		"en": "Wait to start",
-		"ko": "시작 대기",
-		"ja": "これからです"
-	},
-	"e68dg3": {
-		"zh-cn": "已取消",
-		"en": "Cancelled",
-		"ko": "취소됨",
-		"ja": "キャンセルしました"
-	},
-	"d7n0td4": {
-		"zh-cn": "数据报表",
-		"en": "Data report",
-		"ko": "데이터 보고서",
-		"ja": "データレポートです。"
-	},
-	"lrta2": {
-		"zh-cn": "筛选",
-		"en": "Screening",
-		"ko": "압축",
-		"ja": "選別します"
-	},
-	"ql5h2": {
-		"zh-cn": "项目",
-		"en": "Project",
-		"ko": "프로젝트",
-		"ja": "プロジェクトです"
-	},
-	"k1e32": {
-		"zh-cn": "状态",
-		"en": "Status",
-		"ko": "상태",
-		"ja": "状態です"
-	},
-	"l22rm3": {
-		"zh-cn": "责任人",
-		"en": "Responsible person",
-		"ko": "책임자",
-		"ja": "責任者です"
-	},
-	"ab8k534": {
-		"zh-cn": "任务标题",
-		"en": "Task Title",
-		"ko": "작업 제목",
-		"ja": "ミッションタイトルです"
-	},
-	"ab86ys4": {
-		"zh-cn": "任务时间",
-		"en": "Task time",
-		"ko": "작업 시간",
-		"ja": "任務時間です"
-	},
-	"tnwvfc6": {
-		"zh-cn": "选择日期时间",
-		"en": "Select the date and time",
-		"ko": "날짜, 시간을 선택하다",
-		"ja": "日時を選びます。"
-	},
-	"ab4eai4": {
-		"zh-cn": "任务内容",
-		"en": "Task content",
-		"ko": "작업 내용",
-		"ja": "任務内容です"
-	},
-	"l7tjo3": {
-		"zh-cn": "赵晨宇",
-		"en": "Zhao Chenyu",
-		"ko": "자오천위",
-		"ja": "チェンウです"
-	},
-	"8gd4qzf": {
-		"zh-cn": "人生若只如初见，何事秋风悲画扇",
-		"en": "If life were always like the first encounter, why would the autumn wind grieve over the painted fan",
-		"ko": "인생이 단지 처음 본 것 같다면, 무슨 일이니 가을 바람이 화선을 슬프게 하랴",
-		"ja": "人生は初見の如し何事も秋風は扇をかくのです"
-	},
-	"m1a62": {
-		"zh-cn": "繁星",
-		"en": "Stars",
-		"ko": "별",
-		"ja": "たくさんの星です"
-	},
-	"hgfmgw5": {
-		"zh-cn": "前端工程师",
-		"en": "Front-end engineer",
-		"ko": "프론트엔드 엔지니어",
-		"ja": "フロントエンド・エンジニアです"
-	},
-	"cnkqq3": {
-		"zh-cn": "前端组",
-		"en": "Front-end Group",
-		"ko": "프론트엔드 그룹",
-		"ja": "フロントエンド群です"
-	},
-	"blnt4z4": {
-		"zh-cn": "基础研发",
-		"en": "Basic research and development",
-		"ko": "기초 연구 개발",
-		"ja": "基礎研究開発です"
-	},
-	"cv17cx4": {
-		"zh-cn": "我的信息",
-		"en": "My information",
-		"ko": "내 메시지",
-		"ja": "私の情報です"
-	},
-	"123vlo6": {
-		"zh-cn": "查看个人信息",
-		"en": "View personal information",
-		"ko": "개인 정보 확인",
-		"ja": "個人情報を見ます"
-	},
-	"cdfpc44": {
-		"zh-cn": "常用应用",
-		"en": "Common applications",
-		"ko": "상용 응용",
-		"ja": "よく使われる応用です。"
-	},
-	"ei7p9v8": {
-		"zh-cn": "智能仓储系统开发",
-		"en": "Development of intelligent warehousing systems",
-		"ko": "지능형 창고 시스템 개발",
-		"ja": "スマート倉庫システムの開発です"
-	},
-	"ifayk84": {
-		"zh-cn": "软件开发",
-		"en": "Software development",
-		"ko": "소프트웨어 개발",
-		"ja": "ソフトウェア開発です"
-	},
-	"jhw5xo4": {
-		"zh-cn": "需求分析",
-		"en": "Demand analysis",
-		"ko": "수요분석",
-		"ja": "ニーズ分析です"
-	},
-	"40l1yp6": {
-		"zh-cn": "未来物流集团",
-		"en": "Future Logistics Group",
-		"ko": "웨이라이물류그룹",
-		"ja": "未来物流グループです"
-	},
-	"ffx1": {
-		"zh-cn": "中",
-		"en": "In the",
-		"ko": "가운데",
-		"ja": "中です"
-	},
-	"rpgriz5": {
-		"zh-cn": "技术交付部",
-		"en": "Technology Delivery Department",
-		"ko": "기술 인도부",
-		"ja": "技術納入部です"
-	},
-	"eem1i3": {
-		"zh-cn": "张总监",
-		"en": "Director Zhang",
-		"ko": "장 총감독",
-		"ja": "張総監です"
-	},
-	"fiphw3": {
-		"zh-cn": "李主管",
-		"en": "Manager Li",
-		"ko": "이 주관장",
-		"ja": "李主幹です"
-	},
-	"eyzamv4": {
-		"zh-cn": "王工程师",
-		"en": "Engineer Wang",
-		"ko": "왕기사",
-		"ja": "王技師です"
-	},
-	"fhw10z4": {
-		"zh-cn": "研发中心",
-		"en": "Research and Development Center",
-		"ko": "연구개발센터",
-		"ja": "研究開発センターです"
-	},
-	"gy1yrbp": {
-		"zh-cn": "开发智能仓储管理系统，实现自动化库存调度与AI预测",
-		"en": "Develop an intelligent warehouse management system to achieve automated inventory scheduling and AI prediction",
-		"ko": "지능창고관리시스템을 개발하여 자동화된 재고관리와 ai 예측을 실현한다",
-		"ja": "在庫の自動化とAI予測を可能にするスマート倉庫管理システムを開発しました"
-	},
-	"eds3c3": {
-		"zh-cn": "已结项",
-		"en": "Completed project",
-		"ko": "기결산",
-		"ja": "契約済みです"
-	},
-	"femab3": {
-		"zh-cn": "暂停中",
-		"en": "On pause",
-		"ko": "일시 정지 중",
-		"ja": "一時停止中です"
-	},
-	"ul41": {
-		"zh-cn": "高",
-		"en": "high",
-		"ko": "높은",
-		"ja": "高いです"
-	},
-	"fny1": {
-		"zh-cn": "低",
-		"en": "low",
-		"ko": "낮",
-		"ja": "低いです"
-	},
-	"j4lypm8": {
-		"zh-cn": "项目编号不能为空",
-		"en": "The project number cannot be empty",
-		"ko": "아이템 번호는 비어 있으면 안 됩니다",
-		"ja": "プロジェクト番号は空ではいけません。"
-	},
-	"rb3ppk8": {
-		"zh-cn": "项目名称不能为空",
-		"en": "The project name cannot be empty",
-		"ko": "항목 이름은 비어 있을 수 없습니다",
-		"ja": "プロジェクト名を空にしてはいけません。"
-	},
-	"vi7l617": {
-		"zh-cn": "请选择项目状态",
-		"en": "Please select the project status",
-		"ko": "아이템 상태를 선택하십시오",
-		"ja": "アイテムステータスの選択をお願いします。"
-	},
-	"kv38ora": {
-		"zh-cn": "请输入有效的预算金额",
-		"en": "Please enter the valid budget amount",
-		"ko": "올바른 예산 금액을 입력하십시오",
-		"ja": "有効な予算額を入力願います。"
-	},
-	"pqqucx6": {
-		"zh-cn": "表单验证通过",
-		"en": "The form validation was passed.",
-		"ko": "폼 인증 통과",
-		"ja": "フォーム検証はパスしました"
-	},
-	"fovc7e7": {
-		"zh-cn": "请完善表单信息",
-		"en": "Please complete the form information",
-		"ko": "양식 정보를 수정하십시오",
-		"ja": "フォーム情報の補完をお願いします。"
-	},
-	"jqcpva4": {
-		"zh-cn": "项目编号",
-		"en": "Project Number",
-		"ko": "아이템 번호",
-		"ja": "プロジェクト番号です"
-	},
-	"dsqazl7": {
-		"zh-cn": "请输入项目编号",
-		"en": "Please enter the project number",
-		"ko": "아이템 번호를 입력하십시오",
-		"ja": "項目番号をお願いします。"
-	},
-	"jq5lug4": {
-		"zh-cn": "项目名称",
-		"en": "Project Name",
-		"ko": "프로젝트 이름",
-		"ja": "プロジェクト名です"
-	},
-	"dsxf0f7": {
-		"zh-cn": "请输入项目名称",
-		"en": "Please enter the project name",
-		"ko": "항목명을 입력하십시오",
-		"ja": "項目名を入力願います。"
-	},
-	"jqaogw4": {
-		"zh-cn": "项目状态",
-		"en": "Project status",
-		"ko": "프로젝트 상태",
-		"ja": "プロジェクトの状態です"
-	},
-	"bzkvr3": {
-		"zh-cn": "优先级",
-		"en": "Priority",
-		"ko": "우선 순위",
-		"ja": "優先順位です"
-	},
-	"3lzz8g6": {
-		"zh-cn": "请选择优先级",
-		"en": "Please select the priority",
-		"ko": "우선 순위를 선택하십시오",
-		"ja": "優先順位をお願いします"
-	},
-	"2xmpeu6": {
-		"zh-cn": "计划开始时间",
-		"en": "Planned start time",
-		"ko": "스케줄 시작 시간",
-		"ja": "予定開始時間です"
-	},
-	"14uy7v6": {
-		"zh-cn": "计划结束时间",
-		"en": "Planned end time",
-		"ko": "프로젝트 마감 시간",
-		"ja": "予定終了時間です"
-	},
-	"fbz80g6": {
-		"zh-cn": "实际开始时间",
-		"en": "Actual start time",
-		"ko": "실제 시작 시간",
-		"ja": "実際の開始時間です"
-	},
-	"b9hkdr6": {
-		"zh-cn": "实际结束时间",
-		"en": "Actual end time",
-		"ko": "실제 종료 시간",
-		"ja": "実際の終了時間です"
-	},
-	"jqh9ew4": {
-		"zh-cn": "项目预算",
-		"en": "Project budget",
-		"ko": "프로젝트 예산",
-		"ja": "プロジェクト予算です"
-	},
-	"drr5947": {
-		"zh-cn": "请输入预算金额",
-		"en": "Please enter the budget amount",
-		"ko": "예상 금액을 입력해 주십시오",
-		"ja": "見積もりをお願いします。"
-	},
-	"hyhcea4": {
-		"zh-cn": "计划工时",
-		"en": "Planned working hours",
-		"ko": "노동시간을 계획하다.",
-		"ja": "工数を計画します。"
-	},
-	"fklogl7": {
-		"zh-cn": "请输入计划工时",
-		"en": "Please enter the planned working hours",
-		"ko": "근무 계획 시간을 입력하세요",
-		"ja": "予定工数を入力願います。"
-	},
-	"c6guoo4": {
-		"zh-cn": "实际工时",
-		"en": "Actual working hours",
-		"ko": "실제 노동시간",
-		"ja": "実際の工数"
-	},
-	"lcm6677": {
-		"zh-cn": "请输入实际工时",
-		"en": "Please enter the actual working hours",
-		"ko": "실제 노동시간을 입력하시오",
-		"ja": "実際の工数を入力願います。"
-	},
-	"jqcui44": {
-		"zh-cn": "项目经理",
-		"en": "Project Manager",
-		"ko": "프로젝트 매니저",
-		"ja": "プロジェクトマネージャーです"
-	},
-	"mxqdnz9": {
-		"zh-cn": "请输入项目经理姓名",
-		"en": "Please enter the name of the project manager",
-		"ko": "프로젝트 관리자의 이름을 입력하십시오",
-		"ja": "プロジェクトマネジャーの名前をお願いします。"
-	},
-	"arffcv4": {
-		"zh-cn": "创建部门",
-		"en": "Establish a department",
-		"ko": "부서를 만들다",
-		"ja": "部門を創設します。"
-	},
-	"mrnli07": {
-		"zh-cn": "请输入创建部门",
-		"en": "Please enter the department to be created",
-		"ko": "생성 부서를 입력하십시오",
-		"ja": "作成部と入力をお願いします。"
-	},
-	"jq8eom4": {
-		"zh-cn": "项目描述",
-		"en": "Project Description",
-		"ko": "프로젝트 설명",
-		"ja": "項目記述です"
-	},
-	"dsum697": {
-		"zh-cn": "请输入项目描述",
-		"en": "Please enter the project description",
-		"ko": "항목 설명을 입력하십시오",
-		"ja": "項目記述をお願いします。"
-	},
-	"heqc2": {
-		"zh-cn": "提交",
-		"en": "Submit",
-		"ko": "제출",
-		"ja": "提出します"
-	},
-	"abboy34": {
-		"zh-cn": "任务管理",
-		"en": "Task Management",
-		"ko": "작업 관리",
-		"ja": "タスク管理です"
-	},
-	"aygs5l4": {
-		"zh-cn": "合同管理",
-		"en": "Contract Management",
-		"ko": "계약 관리",
-		"ja": "契約管理です"
-	},
-	"f4s8d5a": {
-		"zh-cn": "新版PMS研发与应用",
-		"en": "Research and Application of the New Version of PMS",
-		"ko": "새로운 pms 개발 및 적용",
-		"ja": "PMSの開発と応用の新版です"
-	},
-	"cj49bw4": {
-		"zh-cn": "形目类型",
-		"en": "Order type",
-		"ko": "카테고리 유형",
-		"ja": "目型です"
-	},
-	"ih5oei8": {
-		"zh-cn": "软件开发现场交付",
-		"en": "On-site delivery of software development",
-		"ko": "소프트웨어 개발 라이브 배급",
-		"ja": "ソフトウェア開発現場での引き渡しです"
-	},
-	"c6csg54": {
-		"zh-cn": "工作信息",
-		"en": "Job information",
-		"ko": "직업 정보",
-		"ja": "仕事情報です"
-	},
-	"a6u45a4": {
-		"zh-cn": "个人信息",
-		"en": "Personal information",
-		"ko": "개인 정보",
-		"ja": "個人情報です"
-	},
-	"dbn5jk4": {
-		"zh-cn": "教育经历",
-		"en": "Educational experience",
-		"ko": "교육 경력",
-		"ja": "教育経験です"
-	},
-	"c6kp9q4": {
-		"zh-cn": "工作经历",
-		"en": "Work Experience",
-		"ko": "근무 경력",
-		"ja": "職務経歴書です"
-	},
-	"ay98du4": {
-		"zh-cn": "合同信息",
-		"en": "Contract information",
-		"ko": "계약 정보",
-		"ja": "契約情報です"
-	},
-	"hg490f4": {
-		"zh-cn": "薪资档案",
-		"en": "Salary file",
-		"ko": "급여 파일",
-		"ja": "給与記録です"
-	},
-	"jab8al4": {
-		"zh-cn": "附件存档",
-		"en": "File the attachment",
-		"ko": "첨부 파일",
-		"ja": "添付ファイルアーカイブです"
-	},
-	"czu3bo4": {
-		"zh-cn": "成长记录",
-		"en": "Growth Record",
-		"ko": "성장 기록",
-		"ja": "成長記録です"
-	},
-	"dvhp2": {
-		"zh-cn": "上海",
-		"en": "Shanghai",
-		"ko": "상하이",
-		"ja": "上海です"
-	},
-	"iscs2": {
-		"zh-cn": "正式",
-		"en": "Formal",
-		"ko": "공식",
-		"ja": "正式です"
-	},
-	"hgwrhp5": {
-		"zh-cn": "高级工程师",
-		"en": "Senior Engineer",
-		"ko": "고급 기사",
-		"ja": "上級エンジニアです"
-	},
-	"2jaekd5": {
-		"zh-cn": "请输入姓名",
-		"en": "Please enter your name.",
-		"ko": "이름을 입력하십시오",
-		"ja": "お名前をお願いします"
-	},
-	"2j9pnp5": {
-		"zh-cn": "请输入工号",
-		"en": "Please enter the employee number",
-		"ko": "작업 번호를 입력하십시오",
-		"ja": "勤務番号の入力をお願いします。"
-	},
-	"2j4oeg5": {
-		"zh-cn": "请输入签名",
-		"en": "Please enter the signature.",
-		"ko": "서명을 입력하십시오",
-		"ja": "署名をお願いします。"
-	},
-	"2j3vx25": {
-		"zh-cn": "请输入职位",
-		"en": "Please enter the position.",
-		"ko": "직위를 입력하십시오",
-		"ja": "ポジション入力をお願いします。"
-	},
-	"2j3vx05": {
-		"zh-cn": "请输入组织",
-		"en": "Please enter the organization.",
-		"ko": "조직을 입력하십시오",
-		"ja": "組織入力をお願いします。"
-	},
-	"2j0o9j5": {
-		"zh-cn": "请输入部门",
-		"en": "Please enter the department.",
-		"ko": "입력부",
-		"ja": "部署入力お願いします。"
-	},
-	"2jau2v5": {
-		"zh-cn": "请输入地址",
-		"en": "Please enter the address.",
-		"ko": "주소를 입력하십시오",
-		"ja": "住所を入力願います。"
-	},
-	"a9n8wm4": {
-		"zh-cn": "人事调动",
-		"en": "Personnel transfer",
-		"ko": "인사 이동",
-		"ja": "人事異動です"
-	},
-	"g3ge2": {
-		"zh-cn": "导出",
-		"en": "Export",
-		"ko": "내보 내기",
-		"ja": "導出します"
-	},
-	"dd0d3p4": {
-		"zh-cn": "更多操作",
-		"en": "More operations",
-		"ko": "추가 작업",
-		"ja": "もっと操作します"
-	},
-	"blh1h04": {
-		"zh-cn": "基础信息",
-		"en": "Basic information",
-		"ko": "기초 정보",
-		"ja": "基礎情報です"
-	},
-	"e32z2": {
-		"zh-cn": "保存",
-		"en": "Save",
-		"ko": "저장",
-		"ja": "保存します"
-	},
-	"fqmy2": {
-		"zh-cn": "姓名",
-		"en": "Name",
-		"ko": "이름",
-		"ja": "名前です"
-	},
-	"gfjm2": {
-		"zh-cn": "工号",
-		"en": "Employee number",
-		"ko": "GongHao",
-		"ja": "勤務番号です"
-	},
-	"iwjeyr4": {
-		"zh-cn": "部门组织",
-		"en": "Departmental organization",
-		"ko": "부문 조직",
-		"ja": "部門組織です"
-	},
-	"e6rl2": {
-		"zh-cn": "位置",
-		"en": "Location",
-		"ko": "위치",
-		"ja": "位置です"
-	},
-	"2eo91k5": {
-		"zh-cn": "请选择位置",
-		"en": "Please select the location.",
-		"ko": "위치를 선택하십시오.",
-		"ja": "位置をお願いします"
-	},
-	"c6ipnm4": {
-		"zh-cn": "工作状态",
-		"en": "Working status",
-		"ko": "작업 상태",
-		"ja": "仕事ぶりです"
-	},
-	"glwp2": {
-		"zh-cn": "张三",
-		"en": "Zhang SAN",
-		"ko": "장삼",
-		"ja": "張三さんです"
-	},
-	"i1ql2": {
-		"zh-cn": "李四",
-		"en": "Li Si",
-		"ko": "리",
-		"ja": "リー四"
-	},
-	"k31l2": {
-		"zh-cn": "王五",
-		"en": "Wang Wu",
-		"ko": "왕 씨",
-		"ja": "王五です"
-	},
-	"oiag2": {
-		"zh-cn": "赵六",
-		"en": "Zhao Liu",
-		"ko": "조 6",
-		"ja": "趙六です"
-	},
-	"dp9t2": {
-		"zh-cn": "七仔",
-		"en": "\"七仔\"",
-		"ko": "7. 새끼",
-		"ja": "七の仔です"
-	},
-	"evg5804": {
-		"zh-cn": "热门项目",
-		"en": "Popular projects",
-		"ko": "인기 종목",
-		"ja": "人気プロジェクトです"
-	},
-	"ijqcju4": {
-		"zh-cn": "进度详情",
-		"en": "Progress details",
-		"ko": "진행 정보",
-		"ja": "進捗状況の詳細。"
-	},
-	"ebl693": {
-		"zh-cn": "张伟成",
-		"en": "Zhang Weicheng",
-		"ko": "장웨이청",
-		"ja": "張偉成"
-	},
-	"50dtyxa": {
-		"zh-cn": "用户界面/UI设计师",
-		"en": "User interface /UI designer",
-		"ko": "사용자 인터페이스 디자이너",
-		"ja": "ユーザーインターフェース/UIデザイナーです"
-	},
-	"dez4em4": {
-		"zh-cn": "最新公告",
-		"en": "Latest Announcement",
-		"ko": "최신 공고",
-		"ja": "最新の発表です"
-	},
-	"vr63nnc": {
-		"zh-cn": "今天 | 下午 5：00",
-		"en": "Today | 5:00 p.m",
-		"ko": "오늘 오후 5시 | 된",
-		"ja": "|今日午后5:00"
-	},
-	"jqcamd4": {
-		"zh-cn": "项目类型",
-		"en": "Project type",
-		"ko": "항목 형식",
-		"ja": "プロジェクトタイプです"
-	},
-	"jqgs5w4": {
-		"zh-cn": "项目阶段",
-		"en": "Project stage",
-		"ko": "프로젝트 단계",
-		"ja": "プロジェクトフェーズです"
-	},
-	"byvcwo4": {
-		"zh-cn": "客户名称",
-		"en": "Customer name",
-		"ko": "고객 이름",
-		"ja": "顧客名です"
-	},
-	"abnfkk4": {
-		"zh-cn": "优先级别",
-		"en": "Priority level",
-		"ko": "우선 순위",
-		"ja": "優先順位です。"
-	},
-	"hyhgrg4": {
-		"zh-cn": "计划开始",
-		"en": "Plan to begin",
-		"ko": "계획 시작",
-		"ja": "計画開始です"
-	},
-	"hymybh4": {
-		"zh-cn": "计划结束",
-		"en": "The plan is over.",
-		"ko": "계획이 끝나다",
-		"ja": "計画終了です"
-	},
-	"c6gz1u4": {
-		"zh-cn": "实际开始",
-		"en": "Actually begins",
-		"ko": "실제로 시작하다",
-		"ja": "実際に始めます"
-	},
-	"c6mglv4": {
-		"zh-cn": "实际结束",
-		"en": "Actually over",
-		"ko": "실질적 결말",
-		"ja": "実際に終わります"
-	},
-	"rlek805": {
-		"zh-cn": "项目管理人",
-		"en": "Project Manager",
-		"ko": "프로젝트 관리자",
-		"ja": "プロジェクトマネージャーです"
-	},
-	"rm6q0h5": {
-		"zh-cn": "项目监控人",
-		"en": "Project monitor",
-		"ko": "프로젝트 모니터",
-		"ja": "監視役です"
-	},
-	"jqf08f4": {
-		"zh-cn": "项目说明",
-		"en": "Project Description",
-		"ko": "아이템 설명",
-		"ja": "プロジェクトの説明です"
-	},
-	"lsz1id5": {
-		"zh-cn": "创建人部门",
-		"en": "The creator department",
-		"ko": "설립자 부문",
-		"ja": "創設者部門です"
-	},
-	"ar84e54": {
-		"zh-cn": "创建时间",
-		"en": "Creation time",
-		"ko": "만든 시간",
-		"ja": "作成時間です"
-	},
-	"chizf3": {
-		"zh-cn": "创建人",
-		"en": "Founder",
-		"ko": "창립자",
-		"ja": "設立者です"
-	},
-	"o2coryd": {
-		"zh-cn": "1,275,000.00元",
-		"en": "1,275,000.00 yuan",
-		"ko": "1,275,000.00 위안",
-		"ja": "1,275,000.00円です"
-	},
-	"ssgk95d": {
-		"zh-cn": "1,202,830.00元",
-		"en": "1,202,830.00 yuan",
-		"ko": "1,202,830.00 위안",
-		"ja": "1,202,830.00元です"
-	},
-	"xkm50rb": {
-		"zh-cn": "849,120.00元",
-		"en": "849,120.00 yuan",
-		"ko": "849,120.00 위안",
-		"ja": "849,120.00元です"
-	},
-	"g24n8na": {
-		"zh-cn": "89,120.00元",
-		"en": "89,120.00 yuan",
-		"ko": "89,120.00 위안",
-		"ja": "89,120.00元です"
-	},
-	"n80vneb": {
-		"zh-cn": "353,709.00元",
-		"en": "353,709.00 yuan",
-		"ko": "353,709.00 위안",
-		"ja": "353,709.00円です"
-	},
-	"4x2hyu7": {
-		"zh-cn": "还有 31 天",
-		"en": "There are still 31 days.",
-		"ko": "아직 31일 남았습니다.",
-		"ja": "あと31日です"
-	},
-	"jqfmo04": {
-		"zh-cn": "项目进度",
-		"en": "Project progress",
-		"ko": "프로젝트 진행 상황",
-		"ja": "プロジェクトの進捗状況です"
-	},
-	"jqcs3l4": {
-		"zh-cn": "项目结束",
-		"en": "The project is over.",
-		"ko": "프로젝트 종료",
-		"ja": "プロジェクト終了です"
-	},
-	"dhmgdl4": {
-		"zh-cn": "时间进度",
-		"en": "Time schedule",
-		"ko": "시간 진도",
-		"ja": "時間の進み具合です"
-	},
-	"gz20n94": {
-		"zh-cn": "自评进度",
-		"en": "Self-assessed progress",
-		"ko": "진행 상황을 스스로 평가하다.",
-		"ja": "進捗状況を自己評価します"
-	},
-	"2l9kxj6": {
-		"zh-cn": "项目经营数据",
-		"en": "Project operation data",
-		"ko": "프로젝트경영데이터",
-		"ja": "事業データです"
-	},
-	"aykr8w4": {
-		"zh-cn": "合同金额",
-		"en": "Contract amount",
-		"ko": "계약 금액",
-		"ja": "契約金額です"
-	},
-	"cgq7j3": {
-		"zh-cn": "净收入",
-		"en": "Net income",
-		"ko": "순수입",
-		"ja": "純収入"
-	},
-	"h8v02": {
-		"zh-cn": "成本",
-		"en": "Cost",
-		"ko": "원가",
-		"ja": "コストです"
-	},
-	"lpggmb6": {
-		"zh-cn": "风险预估成本",
-		"en": "Risk estimation cost",
-		"ko": "리스크 예측 비용",
-		"ja": "リスク見積もりコストです"
-	},
-	"ekrh2": {
-		"zh-cn": "利润",
-		"en": "Profit",
-		"ko": "이윤",
-		"ja": "利益です"
-	},
-	"ckih63": {
-		"zh-cn": "利润率",
-		"en": "Profit margin",
-		"ko": "이윤율",
-		"ja": "利益率です"
-	},
-	"ab4zrd4": {
-		"zh-cn": "任务名称",
-		"en": "Task Name",
-		"ko": "작업 이름",
-		"ja": "ミッション名です"
-	},
-	"ab7slj4": {
-		"zh-cn": "任务描述",
-		"en": "Task Description",
-		"ko": "작업 설명",
-		"ja": "ミッション記述です"
-	},
-	"aba2dt4": {
-		"zh-cn": "任务状态",
-		"en": "Task status",
-		"ko": "작업 상태",
-		"ja": "タスク状態です"
-	},
-	"abf0kx4": {
-		"zh-cn": "任务进度",
-		"en": "Task progress",
-		"ko": "작업 진도",
-		"ja": "タスクの進捗状況です"
-	},
-	"zb5f4f6": {
-		"zh-cn": "任务开始时间",
-		"en": "Task start time",
-		"ko": "작업 시작 시간",
-		"ja": "任務開始時間です"
-	},
-	"vngz806": {
-		"zh-cn": "任务结束时间",
-		"en": "Task end time",
-		"ko": "작업 종료 시간",
-		"ja": "任務終了時間です"
-	},
-	"ar3udh4": {
-		"zh-cn": "创建任务",
-		"en": "Create a task",
-		"ko": "작업 만들기",
-		"ja": "タスクを作成します"
 	}
 }
