@@ -1,3 +1,4 @@
+import '../lang/index'
 import '@/assets/css/style.css'
 import '@/assets/css/common.css'
 import '@/assets/css/calendar.less'
@@ -15,12 +16,14 @@ import { router } from "./router/index";
 import naive from 'naive-ui'
 import { loading } from './utils/lib/loading'
 import { context } from './directive/context'  
-import { $t , i18n } from './il8n/index'
+// import { $t , i18n } from './il8n/index'
 window.lottie = lottie;
 const app = createApp(App)
-app.config.globalProperties.$t = $t;
+console.log('睢县执行');
+// window.$t = $t;
+//app.config.globalProperties.$t = $t;
 
 
 app.use(router).use(createPinia()).use(naive).directive('loading',loading).directive('context',context)
-app.use(i18n)
+// app.use(i18n)
 app.mount('#app')

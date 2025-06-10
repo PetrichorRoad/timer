@@ -17,15 +17,14 @@
         :label="song.label"
       />
     </n-radio-group>
-    123
   </div>
 </template>
 
 <script setup>
 import { computed } from "vue";
 import { useStore } from "@/store/index";
-import { useI18n } from 'vue-i18n'
-const { locale, availableLocales,messages } = useI18n()
+// import { useI18n } from 'vue-i18n'
+// const { locale, availableLocales,messages } = useI18n()
 const store = useStore();
 const { setTheme,setLangs } = store;
 const computedTheme = computed(() => {
@@ -36,25 +35,28 @@ const computedLocale = computed(() => {
 });
 // 切换语言方法
 const changeLanguage = (newLocale) => {
-  console.log(messages.value)
-  locale.value = newLocale
-  setLangs(newLocale)
+  // $changeLang(newLocale)
+  localStorage.setItem('lang', newLocale)
+  window.location.reload()
+  // console.log(messages.value)
+  // locale.value = newLocale
+  // setLangs(newLocale)
 }
 const songs = [
   {
     value: "light",
     label: "明亮",
-    lang: "zh-CN",
+    lang: "zhcn",
   },
   {
     value: "dark",
     label: "黑暗",
-    lang: "en-US",
+    lang: "en",
   },
   {
     value: "overrides1",
     label: "主题",
-    lang: "zh-TW",
+    lang: "ja",
   }
 ];
 </script>

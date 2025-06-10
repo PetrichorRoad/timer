@@ -1,4 +1,5 @@
 import request from "@/utils/request/index";
+import { data } from "autoprefixer";
 
 export const login = (data) => {
   return request({
@@ -28,6 +29,14 @@ export const updateTask = (data) => {
     url: '/timer/task/update',
     method: 'post',
     data
+  })
+}
+
+export const removeTask = (params) => {
+  return request({
+    url: '/timer/task/remove',
+    method: 'get',
+    params
   })
 }
 // /timer/organization/tree
@@ -82,6 +91,13 @@ export const createProject = (data) => {
     data
   })
 }
+export const getRecords = () => {
+  return request({
+    url: '/timer/report/record',
+    method: 'get',
+  })
+}
+
 export default {
-  login, getTaskList, createTask, updateTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, createProject
+  login, getTaskList, createTask, updateTask, removeTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, createProject, getRecords
 }

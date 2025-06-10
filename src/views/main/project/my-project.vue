@@ -21,18 +21,18 @@
       <div class="flex gap-2">
         <n-card title="项目动态" class="flex-1">
           <div class="h-[200px] overflow-y-auto flex flex-col gap-4">
-            <n-timeline v-for="(item, index) in 10" :key="index">
-              <n-timeline-item time="2018-04-03 20:46" type="success">
+            <n-timeline v-for="(item, index) in records" :key="index">
+              <n-timeline-item :time="item.time" type="success">
                 <div class="flex items-center gap-3">
                   <div class="flex items-center gap-1">
                     <n-avatar
                       :size="20"
-                      :src="'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'"
+                      :src="item.avatar"
                     />
-                    <span class="w-[]">朱晓明</span>
+                    <span class="w-[]">{{ item.nickname }}</span>
                   </div>
-                  <span class="w-[]">港交所上市计划项目</span>
-                  <a>更新了提案</a>
+                  <span class="w-[]">{{ item.projectName }}</span>
+                  <a>{{ item.text }}</a>
                 </div>
               </n-timeline-item>
             </n-timeline>
@@ -137,8 +137,10 @@ import { computed, reactive, watch, ref, h, nextTick, onMounted } from "vue";
 import { CashOutline } from "@vicons/ionicons5";
 import { useRouter } from "vue-router";
 import request from "@/api/base";
+import moment from "moment";
 let router = useRouter();
 let projectList = ref([]);
+let records = ref([]);
 const createDropdownOptions = (options) =>
   options.map((option) => ({
     key: option.name,
@@ -157,8 +159,29 @@ const checkDetail = (item) => {
     }
   })
 }
+const getRecords = async () => { 
+  let res = await request.getRecords();
+  records.value = res.data.map(option => {
+    let {newData,oldData} = option
+    console.log(newData,oldData);
+    let text = '';
+    if(!newData){
+      text = `删除了任务`
+    } else if(!oldData){ 
+      text = `创建了任务`
+    } else { 
+      text = `更新了任务`
+    }
+    return {
+      ...option,
+      text,
+      time:moment(option.operatedAt).format('YYYY-MM-DD HH:mm:ss')
+    }
+});
+}
 onMounted(() => {
   getProjectList();
+  getRecords();
 });
 </script>
 

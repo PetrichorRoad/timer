@@ -9,6 +9,11 @@ import Components from 'unplugin-vue-components/vite'
 import viteCompression from "vite-plugin-compression";
 // 图片压缩
 import viteImagemin from "vite-plugin-imagemin";
+import vitePluginsAutoI18n, {
+  YoudaoTranslator,
+  GoogleTranslator,
+  BaiduTranslator
+} from 'vite-auto-i18n-plugin'
 
 import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
 // https://vite.dev/config/
@@ -70,6 +75,21 @@ export default defineConfig({
           },
         ],
       },
+    }),
+    vitePluginsAutoI18n({
+      globalPath: './lang', // 存放翻译文件的目录
+      namespace: 'lang', // 命名空间
+      distPath: './dist/assets',
+      distKey: 'index',
+      targetLangList: ['en', 'ko', 'ja'], // 目标语言列表，英文，韩文，日文
+      originLang: 'zh-cn',
+      // 选择翻译器，有道、谷歌或百度
+      // 有道翻译
+      translator: new YoudaoTranslator({
+        appId: '0176935059d24e38',
+        appKey: 'wVaVfaVEYCHwUGNOIS2YocBNiqD5d9hu'
+      })
+      // 谷歌翻译（需配置代理）
     }),
   ],
   resolve: {

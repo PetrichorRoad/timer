@@ -83,7 +83,6 @@
 <script setup lang="jsx">
 import { computed, reactive, watch, ref, h, nextTick, onMounted } from "vue";
 import { Person, CheckmarkCircle } from '@vicons/ionicons5'
-import { organization, getOrganization } from "@/utils/mock/data";
 import { useDialog } from 'naive-ui'
 import request from "@/api/base";
 let dialog = useDialog()
@@ -244,7 +243,6 @@ const getPositionList = async () => {
 }
 const getOrganizationTree = async () => {
   let { data } = await request.getOrganizationTree({companyId: 1})
-  console.log([data],getOrganization());
   organizationTree.value = [data]
 }
 const search = () => {

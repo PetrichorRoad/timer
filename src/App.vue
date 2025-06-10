@@ -1,10 +1,10 @@
 <script setup>
-// import { useStore } from "@/store/index";
-// const { theme } = useStore();
-// document.documentElement.className = theme;
+import { useStore } from "@/store/index";
+const { theme } = useStore();
+document.documentElement.className = theme;
 
 
-import { onMounted } from "vue";
+// import { onMounted } from "vue";
 // i18nDB.open();
 // i18nDB.save("greeting", {
 //   "zh-CN": "你好",

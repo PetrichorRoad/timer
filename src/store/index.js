@@ -14,7 +14,7 @@ export const useStore = defineStore('storeId', {
     actions: {
         setTheme(theme) {
             this.theme = theme
-            // document.documentElement.className = theme;
+            document.documentElement.className = theme;
         },
         setLangs(lang){
             this.lang = lang

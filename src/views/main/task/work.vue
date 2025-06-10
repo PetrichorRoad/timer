@@ -250,11 +250,10 @@ const taskCount = computed(() => {
 // 任务状态(1:待开始 2:进行中 3:已完成 4:已延期 5:已取消)
 const confirm = async () => { 
   console.log(currentEvent.value);
-  let {id,timeRange} = currentEvent.value
+  let {id,timeRange,projectId} = currentEvent.value
   let [start,end] = timeRange
   let startTime = moment(start).format("YYYY-MM-DD HH:mm:ss")
   let endTime = moment(end).format("YYYY-MM-DD HH:mm:ss")
-  console.log(currentEvent.value);
   if(id){
     let res = await request.updateTask({startTime,endTime,...currentEvent.value})
     getTaskList()
@@ -298,6 +297,7 @@ const getTaskList = async () => {
       end: moment(item.endTime).format("YYYY-MM-DD"),
       resourceId: item.resourceId,
       status: item.status,
+      projectId: item.projectId,
     }
   })
 }
@@ -306,12 +306,12 @@ const handleEventMouseEnter = (info) => {
 };
 const handleDateSelect = (info) => {
   let {start,end} = info
-  currentEvent.value = {title:'',timeRange:[moment(start).valueOf(),moment(end).valueOf()],type:0,ownerId:"",content:"",status:0}
+  currentEvent.value = {title:'',timeRange:[moment(start).valueOf(),moment(end).valueOf()],type:0,ownerId:"",content:"",status:0,projectId:'KFXM2019001'}
   showModal.value = true
 };
 const handleEventClick = (info) => {
-  let {event:{title,start,end,id,extendedProps:{type,ownerId,content,status}}} = info
-  currentEvent.value = {title,timeRange:[moment(start).valueOf(),moment(end).valueOf()],type,ownerId,content,status,attachment:'',id}
+  let {event:{title,start,end,id,extendedProps:{type,ownerId,content,status,projectId}}} = info
+  currentEvent.value = {title,timeRange:[moment(start).valueOf(),moment(end).valueOf()],type,ownerId,content,status,attachment:'',id,projectId}
   showModal.value = true
 };
 const calendarOptions = computed(()=>{
