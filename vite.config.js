@@ -21,8 +21,23 @@ export default defineConfig({
   base: "./",
   plugins: [
     vue(),
-    UnoCSS(),
     vueJsx(),
+    vitePluginsAutoI18n({
+      globalPath: './lang', // 存放翻译文件的目录
+      namespace: 'lang', // 命名空间
+      distPath: './dist/assets',
+      distKey: 'index',
+      targetLangList: ['en', 'ko', 'ja'], // 目标语言列表，英文，韩文，日文
+      originLang: 'zh-cn',
+      // 选择翻译器，有道、谷歌或百度
+      // 有道翻译
+      translator: new YoudaoTranslator({
+        appId: '0176935059d24e38',
+        appKey: 'wVaVfaVEYCHwUGNOIS2YocBNiqD5d9hu'
+      })
+      // 谷歌翻译（需配置代理）
+    }),
+    UnoCSS(),
     visualizer({
       open: true, // 打包后自动打开分析图
       filename: "visualizer.html", // 分析图生成的文件名
@@ -75,21 +90,6 @@ export default defineConfig({
           },
         ],
       },
-    }),
-    vitePluginsAutoI18n({
-      globalPath: './lang', // 存放翻译文件的目录
-      namespace: 'lang', // 命名空间
-      distPath: './dist/assets',
-      distKey: 'index',
-      targetLangList: ['en', 'ko', 'ja'], // 目标语言列表，英文，韩文，日文
-      originLang: 'zh-cn',
-      // 选择翻译器，有道、谷歌或百度
-      // 有道翻译
-      translator: new YoudaoTranslator({
-        appId: '0176935059d24e38',
-        appKey: 'wVaVfaVEYCHwUGNOIS2YocBNiqD5d9hu'
-      })
-      // 谷歌翻译（需配置代理）
     }),
   ],
   resolve: {

@@ -1,9 +1,10 @@
 <script setup>
 import { useStore } from "@/store/index";
 import langJSON from '../lang/index.json';
-// import {i18nDB} from "@/database/index";
+import {i18nDB} from "@/database/index";
 const { theme } = useStore();
 document.documentElement.className = theme;
+console.log(langJSON,Object.keys(langJSON).length);
 // Object.keys(langJSON).forEach(async (lang) => {
 //   await i18nDB.save(lang, langJSON[lang]);
 // });
