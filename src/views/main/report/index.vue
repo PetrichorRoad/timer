@@ -9,7 +9,7 @@
               :key="index"
               class="bg-my-bg-2 p-4 rounded-xl flex flex-col relative"
             >
-              <div class="absolute tag px-2 py-1 bg-my-bg-3 text-[12px]">{{ item.projectId }}</div>
+              <div class="absolute tag px-2 py-1 bg-my-bg-3 text-[12px]" @click="checkDetail(item)">{{ item.projectId }}</div>
               <div
                 class="flex items-center justify-between flex-1 h-[72px] gap-4 box-border"
               >
@@ -55,13 +55,13 @@
                     </div>
                     <div class="flex flex-col">
                       <span>所有任务</span>
-                      <n-avatar-group :options="options" :size="24" :max="5">
-                        <template #avatar="{ option: { name, src } }">
+                      <n-avatar-group :options="item.projectMemberVoList" :size="24" :max="5">
+                        <template #avatar="{ option: { nickname, avatar } }">
                           <n-tooltip>
                             <template #trigger>
-                              <n-avatar :src="src" />
+                              <n-avatar :src="avatar" />
                             </template>
-                            {{ name }}
+                            {{ nickname }}
                           </n-tooltip>
                         </template>
                         <template #rest="{ options: restOptions, rest }">
@@ -109,23 +109,27 @@
             </template>
           </div>
         </n-card>
-        <n-card title="最新公告" class="w-[500px]">
+        <n-card title="最新公告" class="w-[500px] overflow-hidden">
           <div
-            class="bg-my-bg-2 h-[300px] p-1 gap-4 flex flex-col justify-between"
+            class="bg-my-bg-2 h-[300px] w-full p-1 gap-4 flex flex-col justify-between overflow-auto"
           >
             <div
-              class="flex gap-4 flex-1"
-              v-for="(item, index) in 3"
+              class="flex gap-4 flex-1 w-full"
+              @click="openSysNotice(item)"
+              v-for="(item, index) in sysNoticeList"
               :key="index"
             >
               <div class="tips bg-[#bb2649]"></div>
-              <div class="flex flex-col gap-2">
-                <div>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  omnis hic architecto temporibus!
+              <div class="flex flex-col gap-2 w-full">
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex items-center justify-between">
+                    <span>{{ item.title }}</span>
+                    <span class="title"></span>
+                  </div>
+                  <div class="max-h-[40px] two-line-ellipsis">{{ item.content }}</div>
                 </div>
                 <div>
-                  <span>今天 | 下午 5：00</span>
+                  <span>{{ item.formatTime }} | 下午 5：00</span>
                 </div>
               </div>
             </div>
@@ -137,45 +141,46 @@
 </template>
 
 <script setup lang="jsx">
-import { getProjects } from "@/api/base";
+import { getAllProjectLists,getSysNotice } from "@/api/base";
 import { computed, reactive, watch, ref, h, nextTick, onMounted } from "vue";
 import { CashOutline } from '@vicons/ionicons5'
-let options = ref([
-  {
-    name: '张三',
-    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
-  },
-  {
-    name: '李四',
-    src: 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'
-  },
-  {
-    name: '王五',
-    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
-  },
-  {
-    name: '赵六',
-    src: 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'
-  },
-  {
-    name: '七仔',
-    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
-  },
-  {
-    name: '赵六',
-    src: 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'
-  },
-  {
-    name: '七仔',
-    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
-  }
-])
-let projectList = ref([]);
+import { useRouter } from "vue-router";
+import { formatTimeAgo } from "@/utils/lib/utils";
+let router = useRouter();
 
+let projectList = ref([]);
+let sysNoticeList = ref([]);
 const getProjectListData = async () => {
-  const res = await getProjects({companyId:1});
+  const res = await getAllProjectLists({companyId:1});
   projectList.value = res.data;
 };
+const openSysNotice = (item) => { 
+  router.push({
+    name: "workbench",
+    query: {
+        page:"publishNotice",
+        ...item
+      },
+  });
+};
+const getSysNoticeData = async () => {
+  const res = await getSysNotice({});
+  sysNoticeList.value = res.data.map((item)=>{
+    return{
+      ...item,
+      formatTime: formatTimeAgo(item.publishTime)
+    }
+  });
+  console.log(res.data);
+};
+const checkDetail = (item) => {
+  router.push({
+    name: 'project-detail',
+    query: {
+      ...item
+    }
+  })
+}
 const createDropdownOptions = (options) =>
   options.map(option => ({
     key: option.name,
@@ -183,10 +188,38 @@ const createDropdownOptions = (options) =>
 }))
 onMounted(() => {
   getProjectListData();
+  getSysNoticeData();
 });
 </script>
 
 <style lang="less" scoped>
+.two-line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  max-height: 3em;
+  
+  /* 备用方案 */
+  @supports not (-webkit-line-clamp: 2) {
+    position: relative;
+    padding-right: 1em;
+    &::after {
+      content: '...';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: white; /* 背景色需匹配父元素 */
+    }
+  }
+}
+.title{
+  background: url('@/assets/images/common/new.png') no-repeat center center / contain;
+  width: 30px;
+  height: 30px;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

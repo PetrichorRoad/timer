@@ -47,6 +47,8 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import request from "@/api/base";
+import user from "@/api/modules/user";
+import {saveUserInfo,saveUserSetting} from "@/utils/auth";
 let router = useRouter();
 let scene = ref(true);
 let register = ref({
@@ -64,7 +66,25 @@ const loginSubmit = async () => {
   let { data:{ token } } = res
   localStorage.setItem("token", token);
   localStorage.setItem("userInfo", JSON.stringify(res.data));
+  
+  await loginTimerIM();
   router.push("/");
+};
+const loginTimerIM = async () => {
+  let params = {
+    mobile: "13800000001",
+    password:
+      "nkBP8uHbojzOOGzg6u8V2ouimKtUnZXwUYqHthob07RgKjG8hCW+4eH4+RJtW3i2yLxrbdPYX+P4RlKfSFWBwBHLwzxsZGQrbc3gjQAPZIy8LBJRo0caiOcy9GGxfycjieZg2O9C9P8I60fmZrLQPMfWcL0GetjtAmwUeFOtD+wSIKnN895tbPFzognR+a/FpwQvQiG0O6uR1P6Er2EbZ5Li7j0cUg2L/11AWqNZ62iEW/3KAFE9wqgu+uYAwE2FHQ0wt5YeFecog013yLOfE5/2VQSxPmrWJpcakjJ8BeSBadwXRdRQhFbP+OMONhi8a80wuXzWvrfPc520Yn/aEg==",
+    platform: "web",
+  };
+  const {code,data} = await user.login(params);
+  if(code === 200){
+    let {access_token} = data;
+    let expire = 60 * 60 * 24;
+    saveUserInfo({expire:new Date().getTime() + expire * 1000,value:access_token});
+    let res = await user.getUserInfo({});
+    saveUserSetting({expire:new Date().getTime() + expire * 1000,value:res.data});
+  }
 };
 const trigger = () => {
   scene.value = !scene.value;

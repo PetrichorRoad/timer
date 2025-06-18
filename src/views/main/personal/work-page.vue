@@ -6,9 +6,10 @@
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import myInfo from "./page/my-info.vue";
+import publishNotice from "./page/publish-notice.vue";
 let route = useRoute();
 let componentMap = {
-  myInfo,
+  myInfo,publishNotice
 };
 const component = computed(() => {
   return componentMap[route.query.page];

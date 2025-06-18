@@ -70,6 +70,13 @@ export const getProjectList = (params) => {
     params
   })
 }
+export const getAllProjectLists = (params) => {
+  return request({
+    url: '/timer/project/list',
+    method: 'post',
+    params
+  })
+}
 export const getProjects = (params) => {
   return request({
     url: '/timer/project/list',
@@ -97,7 +104,20 @@ export const getRecords = () => {
     method: 'get',
   })
 }
-
+export const getSysNotice = (params) => {
+  return request({
+    url: '/timer/sysNotice/list',
+    method: 'get',
+    params
+  })
+}
+export const saveOrUpdateNotice = (data) => {
+  return request({
+    url: '/timer/sysNotice/saveOrUpdateNotice',
+    method: 'post',
+    data
+  })
+}
 export default {
-  login, getTaskList, createTask, updateTask, removeTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, createProject, getRecords
+  login, getTaskList, createTask, updateTask, removeTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, saveOrUpdateNotice, createProject, getRecords
 }

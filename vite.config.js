@@ -117,11 +117,17 @@ export default defineConfig({
         target: 'ws://127.0.0.1:8080',
         ws: true,
       },
+      
+      '/api': { // 代理前缀（可自定义）
+        target: 'https://imapi.gzydong.com', // 后端地址
+        changeOrigin: true, // 启用跨域
+        // rewrite: (path) => path.replace(/^\/api/, '') // 移除路径中的 /api
+      },
       '/weather': { // 代理前缀（可自定义）
         target: 'https://restapi.amap.com/v3', // 后端地址
         changeOrigin: true, // 启用跨域
         // rewrite: (path) => path.replace(/^\/api/, '') // 移除路径中的 /api
-      }
+      },
     }
   },
   build: {

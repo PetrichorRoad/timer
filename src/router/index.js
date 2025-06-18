@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import { BookOutline, PersonOutline, WineOutline } from "@vicons/ionicons5";
 import { getToken } from "@/utils/lib";
 import { menuListByOther } from "@/utils/lib/menu";
+
 export const routes = [
   {
     path: "/",
@@ -142,6 +143,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.Auth && !login) {
     next('/login'); // 重定向到登录页面
   } else {
+
     next(); // 继续导航
   }
 });

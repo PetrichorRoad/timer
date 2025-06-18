@@ -1,0 +1,3596 @@
+{
+	"koca2": {
+		"zh-cn": "登录",
+		"en": "Log in",
+		"ko": "로그인",
+		"ja": "登録します"
+	},
+	"amo6mt4": {
+		"zh-cn": "六合萧条",
+		"en": "The depression in Liuhe",
+		"ko": "육합이 쇠퇴하다",
+		"ja": "六合不況です"
+	},
+	"qylb2": {
+		"zh-cn": "首页",
+		"en": "Home Page",
+		"ko": "첫 페이지",
+		"ja": "トップページです"
+	},
+	"a8yz6o4": {
+		"zh-cn": "万径踪灭",
+		"en": "All paths have vanished",
+		"ko": "길마다 종적이 끊어지다",
+		"ja": "永久に消滅します"
+	},
+	"dqpk2": {
+		"zh-cn": "主体",
+		"en": "Subject",
+		"ko": "주체",
+		"ja": "本体です"
+	},
+	"f6y6dw4": {
+		"zh-cn": "用户管理",
+		"en": "User Management",
+		"ko": "사용자 관리",
+		"ja": "ユーザー管理です"
+	},
+	"dnhnle4": {
+		"zh-cn": "权限管理",
+		"en": "Permission management",
+		"ko": "권한 관리",
+		"ja": "権限管理です"
+	},
+	"d7qb824": {
+		"zh-cn": "数据看板",
+		"en": "Data Board",
+		"ko": "데이터 보드",
+		"ja": "データかんばんです"
+	},
+	"e529l3": {
+		"zh-cn": "工作台",
+		"en": "Workbench",
+		"ko": "작업대",
+		"ja": "作業台です"
+	},
+	"fjfzc3": {
+		"zh-cn": "望天湖",
+		"en": "Wangtian Lake",
+		"ko": "왕톈후",
+		"ja": "天望湖です"
+	},
+	"gzj3um4": {
+		"zh-cn": "菜单管理",
+		"en": "Menu Management",
+		"ko": "메뉴 관리",
+		"ja": "メニュー管理です"
+	},
+	"gemv2": {
+		"zh-cn": "工作",
+		"en": "Work",
+		"ko": "사업",
+		"ja": "仕事です"
+	},
+	"ab65674": {
+		"zh-cn": "任务安排",
+		"en": "Task arrangement",
+		"ko": "작업 배정",
+		"ja": "任務の手配です。"
+	},
+	"bcycp44": {
+		"zh-cn": "回忆斑斑",
+		"en": "Memories abound.",
+		"ko": "추억이 얼룩지다",
+		"ja": "思い出斑です"
+	},
+	"amjzw84": {
+		"zh-cn": "公司热点",
+		"en": "Company Hotspots",
+		"ko": "회사 인기",
+		"ja": "企業ホットスポットです"
+	},
+	"jqcb164": {
+		"zh-cn": "项目管理",
+		"en": "Project Management",
+		"ko": "프로젝트 관리",
+		"ja": "プロジェクトマネジメントです"
+	},
+	"cvdobs4": {
+		"zh-cn": "我的项目",
+		"en": "My project",
+		"ko": "제 프로젝트는",
+		"ja": "私のプロジェクトです"
+	},
+	"jqeyus4": {
+		"zh-cn": "项目详情",
+		"en": "Project Details",
+		"ko": "항목 정보",
+		"ja": "プロジェクトの詳細です"
+	},
+	"argjkk4": {
+		"zh-cn": "创建项目",
+		"en": "Create a project",
+		"ko": "프로젝트 만들기",
+		"ja": "プロジェクトを立ち上げます"
+	},
+	"a6ttl24": {
+		"zh-cn": "个人中心",
+		"en": "Personal Center",
+		"ko": "개인 센터",
+		"ja": "個人センターです"
+	},
+	"hubg2": {
+		"zh-cn": "文档",
+		"en": "Document",
+		"ko": "문서",
+		"ja": "ドキュメント"
+	},
+	"4x9k3o8": {
+		"zh-cn": "Vchart文档",
+		"en": "Vchart document",
+		"ko": "vchart 파일",
+		"ja": "Vchartドキュメントです"
+	},
+	"smw62o6": {
+		"zh-cn": "Vite文档",
+		"en": "Vite documentation",
+		"ko": "vite 문서",
+		"ja": "Viteドキュメントです"
+	},
+	"2z4q9h9": {
+		"zh-cn": "NaiveUI文档",
+		"en": "NaiveUI documentation",
+		"ko": "naiveui 문서",
+		"ja": "NaiveUIドキュメントです"
+	},
+	"dd054v4": {
+		"zh-cn": "日程待办",
+		"en": "Schedule to be done",
+		"ko": "일정 업무",
+		"ja": "日程待ちです"
+	},
+	"osqi6ya7": {
+		"zh-cn": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-4ca33632><input type=\"text\" placeholder=\"昵称\" data-v-4ca33632><input type=\"text\" placeholder=\"邮箱\" data-v-4ca33632><input type=\"password\" placeholder=\"请输入密码\" data-v-4ca33632><input type=\"password\" placeholder=\"请确认密码\" data-v-4ca33632></div><button data-v-4ca33632>注册</button>",
+		"en": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-4ca33632><input type=\"text\" placeholder=\" Nickname \"data-v-4ca33632><input type=\"text\" placeholder=\" Email\" data-v-4ca33632><input type=\"password\" placeholder=\" Please enter the password\" data-v-4ca33632><input type=\"password\" placeholder=\" Please confirm the password\" data-v-4ca33632></div><button data-v-4ca33632> Register </button>",
+		"ko": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex data-col items-center\"data-v-4ca33632><inputtype=\"text\"placeholder=\"data-v-4ca33632\"<input type=\"text\"placeholder=\"메일박스\"data-v-4ca33632><input type=\"password\"placeholder=\"비밀번호를 입력해주세요\"data-v-4ca33632><input type=\"password\"placeholder=\"비밀번호를 확인해주세요\"data-v-4ca33632></div><buttondata-v-4ca33632> 등록 </button>",
+		"ja": "<h1 data-v-4ca33632>register</h1><div class=\"w-full h-[46%] flex flex-col item-center \" data-v-4ca33632><input >type=\"text\" placeholder=\"ニックネーム\" data-v-4ca33632><input type=\"text\" placeholder=\"メールボックス\" data-v-4ca33632><input type=\"password\"placeholder=\"パスワードをご入力ください\" data-v-4ca33632><input type=\"password\" placeholder=\"パスワードをご確認ください\" data-v-4ca33632></div><button >data-v-4ca33632>登録します</button>"
+	},
+	"padf2": {
+		"zh-cn": "邮箱",
+		"en": "Email address",
+		"ko": "메일 박스",
+		"ja": "メールボックスです"
+	},
+	"g9ob2": {
+		"zh-cn": "密码",
+		"en": "Password",
+		"ko": "암호",
+		"ja": "パスワードです"
+	},
+	"e40otn4": {
+		"zh-cn": "欢迎来的",
+		"en": "Welcome!",
+		"ko": "어서 오세요",
+		"ja": "ようこそいらっしゃいました"
+	},
+	"aw383c4": {
+		"zh-cn": "前端世界",
+		"en": "Front-end world",
+		"ko": "프론트엔드 세계",
+		"ja": "フロントエンドの世界です"
+	},
+	"eip3o3": {
+		"zh-cn": "快快滴",
+		"en": "Hurry up!",
+		"ko": "빠른방울",
+		"ja": "早くします"
+	},
+	"ca49z24": {
+		"zh-cn": "已有帐号",
+		"en": "Existing account",
+		"ko": "계정 있음",
+		"ja": "既に口座番号があります"
+	},
+	"cu6np3": {
+		"zh-cn": "去登录",
+		"en": "Log in",
+		"ko": "로그인하기",
+		"ja": "登録します"
+	},
+	"e4shnz4": {
+		"zh-cn": "没有帐号",
+		"en": "No account",
+		"ko": "계정 없음",
+		"ja": "口座番号がありません。"
+	},
+	"cshb33": {
+		"zh-cn": "去注册",
+		"en": "Register",
+		"ko": "등록하러 가다",
+		"ja": "登録します"
+	},
+	"py2u01a7": {
+		"zh-cn": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-a9fada1c><input type=\"text\" placeholder=\"昵称\" data-v-a9fada1c><input type=\"text\" placeholder=\"邮箱\" data-v-a9fada1c><input type=\"password\" placeholder=\"请输入密码\" data-v-a9fada1c><input type=\"password\" placeholder=\"请确认密码\" data-v-a9fada1c></div><button data-v-a9fada1c>注册</button>",
+		"en": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\" data-v-a9fada1c><input type=\"text\" placeholder=\" Nickname \"data-v-a9fada1c><input type=\"text\" placeholder=\" Email\" data-v-a9fada1c><input type=\"password\" placeholder=\" Please enter the password\" data-v-a9fada1c><input type=\"password\" placeholder=\" Please confirm the password\" data-v-a9fada1c></div><button data-v-a9fada1c> Register </button>",
+		"ko": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col items-center\"data-v-a9fada1c><inputtype=\"text\"placeholder=\"data-v-a9fada1c\"<input type=\"text\"placeholder=\"메일박스\"data-v-a9fada1c\"<input type=\"password\"placeholder=\"비밀번호를 입력해주세요\"data-v-a9fada1c><input type=\"password\"placeholder=\"비밀번호를 확인해주세요\"data-v-a9fada1c></div><buttondata-v-a9fada1c> 등록 </button>",
+		"ja": "<h1 data-v-a9fada1c>register</h1><div class=\"w-full h-[46%] flex flex-col item-center \" data-v-a9fada1c><input >type=\"text\" placeholder=\"ニックネーム\" data-v-a9fada1c><input type=\"text\" placeholder=\"メールボックス\" data-v-a9fada1c><input type=\"password\"placeholder=\"パスワードをご入力ください\" data-v-a9fada1c><input type=\"password\" placeholder=\"パスワードをご確認ください\" data-v-a9fada1c></div><button >data-v-a9fada1c>登録します</button>"
+	},
+	"fgkxx3": {
+		"zh-cn": "星期日",
+		"en": "Sunday",
+		"ko": "일요일",
+		"ja": "日曜日です"
+	},
+	"fgg803": {
+		"zh-cn": "星期一",
+		"en": "Monday",
+		"ko": "월요일",
+		"ja": "月曜日です"
+	},
+	"fggbw3": {
+		"zh-cn": "星期二",
+		"en": "Tuesday",
+		"ko": "화요일",
+		"ja": "火曜日です"
+	},
+	"fgg893": {
+		"zh-cn": "星期三",
+		"en": "Wednesday",
+		"ko": "수요일",
+		"ja": "水曜日です"
+	},
+	"fghyz3": {
+		"zh-cn": "星期四",
+		"en": "Thursday",
+		"ko": "목요일",
+		"ja": "木曜日です"
+	},
+	"fggc43": {
+		"zh-cn": "星期五",
+		"en": "Friday",
+		"ko": "금요일",
+		"ja": "金曜日です"
+	},
+	"fggwd3": {
+		"zh-cn": "星期六",
+		"en": "Saturday",
+		"ko": "토요일",
+		"ja": "土曜日です"
+	},
+	"fljd2": {
+		"zh-cn": "复制",
+		"en": "Copy",
+		"ko": "복사",
+		"ja": "複製します"
+	},
+	"eslg2": {
+		"zh-cn": "删除",
+		"en": "Delete",
+		"ko": "삭제",
+		"ja": "削除します"
+	},
+	"l76hs3": {
+		"zh-cn": "访问量",
+		"en": "Visit volume",
+		"ko": "방문객 수",
+		"ja": "アクセス量です"
+	},
+	"ea3j2v4": {
+		"zh-cn": "温度 ：",
+		"en": "Temperature",
+		"ko": "온도:",
+		"ja": "温度です"
+	},
+	"jlyssn4": {
+		"zh-cn": "风力 ：",
+		"en": "Wind force",
+		"ko": "바람 크기:",
+		"ja": "風力です"
+	},
+	"jm6i4d4": {
+		"zh-cn": "风向 ：",
+		"en": "Wind direction:",
+		"ko": "풍향:",
+		"ja": "風向きです。"
+	},
+	"mekb2": {
+		"zh-cn": "编辑",
+		"en": "Editor",
+		"ko": "편집",
+		"ja": "編集します"
+	},
+	"eb7w2": {
+		"zh-cn": "停用",
+		"en": "Stop using",
+		"ko": "정지",
+		"ja": "停止します"
+	},
+	"o6902": {
+		"zh-cn": "警告",
+		"en": "Warning",
+		"ko": "경고",
+		"ja": "警告します"
+	},
+	"aiitlf4": {
+		"zh-cn": "你确定？",
+		"en": "Are you sure?",
+		"ko": "확실해요?",
+		"ja": "確かですか?"
+	},
+	"kzjg2": {
+		"zh-cn": "确定",
+		"en": "\"Sure\"",
+		"ko": "확정",
+		"ja": "確定です"
+	},
+	"c0jp53": {
+		"zh-cn": "不确定",
+		"en": "Uncertain",
+		"ko": "불확정성",
+		"ja": "確かではありません"
+	},
+	"r1732": {
+		"zh-cn": "高级",
+		"en": "Advanced",
+		"ko": "고급",
+		"ja": "高級です"
+	},
+	"dzq22": {
+		"zh-cn": "中级",
+		"en": "Intermediate",
+		"ko": "중급",
+		"ja": "中級です"
+	},
+	"enu22": {
+		"zh-cn": "初级",
+		"en": "Beginner",
+		"ko": "초급",
+		"ja": "初級です"
+	},
+	"fm6z2": {
+		"zh-cn": "头像",
+		"en": "Profile picture",
+		"ko": "얼굴을",
+		"ja": "アイコン"
+	},
+	"i1y32": {
+		"zh-cn": "昵称",
+		"en": "Nickname",
+		"ko": "닉네임",
+		"ja": "ニックネームです"
+	},
+	"m9a92": {
+		"zh-cn": "职位",
+		"en": "Position",
+		"ko": "직위",
+		"ja": "ポジションです"
+	},
+	"fd3d4i4": {
+		"zh-cn": "电话号码",
+		"en": "Telephone number",
+		"ko": "전화 번호",
+		"ja": "電話番号です"
+	},
+	"f6wjtm4": {
+		"zh-cn": "用户状态",
+		"en": "User status",
+		"ko": "사용자 상태",
+		"ja": "ユーザーステータス"
+	},
+	"hkxb2": {
+		"zh-cn": "操作",
+		"en": "Operation",
+		"ko": "조작",
+		"ja": "操作します"
+	},
+	"gflc664": {
+		"zh-cn": "绩效标杆",
+		"en": "Performance benchmark",
+		"ko": "실적 기준",
+		"ja": "業績基準です"
+	},
+	"hpqe2": {
+		"zh-cn": "搜索",
+		"en": "Search",
+		"ko": "검색",
+		"ja": "検索します"
+	},
+	"igc7pp4": {
+		"zh-cn": "输入昵称",
+		"en": "Enter the nickname",
+		"ko": "닉네임 입력",
+		"ja": "ニックネームを入力します。"
+	},
+	"pgxs2": {
+		"zh-cn": "部门",
+		"en": "Department",
+		"ko": "부문",
+		"ja": "部署です"
+	},
+	"ig9wek4": {
+		"zh-cn": "输入姓名",
+		"en": "Enter the name",
+		"ko": "이름 입력",
+		"ja": "名前を入力します"
+	},
+	"phz52": {
+		"zh-cn": "重置",
+		"en": "Reset",
+		"ko": "초기화",
+		"ja": "リセットします"
+	},
+	"f6r81s4": {
+		"zh-cn": "用户列表",
+		"en": "User list",
+		"ko": "사용자 목록",
+		"ja": "ユーザーリストです"
+	},
+	"f6qmm54": {
+		"zh-cn": "用户信息",
+		"en": "User information",
+		"ko": "사용자 정보",
+		"ja": "ユーザー情報です"
+	},
+	"ev022": {
+		"zh-cn": "取消",
+		"en": "Cancel",
+		"ko": "취소",
+		"ja": "取り消します"
+	},
+	"kpc82": {
+		"zh-cn": "电话",
+		"en": "Telephone",
+		"ko": "전화",
+		"ja": "電話です"
+	},
+	"cv3tgn4": {
+		"zh-cn": "我的应用",
+		"en": "My application",
+		"ko": "내 앱",
+		"ja": "私の応用です"
+	},
+	"7plf716": {
+		"zh-cn": "你一共处理了",
+		"en": "You've dealt with it all",
+		"ko": "모두 처리하세요",
+		"ja": "あなたは全部処理しました"
+	},
+	"dkmr9m4": {
+		"zh-cn": "条群消息",
+		"en": "A group message",
+		"ko": "단편적 메시지",
+		"ja": "グループメッセージです。"
+	},
+	"gqx52": {
+		"zh-cn": "已读",
+		"en": "Read",
+		"ko": "읽은",
+		"ja": "既読です"
+	},
+	"ecpz2": {
+		"zh-cn": "全屏",
+		"en": "Full screen",
+		"ko": "전체 화면",
+		"ja": "全画面です"
+	},
+	"gzj3ft4": {
+		"zh-cn": "菜单类型",
+		"en": "Menu type",
+		"ko": "메뉴 종류",
+		"ja": "メニュータイプです。"
+	},
+	"mvw92": {
+		"zh-cn": "菜单",
+		"en": "Menu",
+		"ko": "메뉴",
+		"ja": "メニューです"
+	},
+	"kr3b2": {
+		"zh-cn": "目录",
+		"en": "Table of Contents",
+		"ko": "목록",
+		"ja": "目次"
+	},
+	"fd8p2": {
+		"zh-cn": "图标",
+		"en": "Icon",
+		"ko": "아이콘",
+		"ja": "アイコンです"
+	},
+	"gzcenw4": {
+		"zh-cn": "菜单名称",
+		"en": "Menu name",
+		"ko": "메뉴 이름",
+		"ja": "メニュー名です"
+	},
+	"ie1p9h4": {
+		"zh-cn": "路由名称",
+		"en": "Route name",
+		"ko": "라우팅 이름",
+		"ja": "ルート名です"
+	},
+	"iebehj4": {
+		"zh-cn": "路由路径",
+		"en": "Routing path",
+		"ko": "라우팅 경로",
+		"ja": "経路を指定します"
+	},
+	"en9ick5": {
+		"zh-cn": "添加子菜单",
+		"en": "Add submenus",
+		"ko": "하위 메뉴 추가",
+		"ja": "サブメニューを追加します。"
+	},
+	"gzc5ii4": {
+		"zh-cn": "菜单列表",
+		"en": "Menu list",
+		"ko": "메뉴 목록",
+		"ja": "メニューリストです"
+	},
+	"i820g84": {
+		"zh-cn": "超大卡片",
+		"en": "Super large card",
+		"ko": "슈퍼 카드",
+		"ja": "でかいカード"
+	},
+	"dvye2": {
+		"zh-cn": "任务",
+		"en": "Task",
+		"ko": "임무",
+		"ja": "任務です"
+	},
+	"e7ys2": {
+		"zh-cn": "会议",
+		"en": "Meeting",
+		"ko": "회의",
+		"ja": "会議です"
+	},
+	"mgsd2": {
+		"zh-cn": "缺陷",
+		"en": "Defect",
+		"ko": "결함",
+		"ja": "欠陥です"
+	},
+	"e93e93": {
+		"zh-cn": "带开始",
+		"en": "Start!",
+		"ko": "시작하다",
+		"ja": "バンドが始まります"
+	},
+	"lq5q43": {
+		"zh-cn": "进行中",
+		"en": "In progress",
+		"ko": "진행 중",
+		"ja": "進行中です"
+	},
+	"e7hbq3": {
+		"zh-cn": "已完成",
+		"en": "Completed",
+		"ko": "완료",
+		"ja": "完成しました"
+	},
+	"e838b3": {
+		"zh-cn": "已延期",
+		"en": "Postponed",
+		"ko": "이미 연기하였다",
+		"ja": "延期になりました"
+	},
+	"e61qk3": {
+		"zh-cn": "已关闭",
+		"en": "Closed",
+		"ko": "닫힘",
+		"ja": "閉鎖されました"
+	},
+	"egbo03": {
+		"zh-cn": "待开始",
+		"en": "Wait to start",
+		"ko": "시작 대기",
+		"ja": "これからです"
+	},
+	"e68dg3": {
+		"zh-cn": "已取消",
+		"en": "Cancelled",
+		"ko": "취소됨",
+		"ja": "キャンセルしました"
+	},
+	"d7n0td4": {
+		"zh-cn": "数据报表",
+		"en": "Data report",
+		"ko": "데이터 보고서",
+		"ja": "データレポートです。"
+	},
+	"lrta2": {
+		"zh-cn": "筛选",
+		"en": "Screening",
+		"ko": "압축",
+		"ja": "選別します"
+	},
+	"ql5h2": {
+		"zh-cn": "项目",
+		"en": "Project",
+		"ko": "프로젝트",
+		"ja": "プロジェクトです"
+	},
+	"k1e32": {
+		"zh-cn": "状态",
+		"en": "Status",
+		"ko": "상태",
+		"ja": "状態です"
+	},
+	"l22rm3": {
+		"zh-cn": "责任人",
+		"en": "Responsible person",
+		"ko": "책임자",
+		"ja": "責任者です"
+	},
+	"ab8k534": {
+		"zh-cn": "任务标题",
+		"en": "Task Title",
+		"ko": "작업 제목",
+		"ja": "ミッションタイトルです"
+	},
+	"ab86ys4": {
+		"zh-cn": "任务时间",
+		"en": "Task time",
+		"ko": "작업 시간",
+		"ja": "任務時間です"
+	},
+	"tnwvfc6": {
+		"zh-cn": "选择日期时间",
+		"en": "Select the date and time",
+		"ko": "날짜, 시간을 선택하다",
+		"ja": "日時を選びます。"
+	},
+	"ab4eai4": {
+		"zh-cn": "任务内容",
+		"en": "Task content",
+		"ko": "작업 내용",
+		"ja": "任務内容です"
+	},
+	"eqym605": {
+		"zh-cn": "删除了任务",
+		"en": "Deleted the task",
+		"ko": "작업 삭제",
+		"ja": "タスクを削除しました。"
+	},
+	"ltbp1v5": {
+		"zh-cn": "创建了任务",
+		"en": "Created the task",
+		"ko": "작업 생성",
+		"ja": "ミッションを作成しました"
+	},
+	"ahgss05": {
+		"zh-cn": "更新了任务",
+		"en": "Updated the task",
+		"ko": "작업 업데이트됨",
+		"ja": "タスクを更新しました。"
+	},
+	"li85qk6": {
+		"zh-cn": "即将结束项目",
+		"en": "The project is about to end.",
+		"ko": "프로젝트가 끝나가다",
+		"ja": "まもなくプロジェクト終了です"
+	},
+	"jq586m4": {
+		"zh-cn": "项目动态",
+		"en": "Project Dynamics",
+		"ko": "프로젝트 동향",
+		"ja": "プロジェクトの動きです"
+	},
+	"iki6mh4": {
+		"zh-cn": "近期代办",
+		"en": "Recent agency services",
+		"ko": "근일 대행 공사",
+		"ja": "近いうちに代行します"
+	},
+	"cueobq4": {
+		"zh-cn": "承担部门",
+		"en": "Undertaking department",
+		"ko": "담당 부서",
+		"ja": "担当部署です"
+	},
+	"jso34na": {
+		"zh-cn": "研发中心/基础研发部",
+		"en": "R&d Center/Basic R&D Department",
+		"ko": "연구 개발 센터",
+		"ja": "開発センター/基礎開発部です"
+	},
+	"lckeu3": {
+		"zh-cn": "负责人",
+		"en": "Person in charge",
+		"ko": "책임자",
+		"ja": "責任者です"
+	},
+	"jq8fv74": {
+		"zh-cn": "项目数据",
+		"en": "Project data",
+		"ko": "프로젝트 데이터",
+		"ja": "プロジェクトデータです"
+	},
+	"ctlcwf4": {
+		"zh-cn": "所有任务",
+		"en": "All tasks",
+		"ko": "모든 작업",
+		"ja": "すべての任務"
+	},
+	"idvsdd4": {
+		"zh-cn": "负责团队",
+		"en": "Be responsible for the team",
+		"ko": "팀을 책임지다",
+		"ja": "チームを担当します"
+	},
+	"49d43i6": {
+		"zh-cn": "项目状态统计",
+		"en": "Project status statistics",
+		"ko": "항목 상태 통계",
+		"ja": "プロジェクトステータス統計です"
+	},
+	"328s0p6": {
+		"zh-cn": "项目类型统计",
+		"en": "Project type statistics",
+		"ko": "항목 종류 통계",
+		"ja": "項目種別統計"
+	},
+	"jq4r9f4": {
+		"zh-cn": "项目信息",
+		"en": "Project Information",
+		"ko": "프로젝트 정보",
+		"ja": "プロジェクト情報です"
+	},
+	"abboy34": {
+		"zh-cn": "任务管理",
+		"en": "Task Management",
+		"ko": "작업 관리",
+		"ja": "タスク管理です"
+	},
+	"aygs5l4": {
+		"zh-cn": "合同管理",
+		"en": "Contract Management",
+		"ko": "계약 관리",
+		"ja": "契約管理です"
+	},
+	"f4s8d5a": {
+		"zh-cn": "新版PMS研发与应用",
+		"en": "Research and Application of the New Version of PMS",
+		"ko": "새로운 pms 개발 및 적용",
+		"ja": "PMSの開発と応用の新版です"
+	},
+	"cj49bw4": {
+		"zh-cn": "形目类型",
+		"en": "Order type",
+		"ko": "카테고리 유형",
+		"ja": "目型です"
+	},
+	"ih5oei8": {
+		"zh-cn": "软件开发现场交付",
+		"en": "On-site delivery of software development",
+		"ko": "소프트웨어 개발 라이브 배급",
+		"ja": "ソフトウェア開発現場での引き渡しです"
+	},
+	"ei7p9v8": {
+		"zh-cn": "智能仓储系统开发",
+		"en": "Development of intelligent warehousing systems",
+		"ko": "지능형 창고 시스템 개발",
+		"ja": "スマート倉庫システムの開発です"
+	},
+	"ifayk84": {
+		"zh-cn": "软件开发",
+		"en": "Software development",
+		"ko": "소프트웨어 개발",
+		"ja": "ソフトウェア開発です"
+	},
+	"jhw5xo4": {
+		"zh-cn": "需求分析",
+		"en": "Demand analysis",
+		"ko": "수요분석",
+		"ja": "ニーズ分析です"
+	},
+	"40l1yp6": {
+		"zh-cn": "未来物流集团",
+		"en": "Future Logistics Group",
+		"ko": "웨이라이물류그룹",
+		"ja": "未来物流グループです"
+	},
+	"ffx1": {
+		"zh-cn": "中",
+		"en": "In the",
+		"ko": "가운데",
+		"ja": "中です"
+	},
+	"rpgriz5": {
+		"zh-cn": "技术交付部",
+		"en": "Technology Delivery Department",
+		"ko": "기술 인도부",
+		"ja": "技術納入部です"
+	},
+	"eem1i3": {
+		"zh-cn": "张总监",
+		"en": "Director Zhang",
+		"ko": "장 총감독",
+		"ja": "張総監です"
+	},
+	"fiphw3": {
+		"zh-cn": "李主管",
+		"en": "Manager Li",
+		"ko": "이 주관장",
+		"ja": "李主幹です"
+	},
+	"eyzamv4": {
+		"zh-cn": "王工程师",
+		"en": "Engineer Wang",
+		"ko": "왕기사",
+		"ja": "王技師です"
+	},
+	"fhw10z4": {
+		"zh-cn": "研发中心",
+		"en": "Research and Development Center",
+		"ko": "연구개발센터",
+		"ja": "研究開発センターです"
+	},
+	"gy1yrbp": {
+		"zh-cn": "开发智能仓储管理系统，实现自动化库存调度与AI预测",
+		"en": "Develop an intelligent warehouse management system to achieve automated inventory scheduling and AI prediction",
+		"ko": "지능창고관리시스템을 개발하여 자동화된 재고관리와 ai 예측을 실현한다",
+		"ja": "在庫の自動化とAI予測を可能にするスマート倉庫管理システムを開発しました"
+	},
+	"eds3c3": {
+		"zh-cn": "已结项",
+		"en": "Completed project",
+		"ko": "기결산",
+		"ja": "契約済みです"
+	},
+	"femab3": {
+		"zh-cn": "暂停中",
+		"en": "On pause",
+		"ko": "일시 정지 중",
+		"ja": "一時停止中です"
+	},
+	"ul41": {
+		"zh-cn": "高",
+		"en": "high",
+		"ko": "높은",
+		"ja": "高いです"
+	},
+	"fny1": {
+		"zh-cn": "低",
+		"en": "low",
+		"ko": "낮",
+		"ja": "低いです"
+	},
+	"j4lypm8": {
+		"zh-cn": "项目编号不能为空",
+		"en": "The project number cannot be empty",
+		"ko": "아이템 번호는 비어 있으면 안 됩니다",
+		"ja": "プロジェクト番号は空ではいけません。"
+	},
+	"rb3ppk8": {
+		"zh-cn": "项目名称不能为空",
+		"en": "The project name cannot be empty",
+		"ko": "항목 이름은 비어 있을 수 없습니다",
+		"ja": "プロジェクト名を空にしてはいけません。"
+	},
+	"vi7l617": {
+		"zh-cn": "请选择项目状态",
+		"en": "Please select the project status",
+		"ko": "아이템 상태를 선택하십시오",
+		"ja": "アイテムステータスの選択をお願いします。"
+	},
+	"kv38ora": {
+		"zh-cn": "请输入有效的预算金额",
+		"en": "Please enter the valid budget amount",
+		"ko": "올바른 예산 금액을 입력하십시오",
+		"ja": "有効な予算額を入力願います。"
+	},
+	"pqqucx6": {
+		"zh-cn": "表单验证通过",
+		"en": "The form validation was passed.",
+		"ko": "폼 인증 통과",
+		"ja": "フォーム検証はパスしました"
+	},
+	"fovc7e7": {
+		"zh-cn": "请完善表单信息",
+		"en": "Please complete the form information",
+		"ko": "양식 정보를 수정하십시오",
+		"ja": "フォーム情報の補完をお願いします。"
+	},
+	"jqcpva4": {
+		"zh-cn": "项目编号",
+		"en": "Project Number",
+		"ko": "아이템 번호",
+		"ja": "プロジェクト番号です"
+	},
+	"dsqazl7": {
+		"zh-cn": "请输入项目编号",
+		"en": "Please enter the project number",
+		"ko": "아이템 번호를 입력하십시오",
+		"ja": "項目番号をお願いします。"
+	},
+	"jq5lug4": {
+		"zh-cn": "项目名称",
+		"en": "Project Name",
+		"ko": "프로젝트 이름",
+		"ja": "プロジェクト名です"
+	},
+	"dsxf0f7": {
+		"zh-cn": "请输入项目名称",
+		"en": "Please enter the project name",
+		"ko": "항목명을 입력하십시오",
+		"ja": "項目名を入力願います。"
+	},
+	"jqaogw4": {
+		"zh-cn": "项目状态",
+		"en": "Project status",
+		"ko": "프로젝트 상태",
+		"ja": "プロジェクトの状態です"
+	},
+	"bzkvr3": {
+		"zh-cn": "优先级",
+		"en": "Priority",
+		"ko": "우선 순위",
+		"ja": "優先順位です"
+	},
+	"3lzz8g6": {
+		"zh-cn": "请选择优先级",
+		"en": "Please select the priority",
+		"ko": "우선 순위를 선택하십시오",
+		"ja": "優先順位をお願いします"
+	},
+	"2xmpeu6": {
+		"zh-cn": "计划开始时间",
+		"en": "Planned start time",
+		"ko": "스케줄 시작 시간",
+		"ja": "予定開始時間です"
+	},
+	"14uy7v6": {
+		"zh-cn": "计划结束时间",
+		"en": "Planned end time",
+		"ko": "프로젝트 마감 시간",
+		"ja": "予定終了時間です"
+	},
+	"fbz80g6": {
+		"zh-cn": "实际开始时间",
+		"en": "Actual start time",
+		"ko": "실제 시작 시간",
+		"ja": "実際の開始時間です"
+	},
+	"b9hkdr6": {
+		"zh-cn": "实际结束时间",
+		"en": "Actual end time",
+		"ko": "실제 종료 시간",
+		"ja": "実際の終了時間です"
+	},
+	"jqh9ew4": {
+		"zh-cn": "项目预算",
+		"en": "Project budget",
+		"ko": "프로젝트 예산",
+		"ja": "プロジェクト予算です"
+	},
+	"drr5947": {
+		"zh-cn": "请输入预算金额",
+		"en": "Please enter the budget amount",
+		"ko": "예상 금액을 입력해 주십시오",
+		"ja": "見積もりをお願いします。"
+	},
+	"hyhcea4": {
+		"zh-cn": "计划工时",
+		"en": "Planned working hours",
+		"ko": "노동시간을 계획하다.",
+		"ja": "工数を計画します。"
+	},
+	"fklogl7": {
+		"zh-cn": "请输入计划工时",
+		"en": "Please enter the planned working hours",
+		"ko": "근무 계획 시간을 입력하세요",
+		"ja": "予定工数を入力願います。"
+	},
+	"c6guoo4": {
+		"zh-cn": "实际工时",
+		"en": "Actual working hours",
+		"ko": "실제 노동시간",
+		"ja": "実際の工数"
+	},
+	"lcm6677": {
+		"zh-cn": "请输入实际工时",
+		"en": "Please enter the actual working hours",
+		"ko": "실제 노동시간을 입력하시오",
+		"ja": "実際の工数を入力願います。"
+	},
+	"jqcui44": {
+		"zh-cn": "项目经理",
+		"en": "Project Manager",
+		"ko": "프로젝트 매니저",
+		"ja": "プロジェクトマネージャーです"
+	},
+	"mxqdnz9": {
+		"zh-cn": "请输入项目经理姓名",
+		"en": "Please enter the name of the project manager",
+		"ko": "프로젝트 관리자의 이름을 입력하십시오",
+		"ja": "プロジェクトマネジャーの名前をお願いします。"
+	},
+	"arffcv4": {
+		"zh-cn": "创建部门",
+		"en": "Establish a department",
+		"ko": "부서를 만들다",
+		"ja": "部門を創設します。"
+	},
+	"mrnli07": {
+		"zh-cn": "请输入创建部门",
+		"en": "Please enter the department to be created",
+		"ko": "생성 부서를 입력하십시오",
+		"ja": "作成部と入力をお願いします。"
+	},
+	"jq8eom4": {
+		"zh-cn": "项目描述",
+		"en": "Project Description",
+		"ko": "프로젝트 설명",
+		"ja": "項目記述です"
+	},
+	"dsum697": {
+		"zh-cn": "请输入项目描述",
+		"en": "Please enter the project description",
+		"ko": "항목 설명을 입력하십시오",
+		"ja": "項目記述をお願いします。"
+	},
+	"heqc2": {
+		"zh-cn": "提交",
+		"en": "Submit",
+		"ko": "제출",
+		"ja": "提出します"
+	},
+	"l7tjo3": {
+		"zh-cn": "赵晨宇",
+		"en": "Zhao Chenyu",
+		"ko": "자오천위",
+		"ja": "チェンウです"
+	},
+	"8gd4qzf": {
+		"zh-cn": "人生若只如初见，何事秋风悲画扇",
+		"en": "If life were always like the first encounter, why would the autumn wind grieve over the painted fan",
+		"ko": "인생이 단지 처음 본 것 같다면, 무슨 일이니 가을 바람이 화선을 슬프게 하랴",
+		"ja": "人生は初見の如し何事も秋風は扇をかくのです"
+	},
+	"m1a62": {
+		"zh-cn": "繁星",
+		"en": "Stars",
+		"ko": "별",
+		"ja": "たくさんの星です"
+	},
+	"hgfmgw5": {
+		"zh-cn": "前端工程师",
+		"en": "Front-end engineer",
+		"ko": "프론트엔드 엔지니어",
+		"ja": "フロントエンド・エンジニアです"
+	},
+	"cnkqq3": {
+		"zh-cn": "前端组",
+		"en": "Front-end Group",
+		"ko": "프론트엔드 그룹",
+		"ja": "フロントエンド群です"
+	},
+	"blnt4z4": {
+		"zh-cn": "基础研发",
+		"en": "Basic research and development",
+		"ko": "기초 연구 개발",
+		"ja": "基礎研究開発です"
+	},
+	"cv17cx4": {
+		"zh-cn": "我的信息",
+		"en": "My information",
+		"ko": "내 메시지",
+		"ja": "私の情報です"
+	},
+	"123vlo6": {
+		"zh-cn": "查看个人信息",
+		"en": "View personal information",
+		"ko": "개인 정보 확인",
+		"ja": "個人情報を見ます"
+	},
+	"cdfpc44": {
+		"zh-cn": "常用应用",
+		"en": "Common applications",
+		"ko": "상용 응용",
+		"ja": "よく使われる応用です。"
+	},
+	"c6csg54": {
+		"zh-cn": "工作信息",
+		"en": "Job information",
+		"ko": "직업 정보",
+		"ja": "仕事情報です"
+	},
+	"a6u45a4": {
+		"zh-cn": "个人信息",
+		"en": "Personal information",
+		"ko": "개인 정보",
+		"ja": "個人情報です"
+	},
+	"dbn5jk4": {
+		"zh-cn": "教育经历",
+		"en": "Educational experience",
+		"ko": "교육 경력",
+		"ja": "教育経験です"
+	},
+	"c6kp9q4": {
+		"zh-cn": "工作经历",
+		"en": "Work Experience",
+		"ko": "근무 경력",
+		"ja": "職務経歴書です"
+	},
+	"ay98du4": {
+		"zh-cn": "合同信息",
+		"en": "Contract information",
+		"ko": "계약 정보",
+		"ja": "契約情報です"
+	},
+	"hg490f4": {
+		"zh-cn": "薪资档案",
+		"en": "Salary file",
+		"ko": "급여 파일",
+		"ja": "給与記録です"
+	},
+	"jab8al4": {
+		"zh-cn": "附件存档",
+		"en": "File the attachment",
+		"ko": "첨부 파일",
+		"ja": "添付ファイルアーカイブです"
+	},
+	"czu3bo4": {
+		"zh-cn": "成长记录",
+		"en": "Growth Record",
+		"ko": "성장 기록",
+		"ja": "成長記録です"
+	},
+	"dvhp2": {
+		"zh-cn": "上海",
+		"en": "Shanghai",
+		"ko": "상하이",
+		"ja": "上海です"
+	},
+	"iscs2": {
+		"zh-cn": "正式",
+		"en": "Formal",
+		"ko": "공식",
+		"ja": "正式です"
+	},
+	"hgwrhp5": {
+		"zh-cn": "高级工程师",
+		"en": "Senior Engineer",
+		"ko": "고급 기사",
+		"ja": "上級エンジニアです"
+	},
+	"2jaekd5": {
+		"zh-cn": "请输入姓名",
+		"en": "Please enter your name.",
+		"ko": "이름을 입력하십시오",
+		"ja": "お名前をお願いします"
+	},
+	"2j9pnp5": {
+		"zh-cn": "请输入工号",
+		"en": "Please enter the employee number",
+		"ko": "작업 번호를 입력하십시오",
+		"ja": "勤務番号の入力をお願いします。"
+	},
+	"2j4oeg5": {
+		"zh-cn": "请输入签名",
+		"en": "Please enter the signature.",
+		"ko": "서명을 입력하십시오",
+		"ja": "署名をお願いします。"
+	},
+	"2j83985": {
+		"zh-cn": "请输入昵称",
+		"en": "Please enter the nickname.",
+		"ko": "닉네임을 입력해 주세요",
+		"ja": "ニックネーム入力お願いします。"
+	},
+	"2j3vx25": {
+		"zh-cn": "请输入职位",
+		"en": "Please enter the position.",
+		"ko": "직위를 입력하십시오",
+		"ja": "ポジション入力をお願いします。"
+	},
+	"2j3vx05": {
+		"zh-cn": "请输入组织",
+		"en": "Please enter the organization.",
+		"ko": "조직을 입력하십시오",
+		"ja": "組織入力をお願いします。"
+	},
+	"2j0o9j5": {
+		"zh-cn": "请输入部门",
+		"en": "Please enter the department.",
+		"ko": "입력부",
+		"ja": "部署入力お願いします。"
+	},
+	"7ji3y96": {
+		"zh-cn": "请输入手机号",
+		"en": "Please enter your mobile phone number",
+		"ko": "핸드폰 번호를 입력하세요",
+		"ja": "携帯番号の入力をお願いします。"
+	},
+	"2j0utw5": {
+		"zh-cn": "请输入邮箱",
+		"en": "Please enter your email address.",
+		"ko": "편지함을 입력하십시오",
+		"ja": "メールをお願いします。"
+	},
+	"2jau2v5": {
+		"zh-cn": "请输入地址",
+		"en": "Please enter the address.",
+		"ko": "주소를 입력하십시오",
+		"ja": "住所を入力願います。"
+	},
+	"oxvu2": {
+		"zh-cn": "返回",
+		"en": "Return",
+		"ko": "돌아가",
+		"ja": "戻ります"
+	},
+	"a9n8wm4": {
+		"zh-cn": "人事调动",
+		"en": "Personnel transfer",
+		"ko": "인사 이동",
+		"ja": "人事異動です"
+	},
+	"g3ge2": {
+		"zh-cn": "导出",
+		"en": "Export",
+		"ko": "내보 내기",
+		"ja": "導出します"
+	},
+	"dd0d3p4": {
+		"zh-cn": "更多操作",
+		"en": "More operations",
+		"ko": "추가 작업",
+		"ja": "もっと操作します"
+	},
+	"blh1h04": {
+		"zh-cn": "基础信息",
+		"en": "Basic information",
+		"ko": "기초 정보",
+		"ja": "基礎情報です"
+	},
+	"e32z2": {
+		"zh-cn": "保存",
+		"en": "Save",
+		"ko": "저장",
+		"ja": "保存します"
+	},
+	"fqmy2": {
+		"zh-cn": "姓名",
+		"en": "Name",
+		"ko": "이름",
+		"ja": "名前です"
+	},
+	"gfjm2": {
+		"zh-cn": "工号",
+		"en": "Employee number",
+		"ko": "GongHao",
+		"ja": "勤務番号です"
+	},
+	"iwjeyr4": {
+		"zh-cn": "部门组织",
+		"en": "Departmental organization",
+		"ko": "부문 조직",
+		"ja": "部門組織です"
+	},
+	"ewbd43": {
+		"zh-cn": "手机号",
+		"en": "Mobile phone number",
+		"ko": "핸드폰 번호",
+		"ja": "携帯電話番号です"
+	},
+	"e6rl2": {
+		"zh-cn": "位置",
+		"en": "Location",
+		"ko": "위치",
+		"ja": "位置です"
+	},
+	"2eo91k5": {
+		"zh-cn": "请选择位置",
+		"en": "Please select the location.",
+		"ko": "위치를 선택하십시오.",
+		"ja": "位置をお願いします"
+	},
+	"c6ipnm4": {
+		"zh-cn": "工作状态",
+		"en": "Working status",
+		"ko": "작업 상태",
+		"ja": "仕事ぶりです"
+	},
+	"glwp2": {
+		"zh-cn": "张三",
+		"en": "Zhang SAN",
+		"ko": "장삼",
+		"ja": "張三さんです"
+	},
+	"i1ql2": {
+		"zh-cn": "李四",
+		"en": "Li Si",
+		"ko": "리",
+		"ja": "リー四"
+	},
+	"k31l2": {
+		"zh-cn": "王五",
+		"en": "Wang Wu",
+		"ko": "왕 씨",
+		"ja": "王五です"
+	},
+	"oiag2": {
+		"zh-cn": "赵六",
+		"en": "Zhao Liu",
+		"ko": "조 6",
+		"ja": "趙六です"
+	},
+	"dp9t2": {
+		"zh-cn": "七仔",
+		"en": "\"七仔\"",
+		"ko": "7. 새끼",
+		"ja": "七の仔です"
+	},
+	"evg5804": {
+		"zh-cn": "热门项目",
+		"en": "Popular projects",
+		"ko": "인기 종목",
+		"ja": "人気プロジェクトです"
+	},
+	"ijqcju4": {
+		"zh-cn": "进度详情",
+		"en": "Progress details",
+		"ko": "진행 정보",
+		"ja": "進捗状況の詳細。"
+	},
+	"ebl693": {
+		"zh-cn": "张伟成",
+		"en": "Zhang Weicheng",
+		"ko": "장웨이청",
+		"ja": "張偉成"
+	},
+	"50dtyxa": {
+		"zh-cn": "用户界面/UI设计师",
+		"en": "User interface /UI designer",
+		"ko": "사용자 인터페이스 디자이너",
+		"ja": "ユーザーインターフェース/UIデザイナーです"
+	},
+	"dez4em4": {
+		"zh-cn": "最新公告",
+		"en": "Latest Announcement",
+		"ko": "최신 공고",
+		"ja": "最新の発表です"
+	},
+	"vr63nnc": {
+		"zh-cn": "今天 | 下午 5：00",
+		"en": "Today | 5:00 p.m",
+		"ko": "오늘 오후 5시 | 된",
+		"ja": "|今日午后5:00"
+	},
+	"jqcamd4": {
+		"zh-cn": "项目类型",
+		"en": "Project type",
+		"ko": "항목 형식",
+		"ja": "プロジェクトタイプです"
+	},
+	"jqgs5w4": {
+		"zh-cn": "项目阶段",
+		"en": "Project stage",
+		"ko": "프로젝트 단계",
+		"ja": "プロジェクトフェーズです"
+	},
+	"byvcwo4": {
+		"zh-cn": "客户名称",
+		"en": "Customer name",
+		"ko": "고객 이름",
+		"ja": "顧客名です"
+	},
+	"abnfkk4": {
+		"zh-cn": "优先级别",
+		"en": "Priority level",
+		"ko": "우선 순위",
+		"ja": "優先順位です。"
+	},
+	"hyhgrg4": {
+		"zh-cn": "计划开始",
+		"en": "Plan to begin",
+		"ko": "계획 시작",
+		"ja": "計画開始です"
+	},
+	"hymybh4": {
+		"zh-cn": "计划结束",
+		"en": "The plan is over.",
+		"ko": "계획이 끝나다",
+		"ja": "計画終了です"
+	},
+	"c6gz1u4": {
+		"zh-cn": "实际开始",
+		"en": "Actually begins",
+		"ko": "실제로 시작하다",
+		"ja": "実際に始めます"
+	},
+	"c6mglv4": {
+		"zh-cn": "实际结束",
+		"en": "Actually over",
+		"ko": "실질적 결말",
+		"ja": "実際に終わります"
+	},
+	"rlek805": {
+		"zh-cn": "项目管理人",
+		"en": "Project Manager",
+		"ko": "프로젝트 관리자",
+		"ja": "プロジェクトマネージャーです"
+	},
+	"rm6q0h5": {
+		"zh-cn": "项目监控人",
+		"en": "Project monitor",
+		"ko": "프로젝트 모니터",
+		"ja": "監視役です"
+	},
+	"jqf08f4": {
+		"zh-cn": "项目说明",
+		"en": "Project Description",
+		"ko": "아이템 설명",
+		"ja": "プロジェクトの説明です"
+	},
+	"lsz1id5": {
+		"zh-cn": "创建人部门",
+		"en": "The creator department",
+		"ko": "설립자 부문",
+		"ja": "創設者部門です"
+	},
+	"ar84e54": {
+		"zh-cn": "创建时间",
+		"en": "Creation time",
+		"ko": "만든 시간",
+		"ja": "作成時間です"
+	},
+	"chizf3": {
+		"zh-cn": "创建人",
+		"en": "Founder",
+		"ko": "창립자",
+		"ja": "設立者です"
+	},
+	"o2coryd": {
+		"zh-cn": "1,275,000.00元",
+		"en": "1,275,000.00 yuan",
+		"ko": "1,275,000.00 위안",
+		"ja": "1,275,000.00円です"
+	},
+	"ssgk95d": {
+		"zh-cn": "1,202,830.00元",
+		"en": "1,202,830.00 yuan",
+		"ko": "1,202,830.00 위안",
+		"ja": "1,202,830.00元です"
+	},
+	"xkm50rb": {
+		"zh-cn": "849,120.00元",
+		"en": "849,120.00 yuan",
+		"ko": "849,120.00 위안",
+		"ja": "849,120.00元です"
+	},
+	"g24n8na": {
+		"zh-cn": "89,120.00元",
+		"en": "89,120.00 yuan",
+		"ko": "89,120.00 위안",
+		"ja": "89,120.00元です"
+	},
+	"n80vneb": {
+		"zh-cn": "353,709.00元",
+		"en": "353,709.00 yuan",
+		"ko": "353,709.00 위안",
+		"ja": "353,709.00円です"
+	},
+	"4x2hyu7": {
+		"zh-cn": "还有 31 天",
+		"en": "There are still 31 days.",
+		"ko": "아직 31일 남았습니다.",
+		"ja": "あと31日です"
+	},
+	"jqfmo04": {
+		"zh-cn": "项目进度",
+		"en": "Project progress",
+		"ko": "프로젝트 진행 상황",
+		"ja": "プロジェクトの進捗状況です"
+	},
+	"jqcs3l4": {
+		"zh-cn": "项目结束",
+		"en": "The project is over.",
+		"ko": "프로젝트 종료",
+		"ja": "プロジェクト終了です"
+	},
+	"dhmgdl4": {
+		"zh-cn": "时间进度",
+		"en": "Time schedule",
+		"ko": "시간 진도",
+		"ja": "時間の進み具合です"
+	},
+	"gz20n94": {
+		"zh-cn": "自评进度",
+		"en": "Self-assessed progress",
+		"ko": "진행 상황을 스스로 평가하다.",
+		"ja": "進捗状況を自己評価します"
+	},
+	"2l9kxj6": {
+		"zh-cn": "项目经营数据",
+		"en": "Project operation data",
+		"ko": "프로젝트경영데이터",
+		"ja": "事業データです"
+	},
+	"aykr8w4": {
+		"zh-cn": "合同金额",
+		"en": "Contract amount",
+		"ko": "계약 금액",
+		"ja": "契約金額です"
+	},
+	"cgq7j3": {
+		"zh-cn": "净收入",
+		"en": "Net income",
+		"ko": "순수입",
+		"ja": "純収入"
+	},
+	"h8v02": {
+		"zh-cn": "成本",
+		"en": "Cost",
+		"ko": "원가",
+		"ja": "コストです"
+	},
+	"lpggmb6": {
+		"zh-cn": "风险预估成本",
+		"en": "Risk estimation cost",
+		"ko": "리스크 예측 비용",
+		"ja": "リスク見積もりコストです"
+	},
+	"ekrh2": {
+		"zh-cn": "利润",
+		"en": "Profit",
+		"ko": "이윤",
+		"ja": "利益です"
+	},
+	"ckih63": {
+		"zh-cn": "利润率",
+		"en": "Profit margin",
+		"ko": "이윤율",
+		"ja": "利益率です"
+	},
+	"hsgw2": {
+		"zh-cn": "明亮",
+		"en": "Bright",
+		"ko": "밝은",
+		"ja": "明るいです"
+	},
+	"rkrq2": {
+		"zh-cn": "黑暗",
+		"en": "Darkness",
+		"ko": "어둠",
+		"ja": "暗いです"
+	},
+	"e56l2": {
+		"zh-cn": "主题",
+		"en": "Theme",
+		"ko": "테마",
+		"ja": "テーマです"
+	},
+	"ab4zrd4": {
+		"zh-cn": "任务名称",
+		"en": "Task Name",
+		"ko": "작업 이름",
+		"ja": "ミッション名です"
+	},
+	"ab7slj4": {
+		"zh-cn": "任务描述",
+		"en": "Task Description",
+		"ko": "작업 설명",
+		"ja": "ミッション記述です"
+	},
+	"aba2dt4": {
+		"zh-cn": "任务状态",
+		"en": "Task status",
+		"ko": "작업 상태",
+		"ja": "タスク状態です"
+	},
+	"abf0kx4": {
+		"zh-cn": "任务进度",
+		"en": "Task progress",
+		"ko": "작업 진도",
+		"ja": "タスクの進捗状況です"
+	},
+	"zb5f4f6": {
+		"zh-cn": "任务开始时间",
+		"en": "Task start time",
+		"ko": "작업 시작 시간",
+		"ja": "任務開始時間です"
+	},
+	"vngz806": {
+		"zh-cn": "任务结束时间",
+		"en": "Task end time",
+		"ko": "작업 종료 시간",
+		"ja": "任務終了時間です"
+	},
+	"e5fv2": {
+		"zh-cn": "修改",
+		"en": "Modify",
+		"ko": "수정",
+		"ja": "修正します"
+	},
+	"ar3udh4": {
+		"zh-cn": "创建任务",
+		"en": "Create a task",
+		"ko": "작업 만들기",
+		"ja": "タスクを作成します"
+	},
+	"j6y5gcc": {
+		"zh-cn": "Soybean 管理系统",
+		"en": "Soybean Management System",
+		"ko": "soybean 관리 시스템",
+		"ja": "Soybean管理システムです"
+	},
+	"e3dtv38": {
+		"zh-cn": "系统版本更新通知",
+		"en": "System version update notice",
+		"ko": "시스템 버전 업데이트 알림",
+		"ja": "システム更新のお知らせです"
+	},
+	"zhyq4sl": {
+		"zh-cn": "检测到系统有新版本发布，是否立即刷新页面？",
+		"en": "When a new version of the system is detected to be released, should the page be refreshed immediately?",
+		"ko": "새 버전이 출시되었습니다. 페이지를 새로 고치시겠습니까?",
+		"ja": "システムの新しいバージョンのリリースを検出して、すぐにページを更新しますか?"
+	},
+	"fu6l414": {
+		"zh-cn": "立即刷新",
+		"en": "Refresh immediately",
+		"ko": "지금 새로 고침",
+		"ja": "すぐにリフレッシュします"
+	},
+	"fqwk144": {
+		"zh-cn": "稍后再说",
+		"en": "Let's talk later.",
+		"ko": "나중에 다시 봅시다",
+		"ja": "あとでお話しします"
+	},
+	"hs6m2": {
+		"zh-cn": "新增",
+		"en": "New added",
+		"ko": "신규 증가",
+		"ja": "新たに増えます"
+	},
+	"e7ygyc4": {
+		"zh-cn": "添加成功",
+		"en": "Added successfully",
+		"ko": "추가 성공",
+		"ja": "追加成功です"
+	},
+	"iijhd54": {
+		"zh-cn": "返回首页",
+		"en": "Return to the home page",
+		"ko": "홈 페이지로 돌아가기",
+		"ja": "トップページに戻ります"
+	},
+	"d0w7cq4": {
+		"zh-cn": "批量删除",
+		"en": "Batch deletion",
+		"ko": "일괄 삭제",
+		"ja": "一括削除です"
+	},
+	"eod62": {
+		"zh-cn": "关闭",
+		"en": "Close",
+		"ko": "닫기",
+		"ja": "閉鎖します"
+	},
+	"ewnf2": {
+		"zh-cn": "勾选",
+		"en": "Check the box",
+		"ko": "GouXuan",
+		"ja": "チェックを入れる"
+	},
+	"dzh2k3": {
+		"zh-cn": "展开列",
+		"en": "Expand the column",
+		"ko": "열 펴기",
+		"ja": "展開列です"
+	},
+	"cpbrb3": {
+		"zh-cn": "列设置",
+		"en": "Column Settings",
+		"ko": "열 설정",
+		"ja": "列設定です"
+	},
+	"pewx2": {
+		"zh-cn": "配置",
+		"en": "Configuration",
+		"ko": "설정",
+		"ja": "配置します"
+	},
+	"l9122": {
+		"zh-cn": "确认",
+		"en": "Confirm",
+		"ko": "확인",
+		"ja": "確認します"
+	},
+	"azeh8z4": {
+		"zh-cn": "删除成功",
+		"en": "Deletion successful",
+		"ko": "성공적으로 삭제했습니다.",
+		"ja": "削除成功です"
+	},
+	"ol6ski6": {
+		"zh-cn": "确认删除吗？",
+		"en": "Is the deletion confirmed?",
+		"ko": "삭제를 확인하시겠습니까?",
+		"ja": "削除を確認しますか?"
+	},
+	"q4mu2": {
+		"zh-cn": "错误",
+		"en": "Error",
+		"ko": "오류",
+		"ja": "間違いです"
+	},
+	"gjm02": {
+		"zh-cn": "序号",
+		"en": "Serial number",
+		"ko": "번호",
+		"ja": "番号です"
+	},
+	"8ql26n8": {
+		"zh-cn": "请输入关键词搜索",
+		"en": "Please search by entering keywords",
+		"ko": "검색어를 입력해 주세요",
+		"ja": "キーワード検索をお願いします。"
+	},
+	"iifi5w4": {
+		"zh-cn": "退出登录",
+		"en": "Log out",
+		"ko": "로그아웃",
+		"ja": "ログアウトします"
+	},
+	"wsnp4e8": {
+		"zh-cn": "确认退出登录吗？",
+		"en": "Have you confirmed your logout?",
+		"ko": "로그아웃을 확인하시겠습니까?",
+		"ja": "ログアウトを確認しますか?"
+	},
+	"ddiqvl4": {
+		"zh-cn": "敬请期待",
+		"en": "Stay tuned!",
+		"ko": "기대하시길 바랍니다",
+		"ja": "ご期待願います"
+	},
+	"ai8d7e4": {
+		"zh-cn": "修改成功",
+		"en": "The modification was successful.",
+		"ko": "성공적으로 수정했습니다",
+		"ja": "修正成功です"
+	},
+	"fezfi3": {
+		"zh-cn": "无数据",
+		"en": "No data",
+		"ko": "무수한 증거",
+		"ja": "無数の根拠。"
+	},
+	"2sd1reb": {
+		"zh-cn": "请检查输入的值是否合法",
+		"en": "Please check whether the input value is legal",
+		"ko": "입력한 값이 올바른지 확인하십시오",
+		"ja": "入力された値が正当かどうかチェックします。"
+	},
+	"ejix2": {
+		"zh-cn": "刷新",
+		"en": "Refresh",
+		"ko": "새로 고침",
+		"ja": "リフレッシュします"
+	},
+	"ehx72": {
+		"zh-cn": "切换",
+		"en": "Switch",
+		"ko": "켬/끔",
+		"ja": "切り替えます"
+	},
+	"hn562": {
+		"zh-cn": "提示",
+		"en": "Hint",
+		"ko": "제시",
+		"ja": "ヒントです"
+	},
+	"nwyz2": {
+		"zh-cn": "触发",
+		"en": "Trigger",
+		"ko": "트리거",
+		"ja": "トリガーです"
+	},
+	"i2ik2": {
+		"zh-cn": "更新",
+		"en": "Update",
+		"ko": "업 데이트",
+		"ja": "更新します"
+	},
+	"deua4r4": {
+		"zh-cn": "更新成功",
+		"en": "Update successful",
+		"ko": "업데이트 성공",
+		"ja": "更新成功です"
+	},
+	"k6n1": {
+		"zh-cn": "是",
+		"en": "is",
+		"ko": "은",
+		"ja": "そうです"
+	},
+	"gme1": {
+		"zh-cn": "否",
+		"en": "no",
+		"ko": "아니 오",
+		"ja": "いいえ"
+	},
+	"ajky5f9": {
+		"zh-cn": "请求失败后登出用户",
+		"en": "Log out of the user after the request fails",
+		"ko": "요청이 실패하면 사용자를 로그아웃합니다",
+		"ja": "リクエストが失敗したらログアウトします。"
+	},
+	"raf1s7c": {
+		"zh-cn": "用户状态失效，请重新登录",
+		"en": "The user status is invalid. Please log in again",
+		"ko": "사용자 상태가 유효하지 않습니다. 다시 로그인하십시오",
+		"ja": "ユーザーのステータスが下がりましたので,再ログインをお願いします"
+	},
+	"8oys3ff": {
+		"zh-cn": "请求失败后弹出模态框再登出用户",
+		"en": "After the request fails, a modal box pops up and the user logs out again",
+		"ko": "요청이 실패하면 사용자 로그아웃하기 전에 모달 상자를 팝업한다",
+		"ja": "要求が失敗するとモダリティボックスがポップアップしてユーザーをログアウトします。"
+	},
+	"7pjr7ij": {
+		"zh-cn": "请求的token已过期，刷新token",
+		"en": "The requested token has expired. Refresh the token",
+		"ko": "요청한 토큰이 만료되었습니다. 토큰을 새로 고칩니다",
+		"ja": "請求したトークンの期限が切れましたので、トークンを更新します。"
+	},
+	"hurzlb8": {
+		"zh-cn": "token已过期",
+		"en": "The token has expired.",
+		"ko": "토큰이 만료되었습니다",
+		"ja": "token期限切れです"
+	},
+	"ai2xe34": {
+		"zh-cn": "主题模式",
+		"en": "Theme mode",
+		"ko": "테마 모드",
+		"ja": "テーマモードです"
+	},
+	"agvkia4": {
+		"zh-cn": "亮色模式",
+		"en": "Bright color mode",
+		"ko": "밝은 색 모드",
+		"ja": "明るいパターンです"
+	},
+	"dllktk4": {
+		"zh-cn": "暗黑模式",
+		"en": "Dark Mode",
+		"ko": "어두운 모드",
+		"ja": "ダークモードです"
+	},
+	"iiuf2s4": {
+		"zh-cn": "跟随系统",
+		"en": "Following system",
+		"ko": "추적시스템",
+		"ja": "システムに追従します"
+	},
+	"eq5p5c4": {
+		"zh-cn": "灰色模式",
+		"en": "\"Grey mode\"",
+		"ko": "그레이 모드",
+		"ja": "グレーパターンです"
+	},
+	"gurej14": {
+		"zh-cn": "色弱模式",
+		"en": "Color weakness mode",
+		"ko": "색약 패턴",
+		"ja": "色弱モードです"
+	},
+	"c8wdij4": {
+		"zh-cn": "布局模式",
+		"en": "Layout mode",
+		"ko": "레이아웃 모드",
+		"ja": "レイアウトパターンです"
+	},
+	"ab94546": {
+		"zh-cn": "左侧菜单模式",
+		"en": "Left menu mode",
+		"ko": "왼쪽 메뉴 모드",
+		"ja": "左側メニューモードです"
+	},
+	"ydrkl58": {
+		"zh-cn": "左侧菜单混合模式",
+		"en": "The mixed mode of the left menu",
+		"ko": "왼쪽 메뉴 혼합 모드",
+		"ja": "左側メニューミックスモードです"
+	},
+	"qyqbqx6": {
+		"zh-cn": "顶部菜单模式",
+		"en": "Top menu mode",
+		"ko": "맨 위 메뉴 모드",
+		"ja": "トップメニューモードです"
+	},
+	"cp0yza8": {
+		"zh-cn": "顶部菜单混合模式",
+		"en": "Top menu Hybrid mode",
+		"ko": "맨 위 메뉴 혼합 모드",
+		"ja": "トップメニュー混合モードです"
+	},
+	"mhz3wed": {
+		"zh-cn": "一级菜单与子级菜单位置反转",
+		"en": "The positions of the first-level menu and the sub-level menu are reversed",
+		"ko": "1단계 메뉴와 2단계 메뉴 위치를 뒤집는다",
+		"ja": "1次メニューと2次メニューの位置が反転します"
+	},
+	"cyrqkg9": {
+		"zh-cn": "应用推荐算法的颜色",
+		"en": "Apply the color of the recommendation algorithm",
+		"ko": "추천 알고리즘을 적용한 색입니다",
+		"ja": "推奨アルゴリズムの色を適用します"
+	},
+	"iu8w1j9": {
+		"zh-cn": "推荐颜色的算法参照",
+		"en": "The algorithm reference for recommended colors",
+		"ko": "추천 색상의 알고리즘 참조",
+		"ja": "推奨色のアルゴリズムを参照します。"
+	},
+	"aib1034": {
+		"zh-cn": "主题颜色",
+		"en": "Theme color",
+		"ko": "테마 색상",
+		"ja": "テーマカラーです"
+	},
+	"e0t32": {
+		"zh-cn": "主色",
+		"en": "Main color",
+		"ko": "주 색",
+		"ja": "メインカラーです"
+	},
+	"c6bgk3": {
+		"zh-cn": "信息色",
+		"en": "Information color",
+		"ko": "정보색",
+		"ja": "情報色です"
+	},
+	"erumb3": {
+		"zh-cn": "成功色",
+		"en": "The color of success",
+		"ko": "성공색",
+		"ja": "成功色です"
+	},
+	"ku3im3": {
+		"zh-cn": "警告色",
+		"en": "Warning color",
+		"ko": "경고색",
+		"ja": "警告色です"
+	},
+	"mipfg3": {
+		"zh-cn": "错误色",
+		"en": "\"错 色\" 可 以 翻 译 为 \"wrong color\"",
+		"ko": "오류 색상",
+		"ja": "エラーカラーです"
+	},
+	"iimhif4": {
+		"zh-cn": "跟随主色",
+		"en": "Follow the main color",
+		"ko": "기본 색 따라가기",
+		"ja": "メインカラーに従います"
+	},
+	"ebygt84": {
+		"zh-cn": "滚动模式",
+		"en": "Rolling mode",
+		"ko": "스크롤 모드",
+		"ja": "スクロールモードです"
+	},
+	"bmjz0a4": {
+		"zh-cn": "外层滚动",
+		"en": "Outer layer rolling",
+		"ko": "바깥쪽 스크롤",
+		"ja": "外側が転がります"
+	},
+	"a7dbba4": {
+		"zh-cn": "主体滚动",
+		"en": "Main body rolling",
+		"ko": "메인 스크롤",
+		"ja": "スクロールします"
+	},
+	"pftcyt6": {
+		"zh-cn": "页面切换动画",
+		"en": "Page switching animation",
+		"ko": "페이지 전환 애니메이션",
+		"ja": "ページ切り替えアニメーションです"
+	},
+	"cjem2d8": {
+		"zh-cn": "页面切换动画类型",
+		"en": "Switch the animation type of the page",
+		"ko": "페이지 애니메이션 형식을 변경합니다",
+		"ja": "ページ切り替えアニメーションタイプです"
+	},
+	"jawn2": {
+		"zh-cn": "滑动",
+		"en": "\"Slide\"",
+		"ko": "미끄럼",
+		"ja": "スライドします"
+	},
+	"e7ddy54": {
+		"zh-cn": "淡入淡出",
+		"en": "Fade in and fade out",
+		"ko": "페이드아웃",
+		"ja": "淡入フェードアウト"
+	},
+	"cj83or4": {
+		"zh-cn": "底部消退",
+		"en": "The bottom recedes",
+		"ko": "아래부분이 빠지다",
+		"ja": "底が後退します"
+	},
+	"ggr5nx4": {
+		"zh-cn": "缩放消退",
+		"en": "Zoom fades",
+		"ko": "스케일이 사라지다",
+		"ja": "ズーム後退です"
+	},
+	"j6iw2": {
+		"zh-cn": "渐变",
+		"en": "Gradient",
+		"ko": "그러 데이션",
+		"ja": "グラデーションです"
+	},
+	"q4ue2": {
+		"zh-cn": "闪现",
+		"en": "Flash",
+		"ko": "언뜻",
+		"ja": "ひらめきます"
+	},
+	"k4g1": {
+		"zh-cn": "无",
+		"en": "no",
+		"ko": "무",
+		"ja": "ありません"
+	},
+	"7dkko08": {
+		"zh-cn": "固定头部和标签栏",
+		"en": "Fix the header and label bar",
+		"ko": "머리글과 라벨 표시줄 고정",
+		"ja": "頭とタグバーを固定します"
+	},
+	"bv0agy4": {
+		"zh-cn": "头部高度",
+		"en": "Head height",
+		"ko": "머리 높이",
+		"ja": "頭の高さです"
+	},
+	"ai4j1q5": {
+		"zh-cn": "显示面包屑",
+		"en": "Show breadcrumbs",
+		"ko": "빵 부스러기 보이기",
+		"ja": "パンくずが表示されます"
+	},
+	"7ghb8l7": {
+		"zh-cn": "显示面包屑图标",
+		"en": "Display the breadcrumb icon",
+		"ko": "빵 부스러기 아이콘 보이기",
+		"ja": "パン屑のアイコンが表示されます"
+	},
+	"aova905": {
+		"zh-cn": "显示标签栏",
+		"en": "Display the label bar",
+		"ko": "탭 표시줄 보이기",
+		"ja": "タブバーを表示します。"
+	},
+	"timdud7": {
+		"zh-cn": "标签栏信息缓存",
+		"en": "TAB bar information caching",
+		"ko": "탭 표시줄 정보 캐시입니다",
+		"ja": "タブバー情報キャッシュです"
+	},
+	"3f5imy5": {
+		"zh-cn": "标签栏高度",
+		"en": "Tag bar height",
+		"ko": "탭 표시줄 높이",
+		"ja": "タグバーの高さです"
+	},
+	"3f5t8a5": {
+		"zh-cn": "标签栏风格",
+		"en": "TAB bar style",
+		"ko": "탭 표시줄 스타일",
+		"ja": "タブバースタイルです"
+	},
+	"i546ar4": {
+		"zh-cn": "谷歌风格",
+		"en": "Google style",
+		"ko": "구글 스타일",
+		"ja": "googleスタイルです"
+	},
+	"d4725v4": {
+		"zh-cn": "按钮风格",
+		"en": "Button style",
+		"ko": "버튼 스타일",
+		"ja": "ボタンスタイルです"
+	},
+	"kh915o5": {
+		"zh-cn": "深色侧边栏",
+		"en": "Dark sidebar",
+		"ko": "어두운 사이드바",
+		"ja": "ダークサイドバーです"
+	},
+	"p5hgm25": {
+		"zh-cn": "侧边栏宽度",
+		"en": "Sidebar width",
+		"ko": "사이드바 너비",
+		"ja": "サイドバーの幅です"
+	},
+	"k2tvte7": {
+		"zh-cn": "侧边栏折叠宽度",
+		"en": "Sidebar folding width",
+		"ko": "사이드바 접기 너비",
+		"ja": "サイドバー折りたたみ幅"
+	},
+	"w7jaaw9": {
+		"zh-cn": "混合布局侧边栏宽度",
+		"en": "Mix the width of the sidebar layout",
+		"ko": "혼합된 레이아웃 사이드바 너비",
+		"ja": "ハイブリッドレイアウトサイドバー幅"
+	},
+	"h59twgb": {
+		"zh-cn": "混合布局侧边栏折叠宽度",
+		"en": "Mixed layout sidebar folding width",
+		"ko": "혼합된 레이아웃 사이드바 접기 너비입니다",
+		"ja": "ハイブリッドレイアウトサイドバー折りたたみ幅"
+	},
+	"bsu39g9": {
+		"zh-cn": "混合布局子菜单宽度",
+		"en": "Mix the width of the layout sub-menu",
+		"ko": "하위 메뉴 너비 섞기",
+		"ja": "ハイブリッドレイアウトサブメニュー幅です"
+	},
+	"degujz4": {
+		"zh-cn": "显示底部",
+		"en": "Show the bottom",
+		"ko": "아래쪽 보이기",
+		"ja": "下部を示します"
+	},
+	"bcta6r4": {
+		"zh-cn": "固定底部",
+		"en": "Fix the bottom",
+		"ko": "아래쪽 고정",
+		"ja": "底を固定します"
+	},
+	"cjfjep4": {
+		"zh-cn": "底部高度",
+		"en": "Bottom height",
+		"ko": "아래 높이",
+		"ja": "底の高さです"
+	},
+	"cj4u064": {
+		"zh-cn": "底部局右",
+		"en": "Right of the bottom game",
+		"ko": "아래쪽 끝",
+		"ja": "下の局右です"
+	},
+	"krdhgf6": {
+		"zh-cn": "显示全屏水印",
+		"en": "Display full-screen watermarks",
+		"ko": "전체 화면의 워터마크를 표시합니다",
+		"ja": "全画面透かしを表示します"
+	},
+	"e00xfl4": {
+		"zh-cn": "水印文本",
+		"en": "Watermark text",
+		"ko": "워터마크 텍스트",
+		"ja": "透かしテキスト"
+	},
+	"ai9rni4": {
+		"zh-cn": "主题配置",
+		"en": "Theme configuration",
+		"ko": "테마 설정",
+		"ja": "テーマ配置です"
+	},
+	"jutz0r4": {
+		"zh-cn": "页面功能",
+		"en": "Page function",
+		"ko": "페이지 기능",
+		"ja": "ページ機能です"
+	},
+	"35sy5x6": {
+		"zh-cn": "重置缓存策略",
+		"en": "Reset cache strategy",
+		"ko": "캐시 정책을 초기화합니다",
+		"ja": "キャッシュリセットポリシーです"
+	},
+	"awj6xz4": {
+		"zh-cn": "关闭页面",
+		"en": "Close the page",
+		"ko": "페이지 닫기",
+		"ja": "ページを閉じます"
+	},
+	"asxzfq4": {
+		"zh-cn": "刷新页面",
+		"en": "Refresh the page",
+		"ko": "페이지 새로 고침",
+		"ja": "ページを更新します"
+	},
+	"bl3cqy4": {
+		"zh-cn": "复制配置",
+		"en": "Copy the configuration",
+		"ko": "설정 복사",
+		"ja": "複製構成です"
+	},
+	"5vf5n1d": {
+		"zh-cn": "复制成功，请替换 src/theme/settings.ts 中的变量 themeSettings",
+		"en": "The copy was successful. Please replace the variable themeSettings in src/theme/settings.ts",
+		"ko": "복사가 성공했습니다. src/theme/settings.ts의 변수 themesettings를 대체하십시오",
+		"ja": "コピーに成功し、src/theme/settings.tsの変数themeSettingsを置き換えてください。"
+	},
+	"ixe9xe4": {
+		"zh-cn": "重置配置",
+		"en": "Reset configuration",
+		"ko": "설정 초기화",
+		"ja": "リセット構成です"
+	},
+	"ix5ztc4": {
+		"zh-cn": "重置成功",
+		"en": "Reset successful",
+		"ko": "성공적으로 초기화되었습니다.",
+		"ja": "リセット成功です"
+	},
+	"ffknh3": {
+		"zh-cn": "无权限",
+		"en": "No permission",
+		"ko": "권한 없음",
+		"ja": "権限がありません"
+	},
+	"nr1d005": {
+		"zh-cn": "页面不存在",
+		"en": "The page does not exist.",
+		"ko": "페이지가 존재하지 않습니다.",
+		"ja": "ページは存在しません"
+	},
+	"cgrhw65": {
+		"zh-cn": "服务器错误",
+		"en": "Server error",
+		"ko": "서버 오류",
+		"ja": "サーバーエラーです"
+	},
+	"bv2l2t4": {
+		"zh-cn": "外链页面",
+		"en": "External link page",
+		"ko": "외부 링크 페이지",
+		"ja": "外部リンクのページです"
+	},
+	"jq8he94": {
+		"zh-cn": "项目文档",
+		"en": "Project document",
+		"ko": "프로젝트 문서",
+		"ja": "プロジェクトドキュメントです"
+	},
+	"74rroq8": {
+		"zh-cn": "项目文档(外链)",
+		"en": "Project Documentation (External Link)",
+		"ko": "프로젝트 문서 (외부 체인)",
+		"ja": "プロジェクトドキュメント(外部リンク)です。"
+	},
+	"1dwxpe5": {
+		"zh-cn": "Vue文档",
+		"en": "Vue documentation",
+		"ko": "vue 문서",
+		"ja": "Vueドキュメントです"
+	},
+	"1nyuk78": {
+		"zh-cn": "UnoCSS文档",
+		"en": "UnoCSS document",
+		"ko": "unocss 문서",
+		"ja": "UnoCSSドキュメントです"
+	},
+	"k07d63a": {
+		"zh-cn": "Naive UI文档",
+		"en": "Naive UI Documentation",
+		"ko": "naive ui 문서",
+		"ja": "Naive UIドキュメントです"
+	},
+	"9xk2vtg": {
+		"zh-cn": "Ant Design Vue文档",
+		"en": "Ant Design Vue document",
+		"ko": "ant design vue 문서",
+		"ja": "Ant Design Vueドキュメントです"
+	},
+	"cir7zf7": {
+		"zh-cn": "Alova文档",
+		"en": "Alova Document",
+		"ko": "알로바 문서",
+		"ja": "Alovaドキュメントです"
+	},
+	"ea9n2": {
+		"zh-cn": "关于",
+		"en": "About",
+		"ko": "관",
+		"ja": "についてです"
+	},
+	"gahcaq4": {
+		"zh-cn": "系统功能",
+		"en": "System function",
+		"ko": "시스템 기능",
+		"ja": "システム機能です"
+	},
+	"f08uzk7": {
+		"zh-cn": "alova示例",
+		"en": "alova Example",
+		"ko": "알로바 예입니다",
+		"ja": "alovaの例です"
+	},
+	"f05ikm7": {
+		"zh-cn": "alova请求",
+		"en": "alova Request",
+		"ko": "알로바 요청",
+		"ja": "alovaお願いします"
+	},
+	"tnwlw5": {
+		"zh-cn": "场景化请求",
+		"en": "Scenario-based request",
+		"ko": "장면화 요청",
+		"ja": "場面化依頼です"
+	},
+	"fudj23": {
+		"zh-cn": "标签页",
+		"en": "Tag page",
+		"ko": "탭 페이지",
+		"ja": "タグページです"
+	},
+	"bof4bo4": {
+		"zh-cn": "多标签页",
+		"en": "Multiple tabs",
+		"ko": "다중 탭",
+		"ja": "マルチタブです"
+	},
+	"xbdhzq5": {
+		"zh-cn": "隐藏子菜单",
+		"en": "Hide submenu",
+		"ko": "하위 메뉴 숨기기",
+		"ja": "隠しメニューです"
+	},
+	"jpwab3": {
+		"zh-cn": "菜单二",
+		"en": "Menu Two",
+		"ko": "메뉴 2",
+		"ja": "メニュー2です"
+	},
+	"jpw6o3": {
+		"zh-cn": "菜单三",
+		"en": "Menu Three",
+		"ko": "메뉴 3",
+		"ja": "メニュー三です"
+	},
+	"oegb2": {
+		"zh-cn": "请求",
+		"en": "Request",
+		"ko": "청구",
+		"ja": "お願いします"
+	},
+	"arit484": {
+		"zh-cn": "切换权限",
+		"en": "Switch permissions",
+		"ko": "전환 권한",
+		"ja": "権限の切り替えです"
+	},
+	"uiwyxv7": {
+		"zh-cn": "超级管理员可见",
+		"en": "Super Administrator Visible",
+		"ko": "슈퍼 관리자 표시",
+		"ja": "超管理人です"
+	},
+	"gao8uh4": {
+		"zh-cn": "系统管理",
+		"en": "System management",
+		"ko": "시스템 관리",
+		"ja": "システム管理です"
+	},
+	"f70u7i4": {
+		"zh-cn": "用户详情",
+		"en": "User Details",
+		"ko": "사용자 정보",
+		"ja": "利用者の詳細です"
+	},
+	"hxhx7p4": {
+		"zh-cn": "角色管理",
+		"en": "Role management",
+		"ko": "역할 관리",
+		"ja": "役割管理です"
+	},
+	"brrgqu4": {
+		"zh-cn": "多级菜单",
+		"en": "Multi-level menu",
+		"ko": "다단계 메뉴",
+		"ja": "マルチメニュー"
+	},
+	"jpw6f3": {
+		"zh-cn": "菜单一",
+		"en": "Menu One",
+		"ko": "메뉴 1",
+		"ja": "メニュー1です"
+	},
+	"ih0uv26": {
+		"zh-cn": "菜单一子菜单",
+		"en": "A sub-menu of the menu",
+		"ko": "메뉴 1개",
+		"ja": "メニュー1サブメニューです"
+	},
+	"iejgp66": {
+		"zh-cn": "菜单二子菜单",
+		"en": "Two sub-menus of the menu",
+		"ko": "메뉴 2개",
+		"ja": "メニュー2サブメニューです"
+	},
+	"k7umt8": {
+		"zh-cn": "菜单二子菜单首页",
+		"en": "Menu Two sub-menus Home page",
+		"ko": "메뉴 2 메뉴 홈페이지",
+		"ja": "メニュー二子トップページです"
+	},
+	"edu4f3": {
+		"zh-cn": "异常页",
+		"en": "Abnormal page",
+		"ko": "예외 페이지",
+		"ja": "異常ページです"
+	},
+	"cxe9rp4": {
+		"zh-cn": "插件示例",
+		"en": "Plugin example",
+		"ko": "플러그인 예제",
+		"ja": "プラグイン例"
+	},
+	"cr5it3": {
+		"zh-cn": "剪贴板",
+		"en": "Clipboard",
+		"ko": "클립보드",
+		"ja": "クリップボード"
+	},
+	"fjmy2": {
+		"zh-cn": "图表",
+		"en": "Chart",
+		"ko": "도표",
+		"ja": "グラフです"
+	},
+	"jb0jx3": {
+		"zh-cn": "编辑器",
+		"en": "Editor",
+		"ko": "편집기",
+		"ja": "エディタ"
+	},
+	"u59y1o6": {
+		"zh-cn": "富文本编辑器",
+		"en": "Rich text editor",
+		"ko": "리치 텍스트 편집기",
+		"ja": "リッチなテキストエディターです"
+	},
+	"wzdp4s6": {
+		"zh-cn": "MD 编辑器",
+		"en": "MD Editor",
+		"ko": "md 편집기",
+		"ja": "MDエディタ"
+	},
+	"fb2m2": {
+		"zh-cn": "地图",
+		"en": "Map",
+		"ko": "지도",
+		"ja": "地図です"
+	},
+	"h6kd2": {
+		"zh-cn": "打印",
+		"en": "Print",
+		"ko": "인쇄",
+		"ja": "印刷します"
+	},
+	"o9sb2": {
+		"zh-cn": "视频",
+		"en": "Video",
+		"ko": "동영상",
+		"ja": "ビデオです"
+	},
+	"flzwg3": {
+		"zh-cn": "条形码",
+		"en": "Barcode",
+		"ko": "바코드",
+		"ja": "バーコードです"
+	},
+	"ho532": {
+		"zh-cn": "拼音",
+		"en": "Pinyin",
+		"ko": "병 음",
+		"ja": "ピンインです"
+	},
+	"w2484u6": {
+		"zh-cn": "PDF 预览",
+		"en": "PDF Preview",
+		"ko": "pdf 미리보기",
+		"ja": "PDFプレビューです。"
+	},
+	"hpdq53": {
+		"zh-cn": "甘特图",
+		"en": "Gantt chart",
+		"ko": "간터투",
+		"ja": "ガントチャートです"
+	},
+	"eukba3": {
+		"zh-cn": "打字机",
+		"en": "Typewriter",
+		"ko": "타자기",
+		"ja": "タイプライター"
+	},
+	"nrv82": {
+		"zh-cn": "表格",
+		"en": "Form",
+		"ko": "도표",
+		"ja": "表です"
+	},
+	"fvzv4r7": {
+		"zh-cn": "登录 / 注册",
+		"en": "Login/Registration",
+		"ko": "로그인",
+		"ja": "ログインします"
+	},
+	"7grhuz6": {
+		"zh-cn": "请输入用户名",
+		"en": "Please enter the username",
+		"ko": "사용자 이름을 입력하십시오",
+		"ja": "ユーザー名の入力をお願いします"
+	},
+	"7b32n16": {
+		"zh-cn": "请输入验证码",
+		"en": "Please enter the verification code",
+		"ko": "인증번호를 입력해주세요",
+		"ja": "captcha入力をお願いします。"
+	},
+	"2j9vj05": {
+		"zh-cn": "请输入密码",
+		"en": "Please enter the password.",
+		"ko": "비밀번호를 입력하십시오.",
+		"ja": "パスワードをお願いします"
+	},
+	"pyymjc7": {
+		"zh-cn": "请再次输入密码",
+		"en": "Please enter the password again",
+		"ko": "비밀번호를 다시 입력하십시오",
+		"ja": "パスワードの再入力をお願いします"
+	},
+	"gvefve5": {
+		"zh-cn": "验证码登录",
+		"en": "Verification code login",
+		"ko": "인증 로그인",
+		"ja": "認証コード登録です"
+	},
+	"k2omx04": {
+		"zh-cn": "验证成功",
+		"en": "Verification successful",
+		"ko": "성공적으로 인증했습니다.",
+		"ja": "検証成功です"
+	},
+	"fcewjt4": {
+		"zh-cn": "登录成功",
+		"en": "Login successful",
+		"ko": "로그인 성공",
+		"ja": "ログインできました"
+	},
+	"stm5dyh": {
+		"zh-cn": "欢迎回来，{userName} ！",
+		"en": "Welcome back, {userName}!",
+		"ko": "돌아와 주셔서 감사합니다!",
+		"ja": "お帰りなさい,{userName} !"
+	},
+	"c2uy5x4": {
+		"zh-cn": "密码登录",
+		"en": "Password login",
+		"ko": "비밀번호 로그인",
+		"ja": "ログインパスワードです"
+	},
+	"kulhu3": {
+		"zh-cn": "记住我",
+		"en": "Remember me",
+		"ko": "나를 기억하다",
+		"ja": "覚えていてください"
+	},
+	"xfgztg5": {
+		"zh-cn": "忘记密码？",
+		"en": "Forgot the password?",
+		"ko": "비밀번호를 잊었나요?",
+		"ja": "パスワードを忘れましたか?"
+	},
+	"e34j054": {
+		"zh-cn": "注册账号",
+		"en": "Register an account",
+		"ko": "가입 계정",
+		"ja": "アカウントを登録します。"
+	},
+	"s7xrh16": {
+		"zh-cn": "其他账号登录",
+		"en": "Login with other accounts",
+		"ko": "기타 계정 등록",
+		"ja": "他のアカウントを登録します"
+	},
+	"v1a1806": {
+		"zh-cn": "其他登录方式",
+		"en": "Other login methods",
+		"ko": "기타 로그인 방법",
+		"ja": "その他の登録方法です"
+	},
+	"1l0s4x5": {
+		"zh-cn": "超级管理员",
+		"en": "Super Administrator",
+		"ko": "슈퍼 관리자",
+		"ja": "スーパー管理人です"
+	},
+	"io38z3": {
+		"zh-cn": "管理员",
+		"en": "Administrator",
+		"ko": "관리원",
+		"ja": "管理人です"
+	},
+	"dirp8b4": {
+		"zh-cn": "普通用户",
+		"en": "Ordinary user",
+		"ko": "일반 사용자",
+		"ja": "一般ユーザーです"
+	},
+	"t09mz15": {
+		"zh-cn": "获取验证码",
+		"en": "Obtain the verification code",
+		"ko": "인증 코드 가져오기",
+		"ja": "認証コードを取得します"
+	},
+	"55b1o3c": {
+		"zh-cn": "{time}秒后重新获取",
+		"en": "Retrieve it after {time} seconds",
+		"ko": "시간 (time)이 지나면 다시 입력한다",
+		"ja": "{time}秒後に再取得します"
+	},
+	"nclo397": {
+		"zh-cn": "验证码发送成功",
+		"en": "The verification code was sent successfully",
+		"ko": "인증 코드가 성공적으로 전송되었습니다",
+		"ja": "captcha送信成功です"
+	},
+	"q2odbu8": {
+		"zh-cn": "请输入图片验证码",
+		"en": "Please enter the verification code for the picture",
+		"ko": "그림 인증번호를 입력해주세요",
+		"ja": "画像認証コードの入力をお願いします"
+	},
+	"1h6elqa": {
+		"zh-cn": "我已经仔细阅读并接受",
+		"en": "I have read carefully and accepted",
+		"ko": "나는 이미 자세히 읽고 받아들였다",
+		"ja": "ちゃんと読んで納得しました"
+	},
+	"s59kel6": {
+		"zh-cn": "《用户协议》",
+		"en": "\"User Agreement\"",
+		"ko": "「 사용자협의 」",
+		"ja": "『ユーザープロトコル』です"
+	},
+	"3lkzyk7": {
+		"zh-cn": "《隐私权政策》",
+		"en": "\"Privacy Policy\"",
+		"ko": "「 개인정보보호정책 」",
+		"ja": "『プライバシーポリシー』です"
+	},
+	"ix54os4": {
+		"zh-cn": "重置密码",
+		"en": "Reset password",
+		"ko": "비밀번호 초기화",
+		"ja": "パスワードをリセットします"
+	},
+	"gdpfa44": {
+		"zh-cn": "绑定微信",
+		"en": "Bind wechat",
+		"ko": "위챗 바인딩",
+		"ja": "wechatと連携します"
+	},
+	"y5ab3l5x": {
+		"zh-cn": "SoybeanAdmin 是一个优雅且功能强大的后台管理模板，基于最新的前端技术栈，包括 Vue3, Vite5, TypeScript, Pinia 和 UnoCSS。它内置了丰富的主题配置和组件，代码规范严谨，实现了自动化的文件路由系统。此外，它还采用了基于 ApiFox 的在线Mock数据方案。SoybeanAdmin 为您提供了一站式的后台管理解决方案，无需额外配置，开箱即用。同样是一个快速学习前沿技术的最佳实践。",
+		"en": "SoybeanAdmin is an elegant and powerful backend management template based on the latest front-end technology stack, including Vue3, Vite5, TypeScript, Pinia and UnoCSS. It has a rich built-in theme configuration and components, with strict code standards, and realizes an automated file routing system. Furthermore, it also adopts the online Mock data scheme based on ApiFox. SoybeanAdmin offers you a one-stop background management solution that requires no additional configuration and is ready to use out of the box. It is also a best practice for quickly learning cutting-edge technologies.",
+		"ko": "soybeanadmin은 vue3, vite5, typescript, pinia 및 unocss와 같은 최신 프론트엔드 기술 스택들을 기반으로 한 우아하고 강력한 백그라운드 관리 템플릿이다.풍부한 테마배치와 구성요소를 내장하였으며 코드가 엄격하고 자동화된 문서라우팅시스템을 실현하였다.또한, apifox 기반의 온라인 mock 데이터 방식을 사용한다.soybeanadmin은 추가 설정 없이 즉시 사용할 수 있는 원스톱 백그라운드 관리 솔루션을 제공합니다.최첨단기술을 빨리 배울 수 있는 모범 사례이기도 합니다.",
+		"ja": "SoybeanAdminは、Vue3、Vite5、TypeScript、Pinia、UnoCSSなどの最新のフロントエンド技術スタックをベースとした、エレガントで高機能なバックエンド管理テンプレートです。それは豊富なテーマの構成とコンポーネントを内蔵して、コードの仕様は厳格で、自働化のファイルのルーティングシステムを実現します。また、ApiFoxによるオンラインモックデータスキームも採用しています。SoybeanAdminは、ワンストップのバックオフィス管理ソリューションを提供しています。最先端の技術を素早く習得するための最良の実践です"
+	},
+	"k06c2": {
+		"zh-cn": "版本",
+		"en": "Version",
+		"ko": "버전",
+		"ja": "バージョンです"
+	},
+	"w0jcws6": {
+		"zh-cn": "最新构建时间",
+		"en": "The latest build time",
+		"ko": "최신 빌드 시간",
+		"ja": "最新の構築時期です"
+	},
+	"tmoa4t9": {
+		"zh-cn": "Github 地址",
+		"en": "Github address",
+		"ko": "github 주소",
+		"ja": "Githubアドレスです"
+	},
+	"jt4dlg4": {
+		"zh-cn": "预览地址",
+		"en": "Preview address",
+		"ko": "주소 미리 보기",
+		"ja": "プレビューアドレスです。"
+	},
+	"f3pxhd4": {
+		"zh-cn": "生产依赖",
+		"en": "Production dependence",
+		"ko": "생산의존도",
+		"ja": "生産依存症です"
+	},
+	"cc171m4": {
+		"zh-cn": "开发依赖",
+		"en": "Development dependency",
+		"ko": "개발의존성",
+		"ja": "開発依存です"
+	},
+	"iunmgq2e": {
+		"zh-cn": "为了方便大家开发和更新合并，我们对main分支的代码进行了精简，只保留了首页菜单，其余内容已移至example分支进行维护。预览地址显示的内容即为example分支的内容。",
+		"en": "To facilitate everyone's development and update merge, we have streamlined the code of the main branch, retaining only the home page menu. The rest of the content has been moved to the example branch for maintenance. The content displayed at the preview address is the content of the example branch.",
+		"ko": "개발 및 업데이트를 위해 메인 브랜치의 코드를 간소화하여 홈페이지 메뉴만 남기고 나머지 컨텐츠 관리를 위해 example 브랜치로 이동하였다.미리 보기 주소는 example 브랜치의 콘텐트를 보여줍니다.",
+		"ja": "みんなの開発と更新のために、私達はmainブランチのコードを簡素化しました。トップページのメニューだけを残して、残りの内容はexampleブランチに移働してメンテナンスしました。プレビューアドレスに表示されるコンテンツは、exampleブランチのコンテンツとなります。"
+	},
+	"ha1f3yr": {
+		"zh-cn": "早安，{userName}, 今天又是充满活力的一天!",
+		"en": "Good morning, {userName}. Today is another energetic day!",
+		"ko": "안녕하십니까, {username} 오늘도 활기찬 하루입니다!",
+		"ja": "おはようございます,{userName},今日もまた活気に満ちた一日です!"
+	},
+	"dc901th": {
+		"zh-cn": "今日多云转晴，20℃ - 25℃!",
+		"en": "It's cloudy turning to sunny today, with a temperature range of 20℃ to 25℃!",
+		"ko": "오늘은 구름이 많다가 개여 20℃-25 ℃입니다!",
+		"ja": "今日は曇りのち晴れ、20℃~ 25℃でしょう。"
+	},
+	"mwrqz3": {
+		"zh-cn": "项目数",
+		"en": "Number of projects",
+		"ko": "종목 수",
+		"ja": "項目数です"
+	},
+	"gp892": {
+		"zh-cn": "待办",
+		"en": "To be done",
+		"ko": "할 일",
+		"ja": "待ちます"
+	},
+	"j5rb2": {
+		"zh-cn": "消息",
+		"en": "Message",
+		"ko": "소식",
+		"ja": "メッセージです"
+	},
+	"c4q4d3": {
+		"zh-cn": "下载量",
+		"en": "Download volume",
+		"ko": "다운로드량",
+		"ja": "ダウンロードします"
+	},
+	"gcxij3": {
+		"zh-cn": "注册量",
+		"en": "Registration volume",
+		"ko": "등록량",
+		"ja": "登録量"
+	},
+	"aewvek4": {
+		"zh-cn": "作息安排",
+		"en": "Schedule",
+		"ko": "일과 휴식 안배",
+		"ja": "生活スケジュールです。"
+	},
+	"fz5m2": {
+		"zh-cn": "学习",
+		"en": "Study",
+		"ko": "학습",
+		"ja": "勉強します"
+	},
+	"dz7i2": {
+		"zh-cn": "休息",
+		"en": "Rest",
+		"ko": "쉬",
+		"ja": "休みます"
+	},
+	"frr32": {
+		"zh-cn": "娱乐",
+		"en": "Entertainment",
+		"ko": "오락",
+		"ja": "娯楽です"
+	},
+	"eramh3": {
+		"zh-cn": "成交额",
+		"en": "Transaction amount",
+		"ko": "거래액",
+		"ja": "出来高です"
+	},
+	"er9a33": {
+		"zh-cn": "成交量",
+		"en": "Trading volume",
+		"ko": "거래량",
+		"ja": "出来高です"
+	},
+	"dcxda74": {
+		"zh-cn": "更多动态",
+		"en": "More updates",
+		"ko": "추가 동적",
+		"ja": "もっとダイナミックです"
+	},
+	"k5og4015": {
+		"zh-cn": "Soybean 在2021年5月28日创建了开源项目 soybean-admin!",
+		"en": "soybean created the open-source project Curd-Admin! On May 28, 2021.",
+		"ko": "소이빈은 2021년 5월 28일, 오픈 소스 프로젝트 soybean-admin!",
+		"ja": "Soybeanは2021年5月28日にオープンソースプロジェクトsoybean-admin!"
+	},
+	"6ym70m17": {
+		"zh-cn": "Yanbowe 向 soybean-admin 提交了一个bug，多标签栏不会自适应。",
+		"en": "Yanbowe submitted a bug to soybean admin that multiple TAB bars do not adapt.",
+		"ko": "양보위는 soybean-admin에 여러 태그 표시줄이 적응하지 않는 버그를 제출했다.",
+		"ja": "Yanboweはsoybean-adminに複数タブが適応しないバグを投稿しました"
+	},
+	"g4sfqj12": {
+		"zh-cn": "Soybean 准备为 soybean-admin 的发布做充分的准备工作!",
+		"en": "Soybean is ready to make full preparations for the release of soybean-admin!",
+		"ko": "soybean이 soybean-admin 출시를 위해 열심히 준비하고 있습니다!",
+		"ja": "Soybeanはsoybean-adminのリリースに向けて万全の準備をしてまいります!"
+	},
+	"nakasfy": {
+		"zh-cn": "Soybean 正在忙于为soybean-admin写项目说明文档！",
+		"en": "Soybean is busy writing the project description document for soybean-admin!",
+		"ko": "soybean은 soybean-admin을 위한 프로젝트 설명서를 작성하느라 바쁘다!",
+		"ja": "Soybeanはsoybean-adminのためにプロジェクト説明のドキュメントを書いています!"
+	},
+	"qe0pw2t": {
+		"zh-cn": "Soybean 刚才把工作台页面随便写了一些，凑合能看了！",
+		"en": "Soybean just wrote a few random pieces on the workbench page. It's passable now!",
+		"ko": "soybean이 방금 책상 페이지에 대충 몇 장 적어놓았는데, 대충 볼 수 있네!",
+		"ja": "Soybeanはさっき作業台のページを適当に書いて、なんとか読めるようになりました!"
+	},
+	"ehxw2": {
+		"zh-cn": "创意",
+		"en": "Creativity",
+		"ko": "아이디어",
+		"ja": "アイデアです"
+	},
+	"38bl8z5": {
+		"zh-cn": "标签页操作",
+		"en": "TAB page operation",
+		"ko": "탭 동작",
+		"ja": "タブ操作です"
+	},
+	"ep3ie15": {
+		"zh-cn": "添加标签页",
+		"en": "Add a TAB page",
+		"ko": "탭 추가",
+		"ja": "タブを追加します"
+	},
+	"urpcu77": {
+		"zh-cn": "跳转到关于页面",
+		"en": "Jump to the About page",
+		"ko": "정보 페이지로 갑니다",
+		"ja": "ページに飛びます"
+	},
+	"hc8kkc5": {
+		"zh-cn": "关闭标签页",
+		"en": "Close the TAB page",
+		"ko": "탭 닫기",
+		"ja": "タブを閉じます"
+	},
+	"atwg8m7": {
+		"zh-cn": "关闭当前标签页",
+		"en": "Close the current TAB page",
+		"ko": "현재 탭을 닫습니다",
+		"ja": "現在のタブを閉じます"
+	},
+	"c3980x9": {
+		"zh-cn": "关闭\"关于\"标签页",
+		"en": "Close the \"About\" TAB",
+		"ko": "정보 탭을 닫습니다",
+		"ja": "「について」タブを閉じます"
+	},
+	"rglz556": {
+		"zh-cn": "添加多标签页",
+		"en": "Add multiple tabs",
+		"ko": "다중 탭을 추가합니다",
+		"ja": "マルチタブを追加します"
+	},
+	"l9i5y09": {
+		"zh-cn": "跳转到多标签页页面",
+		"en": "Jump to the multi-tab page",
+		"ko": "다중 탭 페이지로 갑니다",
+		"ja": "マルチタップページにジャンプします"
+	},
+	"x5tghnh": {
+		"zh-cn": "跳转到多标签页页面(带有查询参数)",
+		"en": "Jump to the multi-tab page (with query parameters)",
+		"ko": "다중 탭으로 가기 (쿼리 매개변수로)",
+		"ja": "マルチタップページ(クエリパラメータ付き)にジャンプします"
+	},
+	"38an0x5": {
+		"zh-cn": "标签页标题",
+		"en": "TAB page title",
+		"ko": "탭 제목",
+		"ja": "タブタイトルです。"
+	},
+	"ai9rjw4": {
+		"zh-cn": "修改标题",
+		"en": "Modify the title",
+		"ko": "제목 수정",
+		"ja": "タイトルを修正します"
+	},
+	"ix7e5u4": {
+		"zh-cn": "重置标题",
+		"en": "Reset the title",
+		"ko": "제목 초기화",
+		"ja": "タイトルをリセットします"
+	},
+	"ie1jf44": {
+		"zh-cn": "路由参数",
+		"en": "Routing parameters",
+		"ko": "라우팅 인자",
+		"ja": "ルーティングパラメータです"
+	},
+	"8aynicf": {
+		"zh-cn": "返回 function_tab",
+		"en": "Return function_tab",
+		"ko": "function_tab를 반환한다",
+		"ja": "function_tabを返します"
+	},
+	"arow0c4": {
+		"zh-cn": "切换账号",
+		"en": "Switch accounts",
+		"ko": "계좌 전환",
+		"ja": "アカウントの切り替えです"
+	},
+	"ap64slg": {
+		"zh-cn": "权限钩子函数 `hasAuth`",
+		"en": "Permission hook function 'hasAuth'",
+		"ko": "후크 함수'hasauth'",
+		"ja": "権限フック関数「hasAuth」です"
+	},
+	"15pdut5": {
+		"zh-cn": "管理员可见",
+		"en": "Visible to the administrator",
+		"ko": "관리자 표시",
+		"ja": "管理人可視です"
+	},
+	"8ng07a8": {
+		"zh-cn": "管理员和用户可见",
+		"en": "Visible to administrators and users",
+		"ko": "관리자와 사용자가 볼 수 있습니다",
+		"ja": "管理者とユーザーには見えます"
+	},
+	"tval7kb": {
+		"zh-cn": "重复请求错误只出现一次",
+		"en": "The repeated request error occurs only once",
+		"ko": "반복 요청 오류가 한 번만 발생했습니다",
+		"ja": "再請求エラーは1回だけです。"
+	},
+	"350q0v6": {
+		"zh-cn": "重复请求错误",
+		"en": "Repeated request error",
+		"ko": "반복 요청 오류",
+		"ja": "請求ミスを繰り返します。"
+	},
+	"aspnhx9": {
+		"zh-cn": "自定义请求错误 1",
+		"en": "Custom request Error 1",
+		"ko": "사용자 정의 요청 오류 1",
+		"ja": "カスタム要求エラー1です"
+	},
+	"aspnhw9": {
+		"zh-cn": "自定义请求错误 2",
+		"en": "Custom Request Error 2",
+		"ko": "사용자 정의 요청 오류 2",
+		"ja": "カスタムリクエストエラー2です"
+	},
+	"8mg9yc5": {
+		"zh-cn": "发送验证码",
+		"en": "Send the verification code",
+		"ko": "인증 코드 보내기",
+		"ja": "captchaを送ります"
+	},
+	"gqoall4": {
+		"zh-cn": "自动请求",
+		"en": "Automatic request",
+		"ko": "자동 요청",
+		"ja": "自動請求です"
+	},
+	"k3fsotd": {
+		"zh-cn": "浏览器窗口切换自动请求数据",
+		"en": "The browser window switches to automatically request data",
+		"ko": "브라우저 창이 자동으로 데이터를 요청합니다",
+		"ja": "ブラウザのウィンドウを切り替えて自動的にデータを要求します"
+	},
+	"7i83jc9": {
+		"zh-cn": "每3秒自动请求一次",
+		"en": "Request automatically every 3 seconds",
+		"ko": "3초마다 한 번씩 자동으로 요청된다",
+		"ja": "3秒ごとに自動的に要求されます"
+	},
+	"6cnv6j9": {
+		"zh-cn": "网络重连后自动请求",
+		"en": "Automatic request after network reconnection",
+		"ko": "네트워크 재연결 후 자동으로 요청됩니다",
+		"ja": "ネットワーク再接続後自動的に要求されます"
+	},
+	"devbay4": {
+		"zh-cn": "更新时间",
+		"en": "Update time",
+		"ko": "업데이트 시간",
+		"ja": "更新時間です"
+	},
+	"cd6sl24": {
+		"zh-cn": "开始请求",
+		"en": "Start the request",
+		"ko": "요청 시작",
+		"ja": "お願いを始めます"
+	},
+	"alacs14": {
+		"zh-cn": "停止请求",
+		"en": "Stop the request",
+		"ko": "요청 중지",
+		"ja": "停止要請です"
+	},
+	"o4jyhc7": {
+		"zh-cn": "跨组件触发请求",
+		"en": "Trigger requests across components",
+		"ko": "다중 구성 요소 트리거 요청",
+		"ja": "コンポーネント間トリガ要求です"
+	},
+	"9hn4t6a": {
+		"zh-cn": "手动触发所有自动请求",
+		"en": "Manually trigger all automatic requests",
+		"ko": "수동으로 모든 자동 요청을 실행합니다",
+		"ja": "すべての自動リクエストを手動で起動します"
+	},
+	"eymx2": {
+		"zh-cn": "启用",
+		"en": "Enable",
+		"ko": "사용 하기",
+		"ja": "起用します"
+	},
+	"lb5z2": {
+		"zh-cn": "禁用",
+		"en": "Disable",
+		"ko": "사용 안 함",
+		"ja": "無効です"
+	},
+	"hxayvl4": {
+		"zh-cn": "角色列表",
+		"en": "Role list",
+		"ko": "역할 목록",
+		"ja": "登場人物一覧です"
+	},
+	"hxb80z4": {
+		"zh-cn": "角色名称",
+		"en": "Character name",
+		"ko": "역할 이름",
+		"ja": "役名です"
+	},
+	"hxij634": {
+		"zh-cn": "角色编码",
+		"en": "Role coding",
+		"ko": "역할 인코딩",
+		"ja": "キャラクターコードです"
+	},
+	"hxganf4": {
+		"zh-cn": "角色状态",
+		"en": "Role status",
+		"ko": "역할 상태",
+		"ja": "役割の状態です"
+	},
+	"hxe0v54": {
+		"zh-cn": "角色描述",
+		"en": "Role description",
+		"ko": "역할 설명",
+		"ja": "キャラクター描写です"
+	},
+	"gzftwm4": {
+		"zh-cn": "菜单权限",
+		"en": "Menu permission",
+		"ko": "메뉴 권한",
+		"ja": "メニュー権限です"
+	},
+	"d3yvw24": {
+		"zh-cn": "按钮权限",
+		"en": "Button permission",
+		"ko": "단추 권한",
+		"ja": "ボタン権限です"
+	},
+	"flrstw7": {
+		"zh-cn": "请输入角色名称",
+		"en": "Please enter the character name",
+		"ko": "역할명을 입력하십시오",
+		"ja": "キャラクター名の入力をお願いします"
+	},
+	"flkhos7": {
+		"zh-cn": "请输入角色编码",
+		"en": "Please enter the character code",
+		"ko": "역할 번호를 입력하십시오",
+		"ja": "キャラクターコードをお願いします"
+	},
+	"xb1yzi7": {
+		"zh-cn": "请选择角色状态",
+		"en": "Please select the character status",
+		"ko": "역할 상태를 선택하세요",
+		"ja": "キャラクターステータスを選択します"
+	},
+	"flozzq7": {
+		"zh-cn": "请输入角色描述",
+		"en": "Please enter the role description",
+		"ko": "역할 설명을 입력해 주세요",
+		"ja": "キャラクター記述をお願いします"
+	},
+	"d7di6m4": {
+		"zh-cn": "新增角色",
+		"en": "New character",
+		"ko": "신규 캐릭터",
+		"ja": "追加キャラクターです"
+	},
+	"gmqxqz4": {
+		"zh-cn": "编辑角色",
+		"en": "Editor role",
+		"ko": "역할 편집",
+		"ja": "編集役です"
+	},
+	"hmxge3": {
+		"zh-cn": "用户名",
+		"en": "User name",
+		"ko": "사용자 이름",
+		"ja": "ユーザー名です"
+	},
+	"gt0k2": {
+		"zh-cn": "性别",
+		"en": "Gender",
+		"ko": "성별",
+		"ja": "性別です"
+	},
+	"f70o4v4": {
+		"zh-cn": "用户角色",
+		"en": "User role",
+		"ko": "사용자 역할",
+		"ja": "ユーザー役割です"
+	},
+	"2elmsl5": {
+		"zh-cn": "请选择性别",
+		"en": "Please select the gender.",
+		"ko": "성별을 선택하십시오",
+		"ja": "性別をお願いします"
+	},
+	"yzic5t7": {
+		"zh-cn": "请选择用户状态",
+		"en": "Please select the user status",
+		"ko": "사용자 상태를 선택하십시오",
+		"ja": "ユーザーステータスの選択をお願いします"
+	},
+	"yzmgh27": {
+		"zh-cn": "请选择用户角色",
+		"en": "Please select the user role",
+		"ko": "사용자 역할을 선택하십시오",
+		"ja": "ユーザーキャラクターの選択をお願いします"
+	},
+	"d79ta54": {
+		"zh-cn": "新增用户",
+		"en": "New user",
+		"ko": "신규 사용자",
+		"ja": "新規加入者です"
+	},
+	"gmn8ui4": {
+		"zh-cn": "编辑用户",
+		"en": "Edit user",
+		"ko": "사용자 편집",
+		"ja": "編集ユーザーです"
+	},
+	"n5j1": {
+		"zh-cn": "男",
+		"en": "male",
+		"ko": "남자",
+		"ja": "男です"
+	},
+	"ho31": {
+		"zh-cn": "女",
+		"en": "female",
+		"ko": "여자",
+		"ja": "女です"
+	},
+	"7d1ll16": {
+		"zh-cn": "父级菜单ID",
+		"en": "Parent menu ID",
+		"ko": "상위 메뉴 id입니다",
+		"ja": "親メニューIDです"
+	},
+	"iav8rn4": {
+		"zh-cn": "路径参数",
+		"en": "Path parameter",
+		"ko": "경로 인자",
+		"ja": "パスパラメータです"
+	},
+	"ghwd2": {
+		"zh-cn": "布局",
+		"en": "Layout",
+		"ko": "레이아웃",
+		"ja": "レイアウトです"
+	},
+	"jv17gf4": {
+		"zh-cn": "页面组件",
+		"en": "Page component",
+		"ko": "페이지 구성 요소",
+		"ja": "ページのコンポーネントです"
+	},
+	"a15spb6": {
+		"zh-cn": "国际化key",
+		"en": "Internationalization key",
+		"ko": "국제화 key",
+		"ja": "グローバルkeyです"
+	},
+	"ddntcd4": {
+		"zh-cn": "本地图标",
+		"en": "Local icon",
+		"ko": "로컬 아이콘",
+		"ja": "ローカルアイコンです"
+	},
+	"beu4mx4": {
+		"zh-cn": "图标类型",
+		"en": "Icon type",
+		"ko": "아이콘 형식",
+		"ja": "アイコンタイプです"
+	},
+	"hge52": {
+		"zh-cn": "排序",
+		"en": "Sorting",
+		"ko": "정렬",
+		"ja": "順序付けです"
+	},
+	"chuubd4": {
+		"zh-cn": "常量路由",
+		"en": "Constant routing",
+		"ko": "상수 라우팅",
+		"ja": "定数経路"
+	},
+	"gf2a2v4": {
+		"zh-cn": "缓存路由",
+		"en": "Cache routing",
+		"ko": "캐시 라우팅",
+		"ja": "キャッシュ・ルーティング"
+	},
+	"fyy02": {
+		"zh-cn": "外链",
+		"en": "External link",
+		"ko": "외 사슬",
+		"ja": "外鎖です"
+	},
+	"jjvqt44": {
+		"zh-cn": "隐藏菜单",
+		"en": "Hidden menu",
+		"ko": "메뉴 숨기기",
+		"ja": "隠しメニュー"
+	},
+	"nf31nd5": {
+		"zh-cn": "高亮的菜单",
+		"en": "Highlighted menu",
+		"ko": "강조된 메뉴",
+		"ja": "ハイライトメニュー"
+	},
+	"hotrjj5": {
+		"zh-cn": "支持多页签",
+		"en": "Support multiple tabs",
+		"ko": "다중 탭을 지원합니다",
+		"ja": "多ページくじ対応です"
+	},
+	"5f6zv49": {
+		"zh-cn": "固定在页签中的序号",
+		"en": "The serial number fixed in the TAB",
+		"ko": "탭에 고정된 번호",
+		"ja": "ページくじに留められた番号です"
+	},
+	"hnt12": {
+		"zh-cn": "按钮",
+		"en": "Button",
+		"ko": "버튼",
+		"ja": "ボタンです"
+	},
+	"d42rsg4": {
+		"zh-cn": "按钮编码",
+		"en": "Button coding",
+		"ko": "단추 인코딩",
+		"ja": "ボタンコードです"
+	},
+	"d3y9hi4": {
+		"zh-cn": "按钮描述",
+		"en": "Button description",
+		"ko": "단추 설명",
+		"ja": "ボタン記述です"
+	},
+	"gzhhac4": {
+		"zh-cn": "菜单状态",
+		"en": "Menu status",
+		"ko": "메뉴 상태",
+		"ja": "メニュー状態です"
+	},
+	"2ebh7u5": {
+		"zh-cn": "请选择首页",
+		"en": "Please select the homepage.",
+		"ko": "첫 페이지를 선택해 주세요",
+		"ja": "トップページをお願いします。"
+	},
+	"y8z6747": {
+		"zh-cn": "请选择菜单类型",
+		"en": "Please select the menu type",
+		"ko": "메뉴 종류를 선택하세요",
+		"ja": "メニュータイプをお願いします。"
+	},
+	"gjqm6z7": {
+		"zh-cn": "请输入菜单名称",
+		"en": "Please enter the menu name",
+		"ko": "메뉴 이름을 입력하십시오",
+		"ja": "メニュー名を入力願います。"
+	},
+	"f51ble7": {
+		"zh-cn": "请输入路由名称",
+		"en": "Please enter the route name",
+		"ko": "라우팅 이름을 입력하십시오",
+		"ja": "ルート名をお願いします。"
+	},
+	"f4rmdc7": {
+		"zh-cn": "请输入路由路径",
+		"en": "Please enter the routing path",
+		"ko": "라우팅 경로를 입력하십시오",
+		"ja": "経路の入力をお願いします"
+	},
+	"f87s387": {
+		"zh-cn": "请输入路径参数",
+		"en": "Please enter the path parameters",
+		"ko": "경로 인수를 입력하십시오",
+		"ja": "パスパラメータの入力をお願いします"
+	},
+	"vdh26i7": {
+		"zh-cn": "请选择页面组件",
+		"en": "Please select the page component",
+		"ko": "페이지 구성 요소를 선택하십시오",
+		"ja": "ページの構成を選択します。"
+	},
+	"w1ll1i7": {
+		"zh-cn": "请选择布局组件",
+		"en": "Please select the layout component",
+		"ko": "레이아웃 구성 요소를 선택하십시오",
+		"ja": "レイアウトコンポーネントの選択をお願いします。"
+	},
+	"fk989m9": {
+		"zh-cn": "请输入国际化key",
+		"en": "Please enter the internationalization key",
+		"ko": "국제화 key를 입력하십시오",
+		"ja": "グローバルkeyの入力をお願いします。"
+	},
+	"2jarym5": {
+		"zh-cn": "请输入图标",
+		"en": "Please enter the icon.",
+		"ko": "아이콘을 입력하십시오",
+		"ja": "アイコンを入力します。"
+	},
+	"x69lok7": {
+		"zh-cn": "请选择本地图标",
+		"en": "Please select the local icon",
+		"ko": "로컬 아이콘을 선택하십시오",
+		"ja": "ローカルアイコンを選択します。"
+	},
+	"2j8ot65": {
+		"zh-cn": "请输入排序",
+		"en": "Please enter the sorting.",
+		"ko": "입력 정렬",
+		"ja": "並べ替えをお願いします。"
+	},
+	"2tmr4l9": {
+		"zh-cn": "请选择是否缓存路由",
+		"en": "Please select whether to cache the route",
+		"ko": "캐시 라우팅 여부를 선택하십시오",
+		"ja": "キャッシュするかどうかを選択します。"
+	},
+	"2ja69b5": {
+		"zh-cn": "请输入外链",
+		"en": "Please enter an external link",
+		"ko": "외부 체인을 입력해주세요",
+		"ja": "アウトライン入力をお願いします。"
+	},
+	"5yg7uu9": {
+		"zh-cn": "请选择是否隐藏菜单",
+		"en": "Please select whether to hide the menu",
+		"ko": "메뉴를 숨길지 선택하십시오",
+		"ja": "非表示メニューの選択をお願いします。"
+	},
+	"4nj7o9d": {
+		"zh-cn": "请选择高亮的菜单的路由名称",
+		"en": "Please select the route name of the highlighted menu",
+		"ko": "강조된 메뉴의 라우팅 이름을 선택하십시오",
+		"ja": "ハイライトメニューのルート名をお願いします。"
+	},
+	"cyqzrja": {
+		"zh-cn": "请选择是否支持多标签",
+		"en": "Please select whether to support multiple tags",
+		"ko": "다중 탭 지원 여부를 선택하십시오",
+		"ja": "マルチラベル対応の選択をお願いします。"
+	},
+	"m0ewnqb": {
+		"zh-cn": "请选择是否固定在页签中",
+		"en": "Please select whether to fix it in the TAB",
+		"ko": "탭에 고정할지 선택하십시오",
+		"ja": "ページくじに固定するかどうかを選択します。"
+	},
+	"np4eahc": {
+		"zh-cn": "请输入固定在页签中的序号",
+		"en": "Please enter the serial number fixed in the TAB",
+		"ko": "탭에 고정되어 있는 번호를 입력하십시오",
+		"ja": "ページくじに固定されている番号をお願いします。"
+	},
+	"9hx0rqa": {
+		"zh-cn": "请输入路由参数Key",
+		"en": "Please enter the routing parameter Key",
+		"ko": "라우터 키를 입력하십시오",
+		"ja": "ルーティングパラメータKeyを入力していただきます。"
+	},
+	"zi1j08c": {
+		"zh-cn": "请输入路由参数Value",
+		"en": "Please enter the routing parameter Value",
+		"ko": "라우팅 변수 value를 입력하십시오",
+		"ja": "ルーティングパラメータValueを入力します。"
+	},
+	"x1ebo37": {
+		"zh-cn": "请选择是否按钮",
+		"en": "Please select the \"Whether\" button",
+		"ko": "여부 단추를 선택하십시오",
+		"ja": "ボタンを選択します。"
+	},
+	"kf092f7": {
+		"zh-cn": "请输入按钮编码",
+		"en": "Please enter the button code",
+		"ko": "단추 인코딩을 입력하십시오",
+		"ja": "ボタンコードの入力をお願いします"
+	},
+	"kf4rdd7": {
+		"zh-cn": "请输入按钮描述",
+		"en": "Please enter the button description",
+		"ko": "단추 설명을 입력하십시오",
+		"ja": "ボタンの入力をお願いします。"
+	},
+	"y90scl7": {
+		"zh-cn": "请选择菜单状态",
+		"en": "Please select the menu status",
+		"ko": "메뉴 상태를 선택하세요",
+		"ja": "メニューステータスをお願いします。"
+	},
+	"d7c8dj4": {
+		"zh-cn": "新增菜单",
+		"en": "New menu added",
+		"ko": "메뉴 추가",
+		"ja": "メニュー追加です"
+	},
+	"gmpnxw4": {
+		"zh-cn": "编辑菜单",
+		"en": "Edit menu",
+		"ko": "메뉴 편집",
+		"ja": "メニューを編集します。"
+	},
+	"h0u7hh5": {
+		"zh-cn": "新增子菜单",
+		"en": "Add a submenu",
+		"ko": "하위 메뉴 추가",
+		"ja": "サブメニューを追加します"
+	},
+	"mu55as9": {
+		"zh-cn": "iconify图标",
+		"en": "iconify icon",
+		"ko": "아이코드 아이콘",
+		"ja": "iconifyアイコンです"
+	},
+	"adohlc4": {
+		"zh-cn": "不能为空",
+		"en": "It cannot be empty.",
+		"ko": "비워둘 수 없음",
+		"ja": "空にはできません"
+	},
+	"1achzt8": {
+		"zh-cn": "用户名格式不正确",
+		"en": "The username format is incorrect",
+		"ko": "사용자 이름의 형식이 올바르지 않습니다",
+		"ja": "ユーザー名のフォーマットが正しくありません。"
+	},
+	"ve0m7x8": {
+		"zh-cn": "手机号格式不正确",
+		"en": "The format of the mobile phone number is incorrect",
+		"ko": "휴대전화 번호의 형식이 틀립니다",
+		"ja": "携帯電話番号のフォーマットが間違っています。"
+	},
+	"wpoafnr": {
+		"zh-cn": "密码格式不正确，6-18位字符，包含字母、数字、下划线",
+		"en": "The password format is incorrect, ranging from 6 to 18 characters, including letters, numbers, and underscores",
+		"ko": "암호가 문자, 숫자, 밑줄을 포함하여 6-18자짜리 잘못된 형식입니다",
+		"ja": "パスワードの書式は正しくありません、6-18桁の文字、アルファベット、数字、下線を含みます"
+	},
+	"hrcq067": {
+		"zh-cn": "请输入确认密码",
+		"en": "Please enter the confirmation password",
+		"ko": "비밀번호 확인을 입력하십시오",
+		"ja": "確認パスワードをお願いします。"
+	},
+	"p31ihj9": {
+		"zh-cn": "两次输入密码不一致",
+		"en": "The passwords entered twice were inconsistent",
+		"ko": "두 번 입력한 비밀번호가 일치하지 않습니다",
+		"ja": "2回入力してもパスワードが一致しません"
+	},
+	"azo0h38": {
+		"zh-cn": "验证码格式不正确",
+		"en": "The verification code format is incorrect",
+		"ko": "인증 코드 형식이 올바르지 않습니다",
+		"ja": "captchaフォーマットが正しくありません。"
+	},
+	"venleq7": {
+		"zh-cn": "邮箱格式不正确",
+		"en": "The email format is incorrect",
+		"ko": "메일박스 형식이 올바르지 않습니다",
+		"ja": "メールのフォーマットが正しくありません。"
+	},
+	"aw6sdj4": {
+		"zh-cn": "关闭其它",
+		"en": "Turn off the others",
+		"ko": "기타 닫기",
+		"ja": "その他は閉鎖します"
+	},
+	"aw8u6z4": {
+		"zh-cn": "关闭左侧",
+		"en": "Close the left side",
+		"ko": "왼쪽 닫기",
+		"ja": "左側を閉じます"
+	},
+	"aw759q4": {
+		"zh-cn": "关闭右侧",
+		"en": "Close the right side",
+		"ko": "오른쪽 닫기",
+		"ja": "右側を閉じます"
+	},
+	"aw9pgj4": {
+		"zh-cn": "关闭所有",
+		"en": "Turn off all",
+		"ko": "모두 닫기",
+		"ja": "すべて閉鎖します"
+	},
+	"aroz724": {
+		"zh-cn": "切换语言",
+		"en": "Switch languages",
+		"ko": "언어 전환",
+		"ja": "言語を切り替えます"
+	},
+	"ii96jl4": {
+		"zh-cn": "退出全屏",
+		"en": "Exit full screen",
+		"ko": "전체 화면 끝내기",
+		"ja": "全画面から退出します"
+	},
+	"cslikh4": {
+		"zh-cn": "折叠菜单",
+		"en": "Folding menu",
+		"ko": "메뉴 접기",
+		"ja": "折りたたみメニュー"
+	},
+	"c1smf84": {
+		"zh-cn": "展开菜单",
+		"en": "Expand the menu",
+		"ko": "메뉴 펴기",
+		"ja": "メニューを展開します"
+	},
+	"faow2": {
+		"zh-cn": "固定",
+		"en": "Fixed",
+		"ko": "고정",
+		"ja": "固定します"
+	},
+	"b14v6a4": {
+		"zh-cn": "取消固定",
+		"en": "Cancel the fixation",
+		"ko": "고정 해제",
+		"ja": "固定をなくします"
+	},
+	"o5vr22b": {
+		"zh-cn": "共 {total} 条",
+		"en": "A total of {total} items",
+		"ko": "총 {total} 조항",
+		"ja": "{total}条です"
+	}
+}

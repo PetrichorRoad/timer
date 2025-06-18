@@ -56,6 +56,13 @@ let appList = ref([
     icon: BoatSharp,
     url: "https://github.com/zhaochenyu",
   },
+  {
+    name: "发布公告",
+    description: "发布企业公告",
+    code: "publishNotice",
+    icon: BoatSharp,
+    url: "https://github.com/zhaochenyu",
+  },
 ]);
 const openApp = (app) => { 
     let { code } = app;

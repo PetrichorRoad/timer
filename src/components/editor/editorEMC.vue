@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4">
+  <div class="">
     <editor
       v-model="content"
       api-key="no-api-key"
@@ -63,7 +63,7 @@ import "tinymce/plugins/save"; // 保存
 import "tinymce/plugins/searchreplace"; //查询替换
 import "tinymce/plugins/pagebreak"; //分页
 import "tinymce/plugins/insertdatetime"; //时间插入
-
+const emit = defineEmits(["update:content"]);
 const props = defineProps({
   plugins: {
     type: [String, Array],
@@ -82,7 +82,14 @@ const props = defineProps({
     default: "",
   },
 });
-const content = ref("");
+// const content = ref("");
+const content = computed({
+  get: () => {
+    console.log(props.content);
+    return props.content;
+  },
+  set: (value) => emit('update:content', value)
+})
 const init = ref({
   branding: false,
   promotion: false,
@@ -110,7 +117,9 @@ const init = ref({
     "tableprops tabledelete | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol",
   setup: (editor) => {
     editor.on("init", (e) => {
+      console.log("init", e);
     });
+
   },
   init_instance_callback: (editor) => {
     editor.on("blur", (e) => {
@@ -127,7 +136,13 @@ const init = ref({
     });
   },
 });
+watch(() => props.content,
+(newValue)=>{
+  console.log(newValue,'qwwqe');
+},{  immediate: true }
+)
 onMounted(() => {
+  console.log(props.content,'妈的');
   tinymce.init({ license_key: "gpl" });
 });
 defineExpose({
