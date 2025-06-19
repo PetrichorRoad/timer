@@ -111,5 +111,5 @@ const createWebSocket = () => {
       return websocketConnection.value = websocket
     }
 }
-createWebSocket()
+// createWebSocket()
 </script>

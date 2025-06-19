@@ -62,12 +62,15 @@ let login = ref({
   password: "123456",
 });
 const loginSubmit = async () => {
-  let res = await request.login(login.value);
-  let { data:{ token } } = res
-  localStorage.setItem("token", token);
-  localStorage.setItem("userInfo", JSON.stringify(res.data));
-  
   await loginTimerIM();
+  
+  // let res = await request.login(login.value);
+  // let { data:{ token } } = res
+  // localStorage.setItem("token", token);
+  // localStorage.setItem("userInfo", JSON.stringify(res.data));
+
+   localStorage.setItem("token", '123');
+  
   router.push("/");
 };
 const loginTimerIM = async () => {
