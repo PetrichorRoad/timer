@@ -6,20 +6,73 @@ import { all } from 'axios'
 export const chatStore = defineStore('chat-list', {
     state: () => {
         return {
-            chatList:[]
+            chatList:[],
+            conversation:{id:null,talk_mode:null},
+
+            chatRecords:[],
+
+            groupInfo:[],
+            friendInfo:{},
+            friendStatus:{},
         }
     },
     getters: {
         allChatList: (state) => state.chatList,
         friendChatList: (state) => state.chatList.filter(item => item.talk_mode === 1),
         groupChatList: (state) => state.chatList.filter(item => item.talk_mode === 2),
-        talkUnreadNum: (state) => state.chatList.reduce((total, item) => total + item.unread_num, 0)
+        talkUnreadNum: (state) => state.chatList.reduce((total, item) => total + item.unread_num, 0),
+
+        talkMode: (state) => state.conversation.talk_mode,
+
+        userTalkSession: (state) => {
+            let { chatRecords, friendInfo, friendStatus, conversation } = state
+            return { chatRecords, friendInfo, friendStatus, conversation }
+        },
+        groupTalkSession: (state) => {
+            let { chatRecords, groupInfo, conversation } = state
+            return { chatRecords, groupInfo, conversation }
+        }
     },
     actions: {
         async getChatList () {
-            console.log('先执行获取聊天列表');
             let { data} = await user.getChatList({})
             this.chatList = data.items
-        }
+        },
+        setConversation(talk){
+            this.conversation = talk
+            let { talk_mode } = talk
+            switch (talk_mode) {
+                case 1:
+                    this.getFriendsInfo()
+                    this.getFriendsStatus()
+                    this.getChatRecords()
+                    break;
+                case 2:
+                    this.getGroupInfo()
+                    this.getChatRecords()
+                    break;
+            }
+        },
+        async getChatRecords () {
+            let { talk_mode, to_from_id } = this.conversation
+            let { data } = await user.getTalkRecords({ talk_mode, to_from_id, cursor :0, limit: 30})
+            this.chatRecords = data.items
+        },
+        async getGroupInfo () {
+            let { to_from_id } = this.conversation
+            let { data } = await user.getGroupInfo({ group_id:to_from_id })
+            this.groupInfo = data
+        },
+        async getFriendsInfo () {
+            let { to_from_id } = this.conversation
+            let { data } = await user.getFriendsInfo({ user_id:to_from_id })
+            this.friendInfo = data
+        },
+        async getFriendsStatus () {
+            let { to_from_id } = this.conversation
+            let { data } = await user.getFriendsStatus({ user_id:to_from_id })
+            this.friendInfo = data
+        },
+
     }
 })

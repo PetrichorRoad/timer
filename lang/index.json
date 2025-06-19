@@ -1786,5 +1786,47 @@
 		"en": "female",
 		"ko": "여자",
 		"ja": "女です"
+	},
+	"hul22": {
+		"zh-cn": "是啥",
+		"en": "What is it?",
+		"ko": "뭐",
+		"ja": "なんですか"
+	},
+	"fiqf2": {
+		"zh-cn": "在线",
+		"en": "Online",
+		"ko": "온라인",
+		"ja": "オンラインです"
+	},
+	"6k9crt9": {
+		"zh-cn": "对方正在输入...",
+		"en": "The other party is inputting...",
+		"ko": "입력하는 중...",
+		"ja": "先方は入力中です…"
+	},
+	"j3cw23": {
+		"zh-cn": "群公告",
+		"en": "Group announcement",
+		"ko": "집단 공고",
+		"ja": "群宣言です"
+	},
+	"b5x6cs4": {
+		"zh-cn": "发起群聊",
+		"en": "Initiate a group chat",
+		"ko": "그룹채팅을 시작하다.",
+		"ja": "グループトークを始めます"
+	},
+	"it20f94": {
+		"zh-cn": "邀请好友",
+		"en": "Invite friends",
+		"ko": "친한 친구를 초대하다.",
+		"ja": "親友を招く"
+	},
+	"jddfn3": {
+		"zh-cn": "群详情",
+		"en": "Group Details",
+		"ko": "그룹상세",
+		"ja": "群の詳細です"
 	}
 }

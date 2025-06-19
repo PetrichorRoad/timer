@@ -3,7 +3,7 @@
     <div class="talk-item-avatar">
       <timer-avatar :src="avatar" :size="34" :username="data.name" />
       <div class="top-mask" @click.stop="emit('top-talk', data)">
-        <n-icon :component="data.is_top === 1 ? ArrowDown : ArrowUp" />
+        <n-icon :component="data.is_top === 1 ? CaretDownSharp : CaretUpOutline" />
       </div>
     </div>
 
@@ -11,9 +11,9 @@
       <div class="header">
         <div class="title gap-1">
           <span class="nickname">{{ username }}</span>
-          <span class="badge top p-1 rounded" v-show="data.is_top === 1">顶</span>
-          <span class="badge roboot p-1 rounded" v-show="data.is_robot === 1">助</span>
-          <span class="badge group p-1 rounded" v-show="data.talk_mode === 2">群</span>
+          <span class="badge top font-[12px] px-[2px] rounded-[4px]" v-show="data.is_top === 1">顶</span>
+          <span class="badge roboot font-[12px] rounded-[4px]" v-show="data.is_robot === 1">助</span>
+          <span class="badge group font-[12px] rounded-[4px]" v-show="data.talk_mode === 2">群</span>
         </div>
         <div class="datetime">
           <text-time :time="data.updated_at" />
@@ -51,6 +51,7 @@
 // import { ArrowUp, ArrowDown, CloseRemind } from '@icon-park/vue-next'
 import textTime from '@/components/custom/time.vue'
 import timerAvatar from '@/components/custom/timer-avatar.vue'
+import {CaretUpOutline,CaretDownSharp} from '@vicons/ionicons5'
 // import { ISession } from '@/types/chat'
 
 const emit = defineEmits(['tab-talk', 'top-talk'])
@@ -132,7 +133,7 @@ defineProps({
 
       .title {
         color: #1f2329;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px;
         flex: 1;
         display: flex;
@@ -221,6 +222,13 @@ defineProps({
 }
 
 .badge {
+  font-size: 10px;
+  height: 18px;
+  line-height: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 18px;
+
   &.top {
     color: red !important;
     background-color: #ffdddd !important;
