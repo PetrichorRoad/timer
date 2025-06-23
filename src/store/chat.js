@@ -1,7 +1,6 @@
 import { defineStore } from 'pinia'
 import { router } from '@/router'
 import user from '../api/modules/user'
-import { all } from 'axios'
 // 第一个参数 storeId 是仓库的key 必须独一无二
 export const chatStore = defineStore('chat-list', {
     state: () => {
@@ -14,6 +13,7 @@ export const chatStore = defineStore('chat-list', {
             groupInfo:[],
             friendInfo:{},
             friendStatus:{},
+            cursor:0
         }
     },
     getters: {
@@ -31,6 +31,15 @@ export const chatStore = defineStore('chat-list', {
         groupTalkSession: (state) => {
             let { chatRecords, groupInfo, conversation } = state
             return { chatRecords, groupInfo, conversation }
+        },
+        talkSession: (state) => {
+            let { talkMode, userTalkSession, groupTalkSession } = state
+            switch (talkMode) {
+                case 1:
+                    return userTalkSession
+                case 2:
+                    return groupTalkSession
+            }
         }
     },
     actions: {
@@ -55,13 +64,20 @@ export const chatStore = defineStore('chat-list', {
         },
         async getChatRecords () {
             let { talk_mode, to_from_id } = this.conversation
-            let { data } = await user.getTalkRecords({ talk_mode, to_from_id, cursor :0, limit: 30})
-            this.chatRecords = data.items
+            let { data: { items, cursor }  } = await user.getTalkRecords({ talk_mode, to_from_id, cursor :0, limit: 30})  
+            this.chatRecords = items.reverse()
+            this.cursor = cursor
+        },
+        async getMoreChatRecords () {
+            let { talk_mode, to_from_id } = this.conversation
+            let { data: { items, cursor } } = await user.getTalkRecords({ talk_mode, to_from_id, cursor: this.cursor, limit: 30 })
+            this.chatRecords = [...items.reverse(),...this.chatRecords]
+            this.cursor = cursor
         },
         async getGroupInfo () {
             let { to_from_id } = this.conversation
-            let { data } = await user.getGroupInfo({ group_id:to_from_id })
-            this.groupInfo = data
+            let { data: { items } } = await user.getGroupInfo({ group_id:to_from_id })
+            this.groupInfo = items
         },
         async getFriendsInfo () {
             let { to_from_id } = this.conversation

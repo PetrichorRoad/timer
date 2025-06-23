@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-import { defaultAvatar } from '@/constant/default'
+<script setup>
+import  defaultAvatar  from '@/assets/images/notify.png'
 
 defineProps({
   src: {

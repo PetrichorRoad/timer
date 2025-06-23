@@ -1,6 +1,6 @@
 <template>
   <div class="page relative flex">
-    <div class="left-chat-list flex flex-col w-[300px] border-solid border-r-[1px] border-[#44496B]">
+    <div class="left-chat-list flex flex-col w-[300px] border-solid border-r-[1px] border-my-border-1">
       <search-header :options="options" @on-keyword="onKeywordChange" @on-select="onselect"></search-header>
 
       <!-- <top-header
@@ -11,8 +11,7 @@
       /> -->
       <tabs-header v-model="selectIndex" />
       <main class="flex-1 overflow-y-auto">
-        <n-virtual-list ref="virtualListInst" class="max-h-inherit pointer" :item-size="66" :items="talkList.value">
-          
+        <n-virtual-list ref="virtualListInst" class="max-h-inherit pointer" :item-size="66" item-resizable :items="talkList.value">
           <template #default="{ item }">
             <talk-item :key="item.index_name" :data="item" :avatar="item.avatar" :username="item.remark || item.name"
              @tab-talk="onTabTalk" @top-talk="onToTopTalk" :active="conversation.id === item.id"
