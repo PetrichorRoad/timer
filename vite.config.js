@@ -16,7 +16,6 @@ import vitePluginsAutoI18n, {
 } from 'vite-auto-i18n-plugin'
 
 import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
-// https://vite.dev/config/
 export default defineConfig({
   base: "./",
   plugins: [

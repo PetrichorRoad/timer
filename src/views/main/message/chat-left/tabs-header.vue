@@ -23,7 +23,6 @@ import { chatStore } from "@/store/chat.js";
 const talkStore = chatStore();
 const {allChatList,friendChatList,groupChatList,talkUnreadNum} = storeToRefs(talkStore);
 const tabIndex = defineModel()
-console.log('后执行获取聊天列表');
 const tabs = ref([
   {
     name: '全部',

@@ -9,7 +9,7 @@
 
     <div class="talk-item-content">
       <div class="header">
-        <div class="title gap-1">
+        <div class="title text-my-text-1 gap-1">
           <span class="nickname">{{ username }}</span>
           <span class="badge top font-[12px] px-[2px] rounded-[4px]" v-show="data.is_top === 1">顶</span>
           <span class="badge roboot font-[12px] rounded-[4px]" v-show="data.is_robot === 1">助</span>
@@ -132,7 +132,6 @@ defineProps({
       align-items: center;
 
       .title {
-        color: #1f2329;
         font-size: 16px;
         line-height: 20px;
         flex: 1;

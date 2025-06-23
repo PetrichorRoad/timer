@@ -13,7 +13,7 @@ export const myTheme = {
                 2: '#003366',
             },
             myBorder: {
-                1: '#003366',
+                1: '#f5f5f5',
             },
             myPrimary: {
                 1: '#ab908b',
@@ -39,7 +39,7 @@ export const myTheme = {
                 2: '#FF0033',
             },
             myBorder: {
-                1: '#FF0033',
+                1: '#323232',
             },
         },
     },
@@ -57,7 +57,7 @@ export const myTheme = {
                 3: '#69514c',
             },
             myBorder: {
-                1: '#FF9900',
+                1: '#323232',
             },
             myPrimary: {
                 1: '#ab908b',
