@@ -49,5 +49,12 @@ export const getFriendsStatus = (data) => {
         data
     })
 }
+export const getVoteDetailById = (data) => {
+    return http({
+        url: '/api/v1/group/vote/detail',
+        method: 'post',
+        data
+    })
+}
 
-export default { login, getUserInfo, getChatList, getTalkRecords, getGroupInfo, getFriendsInfo, getFriendsStatus }
+export default { login, getUserInfo, getChatList, getTalkRecords, getGroupInfo, getFriendsInfo, getFriendsStatus, getVoteDetailById }

@@ -33,7 +33,7 @@
 
         <div class="tip">
           <div v-if="data.is_disturb === 1" class="disturb">
-            <n-icon :component="CloseRemind" />
+            <n-icon :component="CaretUpOutline" />
           </div>
           
           <div v-else class="unread" v-show="data.unread_num">
@@ -48,11 +48,9 @@
 </template>
 
 <script setup>
-// import { ArrowUp, ArrowDown, CloseRemind } from '@icon-park/vue-next'
 import textTime from '@/components/custom/time.vue'
 import timerAvatar from '@/components/custom/timer-avatar.vue'
 import {CaretUpOutline,CaretDownSharp} from '@vicons/ionicons5'
-// import { ISession } from '@/types/chat'
 
 const emit = defineEmits(['tab-talk', 'top-talk'])
 

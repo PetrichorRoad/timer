@@ -1828,5 +1828,245 @@
 		"en": "Group Details",
 		"ko": "그룹상세",
 		"ja": "群の詳細です"
+	},
+	"hu2t2": {
+		"zh-cn": "文本",
+		"en": "Text",
+		"ko": "텍스트",
+		"ja": "テキストです"
+	},
+	"e2ri2": {
+		"zh-cn": "代码",
+		"en": "Code",
+		"ko": "코드",
+		"ja": "コードです"
+	},
+	"ff9l2": {
+		"zh-cn": "图片",
+		"en": "Picture",
+		"ko": "사진",
+		"ja": "画像です"
+	},
+	"qola2": {
+		"zh-cn": "音频",
+		"en": "Audio",
+		"ko": "오디오",
+		"ja": "オーディオです"
+	},
+	"o9sb2": {
+		"zh-cn": "视频",
+		"en": "Video",
+		"ko": "동영상",
+		"ja": "ビデオです"
+	},
+	"hpan2": {
+		"zh-cn": "文件",
+		"en": "File",
+		"ko": "파일",
+		"ja": "書類です"
+	},
+	"e8032": {
+		"zh-cn": "会话",
+		"en": "Conversation",
+		"ko": "세션",
+		"ja": "会話をする"
+	},
+	"hfn72": {
+		"zh-cn": "投票",
+		"en": "Vote",
+		"ko": "투표",
+		"ja": "投票します"
+	},
+	"omue2": {
+		"zh-cn": "语音",
+		"en": "Voice",
+		"ko": "음성",
+		"ja": "音声です"
+	},
+	"dilacr4": {
+		"zh-cn": "未知类型",
+		"en": "Unknown type",
+		"ko": "알 수 없는 형식",
+		"ja": "未知のタイプです"
+	},
+	"b643fo4": {
+		"zh-cn": "发送失败",
+		"en": "Failed to send",
+		"ko": "보내기 실패",
+		"ja": "送信失敗です"
+	},
+	"d6lfv3": {
+		"zh-cn": "回复：",
+		"en": "Reply:",
+		"ko": "답장:",
+		"ja": "回答します:"
+	},
+	"ex962": {
+		"zh-cn": "名片",
+		"en": "Business card",
+		"ko": "명함",
+		"ja": "名刺です"
+	},
+	"fcbvxk4": {
+		"zh-cn": "登录信息",
+		"en": "Login information",
+		"ko": "로그인 정보",
+		"ja": "登録情報です"
+	},
+	"e80bbz4": {
+		"zh-cn": "混合信息",
+		"en": "Mixed information",
+		"ko": "혼합 정보",
+		"ja": "情報をミックスします"
+	},
+	"vaqp9s6": {
+		"zh-cn": "系统文本消息",
+		"en": "System text message",
+		"ko": "시스템 텍스트 메시지",
+		"ja": "テキストメッセージです"
+	},
+	"uko5v86": {
+		"zh-cn": "创建群聊消息",
+		"en": "Create group chat messages",
+		"ko": "그룹 메시지를 만듭니다",
+		"ja": "グループチャットのメッセージを作成します"
+	},
+	"kph2jy6": {
+		"zh-cn": "加入群聊消息",
+		"en": "Join the group chat message",
+		"ko": "그룹메시지에 가입하기",
+		"ja": "グループチャットに参加します"
+	},
+	"dd550y6": {
+		"zh-cn": "离开群聊消息",
+		"en": "Leave the group chat messages",
+		"ko": "채팅방을 떠나다",
+		"ja": "グループから離れてメッセージを発信します"
+	},
+	"kch8yt6": {
+		"zh-cn": "踢出群聊消息",
+		"en": "Kick out the group chat message",
+		"ko": "단체 채팅방을 내쫓다",
+		"ja": "グループチャットから除外します"
+	},
+	"1e5tek9": {
+		"zh-cn": "管理员撤回成员消息",
+		"en": "The administrator withdraws the member's message",
+		"ko": "관리자가 구성원 소식을 취소하다",
+		"ja": "管理者はメンバーメッセージを撤回します"
+	},
+	"jd2103": {
+		"zh-cn": "群解散",
+		"en": "Group disbandment",
+		"ko": "집단 해산",
+		"ja": "群は解散します"
+	},
+	"jagxv3": {
+		"zh-cn": "群禁言",
+		"en": "Group silencing",
+		"ko": "군중 금기",
+		"ja": "禁句です"
+	},
+	"jvikf85": {
+		"zh-cn": "群解除禁言",
+		"en": "The group has lifted the ban",
+		"ko": "금언을 해제하다",
+		"ja": "群は禁言を解きます"
+	},
+	"el0jnv5": {
+		"zh-cn": "群成员禁言",
+		"en": "Group members are muted",
+		"ko": "집단 성원 금언",
+		"ja": "メンバーの禁句です"
+	},
+	"o16t647": {
+		"zh-cn": "群成员解除禁言",
+		"en": "Group members have lifted the ban",
+		"ko": "군중이 금언을 해제하다",
+		"ja": "グループのメンバーは発禁を解きます"
+	},
+	"b0easz4": {
+		"zh-cn": "变更群主",
+		"en": "Change the group owner",
+		"ko": "군주 변경",
+		"ja": "群主を変更します"
+	},
+	"c2f6k3": {
+		"zh-cn": "你妈的",
+		"en": "Damn it!",
+		"ko": "너의 어머니",
+		"ja": "お母さんのです"
+	},
+	"g4ouyo6": {
+		"zh-cn": "[多选投票]",
+		"en": "[Multiple-choice voting]",
+		"ko": "[복수 투표]",
+		"ja": "[複数投票です]"
+	},
+	"wcb2m36": {
+		"zh-cn": "[单选投票]",
+		"en": "[Single-choice Voting]",
+		"ko": "[단일투표]",
+		"ja": "[ラジオ投票です]"
+	},
+	"nzc1": {
+		"zh-cn": "票",
+		"en": "ticket",
+		"ko": "표",
+		"ja": "チケットです"
+	},
+	"aadlfo6": {
+		"zh-cn": "应参与人数：",
+		"en": "Number of participants:",
+		"ko": "응당 참가인원수:",
+		"ja": "参加すべき人数です。"
+	},
+	"fju1": {
+		"zh-cn": "人",
+		"en": "people",
+		"ko": "사람이",
+		"ja": "人です"
+	},
+	"nmvj1r7": {
+		"zh-cn": "实际参与人数：",
+		"en": "Actual number of participants:",
+		"ko": "실제참가인원수는 다음과 같다.",
+		"ja": "実際の参加者数です"
+	},
+	"fu9h8b4": {
+		"zh-cn": "立即投票",
+		"en": "Vote now",
+		"ko": "바로 투표",
+		"ja": "即時投票です"
+	},
+	"wiv77p7": {
+		"zh-cn": "请选择进行投票",
+		"en": "Please choose to vote",
+		"ko": "투표할 것을 선택해 주세요",
+		"ja": "投票をお願いします"
+	},
+	"bu5o824": {
+		"zh-cn": "多选投票",
+		"en": "Multiple-choice voting",
+		"ko": "다선 투표",
+		"ja": "多選投票です"
+	},
+	"b3yklj4": {
+		"zh-cn": "单选投票",
+		"en": "Single-choice voting",
+		"ko": "단독 투표",
+		"ja": "ラジオ投票"
+	},
+	"jhzrq26": {
+		"zh-cn": "错误代码: ",
+		"en": "Error code:",
+		"ko": "오류 코드:",
+		"ja": "エラーコードです"
+	},
+	"k0ywqcf": {
+		"zh-cn": "WebSocket 连接已关闭",
+		"en": "The WebSocket connection has been closed",
+		"ko": "websocket 연결이 종료되었습니다",
+		"ja": "WebSocket接続は終了しました"
 	}
 }

@@ -3,16 +3,16 @@
     <div class="menu border-right pointer" @click="onSetMenu">
       <n-icon :component="menu ? ChevronForward : ChevronBackSharp" :size="22" />
     </div>
-
+    <!-- {{ talkSessionInfo }} -->
     <div class="module left-module">
-      <span class="tag" v-show="talkMode == 2"> 群聊 </span>
-      <span class="tag red" v-show="talkMode == 1 && !online"> 好友 </span>
-      <span class="tag" v-show="talkMode == 1 && online" style="background-color: rgb(65, 174, 60)">
+      <span class="tag" v-show="talkSessionInfo.talkMode == 2"> 群聊 </span>
+      <span class="tag red" v-show="talkSessionInfo.talkMode == 1"> 好友 </span>
+      <span class="tag" v-show="talkSessionInfo.talkMode == 1" style="background-color: rgb(65, 174, 60)">
         在线
       </span>
-      <span class="nickname text-ellipsis">{{ talkSession.username }}</span>
+      <span class="nickname text-ellipsis">{{ talkSessionInfo.username }}</span>
       <!-- <span class="keyboard" v-show="keyboard">对方正在输入...</span> -->
-      <span class="num" v-show="talkMode == 2">({{ talkSession.num }})</span>
+      <span class="num" v-show="talkSessionInfo.talkMode == 2">({{ talkSessionInfo.num }})</span>
       <!-- <p class="desc text-ellipsis" v-show="description.length">
         {{ description }}
       </p> -->
@@ -23,7 +23,7 @@
         <template #trigger>
           <n-icon
             class="icon"
-            v-show="talkMode == 2"
+            v-show="talkSessionInfo.talkMode == 2"
             :component="Calendar"
             :size="18"
             @click="emit('evnet', 'announcement')"
@@ -67,14 +67,14 @@
             @click="emit('evnet', 'addGroup')"
           />
         </template>
-        {{ talkMode === 1 ? '发起群聊' : '邀请好友' }}
+        {{ talkSessionInfo.talkMode === 1 ? '发起群聊' : '邀请好友' }}
       </n-popover>
 
       <n-popover trigger="hover">
         <template #trigger>
           <n-icon
             class="icon"
-            v-show="talkMode == 2"
+            v-show="talkSessionInfo.talkMode == 2"
             :component="EllipsisHorizontal"
             :size="18"
             @click="emit('evnet', 'group')"
@@ -92,21 +92,12 @@ import { computed, defineEmits, defineProps,ref } from "vue";
 import { storeToRefs } from "pinia";
 import { chatStore } from "@/store/chat.js";
 const talkStore = chatStore();
-const { groupTalkSession,userTalkSession,talkMode } = storeToRefs(talkStore);
-const talkSession = computed(() => {
-  let sessionMap = { 1: userTalkSession, 2: groupTalkSession };
-  let {chatRecords, friendInfo, friendStatus, conversation:{name,remark},groupInfo} = sessionMap[talkMode.value].value
-  console.log(chatRecords, friendInfo, friendStatus,groupInfo);
-  console.log({
-    username:remark.value||name.value,
-    num:groupInfo?.length||0
-  });
-  return{
-    username:remark||name,
-    num:groupInfo?.length||0
-  }
-  // return sessionMap[talkMode.value];
-})
+const talkInfo = storeToRefs(talkStore);
+const talkSessionInfo = computed(() => {
+  let {talkMode, talkSession,conversation,groupInfo} = talkInfo;
+  let {name,remark} = conversation.value;
+  return {talkMode:talkMode.value, talkSession,username:remark||name,num:groupInfo.value.length}
+});
 let menu = ref(false)
 const emit = defineEmits(['evnet', 'changeSessionMenu'])
 

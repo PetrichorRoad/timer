@@ -1,9 +1,9 @@
 
 
 <template>
-  <section class="el-container is-vertical" id="drawer-container">
+  <section class="h-full w-full flex flex-col" id="drawer-container">
     <!-- 头部区域 -->
-    <header class="el-header border-solid border-solid border-b-[1px] border-[#44496B]">
+    <header class="el-header border-solid border-solid border-b-[1px] border-my-border-1">
       <!-- <panel-header
         :talk-mode="talkParams.talkMode"
         :username="talkParams.username"
@@ -24,23 +24,8 @@
     </header>
 
     <!-- 聊天区域 -->
-    <main class="el-main">
-      <!-- <ChatPlus
-        ref="chat"
-        :items="records"
-        :custom-render="customMessageRender"
-        data-source-mode="pulldown"
-        :onScrollLoadMore="loadChatRecord"
-        :unread="dialogueStore.unreadBubble"
-        :multi-select-mode="true"
-        :context-menu="true"
-        :context-menu-option="contextMenuOptions"
-        @context-menu-event="onContextMenuEvent"
-        @element-select="onChatElementSelect"
-        @element-event="onContextMenuEvent"
-        @user-click-event="onElementClickUser"
-        @on-scroll-to-bottom="onClearUnread"
-      /> -->
+    <main class="flex-1 min-h-[0px] overflow-hidden">
+      <panel-chat-list></panel-chat-list>
     </main>
 
     <!-- 编辑器区域 -->
@@ -109,4 +94,5 @@
 
 <script setup>
 import panelHeader from './chat-panel/panel-header.vue';
+import panelChatList from './chat-panel/panel-chat-list.vue';
 </script>
