@@ -1,7 +1,6 @@
 <template>
   <div class="page relative flex">
     <div class="left-chat-list flex flex-col w-[300px] border-solid border-r-[1px] border-my-border-1">
-    <div class="left-chat-list flex flex-col w-[300px] border-solid border-r-[1px] border-my-border-1">
       <search-header :options="options" @on-keyword="onKeywordChange" @on-select="onselect"></search-header>
 
       <!-- <top-header
