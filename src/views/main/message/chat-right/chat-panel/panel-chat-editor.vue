@@ -24,14 +24,15 @@
 //   useEditorStore,
 //   useAsyncMessageStore
 // } from '@/store'
+import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import ws from '@/plugins/connect'
-import { ServTalkMessageSend } from '@/api/chat.ts'
-import { ServGroupVoteCreate } from '@/api/group.ts'
+import { ServTalkMessageSend } from '@/api/modules/chat.js'
+import { ServGroupVoteCreate } from '@/api/modules/group.js'
 import { throttle } from 'lodash'
 import { getVideoImage } from '@/utils/file'
-import Editor from '@/components/editor/ediyorQuill.vue'
+import Editor from '@/components/editor/editorQuill.vue'
 // import HistoryRecord from '@/components/mechat/HistoryRecord.vue'
-import { ServUploadImage } from '@/api/upload.ts'
+import { ServUploadImage } from '@/api/modules/upload.js'
 // import { bus } from '@/utils'
 // import { useInject } from '@/hooks'
 
@@ -239,7 +240,7 @@ const evnets = {
 }
 
 onMounted(() => {
-  editorStore.loadUserEmoticon()
+  // editorStore.loadUserEmoticon()
 })
 
 const onEditorEvent = async (event, data) => {

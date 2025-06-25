@@ -1,29 +1,30 @@
 <script lang="js" setup>
-import QuillEditor, { Quill, Delta } from '@/components/quill-editor'
+import QuillEditor, { Quill, Delta } from '@/components/editor/quill-editor'
 import Emitter from 'quill/core/emitter.js'
 import { reactive, watch, ref, markRaw, computed, onMounted, onUnmounted } from 'vue'
-import {
-  Voice as IconVoice,
-  SourceCode,
-  SmilingFace,
-  Pic,
-  FolderUpload,
-  Ranking,
-  History
-} from '@icon-park/vue-next'
+// import {
+//   Voice as IconVoice,
+//   SourceCode,
+//   SmilingFace,
+//   Pic,
+//   FolderUpload,
+//   Ranking,
+//   History
+// } from '@icon-park/vue-next'
+import { BookOutline, PersonOutline, WineOutline } from "@vicons/ionicons5";
 import  defaultAvatar  from '@/assets/images/notify.png'
-import MeEditorVote from './MeEditorVote.vue'
-import MeEditorEmoticon from './MeEditorEmoticon.vue'
-import MeEditorCode from './MeEditorCode.vue'
-import MeEditorRecorder from './MeEditorRecorder.vue'
-import { useEditorDraftStore } from '@/store'
+import MeEditorVote from './chat-editor/MeEditorVote.vue'
+import MeEditorEmoticon from './chat-editor/MeEditorEmoticon.vue'
+import MeEditorCode from './chat-editor/MeEditorCode.vue'
+import MeEditorRecorder from './chat-editor/MeEditorRecorder.vue'
+// import { useEditorDraftStore } from '@/store'
 import { deltaToMessage, deltaToString, isEmptyDelta, onUploadImage } from '@/utils/util.js'
 import { getImageInfo } from '@/utils/file'
 // import { EditorConst } from '@/constant/event-bus'
 // import { useEventBus } from '@/hooks'
 
 const emit = defineEmits(['editor-event'])
-const editorDraftStore = useEditorDraftStore()
+// const editorDraftStore = useEditorDraftStore()
 
 
 
@@ -127,7 +128,7 @@ const editorOption = {
 const navs = reactive([
   {
     title: '图片',
-    icon: markRaw(Pic),
+    icon: markRaw(BookOutline),
     show: true,
     click: () => {
       fileImageRef.value.click()
@@ -135,7 +136,7 @@ const navs = reactive([
   },
   {
     title: '附件',
-    icon: markRaw(FolderUpload),
+    icon: markRaw(BookOutline),
     show: true,
     click: () => {
       uploadFileRef.value.click()
@@ -143,7 +144,7 @@ const navs = reactive([
   },
   {
     title: '代码',
-    icon: markRaw(SourceCode),
+    icon: markRaw(BookOutline),
     show: true,
     click: () => {
       isShowEditorCode.value = true
@@ -151,7 +152,7 @@ const navs = reactive([
   },
   {
     title: '语音消息',
-    icon: markRaw(IconVoice),
+    icon: markRaw(BookOutline),
     show: true,
     click: () => {
       isShowEditorRecorder.value = true
@@ -159,7 +160,7 @@ const navs = reactive([
   },
   {
     title: '群投票',
-    icon: markRaw(Ranking),
+    icon: markRaw(BookOutline),
     show: computed(() => showVote),
     click: () => {
       isShowEditorVote.value = true
@@ -167,7 +168,7 @@ const navs = reactive([
   },
   {
     title: '历史记录',
-    icon: markRaw(History),
+    icon: markRaw(BookOutline),
     show: true,
     click: () => {
       callback('history_event')
@@ -290,13 +291,13 @@ function onEditorChange() {
   const text = deltaToString(delta)
 
   if (!isEmptyDelta(delta)) {
-    editorDraftStore.items[indexName || ''] = JSON.stringify({
-      text: text,
-      ops: delta.ops
-    })
+    // editorDraftStore.items[indexName || ''] = JSON.stringify({
+    //   text: text,
+    //   ops: delta.ops
+    // })
   } else {
     // 删除 editorDraftStore.items 下的元素
-    delete editorDraftStore.items[indexName || '']
+    // delete editorDraftStore.items[indexName || '']
   }
 
   callback('input_event', text)
@@ -304,23 +305,23 @@ function onEditorChange() {
 
 function loadEditorDraftText() {
   // 这里延迟处理，不然会有问题
-  setTimeout(() => {
-    hideMentionDom()
+  // setTimeout(() => {
+  //   hideMentionDom()
 
-    const quill = getQuill()
+  //   const quill = getQuill()
 
-    if (!quill) return
+  //   if (!quill) return
 
-    // 从缓存中加载编辑器草稿
-    let draft = editorDraftStore.items[indexName || '']
-    if (draft) {
-      quill.setContents(JSON.parse(draft)?.ops || [])
-    } else {
-      quill.setContents([])
-    }
+  //   // 从缓存中加载编辑器草稿
+  //   let draft = editorDraftStore.items[indexName || '']
+  //   if (draft) {
+  //     quill.setContents(JSON.parse(draft)?.ops || [])
+  //   } else {
+  //     quill.setContents([])
+  //   }
 
-    quill.setSelection(getQuillSelectionIndex(), 0, 'user')
-  }, 10)
+  //   quill.setSelection(getQuillSelectionIndex(), 0, 'user')
+  // }, 10)
 }
 
 function onSubscribeMention(data) {
@@ -364,10 +365,10 @@ onUnmounted(() => {
   hideMentionDom()
 })
 
-useEventBus([
-  { name: EditorConst.Mention, event: onSubscribeMention },
-  { name: EditorConst.Quote, event: onSubscribeQuote }
-])
+// useEventBus([
+//   { name: EditorConst.Mention, event: onSubscribeMention },
+//   { name: EditorConst.Quote, event: onSubscribeQuote }
+// ])
 </script>
 
 <template>

@@ -29,24 +29,20 @@
     </main>
 
     <!-- 编辑器区域 -->
-    <!-- <footer
-      v-show="isShowEditor"
-      class="el-footer"
-      :style="{ height: 200 + 'px' }"
-      v-dropsize="{ min: 100, max: 600, direction: 'top', key: 'editor' }"
+    <footer
+      class="el-footer border-t-[1px] border-solid border-my-border-1"
+      :style="{ height: '200px' }"
     >
-      <MultiSelectComponent v-if="isShowMultiSelect" />
-
-      <Editor
-        v-else
+    <panel-chat-editor></panel-chat-editor>
+      <!-- <Editor
         :uid="talkParams.uid"
         :index-name="talkParams.indexName"
         :talk-mode="talkParams.talkMode"
         :to-from-id="talkParams.toFromId"
         :online="talkParams.online"
         :members="members"
-      />
-    </footer> -->
+      /> -->
+    </footer>
   </section>
 
   <!-- <n-drawer
@@ -93,6 +89,7 @@
 
 
 <script setup>
+import panelChatEditor from './chat-panel/panel-chat-editor.vue';
 import panelHeader from './chat-panel/panel-header.vue';
 import panelChatList from './chat-panel/panel-chat-list.vue';
 </script>

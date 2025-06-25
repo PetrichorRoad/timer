@@ -48,6 +48,7 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 import request from "@/api/base";
 import user from "@/api/modules/user";
+import ws from '@/plugins/connect'
 import {saveUserInfo,saveUserSetting} from "@/utils/auth";
 let router = useRouter();
 let scene = ref(true);
@@ -64,11 +65,11 @@ let login = ref({
 const loginSubmit = async () => {
   await loginTimerIM();
   
-  // let res = await request.login(login.value);
-  // let { data:{ token } } = res
-  // localStorage.setItem("token", token);
-  // localStorage.setItem("userInfo", JSON.stringify(res.data));
-  
+  let res = await request.login(login.value);
+  let { data:{ token } } = res
+  localStorage.setItem("token", token);
+  localStorage.setItem("userInfo", JSON.stringify(res.data));
+  // ws.connect()
   router.push("/");
 };
 const loginTimerIM = async () => {

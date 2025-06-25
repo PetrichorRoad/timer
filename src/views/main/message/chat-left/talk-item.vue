@@ -9,11 +9,11 @@
 
     <div class="talk-item-content">
       <div class="header">
-        <div class="title text-my-text-1 gap-1">
-          <span class="nickname">{{ username }}</span>
-          <span class="badge top font-[12px] px-[2px] rounded-[4px]" v-show="data.is_top === 1">顶</span>
-          <span class="badge roboot font-[12px] rounded-[4px]" v-show="data.is_robot === 1">助</span>
-          <span class="badge group font-[12px] rounded-[4px]" v-show="data.talk_mode === 2">群</span>
+        <div class="title gap-1">
+          <span class="nickname text-[14px]">{{ username }}</span>
+          <span class="badge top font-[10px]" v-show="data.is_top === 1">顶</span>
+          <span class="badge roboot font-[10px]" v-show="data.is_robot === 1">助</span>
+          <span class="badge group font-[10px]" v-show="data.talk_mode === 2">群</span>
         </div>
         <div class="datetime">
           <text-time :time="data.updated_at" />

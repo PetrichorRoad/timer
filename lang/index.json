@@ -2068,5 +2068,209 @@
 		"en": "The WebSocket connection has been closed",
 		"ko": "websocket 연결이 종료되었습니다",
 		"ja": "WebSocket接続は終了しました"
+	},
+	"ou37nxe": {
+		"zh-cn": "网络连接已中断，请稍后再试!",
+		"en": "The network connection has been interrupted. Please try again later!",
+		"ko": "네트워크 연결이 중단되었습니다. 나중에 다시 시도하십시오!",
+		"ja": "ネットワークの接続が切れました。また後でお試しください。"
+	},
+	"btm836d": {
+		"zh-cn": "上传文件不能超过500M!",
+		"en": "The uploaded file cannot exceed 500M!",
+		"ko": "업로드 파일은 500m을 초과할 수 없습니다!",
+		"ja": "ファイルのアップロードは500Mを超えてはいけません!"
+	},
+	"py1e0jp": {
+		"zh-cn": "按Enter发送 / Shift+Enter 换行",
+		"en": "Press Enter to send/Shift+Enter to break a line",
+		"ko": "줄 바꿈에는 enter 보내기/shift + enter를 클릭하십시오",
+		"ja": "Enter送信/ Shift+Enter改行です"
+	},
+	"ew1013": {
+		"zh-cn": "所有人",
+		"en": "All people",
+		"ko": "소유주",
+		"ja": "全員です"
+	},
+	"pzqq2": {
+		"zh-cn": "附件",
+		"en": "Attachment",
+		"ko": "부속 서",
+		"ja": "添付ファイルです"
+	},
+	"ia4yz14": {
+		"zh-cn": "语音消息",
+		"en": "Voice message",
+		"ko": "음성 메시지",
+		"ja": "音声メッセージです"
+	},
+	"j6hav3": {
+		"zh-cn": "群投票",
+		"en": "Group voting",
+		"ko": "집단 투표",
+		"ja": "グループ投票です"
+	},
+	"aw7utt4": {
+		"zh-cn": "历史记录",
+		"en": "Historical record",
+		"ko": "역사 기록",
+		"ja": "歴史的記録です"
+	},
+	"2pyt3oc": {
+		"zh-cn": "发送内容超长，请分条发送",
+		"en": "The content to be sent is extremely long. Please send it in separate entries",
+		"ko": "발송 내용이 너무 길으니, 각양각색으로 보내주세요",
+		"ja": "送信内容が長いので箇条書きでお願いします。"
+	},
+	"hm4y3y4": {
+		"zh-cn": "表情符号",
+		"en": "Emoji",
+		"ko": "이모티콘",
+		"ja": "顔文字です"
+	},
+	"ew94p4": {
+		"zh-cn": "[图片]",
+		"en": "[Picture]",
+		"ko": "[사진]",
+		"ja": "[画像です]"
+	},
+	"l72nr3": {
+		"zh-cn": "请选择",
+		"en": "Please choose",
+		"ko": "선택하십시오",
+		"ja": "選択をお願いします"
+	},
+	"agaxut4": {
+		"zh-cn": "代码消息",
+		"en": "Code message",
+		"ko": "코드 메시지",
+		"ja": "コードメッセージです"
+	},
+	"f1ow2": {
+		"zh-cn": "发送",
+		"en": "Send",
+		"ko": "보내기",
+		"ja": "発送します"
+	},
+	"uzhs2f5": {
+		"zh-cn": "代码语言:",
+		"en": "Code language",
+		"ko": "코드 언어:",
+		"ja": "コード言語です"
+	},
+	"ia2h7r4": {
+		"zh-cn": "语音录制",
+		"en": "Voice recording",
+		"ko": "음성 녹음",
+		"ja": "音声録音です"
+	},
+	"cczfwp4": {
+		"zh-cn": "开始录音",
+		"en": "Start recording",
+		"ko": "녹음을 시작하다",
+		"ja": "録音を始めます"
+	},
+	"gfh3je4": {
+		"zh-cn": "结束录音",
+		"en": "End the recording",
+		"ko": "녹음을 끝내다",
+		"ja": "録音を終了します"
+	},
+	"ite6814": {
+		"zh-cn": "重新录音",
+		"en": "Re-record",
+		"ko": "다시 녹음하다",
+		"ja": "録音し直します"
+	},
+	"b657664": {
+		"zh-cn": "发送录音",
+		"en": "Send the recording",
+		"ko": "녹음을 발송하다.",
+		"ja": "録音を送ります"
+	},
+	"dwuasj4": {
+		"zh-cn": "正在录音",
+		"en": "Recording in progress",
+		"ko": "녹음 중",
+		"ja": "録音中です"
+	},
+	"pfsmh65": {
+		"zh-cn": "已暂停录音",
+		"en": "The recording has been suspended.",
+		"ko": "녹음 일시 정지",
+		"ja": "録音は中断しました"
+	},
+	"b5s7214": {
+		"zh-cn": "发起投票",
+		"en": "Initiate a vote",
+		"ko": "투표를 발기하다",
+		"ja": "投票を発議します"
+	},
+	"cxwfu14": {
+		"zh-cn": "投票方式",
+		"en": "Voting method",
+		"ko": "투표 방식",
+		"ja": "投票方法です"
+	},
+	"ao3rt34": {
+		"zh-cn": "公开投票",
+		"en": "Public voting",
+		"ko": "공개 투표",
+		"ja": "公開投票です"
+	},
+	"aus8814": {
+		"zh-cn": "匿名投票",
+		"en": "Anonymous voting",
+		"ko": "익명 투표",
+		"ja": "とくめい投票です"
+	},
+	"ikzoty4": {
+		"zh-cn": "选择方式",
+		"en": "Selection method",
+		"ko": "방식을 선택하다",
+		"ja": "選択の仕方です"
+	},
+	"eyqc2": {
+		"zh-cn": "单选",
+		"en": "Single choice",
+		"ko": "라디오",
+		"ja": "ラジオです"
+	},
+	"fy272": {
+		"zh-cn": "多选",
+		"en": "Multiple choices",
+		"ko": "선",
+		"ja": "複数回答です"
+	},
+	"cxsrcg4": {
+		"zh-cn": "投票主题",
+		"en": "Voting topic",
+		"ko": "투표 테마",
+		"ja": "投票テーマです"
+	},
+	"rztgz5d": {
+		"zh-cn": "请输入投票主题，最多50字",
+		"en": "Please enter the voting topic, with a maximum of 50 characters",
+		"ko": "투표 주제를 최대 50자까지 입력해주세요",
+		"ja": "投票テーマを50文字まで入力してくださいます"
+	},
+	"cy3y9v4": {
+		"zh-cn": "投票选项",
+		"en": "Voting options",
+		"ko": "투표 옵션",
+		"ja": "投票オプションです"
+	},
+	"eqccs37": {
+		"zh-cn": "请输入选项内容",
+		"en": "Please enter the option content",
+		"ko": "옵션 내용을 입력해 주세요",
+		"ja": "オプションの入力をお願いします。"
+	},
+	"e86o9h4": {
+		"zh-cn": "添加选项",
+		"en": "Add options",
+		"ko": "옵션 추가",
+		"ja": "オプションを入れます。"
 	}
 }

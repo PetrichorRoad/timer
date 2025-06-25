@@ -1,5 +1,4 @@
 import { LRUCache } from "lru-cache";
-console.log(LRUCache);
 // @ts-ignore
 const cache = new LRUCache({
   max: 10000,
