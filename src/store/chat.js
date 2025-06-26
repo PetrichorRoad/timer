@@ -89,6 +89,15 @@ export const chatStore = defineStore('chat-list', {
             let { data } = await user.getFriendsStatus({ user_id:to_from_id })
             this.friendInfo = data
         },
+        findItem(index_name) {
+            return this.items.find((item) => item.index_name === index_name)
+        },
+        updateItem(params) {
+            if (!params.index_name) return
 
+            const item = this.findItem(params.index_name)
+
+            item && Object.assign(item, params)
+        },
     }
 })

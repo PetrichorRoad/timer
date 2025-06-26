@@ -1,16 +1,71 @@
+<template>
+  <section class="el-container is-vertical editor">
+    <header class="el-header toolbar border-top">
+      <n-popover
+        placement="top-start"
+        trigger="click"
+        raw
+        :width="300"
+        ref="emoticonRef"
+        class="w-[500px] h-[250px] rounded-[10px] overflow-hidden border-my-border-1 border-[1px] border-solid"
+      >
+        <template #trigger>
+          <div class="toolbar-item">
+            <n-icon size="18" class="icon" :component="PersonOutline" />
+            <p class="title">表情符号</p>
+          </div>
+        </template>
+
+        <MeEditorEmoticon @on-select="onEmoticonEvent" />
+      </n-popover>
+
+      <div
+        class="toolbar-item"
+        v-for="nav in navs"
+        :key="nav.title"
+        v-show="nav.show"
+        @click="nav.click"
+      >
+        <n-icon size="18" class="icon" :component="nav.icon" />
+        <p class="title">{{ nav.title }}</p>
+      </div>
+    </header>
+
+    <main class="el-main">
+      <form enctype="multipart/form-data" style="display: none">
+        <input type="file" ref="fileImageRef" accept="image/*" @change="onUploadFile" />
+        <input type="file" ref="uploadFileRef" @change="onUploadFile" />
+      </form>
+
+      <QuillEditor
+        ref="editor"
+        :options="editorOption"
+        @change="onEditorChange"
+        style="height: 100%"
+      />
+    </main>
+  </section>
+
+  <MeEditorVote v-if="isShowEditorVote" @close="isShowEditorVote = false" @submit="onVoteEvent" />
+
+  <MeEditorCode
+    v-if="isShowEditorCode"
+    @on-submit="onCodeEvent"
+    @close="isShowEditorCode = false"
+  />
+
+  <MeEditorRecorder
+    v-if="isShowEditorRecorder"
+    @on-submit="onRecorderEvent"
+    @close="isShowEditorRecorder = false"
+  />
+</template>
+
+
 <script lang="js" setup>
 import QuillEditor, { Quill, Delta } from '@/components/editor/quill-editor'
 import Emitter from 'quill/core/emitter.js'
 import { reactive, watch, ref, markRaw, computed, onMounted, onUnmounted } from 'vue'
-// import {
-//   Voice as IconVoice,
-//   SourceCode,
-//   SmilingFace,
-//   Pic,
-//   FolderUpload,
-//   Ranking,
-//   History
-// } from '@icon-park/vue-next'
 import { BookOutline, PersonOutline, WineOutline } from "@vicons/ionicons5";
 import  defaultAvatar  from '@/assets/images/notify.png'
 import MeEditorVote from './chat-editor/MeEditorVote.vue'
@@ -25,10 +80,28 @@ import { getImageInfo } from '@/utils/file'
 
 const emit = defineEmits(['editor-event'])
 // const editorDraftStore = useEditorDraftStore()
+const props = defineProps({
+  showVote: {
+    type: Boolean,
+    default: false
+  },
+  indexName: {
+    type: String,
+    default: ''
+  },
+  members: {
+    type: Array,
+    default: () => []
+  },
+  callback: {
+    type: Function,
+    default: () => {}
+  }
+})
+console.log(props);
 
 
-
-const { showVote = false, indexName = '', members = [], callback } = defineProps()
+// const { showVote = false, indexName = '', members = [], callback } = defineProps()
 
 const editor = ref(null)
 
@@ -80,11 +153,11 @@ const editorOption = {
         return el
       },
       source: function (searchTerm, render) {
-        if (!members.length) return render([])
+        if (!props.members.length) return render([])
 
         const items = [
           { id: 0, nickname: '所有人', avatar: defaultAvatar, value: '所有人' },
-          ...members.map((item) => {
+          ...props.members.map((item) => {
             return {
               id: item.id,
               nickname: item.nickname,
@@ -161,7 +234,7 @@ const navs = reactive([
   {
     title: '群投票',
     icon: markRaw(BookOutline),
-    show: computed(() => showVote),
+    show: computed(() => props.showVote),
     click: () => {
       isShowEditorVote.value = true
     }
@@ -171,7 +244,7 @@ const navs = reactive([
     icon: markRaw(BookOutline),
     show: true,
     click: () => {
-      callback('history_event')
+      props.callback('history_event')
     }
   }
 ])
@@ -206,12 +279,12 @@ async function onEmoticonEvent(data) {
 
     quill.setSelection(index + 1, 0, 'user')
   } else {
-    await callback('emoticon_event', data.value)
+    await props.callback('emoticon_event', data.value)
   }
 }
 
 async function onCodeEvent(data) {
-  const ok = await callback('code_event', data)
+  const ok = await props.callback('code_event', data)
   ok && (isShowEditorCode.value = false)
 }
 
@@ -241,14 +314,14 @@ async function onUploadFile(e) {
   }
 
   if (file.type.indexOf('video/') === 0) {
-    await callback('video_event', file)
+    await props.callback('video_event', file)
   } else {
-    await callback('file_event', file)
+    await props.callback('file_event', file)
   }
 }
 
 async function onRecorderEvent(file) {
-  const ok = await callback('file_event', file)
+  const ok = await props.callback('file_event', file)
   ok && (isShowEditorRecorder.value = false)
 }
 async function onSendMessage() {
@@ -262,13 +335,13 @@ async function onSendMessage() {
       return window['$message'].info('发送内容超长，请分条发送')
     }
 
-    const ok = await callback('text_event', data)
+    const ok = await props.callback('text_event', data)
     ok && getQuill().setContents([], Quill.sources.USER)
     return
   }
 
   if (data.msgType == 3) {
-    const ok = await callback('image_event', {
+    const ok = await props.callback('image_event', {
       ...getImageInfo(data.items[0].content),
       url: data.items[0].content,
       size: 10000
@@ -279,7 +352,7 @@ async function onSendMessage() {
   }
 
   if (data.msgType == 12) {
-    const ok = await callback('mixed_event', data)
+    const ok = await props.callback('mixed_event', data)
     ok && getQuill().setContents([], Quill.sources.USER)
     return
   }
@@ -291,16 +364,15 @@ function onEditorChange() {
   const text = deltaToString(delta)
 
   if (!isEmptyDelta(delta)) {
-    // editorDraftStore.items[indexName || ''] = JSON.stringify({
+    // editorDraftStore.items[props.indexName || ''] = JSON.stringify({
     //   text: text,
     //   ops: delta.ops
     // })
   } else {
     // 删除 editorDraftStore.items 下的元素
-    // delete editorDraftStore.items[indexName || '']
+    // delete editorDraftStore.items[props.indexName || '']
   }
-
-  callback('input_event', text)
+  props.callback('input_event', text)
 }
 
 function loadEditorDraftText() {
@@ -313,7 +385,7 @@ function loadEditorDraftText() {
   //   if (!quill) return
 
   //   // 从缓存中加载编辑器草稿
-  //   let draft = editorDraftStore.items[indexName || '']
+  //   let draft = editorDraftStore.items[props.indexName || '']
   //   if (draft) {
   //     quill.setContents(JSON.parse(draft)?.ops || [])
   //   } else {
@@ -355,7 +427,7 @@ function hideMentionDom() {
   el && el.remove()
 }
 
-watch(() => indexName, loadEditorDraftText, { immediate: true })
+watch(() => props.indexName, loadEditorDraftText, { immediate: true })
 
 onMounted(() => {
   loadEditorDraftText()
@@ -371,75 +443,6 @@ onUnmounted(() => {
 // ])
 </script>
 
-<template>
-  <section class="el-container is-vertical editor">
-    <header class="el-header toolbar border-top">
-      <n-popover
-        placement="top-start"
-        trigger="click"
-        raw
-        :width="300"
-        ref="emoticonRef"
-        style="
-          width: 500px;
-          height: 250px;
-          border-radius: 10px;
-          overflow: hidden;
-          box-shadow: none;
-          border: 1px solid var(--border-color);
-        "
-      >
-        <template #trigger>
-          <div class="toolbar-item">
-            <n-icon size="18" class="icon" :component="SmilingFace" />
-            <p class="title">表情符号</p>
-          </div>
-        </template>
-
-        <MeEditorEmoticon @on-select="onEmoticonEvent" />
-      </n-popover>
-
-      <div
-        class="toolbar-item"
-        v-for="nav in navs"
-        :key="nav.title"
-        v-show="nav.show"
-        @click="nav.click"
-      >
-        <n-icon size="18" class="icon" :component="nav.icon" />
-        <p class="title">{{ nav.title }}</p>
-      </div>
-    </header>
-
-    <main class="el-main">
-      <form enctype="multipart/form-data" style="display: none">
-        <input type="file" ref="fileImageRef" accept="image/*" @change="onUploadFile" />
-        <input type="file" ref="uploadFileRef" @change="onUploadFile" />
-      </form>
-
-      <QuillEditor
-        ref="editor"
-        :options="editorOption"
-        @change="onEditorChange"
-        style="height: 100%"
-      />
-    </main>
-  </section>
-
-  <MeEditorVote v-if="isShowEditorVote" @close="isShowEditorVote = false" @submit="onVoteEvent" />
-
-  <MeEditorCode
-    v-if="isShowEditorCode"
-    @on-submit="onCodeEvent"
-    @close="isShowEditorCode = false"
-  />
-
-  <MeEditorRecorder
-    v-if="isShowEditorRecorder"
-    @on-submit="onRecorderEvent"
-    @close="isShowEditorRecorder = false"
-  />
-</template>
 
 <style lang="less" scoped>
 .editor {

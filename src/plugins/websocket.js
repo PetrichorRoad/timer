@@ -37,6 +37,7 @@ class WsSocket {
   defaultEvent = defaultEvent;
 
   constructor(urlCallBack, events) {
+    this.urlCallBack = urlCallBack;
     this.events = { ...this.defaultEvent, ...events };
   }
 

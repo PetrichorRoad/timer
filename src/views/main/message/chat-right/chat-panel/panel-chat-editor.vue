@@ -33,9 +33,10 @@ import { getVideoImage } from '@/utils/file'
 import Editor from '@/components/editor/editorQuill.vue'
 // import HistoryRecord from '@/components/mechat/HistoryRecord.vue'
 import { ServUploadImage } from '@/api/modules/upload.js'
-// import { bus } from '@/utils'
+import { bus } from '@/utils'
 // import { useInject } from '@/hooks'
-
+import { chatStore } from "@/store/chat.js";
+const talkStore = chatStore();
 // const { message } = useInject()
 // const talkStore = useTalkStore()
 // const editorStore = useEditorStore()
@@ -73,7 +74,7 @@ const isShowHistory = ref(false)
 
 const onSendMessage = async (data= {}) => {
   if (!ws.isConnect()) {
-    message.error('网络连接已中断，请稍后再试!')
+    // message.error('网络连接已中断，请稍后再试!')
     return Promise.resolve(false)
   }
 
@@ -213,9 +214,9 @@ const onInputEvent = async (data) => {
 
   // 判断对方是否在线和是否需要推送
   // 3秒时间内推送一次
-  if (settingsStore.isKeyboard && props.online) {
-    onKeyboardPush()
-  }
+  // if (settingsStore.isKeyboard && props.online) {
+  //   onKeyboardPush()
+  // }
 
   return true
 }

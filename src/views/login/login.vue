@@ -69,7 +69,7 @@ const loginSubmit = async () => {
   let { data:{ token } } = res
   localStorage.setItem("token", token);
   localStorage.setItem("userInfo", JSON.stringify(res.data));
-  // ws.connect()
+  ws.connect()
   router.push("/");
 };
 const loginTimerIM = async () => {
@@ -83,9 +83,11 @@ const loginTimerIM = async () => {
   if(code === 200){
     let {access_token} = data;
     let expire = 60 * 60 * 24;
-    saveUserInfo({expire:new Date().getTime() + expire * 1000,value:access_token});
+    await saveUserInfo({expire:new Date().getTime() + expire * 1000,value:access_token});
+    console.log('存进去完了');
     let res = await user.getUserInfo({});
-    saveUserSetting({expire:new Date().getTime() + expire * 1000,value:res.data});
+    await saveUserSetting({expire:new Date().getTime() + expire * 1000,value:res.data});
+    console.log('用户信息存进去完了');
   }
 };
 const trigger = () => {

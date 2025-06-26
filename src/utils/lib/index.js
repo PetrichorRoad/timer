@@ -4,6 +4,6 @@ export const getToken = (params) => {
 }
 export const getIMToken = (params) => {
   let jwt = localStorage.getItem('IM_AUTH_TOKEN');
-  let {token} = JSON.parse(jwt);
-  return token;
+  let {value} = JSON.parse(jwt);
+  return value;
 }

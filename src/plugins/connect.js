@@ -19,7 +19,6 @@ class Connect {
   conn;
 
   constructor() {
-    console.log('connect', urlCallback)
     this.conn = new WsSocket(urlCallback, {
       onError: () => {
         // console.error('WebSocket 连接失败:', evt)
@@ -32,7 +31,6 @@ class Connect {
         // useUserStore().updateSocketStatus(false)
       }
     })
-
     this.bindEvents()
   }
 

@@ -9,6 +9,7 @@ const { theme } = useStore();
 document.documentElement.className = theme;
 const init = () => {
   ws.connect()
+  console.log('已连接');
 }
 
 onMounted(() => {
