@@ -49,12 +49,8 @@
 
       <div class="chat-content" @click="onClieckSelect($event, message)">
         <div class="chat-content-title">
-          <span class="name">{{
-            message.nickname
-          }}</span>
-          <span class="time">{{
-            message.send_time
-          }}</span>
+          <span class="name">{{ message.nickname }}</span>
+          <span class="time">{{ message.send_time }}</span>
         </div>
 
         <div class="chat-content-main">
@@ -105,6 +101,7 @@
 
 <script setup>
 import { ref, defineProps, computed, onMounted } from "vue";
+import { MESSAGE_TYPE } from "@/constants/default.js";
 import messageCode from "./chat-item/message-code.vue";
 import messageImage from "./chat-item/message-image.vue";
 import messageText from "./chat-item/message-text.vue";
@@ -121,65 +118,10 @@ const props = defineProps({
     default: {},
   },
 });
-let MESSAGE_TYPE = {
-  null: { type: "null", name: "未知", component: messageText },
-  0: { type: "", name: "", component: messageText },
-  1: { type: "text", name: "文本", component: messageText },
-  2: { type: "code", name: "代码", component: messageCode },
-  3: { type: "image", name: "图片", component: messageImage },
-  4: { type: "audio", name: "音频", component: messageAudio },
-  5: { type: "video", name: "视频", component: messageVideo },
-  6: { type: "document", name: "文件", component: messageFile },
-  7: { type: "location", name: "位置", component: messageLocation },
-  8: { type: "card", name: "名片", component: messageText },
-  9: { type: "session", name: "会话", component: messageSession },
-  10: { type: "login", name: "登录信息", component: messageText },
-  11: { type: "text", name: "投票", component: messageVote },
-  12: { type: "mixed ", name: "混合信息", component: messageText },
-  13: { type: "notice", name: "公告", component: messageText },
-
-  1000: { type: "SysText", name: "系统文本消息", component: messageText },
-  1101: {
-    type: "SysGroupCreate",
-    name: "创建群聊消息",
-    component: messageImage,
-  },
-  1102: { type: "SysGroupJoin", name: "加入群聊消息", component: messageImage },
-  1103: {
-    type: "SysGroupLeave",
-    name: "离开群聊消息",
-    component: messageImage,
-  },
-  1104: { type: "SysGroupKick", name: "踢出群聊消息", component: messageImage },
-  1105: {
-    type: "SysGroupMessageRevoke",
-    name: "管理员撤回成员消息",
-    component: messageImage,
-  },
-  1106: { type: "SysGroupDismissed", name: "群解散", component: messageImage },
-  1107: { type: "SysGroupMuted", name: "群禁言", component: messageImage },
-  1108: {
-    type: "SysGroupUnmuted",
-    name: "群解除禁言",
-    component: messageImage,
-  },
-  1109: {
-    type: "SysGroupMemberMuted",
-    name: "群成员禁言",
-    component: messageImage,
-  },
-  1110: {
-    type: "SysGroupMemberUnmuted",
-    name: "群成员解除禁言",
-    component: messageImage,
-  },
-  1113: { type: "SysGroupTransfer", name: "变更群主", component: messageImage },
-};
 const messageComponent = computed(() => {
   return MESSAGE_TYPE[props.message.msg_type].component;
 });
-onMounted(() => {
-});
+onMounted(() => {});
 </script>
 
 <style lang="less" scoped>

@@ -7,3 +7,7 @@ export const getIMToken = (params) => {
   let {value} = JSON.parse(jwt);
   return value;
 }
+export const getUserInfo = (params) => {
+  let userInfo = localStorage.getItem('user');
+  return JSON.parse(userInfo);
+}

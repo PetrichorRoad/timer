@@ -1,3 +1,55 @@
+<template>
+  <n-modal
+    v-model:show="isShowBox"
+    preset="card"
+    title="代码消息"
+    class="modal-radius max-w-[600px] h-[600px]"
+    :on-after-leave="onMaskClick"
+    :mask-closable="false"
+  >
+    <div>
+      <div class="popselect">
+        <span>代码语言:</span>
+
+        <n-popselect v-model:value="model.lang" :options="options" size="medium" scrollable>
+          <n-button text type="primary">
+            {{ langText }}
+          </n-button>
+        </n-popselect>
+      </div>
+
+      <n-input
+        type="textarea"
+        :maxlength="65535"
+        show-count
+        :autosize="{minRows: 9,maxRows: 9}"
+        v-model:value="model.code"
+      >
+        <template #count="{ value }">
+          {{ value.length }}
+        </template>
+      </n-input>
+    </div>
+    <template #footer>
+      <div class="footer">
+        <div>
+          <n-button type="tertiary" @click="isShowBox = false"> 取消 </n-button>
+          <n-button
+            type="primary"
+            text-color="#ffffff"
+            class="mt-l15"
+            @click="onSubmit"
+            :disabled="isCanSubmit"
+          >
+            发送
+          </n-button>
+        </div>
+      </div>
+    </template>
+  </n-modal>
+</template>
+
+
 <script lang="js" setup>
 import { ref, reactive, computed } from 'vue'
 import { options } from '@/utils/lib/highlight.js'
@@ -45,60 +97,6 @@ const onSubmit = () => {
 }
 </script>
 
-<template>
-  <n-modal
-    v-model:show="isShowBox"
-    preset="card"
-    title="代码消息"
-    class="modal-radius"
-    style="max-width: 600px; height: 400px"
-    :on-after-leave="onMaskClick"
-    :mask-closable="false"
-  >
-    <div>
-      <div class="popselect">
-        <span>代码语言:</span>
-
-        <n-popselect v-model:value="model.lang" :options="options" size="medium" scrollable>
-          <n-button text type="primary">
-            {{ langText }}
-          </n-button>
-        </n-popselect>
-      </div>
-
-      <n-input
-        type="textarea"
-        :maxlength="65535"
-        show-count
-        :autosize="{
-          minRows: 9,
-          maxRows: 9
-        }"
-        v-model:value="model.code"
-      >
-        <template #count="{ value }">
-          {{ value.length }}
-        </template>
-      </n-input>
-    </div>
-    <template #footer>
-      <div class="footer">
-        <div>
-          <n-button type="tertiary" @click="isShowBox = false"> 取消 </n-button>
-          <n-button
-            type="primary"
-            text-color="#ffffff"
-            class="mt-l15"
-            @click="onSubmit"
-            :disabled="isCanSubmit"
-          >
-            发送
-          </n-button>
-        </div>
-      </div>
-    </template>
-  </n-modal>
-</template>
 
 <style lang="less" scoped>
 .popselect {

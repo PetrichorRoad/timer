@@ -98,7 +98,6 @@ const props = defineProps({
     default: () => {}
   }
 })
-console.log(props);
 
 
 // const { showVote = false, indexName = '', members = [], callback } = defineProps()

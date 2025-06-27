@@ -17,12 +17,9 @@
 </template>
 <script lang="js" setup>
 // import {
-//   useTalkStore,
-//   useDialogueStore,
 //   useSettingsStore,
 //   useUploadsStore,
 //   useEditorStore,
-//   useAsyncMessageStore
 // } from '@/store'
 import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import ws from '@/plugins/connect'
@@ -36,14 +33,15 @@ import { ServUploadImage } from '@/api/modules/upload.js'
 import { bus } from '@/utils'
 // import { useInject } from '@/hooks'
 import { chatStore } from "@/store/chat.js";
-const talkStore = chatStore();
+import { useDialogueStore } from "@/store/dialogue.js";
+import {useAsyncMessageStore} from '@/store/message.js'
 // const { message } = useInject()
-// const talkStore = useTalkStore()
 // const editorStore = useEditorStore()
 // const settingsStore = useSettingsStore()
 // const uploadsStore = useUploadsStore()
-// const dialogueStore = useDialogueStore()
-// const { addAsyncMessage } = useAsyncMessageStore()
+const talkStore = chatStore();
+const dialogueStore = useDialogueStore()
+const { addAsyncMessage } = useAsyncMessageStore()
 const props = defineProps({
   uid: {
     type: Number,
@@ -74,7 +72,6 @@ const isShowHistory = ref(false)
 
 const onSendMessage = async (data= {}) => {
   if (!ws.isConnect()) {
-    // message.error('网络连接已中断，请稍后再试!')
     return Promise.resolve(false)
   }
 
