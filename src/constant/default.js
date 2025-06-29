@@ -1,6 +1,18 @@
 import avatar from '../assets/images/notify.png'
 import notify from '../assets/images/notify.png'
 
+import messageCode from "@/components/bubble/chat-item/message-code.vue";
+import messageImage from "@/components/bubble/chat-item/message-image.vue";
+import messageText from "@/components/bubble/chat-item/message-text.vue";
+import messageAudio from "@/components/bubble/chat-item/message-audio.vue";
+import messageVideo from "@/components/bubble/chat-item/message-video.vue";
+import messageFile from "@/components/bubble/chat-item/message-document.vue";
+import messageLocation from "@/components/bubble/chat-item/message-location.vue";
+import messageVote from "@/components/bubble/chat-item/message-vote.vue";
+import messageSession from "@/components/bubble/chat-item/message-session.vue";
+
+import { markRaw } from 'vue';
+
 export const GenderOptions = [
   {
     label: '未知',
@@ -86,30 +98,29 @@ export const msgTypeMap = {
 }
 
 export const ChatMsgTypeMapping = {
-  text: '[文本消息]',
-  image: '[图片消息]',
-  audio: '[语音消息]',
-  video: '[视频消息]',
-  document: '[文件消息]',
-  location: '[位置消息]',
-  card: '[名片消息]',
-  mixed: '[转发消息]',
-  login: '[登录消息]',
-  vote: '[投票消息]',
-  code: '[代码消息]',
-  mixed: '[图文消息]',
-  notice: '[群公告]',
-  SysText: '[系统消息]',
-  SysGroupCreate: '[创建群消息]',
-  SysGroupJoin: '[加入群消息]',
-  SysGroupLeave: '[退出群消息]',
-  SysGroupKick: '[踢出群消息]',
-  SysGroupMessageRevoke: '[撤回消息]',
-  SysGroupDismissed: '[群解散消息]',
-  SysGroupMuted: '[群禁言消息]',
-  SysGroupUnmuted: '[群解除禁言消息]',
-  SysGroupMemberMuted: '[群成员禁言消息]',
-  SysGroupMemberUnmuted: '[群成员解除禁言消息]'
+  1: '[文本消息]',
+  3: '[图片消息]',
+  4: '[语音消息]',
+  5: '[视频消息]',
+  6: '[文件消息]',
+  7: '[位置消息]',
+  8: '[名片消息]',
+  12: '[转发消息]',
+  10: '[登录消息]',
+  11: '[投票消息]',
+  2: '[代码消息]',
+  13: '[群公告]',
+  1000: '[系统消息]',
+  1101: '[创建群消息]',
+  1102: '[加入群消息]',
+  1103: '[退出群消息]',
+  1104: '[踢出群消息]',
+  1105: '[撤回消息]',
+  1106: '[群解散消息]',
+  1107: '[群禁言消息]',
+  1108: '[群解除禁言消息]',
+  1109: '[群成员禁言消息]',
+  1110: '[群成员解除禁言消息]'
 }
 
 // 可转发的消息类型

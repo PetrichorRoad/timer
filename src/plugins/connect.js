@@ -2,9 +2,9 @@ import { NAvatar } from 'naive-ui'
 // import { useTalkStore, useUserStore } from '@/store'
 // import { notifyIcon } from '@/constant/default'
 import WsSocket from '@/plugins/websocket.js'
-// import EventTalk from '@/event/talk.ts'
-// import EventKeyboard from '@/event/keyboard.ts'
-// import EventRevoke from '@/event/revoke.ts'
+import EventTalk from '@/event/talk.js'
+import EventKeyboard from '@/event/keyboard.js'
+import EventRevoke from '@/event/revoke.js'
 import { getToken, getIMToken } from '@/utils/lib'
 
 const urlCallback = () => {
@@ -71,15 +71,15 @@ class Connect {
   }
 
   onImMessage() {
-    // this.conn.on('im.message', (data) => new EventTalk(data))
+    this.conn.on('im.message', (data) => new EventTalk(data))
   }
 
   onImMessageKeyboard() {
-    // this.conn.on('im.message.keyboard', (data) => new EventKeyboard(data))
+    this.conn.on('im.message.keyboard', (data) => new EventKeyboard(data))
   }
 
   onImMessageRevoke() {
-    // this.conn.on('im.message.revoke', (data) => new EventRevoke(data))
+    this.conn.on('im.message.revoke', (data) => new EventRevoke(data))
   }
 
   onImContactApply() {

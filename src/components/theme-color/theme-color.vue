@@ -37,6 +37,8 @@ const computedLocale = computed(() => {
 const changeLanguage = (newLocale) => {
   // $changeLang(newLocale)
   localStorage.setItem('lang', newLocale)
+  console.log('getIMToken', )
+    debugger
   window.location.reload()
   // console.log(messages.value)
   // locale.value = newLocale

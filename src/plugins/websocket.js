@@ -42,6 +42,7 @@ class WsSocket {
   }
 
   on(event, callback) {
+    console.log('on', event, callback);
     this.onCallBacks[event] = callback;
     return this;
   }
@@ -117,9 +118,8 @@ class WsSocket {
 
   onMessage(evt) {
     this.lastTime = Date.now();
-
     const data = this.onParse(evt);
-
+    console.log(data,'payload变了');
     if (data.event === "pong") {
       return;
     }
@@ -133,6 +133,7 @@ class WsSocket {
     }
 
     if (this.onCallBacks[data.event]) {
+      console.log(data.payload,data,'why');
       this.onCallBacks[data.event](data.payload, evt.data);
     } else {
       console.warn(`WsSocket message event [${data.event}] not bound...`);

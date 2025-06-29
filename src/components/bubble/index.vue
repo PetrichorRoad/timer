@@ -101,16 +101,7 @@
 
 <script setup>
 import { ref, defineProps, computed, onMounted } from "vue";
-import { MESSAGE_TYPE } from "@/constants/default.js";
-import messageCode from "./chat-item/message-code.vue";
-import messageImage from "./chat-item/message-image.vue";
-import messageText from "./chat-item/message-text.vue";
-import messageAudio from "./chat-item/message-audio.vue";
-import messageVideo from "./chat-item/message-video.vue";
-import messageFile from "./chat-item/message-document.vue";
-import messageLocation from "./chat-item/message-location.vue";
-import messageVote from "./chat-item/message-vote.vue";
-import messageSession from "./chat-item/message-session.vue";
+import { MESSAGE_TYPE } from "@/constant/default.js";
 import timerAvatar from "@/components/custom/timer-avatar.vue";
 const props = defineProps({
   message: {

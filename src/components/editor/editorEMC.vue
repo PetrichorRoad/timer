@@ -85,7 +85,6 @@ const props = defineProps({
 // const content = ref("");
 const content = computed({
   get: () => {
-    console.log(props.content);
     return props.content;
   },
   set: (value) => emit('update:content', value)
@@ -136,13 +135,7 @@ const init = ref({
     });
   },
 });
-watch(() => props.content,
-(newValue)=>{
-  console.log(newValue,'qwwqe');
-},{  immediate: true }
-)
 onMounted(() => {
-  console.log(props.content,'妈的');
   tinymce.init({ license_key: "gpl" });
 });
 defineExpose({

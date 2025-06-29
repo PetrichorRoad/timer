@@ -17,7 +17,7 @@ const content = computed(() => {
   return content
 })
 const msgClass = computed(() => { 
-  let {position} = props.message
+  let {position=false} = props.message
   return position ? 'bg-my-bg-3' : 'bg-my-bg-4'
 })
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <n-config-provider :theme-overrides="themeOverrides">
+  <n-config-provider :theme-overrides="themeOverrides" :hljs="hljs">
     <n-space vertical size="large">
       <n-layout class="h-[100vh] flex flex-col">
         <Header></Header>
@@ -15,7 +15,8 @@
 
 <script setup>
 import { computed} from "vue";
- import { zhCN, dateZhCN,zhTW,dateZhTW } from 'naive-ui'
+import hljs from 'highlight.js/lib/core'
+import { zhCN, dateZhCN,zhTW,dateZhTW } from 'naive-ui'
 import Header from "@/components/header/index.vue";
 import { darkTheme, lightTheme } from "naive-ui";
 import { overrides1 } from "@/utils/theme/overrides1";

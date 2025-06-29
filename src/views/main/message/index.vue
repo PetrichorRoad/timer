@@ -60,8 +60,8 @@ const options = ref([
 const selectIndex = ref(0)
 const onKeywordChange = () => { };
 const onselect = (value) => { };
-const onTabTalk = (talk) => {
-  setConversation(talk)
+const onTabTalk = async (talk) => {
+  await setConversation(talk)
 };
 const onToTopTalk = (index) => {
 }

@@ -7,7 +7,6 @@
       :callback="onEditorEvent"
     />
   </footer>
-
   <!-- <HistoryRecord
     v-if="isShowHistory"
     :talk-mode="talkMode"
@@ -22,6 +21,7 @@
 //   useEditorStore,
 // } from '@/store'
 import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
+import {storeToRefs } from 'pinia'
 import ws from '@/plugins/connect'
 import { ServTalkMessageSend } from '@/api/modules/chat.js'
 import { ServGroupVoteCreate } from '@/api/modules/group.js'
@@ -40,6 +40,12 @@ import {useAsyncMessageStore} from '@/store/message.js'
 // const settingsStore = useSettingsStore()
 // const uploadsStore = useUploadsStore()
 const talkStore = chatStore();
+const talkInfo = storeToRefs(talkStore);
+const talkSessionInfo = computed(() => {
+  let {talkMode,conversation} = talkInfo;
+  let {to_from_id} = conversation.value;
+  return {talkMode:talkMode.value,to_from_id}
+});
 const dialogueStore = useDialogueStore()
 const { addAsyncMessage } = useAsyncMessageStore()
 const props = defineProps({
@@ -49,11 +55,11 @@ const props = defineProps({
   },
   talkMode: {
     type: Number,
-    default: 0
+    default: null
   },
   toFromId: {
     type: Number,
-    default: 0
+    default: null
   },
   indexName: {
     type: String,
@@ -74,11 +80,12 @@ const onSendMessage = async (data= {}) => {
   if (!ws.isConnect()) {
     return Promise.resolve(false)
   }
+  let {to_from_id,talkMode} = talkSessionInfo.value
 
   const params = {
     ...data,
-    talk_mode: props.talkMode,
-    to_from_id: props.toFromId
+    talk_mode: talkMode,
+    to_from_id
   }
 
   // 异步发送

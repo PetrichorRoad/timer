@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia'
 import { router } from '@/router'
 import user from '../api/modules/user'
+import { useDialogueStore } from '@/store/dialogue.js'
+const dialogueStore = useDialogueStore()
 // 第一个参数 storeId 是仓库的key 必须独一无二
 export const chatStore = defineStore('chat-list', {
     state: () => {
@@ -8,12 +10,12 @@ export const chatStore = defineStore('chat-list', {
             chatList:[],
             conversation:{id:null,talk_mode:null},
 
-            chatRecords:[],
+            // chatRecords:[],
 
             groupInfo:[],
             friendInfo:{},
             friendStatus:{},
-            cursor:0
+            // cursor:0
         }
     },
     getters: {
@@ -24,56 +26,58 @@ export const chatStore = defineStore('chat-list', {
 
         talkMode: (state) => state.conversation.talk_mode,
 
-        userTalkSession: (state) => {
-            let { chatRecords, friendInfo, friendStatus, conversation } = state
-            return { chatRecords, friendInfo, friendStatus, conversation }
-        },
-        groupTalkSession: (state) => {
-            let { chatRecords, groupInfo, conversation } = state
-            return { chatRecords, groupInfo, conversation }
-        },
-        talkSession: (state) => {
-            let { talkMode, userTalkSession, groupTalkSession } = state
-            switch (talkMode) {
-                case 1:
-                    return userTalkSession
-                case 2:
-                    return groupTalkSession
-            }
-        }
+        // userTalkSession: (state) => {
+        //     let { chatRecords, friendInfo, friendStatus, conversation } = state
+        //     return { chatRecords, friendInfo, friendStatus, conversation }
+        // },
+        // groupTalkSession: (state) => {
+        //     let { chatRecords, groupInfo, conversation } = state
+        //     return { chatRecords, groupInfo, conversation }
+        // },
+        // talkSession: (state) => {
+        //     let { talkMode, userTalkSession, groupTalkSession } = state
+        //     switch (talkMode) {
+        //         case 1:
+        //             return userTalkSession
+        //         case 2:
+        //             return groupTalkSession
+        //     }
+        // }
     },
     actions: {
         async getChatList () {
             let { data} = await user.getChatList({})
             this.chatList = data.items
         },
-        setConversation(talk){
+        async setConversation(talk){
             this.conversation = talk
             let { talk_mode } = talk
             switch (talk_mode) {
                 case 1:
-                    this.getFriendsInfo()
-                    this.getFriendsStatus()
-                    this.getChatRecords()
+                    dialogueStore.clearDialogueRecord()
+                    await this.getFriendsInfo()
+                    await this.getFriendsStatus()
+                    await this.loadChatRecord()
                     break;
                 case 2:
-                    this.getGroupInfo()
-                    this.getChatRecords()
+                    dialogueStore.clearDialogueRecord()
+                    await this.getGroupInfo()
+                    await this.loadChatRecord()
                     break;
             }
         },
-        async getChatRecords () {
+        async loadChatRecord () {
             let { talk_mode, to_from_id } = this.conversation
             let { data: { items, cursor }  } = await user.getTalkRecords({ talk_mode, to_from_id, cursor :0, limit: 30})  
-            this.chatRecords = items.reverse()
+            dialogueStore.unshiftDialogueRecord(items.reverse())
             this.cursor = cursor
         },
-        async getMoreChatRecords () {
-            let { talk_mode, to_from_id } = this.conversation
-            let { data: { items, cursor } } = await user.getTalkRecords({ talk_mode, to_from_id, cursor: this.cursor, limit: 30 })
-            this.chatRecords = [...items.reverse(),...this.chatRecords]
-            this.cursor = cursor
-        },
+        // async getMoreChatRecords () {
+        //     let { talk_mode, to_from_id } = this.conversation
+        //     let { data: { items, cursor } } = await user.getTalkRecords({ talk_mode, to_from_id, cursor: this.cursor, limit: 30 })
+        //     this.chatRecords = [...items.reverse(),...this.chatRecords]
+        //     this.cursor = cursor
+        // },
         async getGroupInfo () {
             let { to_from_id } = this.conversation
             let { data: { items } } = await user.getGroupInfo({ group_id:to_from_id })
@@ -87,10 +91,13 @@ export const chatStore = defineStore('chat-list', {
         async getFriendsStatus () {
             let { to_from_id } = this.conversation
             let { data } = await user.getFriendsStatus({ user_id:to_from_id })
-            this.friendInfo = data
+            this.friendStatus = data
+        },
+        findIndex(index_name) {
+            return this.chatList.find((item) => item.index_name === index_name)
         },
         findItem(index_name) {
-            return this.items.find((item) => item.index_name === index_name)
+            return this.chatList.find((item) => item.index_name === index_name)
         },
         updateItem(params) {
             if (!params.index_name) return
@@ -98,6 +105,9 @@ export const chatStore = defineStore('chat-list', {
             const item = this.findItem(params.index_name)
 
             item && Object.assign(item, params)
+        },
+        addItem(item) {
+            this.chatList.unshift(item)
         },
     }
 })

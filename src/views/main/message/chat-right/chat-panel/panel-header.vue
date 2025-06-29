@@ -91,12 +91,20 @@ import {ChevronBackSharp,ChevronForward,PersonAdd,Calendar,EllipsisHorizontal} f
 import { computed, defineEmits, defineProps,ref } from "vue";
 import { storeToRefs } from "pinia";
 import { chatStore } from "@/store/chat.js";
+import { useDialogueStore } from '@/store/dialogue.js'
 const talkStore = chatStore();
-const talkInfo = storeToRefs(talkStore);
+const dialogueStore = useDialogueStore()
 const talkSessionInfo = computed(() => {
-  let {talkMode, talkSession,conversation,groupInfo} = talkInfo;
-  let {name,remark} = conversation.value;
-  return {talkMode:talkMode.value, talkSession,username:remark||name,num:groupInfo.value.length}
+  console.log(talkStore.groupInfo,dialogueStore.records);
+  let {conversation,groupInfo,friendInfo} = talkStore;
+  let {records} = dialogueStore
+  let {talk_mode,remark,name} = conversation;
+  return {
+    talkMode:talk_mode,
+     talkSession:records,
+     username:remark||name,
+     num:groupInfo.length
+    }
 });
 let menu = ref(false)
 const emit = defineEmits(['evnet', 'changeSessionMenu'])

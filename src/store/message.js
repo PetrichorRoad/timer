@@ -5,7 +5,7 @@ import { ServTalkMessageSend } from '@/api/modules/chat'
 import { v4  } from 'uuid'
 import { nextTick } from 'vue'
 import {msgTypeMap} from '@/constant/default'
-import { datetime } from '@/utils/datetime'
+import { datetime } from '@/utils/lib/utils'
 
 
 // 消息状态常量
@@ -72,7 +72,7 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
       avatar: avatar,
       is_revoked: 2,
       send_time: datetime(),
-      extra: data.body,
+      extra: JSON.stringify(data.body),
       quote: {},
       status: MESSAGE_STATUS_PENDING
     }
@@ -89,8 +89,8 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
       }
     }
 
-    dialogueStore.records.push(record)
-
+    dialogueStore.addDialogueRecord(record)
+    // console.log('record', dialogueStore.records)
     nextTick(() => {
       dialogueStore.scrollToBottom(false)
     })

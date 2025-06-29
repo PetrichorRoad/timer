@@ -2272,5 +2272,191 @@
 		"en": "Add options",
 		"ko": "옵션 추가",
 		"ja": "オプションを入れます。"
+	},
+	"dlppgt4": {
+		"zh-cn": "查看消息",
+		"en": "View the message",
+		"ko": "메시지 보기",
+		"ja": "メッセージをチェックします"
+	},
+	"rcakae6": {
+		"zh-cn": "[文本消息]",
+		"en": "[Text Message]",
+		"ko": "[텍스트 메시지]",
+		"ja": "[テキストメッセージ]です。"
+	},
+	"s38jwu6": {
+		"zh-cn": "[图片消息]",
+		"en": "[Picture Message]",
+		"ko": "[사진 메시지]",
+		"ja": "[画像メッセージ]です。"
+	},
+	"tgmrnv6": {
+		"zh-cn": "[语音消息]",
+		"en": "[Voice Message]",
+		"ko": "[음성메시지]",
+		"ja": "[音声メッセージです]"
+	},
+	"x8bjao6": {
+		"zh-cn": "[视频消息]",
+		"en": "[Video Message]",
+		"ko": "[비디오 메시지]",
+		"ja": "[ビデオメッセージ]です"
+	},
+	"oaczl86": {
+		"zh-cn": "[文件消息]",
+		"en": "[File Message]",
+		"ko": "[파일 메시지]",
+		"ja": "[ファイルメッセージ]です。"
+	},
+	"eiyika6": {
+		"zh-cn": "[位置消息]",
+		"en": "[Location Message]",
+		"ko": "[위치 메시지]",
+		"ja": "[位置メッセージです]"
+	},
+	"vfuf9d6": {
+		"zh-cn": "[名片消息]",
+		"en": "[Business Card Message]",
+		"ko": "[명함 메시지]",
+		"ja": "[名刺メッセージ]です。"
+	},
+	"odw1t66": {
+		"zh-cn": "[转发消息]",
+		"en": "[Forward the Message]",
+		"ko": "[메시지 전달]",
+		"ja": "[メッセージを転送します]"
+	},
+	"llw2u96": {
+		"zh-cn": "[登录消息]",
+		"en": "[Login Message]",
+		"ko": "[로그인 메시지]",
+		"ja": "[ログインメッセージ]です。"
+	},
+	"i4ibns6": {
+		"zh-cn": "[投票消息]",
+		"en": "[Voting News]",
+		"ko": "[투표 소식]",
+		"ja": "[投票メッセージです]"
+	},
+	"byyhlp6": {
+		"zh-cn": "[代码消息]",
+		"en": "[Code Message]",
+		"ko": "[코드 메시지]",
+		"ja": "[コードメッセージ]です。"
+	},
+	"tp4p3i6": {
+		"zh-cn": "[图文消息]",
+		"en": "[Text and Image News]",
+		"ko": "[그림문자메시지]",
+		"ja": "[画像メッセージ]です。"
+	},
+	"htxdo65": {
+		"zh-cn": "[群公告]",
+		"en": "[Group Announcement]",
+		"ko": "[집단 게시판]",
+		"ja": "[グループ発表]です。"
+	},
+	"k12vop6": {
+		"zh-cn": "[系统消息]",
+		"en": "[System Message]",
+		"ko": "[시스템 메시지]",
+		"ja": "[システムメッセージ]です。"
+	},
+	"qgl0y47": {
+		"zh-cn": "[创建群消息]",
+		"en": "[Create Group Messages]",
+		"ko": "[그룹 메시지 만들기]",
+		"ja": "[グループメッセージ作成]"
+	},
+	"ypbxpq7": {
+		"zh-cn": "[加入群消息]",
+		"en": "[Join Group Message]",
+		"ko": "[그룹 메시지 가입]",
+		"ja": "[グループメッセージに参加します]"
+	},
+	"jktkcn7": {
+		"zh-cn": "[退出群消息]",
+		"en": "[Exit Group Message]",
+		"ko": "[그룹 메시지 종료]",
+		"ja": "[グループからの脱退メッセージです]"
+	},
+	"6cmdt17": {
+		"zh-cn": "[踢出群消息]",
+		"en": "[Kick out of group Message]",
+		"ko": "[게시물 제거]",
+		"ja": "[グループメッセージを蹴り出します]"
+	},
+	"ltg2ch6": {
+		"zh-cn": "[撤回消息]",
+		"en": "[Withdraw Message]",
+		"ko": "[소식 철회]",
+		"ja": "[撤回メッセージです]"
+	},
+	"rqlgfh7": {
+		"zh-cn": "[群解散消息]",
+		"en": "[Group Disbandment News]",
+		"ko": "[그룹 해산 소식]",
+		"ja": "[グループ解散メッセージです]"
+	},
+	"vp6s367": {
+		"zh-cn": "[群禁言消息]",
+		"en": "[Group Muted Message]",
+		"ko": "[대중금지소식]",
+		"ja": "[群禁言メッセージです]"
+	},
+	"p0cvjn9": {
+		"zh-cn": "[群解除禁言消息]",
+		"en": "[Group Unsilencing Message]",
+		"ko": "[엠바고 해제 소식]",
+		"ja": "[群禁言解除メッセージです]"
+	},
+	"j2pzk69": {
+		"zh-cn": "[群成员禁言消息]",
+		"en": "[Group Member Muted Messages]",
+		"ko": "[그룹 멤버 금언 메시지]",
+		"ja": "[グループメンバーの禁句メッセージです]"
+	},
+	"s70ipnb": {
+		"zh-cn": "[群成员解除禁言消息]",
+		"en": "[Group member Lifting the Ban Message]",
+		"ko": "[그룹 엠바고 해제]",
+		"ja": "[グループメンバーの発禁解除メッセージです]"
+	},
+	"tw8n9rh": {
+		"zh-cn": "文件已成功发送, 文件助手永久保存",
+		"en": "The file has been successfully sent and is permanently saved by the File assistant",
+		"ko": "파일이 성공적으로 전송되었습니다. 파일 도우미가 영원히 저장합니다",
+		"ja": "ファイルの送信に成功し、ファイルアシスタントが永久保存します。"
+	},
+	"e28i2": {
+		"zh-cn": "下载",
+		"en": "Download",
+		"ko": "다운로드",
+		"ja": "ダウンロードします"
+	},
+	"bj1sbf4": {
+		"zh-cn": "在线预览",
+		"en": "Online preview",
+		"ko": "온라인 미리 보기",
+		"ja": "オンラインプレビューです"
+	},
+	"hdmm2tc": {
+		"zh-cn": "LumenIM 在线聊天",
+		"en": "LumenIM online chat",
+		"ko": "lumenim 온라인 채팅",
+		"ja": "LumenIMオンラインチャットです"
+	},
+	"k5xcbxe": {
+		"zh-cn": "您有新的聊天消息请注意查收!",
+		"en": "Please check your new chat messages!",
+		"ko": "새로운 대화 소식이 있으면 잘 확인해 주세요!",
+		"ja": "新しいチャットがありますのでご注意ください!"
+	},
+	"fsg7u3": {
+		"zh-cn": "未设置",
+		"en": "Not set",
+		"ko": "설정되지 않음",
+		"ja": "未設定です"
 	}
 }
