@@ -51,6 +51,7 @@ class Connect {
   }
 
   bindEvents() {
+    console.log('绑定事件...');
     this.onPing()
     this.onPong()
     this.onImMessage()

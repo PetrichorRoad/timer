@@ -46,7 +46,6 @@ class Talk extends Base {
 
     body.extra = JSON.parse(body.extra)
     body.quote = JSON.parse(body.quote)
-
     this.handle()
   }
 
@@ -105,7 +104,6 @@ class Talk extends Base {
       if (isCache) {
         msgIdsCache.clear(this.body.msg_id)
       }
-
       this.insertTalkRecord(!isCache)
 
       // if (useSettingsStore().isLeaveWeb) {
@@ -155,7 +153,8 @@ class Talk extends Base {
    * 插入对话记录
    */
   insertTalkRecord(addRecord = true) {
-    const record = this.body
+    let {extra} = this.body
+    const record = { ...this.body, extra: JSON.stringify(extra)}
 
     // 群成员变化的消息，需要更新群成员列表
     if ([1102, 1103, 1104].includes(record.msg_type)) {
@@ -163,6 +162,7 @@ class Talk extends Base {
     }
 
     if (addRecord) {
+      console.log(record,"nimade" );
       useDialogueStore().addDialogueRecord(record)
     }
 

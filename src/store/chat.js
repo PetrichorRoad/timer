@@ -2,7 +2,6 @@ import { defineStore } from 'pinia'
 import { router } from '@/router'
 import user from '../api/modules/user'
 import { useDialogueStore } from '@/store/dialogue.js'
-const dialogueStore = useDialogueStore()
 // 第一个参数 storeId 是仓库的key 必须独一无二
 export const chatStore = defineStore('chat-list', {
     state: () => {
@@ -50,6 +49,7 @@ export const chatStore = defineStore('chat-list', {
             this.chatList = data.items
         },
         async setConversation(talk){
+            const dialogueStore = useDialogueStore()
             this.conversation = talk
             let { talk_mode } = talk
             switch (talk_mode) {
@@ -67,6 +67,7 @@ export const chatStore = defineStore('chat-list', {
             }
         },
         async loadChatRecord () {
+            const dialogueStore = useDialogueStore()
             let { talk_mode, to_from_id } = this.conversation
             let { data: { items, cursor }  } = await user.getTalkRecords({ talk_mode, to_from_id, cursor :0, limit: 30})  
             dialogueStore.unshiftDialogueRecord(items.reverse())

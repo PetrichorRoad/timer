@@ -119,7 +119,6 @@ class WsSocket {
   onMessage(evt) {
     this.lastTime = Date.now();
     const data = this.onParse(evt);
-    console.log(data,'payload变了');
     if (data.event === "pong") {
       return;
     }

@@ -16,7 +16,7 @@ import { router } from "./router/index";
 import naive from 'naive-ui'
 import { loading } from './utils/lib/loading'
 import { context } from './directive/context'  
-
+const pinia = createPinia()
 import '@/plugins/highlight.js'
 // import { $t , i18n } from './il8n/index'
 window.lottie = lottie;
@@ -25,6 +25,6 @@ const app = createApp(App)
 //app.config.globalProperties.$t = $t;
 
 
-app.use(router).use(createPinia()).use(naive).directive('loading',loading).directive('context',context)
+app.use(router).use(pinia).use(naive).directive('loading',loading).directive('context',context)
 // app.use(i18n)
 app.mount('#app')

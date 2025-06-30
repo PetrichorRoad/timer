@@ -1,5 +1,5 @@
 import { getUserInfo } from "@/utils/auth.js";
-import { useDialogueStore } from "@/store/dialogue.js";
+import { chatStore } from "@/store/chat.js";
 import {router} from '@/router'
 
 class Base {
@@ -16,14 +16,16 @@ class Base {
   }
 
   getTalkParams() {
-    const dialogueStore = useDialogueStore()
+    const talkStore = chatStore()
 
-    const { talk_mode, to_from_id } = dialogueStore.target
+    const { conversation } = talkStore
+    const { talk_mode, to_from_id } = conversation
+    console.log(conversation);
 
     return {
       talk_mode,
       to_from_id,
-      index_name: dialogueStore.index_name
+      index_name: `${talk_mode}_${to_from_id}`
     }
   }
 
