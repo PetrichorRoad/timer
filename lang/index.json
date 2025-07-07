@@ -2458,5 +2458,137 @@
 		"en": "Not set",
 		"ko": "설정되지 않음",
 		"ja": "未設定です"
+	},
+	"gio3m94": {
+		"zh-cn": "组织架构",
+		"en": "Organizational structure",
+		"ko": "조직 구성",
+		"ja": "組織構造です"
+	},
+	"ls4kg3": {
+		"zh-cn": "通讯录",
+		"en": "Address Book",
+		"ko": "주소록",
+		"ja": "アドレス帳です"
+	},
+	"aan4n54": {
+		"zh-cn": "企业成员",
+		"en": "Enterprise members",
+		"ko": "기업 구성원",
+		"ja": "企業の構成員です"
+	},
+	"s5qyvpa": {
+		"zh-cn": "禁止给自己发送消息!",
+		"en": "Do not send messages to yourself!",
+		"ko": "자신에게 메시지 보내지 마세요!",
+		"ja": "自分へのメッセージ送信禁止です!"
+	},
+	"eb5c2": {
+		"zh-cn": "全员",
+		"en": "All staff",
+		"ko": "전원",
+		"ja": "全員です"
+	},
+	"y4xoby5": {
+		"zh-cn": "个性签名:",
+		"en": "Personal signature",
+		"ko": "개인 서명:",
+		"ja": "箇性的签名:"
+	},
+	"hztq2": {
+		"zh-cn": "暂无",
+		"en": "Not available for now",
+		"ko": "잠시 무",
+		"ja": "まだありません"
+	},
+	"ct4e03": {
+		"zh-cn": "发消息",
+		"en": "Send a message",
+		"ko": "메시지 보내기",
+		"ja": "メッセージを送ります。"
+	},
+	"i0j92h6": {
+		"zh-cn": "暂无相关数据",
+		"en": "There is no relevant data available for the time being",
+		"ko": "현재 관련 데이터가 없다",
+		"ja": "関連データはまだありません"
+	},
+	"go32f3": {
+		"zh-cn": "测试1",
+		"en": "Test 1",
+		"ko": "테스트 1",
+		"ja": "テスト1です"
+	},
+	"dztcya9": {
+		"zh-cn": "JAVA研发111",
+		"en": "JAVA Development 111",
+		"ko": "java r&d 111",
+		"ja": "JAVA r & d 111"
+	},
+	"tc2y3xh": {
+		"zh-cn": "{\"content\": \"上述\"}",
+		"en": "{\"content\": \"The above \"}",
+		"ko": "{\"content\":\"앞에서\"}",
+		"ja": "{\"content\": \"以上です\"}"
+	},
+	"7v1cj": {
+		"zh-cn": "{\"content\": \"[憨笑]\"}",
+		"en": "{\"content\": \"[Laughing Foolishly]\"}",
+		"ko": "{\"content\":\"[멍청한 웃음]\"}",
+		"ja": "{\"content\": \"[笑います]\"}"
+	},
+	"fs19zml": {
+		"zh-cn": "{\"content\": \"俺爸哈上班‘\"}",
+		"en": "{\"content\": \"My dad goes to work \"}",
+		"ko": "{\"content\":\"아빠 일해요\"}",
+		"ja": "{\"content\": \"私の父は出勤します\"}"
+	},
+	"yfedb8l": {
+		"zh-cn": "{\"content\": \"问八角盒是吧\"}",
+		"en": "{\"content\": \"Asking about the octagon box, right? \"}",
+		"ko": "{\"content\":\"팔각상자한테 물어봐\"}",
+		"ja": "{\"content\": \"問八角盒是吧\"}"
+	},
+	"rqwy9ep": {
+		"zh-cn": "{\"content\": \"问吧呼叫失败发汗解表\"}",
+		"en": "{\"content\": \"Ask. Sweating to solve the problem when the call fails \"}",
+		"ko": "{\"content\":\"묻지마 호출 실패\"}",
+		"ja": "{\"content\": \"問吧呼起失敗発汗解表\"}"
+	},
+	"6djsygm": {
+		"zh-cn": "{\"content\": \"啊是的呐发卡机\"}",
+		"en": "\"Ah, yes, card issuer\"",
+		"ko": "{\"content\":\"아예, 핀꽂이\"}",
+		"ja": "{\"content\": \"ああそうですねヘアピン\"}"
+	},
+	"urehd8g": {
+		"zh-cn": "{\"content\": \"好\"}",
+		"en": "\"Good\"",
+		"ko": "{\"content\":\"good\"}",
+		"ja": "{\"content\": \"はい\"}"
+	},
+	"ta67okh": {
+		"zh-cn": "{\"content\": \"你好\"}",
+		"en": "\"Hello\"",
+		"ko": "{\"content\":\"hello\"}",
+		"ja": "{\"content\": \"こんにちは\"}"
+	},
+	"d46ardi": {
+		"zh-cn": "{\"content\": \"额外发\"}",
+		"en": "{\"content\": \"Extra \"}",
+		"ko": "{\"content\":\"추가 발신\"}",
+		"ja": "{\"content\": \"追加配信\"}です"
+	},
+	"k77uytj": {
+		"zh-cn": "{\"content\": \"发发额发\"}",
+		"en": "{\"content\": \"Fa Fa Forehead \"}",
+		"ko": "{\"content\":\"go to go\"}",
+		"ja": "{\"content\": \"前髪\"}です"
+	},
+	"lw5c2": {
+		"zh-cn": "索滢",
+		"en": "Suo Ying",
+		"ko": "SuoYing",
+		"ja": "ソエイ"
 	}
 }

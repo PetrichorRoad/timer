@@ -1,8 +1,20 @@
-import { i18nDB } from "@/database/index";
+import { conversationDB } from "@/database/index";
 
-export const getTranslations = async (lang) => {
+export const getSessionList = async (lang) => {
     return new Promise(async (resolve, reject) => {
-        const translations = await i18nDB.getAll();
-        resolve(translations);
+        const sessionList = await conversationDB.getAll();
+        resolve(sessionList);
+    });
+}
+export const saveSession = async (key, session) => {
+    return new Promise(async (resolve, reject) => {
+        await conversationDB.save(key, session);
+        resolve();
+    });
+}
+export const deleteSession = async (key) => {
+    return new Promise(async (resolve, reject) => {
+        await conversationDB.remove(key);
+        resolve();
     });
 }

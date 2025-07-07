@@ -3,13 +3,13 @@ import { h, ref, computed } from "vue";
 import { NIcon, NEllipsis } from "naive-ui";
 import { RouterLink } from "vue-router";
 import { useStore } from "@/store/index";
-import { BookOutline, PersonOutline, WineOutline, ChatbubbleEllipsesSharp } from "@vicons/ionicons5";
+import { BookOutline, PersonOutline, WineOutline, ChatbubbleEllipsesSharp, Aperture } from "@vicons/ionicons5";
 import { router } from "@/router/index";
 export const iconMap = {
     BookOutline,
     PersonOutline,
     WineOutline,
-    ChatbubbleEllipsesSharp
+    ChatbubbleEllipsesSharp, Aperture
 };
 const renderIcon = (icon) => {
     return () => h(NIcon, null, { default: () => h(icon) });
@@ -110,8 +110,8 @@ export const menuListByOther = [
         ],
     },
     {
-        path: "message",
-        name: "message",
+        path: "address-book",
+        name: "address-book",
         icon: "ChatbubbleEllipsesSharp",
         label: "消息中心",
         component: () => import("@/views/main/message/index.vue"),
@@ -119,6 +119,26 @@ export const menuListByOther = [
             Auth: true,
             title: "消息中心",
         }, 
+    },
+    {
+        path: "message",
+        name: "message",
+        icon: "Aperture",
+        label: "通讯录",
+        meta: {
+            Auth: true,
+            title: "通讯录",
+        },
+        children: [
+            {
+                path: "organization",
+                name: "organization",
+                icon: "BookOutline",
+                label: "组织架构",
+                component: () => import("@/views/main/addressBook/organization/index.vue"),
+                meta: { Auth: true, title: "组织架构" },
+            },
+        ],
     },
     {
         path: "document",

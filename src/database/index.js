@@ -1,5 +1,5 @@
-export default class TranslationDB {
-  constructor(dbName = 'TranslationDB') {
+export default class conversation {
+  constructor(dbName = 'conversation') {
     this.dbName = dbName;
     this.db = null;
   }
@@ -14,8 +14,8 @@ export default class TranslationDB {
       };
       request.onupgradeneeded = (event) => {
         const db = event.target.result;
-        if (!db.objectStoreNames.contains('translations')) {
-          db.createObjectStore('translations'); // 最简结构
+        if (!db.objectStoreNames.contains('talkSessions')) {
+          db.createObjectStore('talkSessions'); // 最简结构
         }
       };
     });
@@ -30,10 +30,21 @@ export default class TranslationDB {
     if (!this.db) await this.open();
 
     return new Promise((resolve, reject) => {
-      const transaction = this.db.transaction(['translations'], 'readwrite');
-      const store = transaction.objectStore('translations');
+      const transaction = this.db.transaction(['talkSessions'], 'readwrite');
+      const store = transaction.objectStore('talkSessions');
       const request = store.put(translations, key); // key作为外部标识
 
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+    });
+  }
+  async remove(key) { 
+    if (!this.db) await this.open();
+    return new Promise((resolve, reject) => { 
+      const transaction = this.db.transaction(['talkSessions'], 'readwrite');
+      const store = transaction.objectStore('talkSessions');
+      const request = store.delete(key);
+      
       request.onsuccess = () => resolve();
       request.onerror = () => reject(request.error);
     });
@@ -44,24 +55,12 @@ export default class TranslationDB {
    * @param {string} key - 查询键
    * @returns {object} 纯翻译对象
    */
-  async get(key) {
-    if (!this.db) await this.open();
-
-    return new Promise((resolve) => {
-      const transaction = this.db.transaction(['translations'], 'readonly');
-      const store = transaction.objectStore('translations');
-      const request = store.get(key);
-
-      request.onsuccess = () => resolve(request.result || {});
-      request.onerror = () => resolve({});
-    });
-  }
   async getAll() {
   if (!this.db) await this.open();
 
   return new Promise((resolve) => {
-    const transaction = this.db.transaction(['translations'], 'readonly');
-    const store = transaction.objectStore('translations');
+    const transaction = this.db.transaction(['talkSessions'], 'readonly');
+    const store = transaction.objectStore('talkSessions');
     const request = store.getAll(); // 获取所有键值对
 
     request.onsuccess = () => {
@@ -83,4 +82,4 @@ export default class TranslationDB {
 }
 }
 
-export const i18nDB = new TranslationDB();
+export const conversationDB = new conversation();

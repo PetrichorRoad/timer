@@ -1,8 +1,6 @@
 <script setup>
 import { onMounted } from "vue";
 import { useStore } from "@/store/index";
-import langJSON from '../lang/index.json';
-import {i18nDB} from "@/database/index";
 import ws from '@/plugins/connect.js'
 import { getToken, getIMToken } from '@/utils/lib'
 const { theme } = useStore();
