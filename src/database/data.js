@@ -18,3 +18,9 @@ export const deleteSession = async (key) => {
         resolve();
     });
 }
+export const getSession = async (key) => {
+    return new Promise(async (resolve, reject) => {
+        const session = await conversationDB.getChatList(key);
+        resolve(session);
+    });
+}

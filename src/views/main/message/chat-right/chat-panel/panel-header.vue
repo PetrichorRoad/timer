@@ -95,7 +95,6 @@ import { useDialogueStore } from '@/store/dialogue.js'
 const talkStore = chatStore();
 const dialogueStore = useDialogueStore()
 const talkSessionInfo = computed(() => {
-  console.log(talkStore.groupInfo,dialogueStore.records);
   let {conversation,groupInfo,friendInfo} = talkStore;
   let {records} = dialogueStore
   let {talk_mode,remark,name} = conversation;

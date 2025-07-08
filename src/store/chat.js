@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import { router } from "@/router";
 import { getSessionList } from "../database/data";
+import { getSession } from "../database/data";
 
 import user from "../api/modules/user";
 import { useDialogueStore } from "@/store/dialogue.js";
@@ -70,41 +71,45 @@ export const chatStore = defineStore("chat-list", {
           to_from_id: 1199,
           unread_num: 0,
           updated_at: "2025-07-07 21:52:38",
-          sessions: value,
         };
       });
     },
     async setConversation(talk) {
       const dialogueStore = useDialogueStore();
+      dialogueStore.clearDialogueRecord();
       this.conversation = talk;
-      let { talk_mode } = talk;
-      switch (talk_mode) {
-        case 1:
-          dialogueStore.clearDialogueRecord();
-          await this.getFriendsInfo();
-          await this.getFriendsStatus();
-          await this.loadChatRecord();
-          break;
-        case 2:
-          dialogueStore.clearDialogueRecord();
-          await this.getGroupInfo();
-          await this.loadChatRecord();
-          break;
-      }
+      this.loadChatRecord();
+    //   let { talk_mode } = talk;
+    //   switch (talk_mode) {
+    //     case 1:
+    //       dialogueStore.clearDialogueRecord();
+    //       await this.getFriendsInfo();
+    //       await this.getFriendsStatus();
+    //       await this.loadChatRecord();
+    //       break;
+    //     case 2:
+    //       dialogueStore.clearDialogueRecord();
+    //       await this.getGroupInfo();
+    //       await this.loadChatRecord();
+    //       break;
+    //   }
     },
     async loadChatRecord() {
+      let { id } = this.conversation
+      let result = await getSession(id);
+    //   const dialogueStore = useDialogueStore();
+    //   let { talk_mode, to_from_id } = this.conversation;
+    //   let {
+    //     data: { items, cursor },
+    //   } = await user.getTalkRecords({
+    //     talk_mode,
+    //     to_from_id,
+    //     cursor: 0,
+    //     limit: 30,
+    //   });
       const dialogueStore = useDialogueStore();
-      let { talk_mode, to_from_id } = this.conversation;
-      let {
-        data: { items, cursor },
-      } = await user.getTalkRecords({
-        talk_mode,
-        to_from_id,
-        cursor: 0,
-        limit: 30,
-      });
-      dialogueStore.unshiftDialogueRecord(items.reverse());
-      this.cursor = cursor;
+      dialogueStore.unshiftDialogueRecord(result.reverse());
+    //   this.cursor = cursor;
     },
     // async getMoreChatRecords () {
     //     let { talk_mode, to_from_id } = this.conversation
