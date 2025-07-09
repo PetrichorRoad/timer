@@ -4,7 +4,7 @@ import { datetime } from '@/utils/lib/utils'
 import { MESSAGE_TYPE, ChatMsgTypeMapping } from '@/constant/default'
 import { formatTalkItem, playMusic } from '@/utils/lib/talk'
 import { ServTalkClearUnread, ServTalkCreate } from '@/api/modules/chat'
-import { chatStore  } from '@/store/chat'
+import { useSessionStore  } from '@/store/session'
 import { useDialogueStore } from "@/store/dialogue.js";
 import { useAsyncMessageStore } from '@/store/message.js'
 
@@ -89,7 +89,7 @@ class Talk extends Base {
   }
 
   handle() {
-    const findIndex = chatStore().findIndex(this.getIndexName())
+    const findIndex = useSessionStore().findIndex(this.getIndexName())
 
     const { msgIdsCache } = useAsyncMessageStore()
 
@@ -146,7 +146,7 @@ class Talk extends Base {
 
     if (code !== 200) return
 
-    chatStore().addItem({ ...formatTalkItem(data), unread_num: 1 })
+    useSessionStore().addItem({ ...formatTalkItem(data), unread_num: 1 })
   }
 
   /**
@@ -166,7 +166,7 @@ class Talk extends Base {
       useDialogueStore().addDialogueRecord(record)
     }
 
-    // chatStore().updateMessage(
+    // useSessionStore().updateMessage(
     //   {
     //     index_name: this.getIndexName(),
     //     msg_text: this.getTalkText(),
@@ -212,7 +212,7 @@ class Talk extends Base {
    * 更新对话列表记录
    */
   updateTalkItem() {
-    // chatStore().updateMessage(
+    // useSessionStore().updateMessage(
     //   {
     //     index_name: this.getIndexName(),
     //     msg_text: this.getTalkText(),

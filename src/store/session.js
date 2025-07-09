@@ -1,0 +1,77 @@
+import { defineStore } from "pinia";
+import { router } from "@/router";
+import { getSessionList } from "../database/data";
+import { getSession } from "../database/data";
+
+import user from "../api/modules/user";
+import { useDialogueStore } from "@/store/dialogue.js";
+// 第一个参数 storeId 是仓库的key 必须独一无二
+export const useSessionStore = defineStore("chat-list", {
+  state: () => {
+    return {
+      chatList: [],
+      conversation: { id: null, talk_mode: null },
+    };
+  },
+  getters: {
+    allChatList: (state) => state.chatList,
+    friendChatList: (state) =>
+      state.chatList.filter((item) => item.talk_mode === 1),
+    groupChatList: (state) =>
+      state.chatList.filter((item) => item.talk_mode === 2),
+    talkUnreadNum: (state) =>
+      state.chatList.filter((item) => item.unread_num > 0),
+
+    talkMode: (state) => state.conversation.talk_mode,
+  },
+  actions: {
+    async getChatList() {
+
+      let result = await getSessionList();
+      this.chatList = Object.entries(result).map(([key, value]) => {
+        return {
+          id: key,
+          avatar: `https://picsum.photos/200/300?${key}`,
+          is_disturb: 2,
+          is_robot: 2,
+          is_top: 2,
+          msg_text: "...",
+          name: "索滢",
+          remark: "",
+          talk_mode: 1,
+          to_from_id: 1199,
+          unread_num: 0,
+          updated_at: "2025-07-07 21:52:38",
+        };
+      });
+    },
+    async setConversation(talk) {
+      const dialogueStore = useDialogueStore();
+      dialogueStore.clearDialogueRecord();
+      this.conversation = talk;
+      this.loadChatRecord();
+    },
+    async loadChatRecord() {
+      let { id } = this.conversation
+      let result = await getSession(id);
+      const dialogueStore = useDialogueStore();
+      dialogueStore.unshiftDialogueRecord(result.reverse());
+    },
+    findIndex(index_name) {
+      return this.chatList.find((item) => item.index_name === index_name);
+    },
+    findItem(index_name) {
+      return this.chatList.find((item) => item.index_name === index_name);
+    },
+    updateItem(params) {
+      if (!params.index_name) return;
+
+      const item = this.findItem(params.index_name);
+
+      item && Object.assign(item, params);
+    },
+    addItem(item) {
+      this.chatList.unshift(item);
+    },
+  },
+});

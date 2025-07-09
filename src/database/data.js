@@ -8,8 +8,14 @@ export const getSessionList = async (lang) => {
 }
 export const saveSession = async (key, session) => {
     return new Promise(async (resolve, reject) => {
-        await conversationDB.save(key, session);
+        await conversationDB.saveSession(key, session);
         resolve();
+    });
+}
+export const saveChat = async (key,chatMessage) => {
+    return new Promise(async (resolve, reject) => {
+        const session = await conversationDB.saveChatMessage(key, chatMessage);
+        resolve(session);
     });
 }
 export const deleteSession = async (key) => {

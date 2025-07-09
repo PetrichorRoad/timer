@@ -48,8 +48,8 @@ import talkItem from "./chat-left/talk-item.vue";
 
 import talkPanel from "./chat-right/index.vue";
 import empty from "@/components/empty/empty.vue";
-import { chatStore } from "@/store/chat.js";
-const talkStore = chatStore();
+import { useSessionStore } from "@/store/session.js";
+const talkStore = useSessionStore();
 const { getChatList, setConversation } = talkStore;
 const {
   allChatList,

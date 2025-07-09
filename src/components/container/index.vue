@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref, onMounted, computed } from "vue";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 import { storeToRefs } from "pinia";
 const store = useStore();
 const loading = ref(false);

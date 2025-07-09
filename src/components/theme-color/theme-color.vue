@@ -22,7 +22,7 @@
 
 <script setup>
 import { computed } from "vue";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 // import { useI18n } from 'vue-i18n'
 // const { locale, availableLocales,messages } = useI18n()
 const store = useStore();

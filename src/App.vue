@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from "vue";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 import ws from '@/plugins/connect.js'
 import { getToken, getIMToken } from '@/utils/lib'
 const { theme } = useStore();

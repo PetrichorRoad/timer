@@ -1,6 +1,6 @@
 import Base from './base'
-// import { chatStore } from '@/store'
-import { chatStore } from '@/store/chat'
+// import { useSessionStore } from '@/store'
+import { useSessionStore } from '@/store/session'
 import { useDialogueStore } from "@/store/dialogue.js";
 import { datetime } from '@/utils/lib/utils'
 
@@ -74,7 +74,7 @@ class Revoke extends Base {
   }
 
   handle() {
-    // chatStore().updateItem({
+    // useSessionStore().updateItem({
     //   index_name: this.getIndexName(),
     //   msg_text: this.resource.remark,
     //   updated_at: datetime()

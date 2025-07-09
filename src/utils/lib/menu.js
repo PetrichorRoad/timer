@@ -2,7 +2,7 @@ import { routes } from "@/router/index";
 import { h, ref, computed } from "vue";
 import { NIcon, NEllipsis } from "naive-ui";
 import { RouterLink } from "vue-router";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 import { BookOutline, PersonOutline, WineOutline, ChatbubbleEllipsesSharp, Aperture } from "@vicons/ionicons5";
 import { router } from "@/router/index";
 export const iconMap = {

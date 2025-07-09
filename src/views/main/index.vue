@@ -32,7 +32,7 @@
 import WebSocketContainer from "@/views/main/websocket/websocket.vue";
 import { computed } from "vue";
 import { menuList } from "@/utils/lib/menu.js";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 import { useRoute } from "vue-router";
 const route = useRoute();
 const store = useStore();

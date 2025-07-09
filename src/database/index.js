@@ -26,7 +26,7 @@ export default class conversation {
    * @param {string} key - 作为键但不存储
    * @param {object} translations - 纯翻译对象 { 'zh-CN': '...', 'en-US': '...' }
    */
-  async save(key, translations) {
+  async saveSession(key, translations) {
     if (!this.db) await this.open();
 
     return new Promise((resolve, reject) => {
@@ -36,6 +36,42 @@ export default class conversation {
 
       request.onsuccess = () => resolve();
       request.onerror = () => reject(request.error);
+    });
+  }
+  async saveChatMessage(key, session) {
+    if (!this.db) await this.open();
+
+    return new Promise((resolve, reject) => {
+      const transaction = this.db.transaction(["talkSessions"], "readwrite");
+      const store = transaction.objectStore("talkSessions");
+
+      // 1. 先获取当前 key 对应的数据
+      const getRequest = store.get(key);
+
+      getRequest.onsuccess = () => {
+        const existingData = getRequest.result;
+        console.log("existingData", existingData);
+        if (!existingData) {
+          reject(new Error(`Key ${key} does not exist`));
+          return;
+        }
+
+        // 2. 检查是否存在 value 数组（根据图片，value 是数组形式）
+        if (!Array.isArray(existingData)) {
+          reject(new Error('Value is not an array'));
+          return;
+        }
+
+        // 3. 插入新数据到数组（插入到开头）
+        existingData.unshift(session);
+
+        // 4. 更新回数据库
+        const putRequest = store.put(existingData, key);
+
+        putRequest.onsuccess = () => resolve();
+        putRequest.onerror = (event) => reject(event.target.error);
+      };
+      getRequest.onerror = (event) => reject(event.target.error);
     });
   }
   async remove(key) {

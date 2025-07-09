@@ -1,12 +1,13 @@
 import { defineStore } from 'pinia'
 import { useDialogueStore } from './dialogue'
+import { useSessionStore } from './session'
 import { getUserInfo } from '@/utils/lib'
 import { ServTalkMessageSend } from '@/api/modules/chat'
-import { v4  } from 'uuid'
+import { v4 } from 'uuid'
 import { nextTick } from 'vue'
-import {msgTypeMap} from '@/constant/default'
-import { datetime } from '@/utils/lib/utils'
-
+import { datetime, dataValue } from '@/utils/lib/utils'
+import { saveChat } from '@/database/data'
+import { msgTypeMap } from '@/constant/default'
 
 // 消息状态常量
 const MESSAGE_STATUS_SENT = 1
@@ -18,22 +19,34 @@ const MAX_RETRIES = 6
 // 编辑器草稿
 export const useAsyncMessageStore = defineStore('async-message', () => {
   const { uid, nickname, avatar } = getUserInfo()
+  console.log(uid, nickname, avatar);
+  const sessionStore = useSessionStore()
   const dialogueStore = useDialogueStore()
 
+
   // 待推送消息ID
-  let items= []
+  let items = []
 
   // 异步消息ID缓存
   const msgIdsSet = new Set()
   // 添加待推送消息
   function addAsyncMessage(data) {
+    let { conversation } = sessionStore
     data.msg_id = uuid()
     items.push(data)
 
     msgIdsSet.add(data.msg_id)
-
+    // 内存聊天列表里添加一份
     addRecordList(data)
-    sendMessage(data)
+    // 推送至服务器发给别人
+    // sendMessage(data)
+    console.log('addAsyncMessage', data, conversation);
+    // 在indexDB里保存聊天数据
+    let { body, msg_id, type } = data
+    let { avatar, name, id } = conversation
+    let msg_type = msgTypeMap[type]
+    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
+    saveChat(id, params)
   }
 
   async function sendMessage(message, retryCount = 0) {
@@ -76,9 +89,9 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
       quote: {},
       status: MESSAGE_STATUS_PENDING
     }
-
     if (data.quote_id) {
       const quote = dialogueStore.records.find((item) => item.msg_id === data.quote_id)
+      console.log('quote', quote);
       if (quote) {
         record.quote = {
           quote_id: quote.msg_id,
@@ -88,12 +101,7 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
         }
       }
     }
-
     dialogueStore.addDialogueRecord(record)
-    // console.log('record', dialogueStore.records)
-    nextTick(() => {
-      dialogueStore.scrollToBottom(false)
-    })
   }
 
   // 更新消息状态

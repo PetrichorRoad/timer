@@ -1,5 +1,5 @@
 import { getUserInfo } from "@/utils/auth.js";
-import { chatStore } from "@/store/chat.js";
+import { useSessionStore } from "@/store/session.js";
 import {router} from '@/router'
 
 class Base {
@@ -16,7 +16,7 @@ class Base {
   }
 
   getTalkParams() {
-    const talkStore = chatStore()
+    const talkStore = useSessionStore()
 
     const { conversation } = talkStore
     const { talk_mode, to_from_id } = conversation

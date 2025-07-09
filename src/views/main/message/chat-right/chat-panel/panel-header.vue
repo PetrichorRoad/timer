@@ -89,20 +89,19 @@
 <script setup>
 import {ChevronBackSharp,ChevronForward,PersonAdd,Calendar,EllipsisHorizontal} from '@vicons/ionicons5'
 import { computed, defineEmits, defineProps,ref } from "vue";
-import { storeToRefs } from "pinia";
-import { chatStore } from "@/store/chat.js";
+import { useSessionStore } from "@/store/session.js";
 import { useDialogueStore } from '@/store/dialogue.js'
-const talkStore = chatStore();
+const talkStore = useSessionStore();
 const dialogueStore = useDialogueStore()
 const talkSessionInfo = computed(() => {
-  let {conversation,groupInfo,friendInfo} = talkStore;
+  let {conversation} = talkStore;
   let {records} = dialogueStore
   let {talk_mode,remark,name} = conversation;
   return {
     talkMode:talk_mode,
      talkSession:records,
      username:remark||name,
-     num:groupInfo.length
+     num:10
     }
 });
 let menu = ref(false)

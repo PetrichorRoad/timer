@@ -27,7 +27,7 @@ import themeColor from "@/components/theme-color/theme-color.vue";
 import { SettingsOutline } from "@vicons/ionicons5";
 import { computed, h } from "vue";
 import { RouterLink, useRoute ,useRouter } from "vue-router";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 const store = useStore();
 const route = useRoute();
 let router = useRouter();

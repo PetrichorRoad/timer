@@ -16,11 +16,11 @@ import { router } from "./router/index";
 import naive from 'naive-ui'
 import { loading } from './utils/lib/loading'
 import { context } from './directive/context'  
-const pinia = createPinia()
 import '@/plugins/highlight.js'
 // import { $t , i18n } from './il8n/index'
 window.lottie = lottie;
 const app = createApp(App)
+const pinia = createPinia()
 // window.$t = $t;
 //app.config.globalProperties.$t = $t;
 

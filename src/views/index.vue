@@ -20,7 +20,7 @@ import { zhCN, dateZhCN,zhTW,dateZhTW } from 'naive-ui'
 import Header from "@/components/header/index.vue";
 import { darkTheme, lightTheme } from "naive-ui";
 import { overrides1 } from "@/utils/theme/overrides1";
-import { useStore } from "@/store/index";
+import { useStore } from "@/store/setting";
 // console.log(dateZhCN);
 
 const store = useStore();

@@ -19,8 +19,8 @@
 <script setup>
 import { computed, defineModel, ref } from "vue";
 import { storeToRefs } from "pinia";
-import { chatStore } from "@/store/chat.js";    
-const talkStore = chatStore();
+import { useSessionStore } from "@/store/session.js";    
+const talkStore = useSessionStore();
 const {allChatList,friendChatList,groupChatList,talkUnreadNum} = storeToRefs(talkStore);
 const tabIndex = defineModel()
 const tabs = ref([

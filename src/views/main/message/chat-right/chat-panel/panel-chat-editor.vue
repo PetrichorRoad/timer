@@ -32,14 +32,14 @@ import Editor from '@/components/editor/editorQuill.vue'
 import { ServUploadImage } from '@/api/modules/upload.js'
 import { bus } from '@/utils'
 // import { useInject } from '@/hooks'
-import { chatStore } from "@/store/chat.js";
+import { useSessionStore } from "@/store/session.js";
 import { useDialogueStore } from "@/store/dialogue.js";
 import {useAsyncMessageStore} from '@/store/message.js'
 // const { message } = useInject()
 // const editorStore = useEditorStore()
 // const settingsStore = useSettingsStore()
 // const uploadsStore = useUploadsStore()
-const talkStore = chatStore();
+const talkStore = useSessionStore();
 const talkInfo = storeToRefs(talkStore);
 const talkSessionInfo = computed(() => {
   let {talkMode,conversation} = talkInfo;
@@ -249,6 +249,7 @@ onMounted(() => {
 })
 
 const onEditorEvent = async (event, data) => {
+  console.log(event, data);
   if (!evnets[event]) return false
 
   let ok = await evnets[event](data)
