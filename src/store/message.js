@@ -112,6 +112,15 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     dialogueStore.addDialogueRecord(record)
   }
 
+  async function addIndexDBRecords(data) {
+    let { conversation } = sessionStore
+    let { body, msg_id, type } = data
+    let { avatar, name, id } = conversation
+    let msg_type = msgTypeMap[type]
+    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
+    saveChat(id, params)
+  }
+
   // 更新消息状态
   function updateMessageStatus(msg_id, status) {
     dialogueStore.records.forEach((item) => {
