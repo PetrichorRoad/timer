@@ -105,10 +105,6 @@ class Talk extends Base {
         msgIdsCache.clear(this.body.msg_id)
       }
       this.insertTalkRecord(!isCache)
-
-      // if (useSettingsStore().isLeaveWeb) {
-      //   this.showMessageNocice()
-      // }
     } else {
       this.updateTalkItem()
       this.play()
@@ -153,7 +149,6 @@ class Talk extends Base {
    * 插入对话记录
    */
   insertTalkRecord(addRecord = true) {
-    console.log(this.body,'没打印');
     let {extra} = this.body
     const record = { ...this.body, extra: JSON.stringify(extra)}
 
@@ -213,14 +208,7 @@ class Talk extends Base {
    * 更新对话列表记录
    */
   updateTalkItem() {
-    // useSessionStore().updateMessage(
-    //   {
-    //     index_name: this.getIndexName(),
-    //     msg_text: this.getTalkText(),
-    //     updated_at: datetime()
-    //   },
-    //   this.isCurrSender() || this.to_from_id == this.getAccountId()
-    // )
+    useAsyncMessageStore().saveChatOtherToIndexDB(record)
   }
 }
 
