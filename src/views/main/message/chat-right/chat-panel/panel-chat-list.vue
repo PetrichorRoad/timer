@@ -28,7 +28,6 @@ const dialogueStore = useDialogueStore();
 const records = computed(() => {
   let userInfo = localStorage.getItem("user");
   let { uid } = JSON.parse(userInfo);
-  console.log(dialogueStore.records);
   return dialogueStore.records.map((item) => {
     let { from_id } = item;
     return {

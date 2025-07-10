@@ -87,21 +87,8 @@ const onToTopTalk = (index) => {};
 onBeforeMount(async () => {
   await getChatList();
   // await saveSession(
-  //   "1hSYn21quJCLYYTVa9QGLoS8hB",
+  //   "2055",
   //   [
-  //     {
-  //       msg_id: "682512b6338b432e94861a77ffa6af3e",
-  //       sequence: 1942073039273377800,
-  //       msg_type: 1,
-  //       from_id: 2054,
-  //       nickname: "泥嚎",
-  //       avatar:
-  //         "https://im-static.gzydong.com/public/media/image/202507/93dc6429-3cc9-438c-b4fb-4b7bd7f47d71_500x500.png",
-  //       is_revoked: 2,
-  //       send_time: "2025-07-07 12:07:49",
-  //       extra: '{"content": "上述"}',
-  //       quote: "{}",
-  //     },
   //     {
   //       msg_id: "3d0ab105604943df95678ffc78135631",
   //       sequence: 1941802657589018600,
@@ -112,7 +99,7 @@ onBeforeMount(async () => {
   //         "https://im-static.gzydong.com/public/media/image/202507/93dc6429-3cc9-438c-b4fb-4b7bd7f47d71_500x500.png",
   //       is_revoked: 2,
   //       send_time: "2025-07-06 18:13:25",
-  //       extra: '{"content": "[憨笑]"}',
+  //       extra: '{"content": "[笑啥]"}',
   //       quote: "{}",
   //     },
   //   ]

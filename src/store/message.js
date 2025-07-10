@@ -19,7 +19,6 @@ const MAX_RETRIES = 6
 // 编辑器草稿
 export const useAsyncMessageStore = defineStore('async-message', () => {
   const { uid, nickname, avatar } = getUserInfo()
-  console.log(uid, nickname, avatar);
   const sessionStore = useSessionStore()
   const dialogueStore = useDialogueStore()
 
@@ -31,7 +30,7 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
   const msgIdsSet = new Set()
   // 添加待推送消息
   function addAsyncMessage(data) {
-    let { conversation } = sessionStore
+    
     data.msg_id = uuid()
     items.push(data)
 
@@ -40,13 +39,9 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     addRecordList(data)
     // 推送至服务器发给别人
     // sendMessage(data)
-    console.log('addAsyncMessage', data, conversation);
     // 在indexDB里保存聊天数据
-    let { body, msg_id, type } = data
-    let { avatar, name, id } = conversation
-    let msg_type = msgTypeMap[type]
-    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
-    saveChat(id, params)
+    saveSelfChatToIndexDB(data)
+    
   }
 
   async function sendMessage(message, retryCount = 0) {
@@ -72,6 +67,19 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     } catch (error) {
       console.error('Error sending message', error, message)
     }
+  }
+
+  async function saveSelfChatToIndexDB(data){
+    let { conversation } = sessionStore
+    let { body, msg_id, type } = data
+    let { avatar, name, id } = conversation
+    let msg_type = msgTypeMap[type]
+    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence: dataValue() }
+    saveChat(id, params)
+  }
+  async function saveChatOtherToIndexDB(data) {
+    let { from_id } = data
+    saveChat(from_id.toString(), data)
   }
 
   // 推送到会话记录中
@@ -124,7 +132,8 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
 
   return {
     addAsyncMessage,
-    msgIdsCache
+    msgIdsCache,
+    saveChatOtherToIndexDB
   }
 })
 

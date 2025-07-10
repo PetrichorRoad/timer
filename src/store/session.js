@@ -39,7 +39,7 @@ export const useSessionStore = defineStore("chat-list", {
           name: "索滢",
           remark: "",
           talk_mode: 1,
-          to_from_id: 1199,
+          to_from_id: key,
           unread_num: 0,
           updated_at: "2025-07-07 21:52:38",
         };
@@ -57,8 +57,8 @@ export const useSessionStore = defineStore("chat-list", {
       const dialogueStore = useDialogueStore();
       dialogueStore.unshiftDialogueRecord(result.reverse());
     },
-    findIndex(index_name) {
-      return this.chatList.find((item) => item.index_name === index_name);
+    findIndex(id) {
+      return this.chatList.find((item) => item.id === id);
     },
     findItem(index_name) {
       return this.chatList.find((item) => item.index_name === index_name);

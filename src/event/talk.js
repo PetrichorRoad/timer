@@ -153,6 +153,7 @@ class Talk extends Base {
    * 插入对话记录
    */
   insertTalkRecord(addRecord = true) {
+    console.log(this.body,'没打印');
     let {extra} = this.body
     const record = { ...this.body, extra: JSON.stringify(extra)}
 
@@ -162,8 +163,8 @@ class Talk extends Base {
     }
 
     if (addRecord) {
-      console.log(record,"nimade" );
       useDialogueStore().addDialogueRecord(record)
+      useAsyncMessageStore().saveChatOtherToIndexDB(record)
     }
 
     // useSessionStore().updateMessage(

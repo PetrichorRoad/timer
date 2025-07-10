@@ -2638,5 +2638,11 @@
 		"en": "{\"name\": \"Jingzhan View.sql \", \"path\": \"talk-files/202507/8021af08-c821-4d73-a261-7d5d963227d3.sql\", \"size\": 4889}",
 		"ko": "sql\"path\":\"토크-files/202507/8021af08-c821-4d73-a261-7d5d963227d3.sql\",\"size\":4889",
 		"ja": "{\"name\": \"晶湛視図。sql\", \"path\": \"talk-files/202507/8021 af08-c82-4d73-a261-7d5d963227d3.sql \", \"size\": 4889}"
+	},
+	"nkbtbpj": {
+		"zh-cn": "{\"content\": \"[笑啥]\"}",
+		"en": "{\"content\": \"[What are you laughing at]\"}",
+		"ko": "{\"content\":\"[웃기는 소리]\"}",
+		"ja": "{\"content\": \"[何を笑いますか]\"}"
 	}
 }

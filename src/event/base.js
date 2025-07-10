@@ -21,7 +21,6 @@ class Base {
     const { conversation } = talkStore
     const { talk_mode, to_from_id } = conversation
     console.log(conversation);
-
     return {
       talk_mode,
       to_from_id,
@@ -37,7 +36,6 @@ class Base {
    */
   isTalk(talk_mode, to_from_id) {
     const params = this.getTalkParams()
-
     return params.to_from_id == to_from_id && talk_mode == params.talk_mode
   }
 

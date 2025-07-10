@@ -50,7 +50,6 @@ export default class conversation {
 
       getRequest.onsuccess = () => {
         const existingData = getRequest.result;
-        console.log("existingData", existingData);
         if (!existingData) {
           reject(new Error(`Key ${key} does not exist`));
           return;
