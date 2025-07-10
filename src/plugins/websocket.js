@@ -132,7 +132,6 @@ class WsSocket {
     }
 
     if (this.onCallBacks[data.event]) {
-      console.log(data.payload,data,'why');
       this.onCallBacks[data.event](data.payload, evt.data);
     } else {
       console.warn(`WsSocket message event [${data.event}] not bound...`);

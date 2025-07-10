@@ -162,8 +162,8 @@ class Talk extends Base {
     }
 
     if (addRecord) {
-      console.log(record,"nimade" );
       useDialogueStore().addDialogueRecord(record)
+      useAsyncMessageStore().addIndexDBRecords(record)
     }
 
     // useSessionStore().updateMessage(

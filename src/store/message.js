@@ -31,7 +31,6 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
   const msgIdsSet = new Set()
   // 添加待推送消息
   function addAsyncMessage(data) {
-    let { conversation } = sessionStore
     data.msg_id = uuid()
     items.push(data)
 
@@ -40,13 +39,8 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     addRecordList(data)
     // 推送至服务器发给别人
     // sendMessage(data)
-    console.log('addAsyncMessage', data, conversation);
     // 在indexDB里保存聊天数据
-    let { body, msg_id, type } = data
-    let { avatar, name, id } = conversation
-    let msg_type = msgTypeMap[type]
-    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
-    saveChat(id, params)
+    addIndexDBRecords(data)
   }
 
   async function sendMessage(message, retryCount = 0) {
@@ -102,6 +96,15 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
       }
     }
     dialogueStore.addDialogueRecord(record)
+  }
+
+  async function addIndexDBRecords(data) {
+    let { conversation } = sessionStore
+    let { body, msg_id, type } = data
+    let { avatar, name, id } = conversation
+    let msg_type = msgTypeMap[type]
+    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
+    saveChat(id, params)
   }
 
   // 更新消息状态
