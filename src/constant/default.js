@@ -10,6 +10,7 @@ import messageFile from "@/components/bubble/chat-item/message-document.vue";
 import messageLocation from "@/components/bubble/chat-item/message-location.vue";
 import messageVote from "@/components/bubble/chat-item/message-vote.vue";
 import messageSession from "@/components/bubble/chat-item/message-session.vue";
+import messageMixed from "@/components/bubble/chat-item/message-mixed.vue";
 
 import { markRaw } from 'vue';
 
@@ -41,7 +42,7 @@ export const MESSAGE_TYPE = {
   9: { type: "session", name: "会话", component: messageSession },
   10: { type: "login", name: "登录信息", component: messageText },
   11: { type: "vote", name: "投票", component: messageVote },
-  12: { type: "mixed ", name: "混合信息", component: messageText },
+  12: { type: "mixed ", name: "混合信息", component: messageMixed },
   13: { type: "notice", name: "公告", component: messageText },
 
   1000: { type: "SysText", name: "系统文本消息", component: messageText },

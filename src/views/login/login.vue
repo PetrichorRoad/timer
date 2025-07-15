@@ -65,10 +65,10 @@ let login = ref({
 const loginSubmit = async () => {
   await loginTimerIM();
   
-  let res = await request.login(login.value);
-  let { data:{ token } } = res
-  localStorage.setItem("token", token);
-  localStorage.setItem("userInfo", JSON.stringify(res.data));
+  // let res = await request.login(login.value);
+  // let { data:{ token } } = res
+  // localStorage.setItem("token", token);
+  // localStorage.setItem("userInfo", JSON.stringify(res.data));
   
   ws.connect()
   console.log('没走出这里');

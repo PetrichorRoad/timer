@@ -48,10 +48,10 @@ const onSendEmoticon = (type, value, img = '') => {
     <input type="file" ref="fileImageRef" accept="image/*" @change="onUpload" />
   </form>
 
-  <!-- <section class="el-container is-vertical section height100">
-    <header class="el-header em-header border-bottom">
+  <section class="el-container is-vertical section height100">
+    <!-- <header class="el-header em-header border-bottom">
       <span>{{ items[tabIndex].name }}</span>
-    </header>
+    </header> -->
 
     <main class="el-main em-main me-scrollbar me-scrollbar-thumb">
       <div class="symbol-box" v-if="tabIndex == 0">
@@ -94,7 +94,7 @@ const onSendEmoticon = (type, value, img = '') => {
         <img width="20" height="20" :src="item.icon" />
       </div>
     </footer>
-  </section> -->
+  </section>
 </template>
 <style lang="less" scoped>
 .section {
