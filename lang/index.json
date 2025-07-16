@@ -2650,5 +2650,23 @@
 		"en": "\"Custom\"",
 		"ko": "사용자 정의",
 		"ja": "カスタムです"
+	},
+	"gaqba94": {
+		"zh-cn": "系统表情",
+		"en": "System expression",
+		"ko": "시스템 이모티콘",
+		"ja": "システム表情です"
+	},
+	"cv51d84": {
+		"zh-cn": "我的收藏",
+		"en": "My collection",
+		"ko": "나의 수집품",
+		"ja": "私のコレクションです"
+	},
+	"azeh8z4": {
+		"zh-cn": "删除成功",
+		"en": "\"Deleted successfully",
+		"ko": "성공적으로 삭제했습니다.",
+		"ja": "削除成功です"
 	}
 }

@@ -5,7 +5,8 @@
         placement="top-start"
         trigger="click"
         raw
-        :width="300"
+        :width="500"
+        :height="250"
         ref="emoticonRef"
         class="w-[500px] h-[250px] rounded-[10px] overflow-hidden border-my-border-1 border-[1px] border-solid"
       >

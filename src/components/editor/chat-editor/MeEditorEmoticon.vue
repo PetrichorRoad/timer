@@ -1,14 +1,14 @@
 <script lang="js" setup>
 import { ref, computed } from 'vue'
-// import { useEditorStore } from '@/store'
+import { useEditorStore } from '@/store/editor.js'
 // import { UploadOne, Delete } from '@icon-park/vue-next'
 import { emojis } from '@/utils/emojis'
 
 const emit = defineEmits(['on-select'])
-// const editorStore = useEditorStore()
+const editorStore = useEditorStore()
 const fileImageRef = ref()
 const tabIndex = ref(0)
-// const items = computed<any[]>(() => editorStore.emoticon.items)
+const items = computed(() => editorStore.emoticon.items)
 
 // 触发上传按钮事件
 const onTriggerUpload = () => {
@@ -19,12 +19,12 @@ const onTriggerUpload = () => {
 const onUpload = (e) => {
   let file = e.target.files[0]
 
-  // editorStore.uploadUserEmoticon(file)
+  editorStore.uploadUserEmoticon(file)
 }
 
 // 删除表情包
 const onDelete = (index, emoticon_id) => {
-  // editorStore.removeUserEmoticon({ index, emoticon_id })
+  editorStore.removeUserEmoticon({ index, emoticon_id })
 }
 
 const onTabs = (index) => {
@@ -48,12 +48,12 @@ const onSendEmoticon = (type, value, img = '') => {
     <input type="file" ref="fileImageRef" accept="image/*" @change="onUpload" />
   </form>
 
-  <section class="el-container is-vertical section height100">
-    <!-- <header class="el-header em-header border-bottom">
+  <section class="el-container is-vertical section h-full flex flex-col">
+    <header class="el-header em-header border-bottom">
       <span>{{ items[tabIndex].name }}</span>
-    </header> -->
+    </header>
 
-    <main class="el-main em-main me-scrollbar me-scrollbar-thumb">
+    <main class="flex-1 em-main overflow-y-auto">
       <div class="symbol-box" v-if="tabIndex == 0">
         <div class="options">
           <div
@@ -101,7 +101,6 @@ const onSendEmoticon = (type, value, img = '') => {
   width: 500px;
   height: 250px;
   overflow: hidden;
-  background-color: var(--im-bg-color);
   border-radius: 3px;
 
   .em-header {
