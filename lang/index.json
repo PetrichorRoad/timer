@@ -2644,5 +2644,11 @@
 		"en": "{\"content\": \"[What are you laughing at]\"}",
 		"ko": "{\"content\":\"[웃기는 소리]\"}",
 		"ja": "{\"content\": \"[何を笑いますか]\"}"
+	},
+	"jh1ll3": {
+		"zh-cn": "自定义",
+		"en": "\"Custom\"",
+		"ko": "사용자 정의",
+		"ja": "カスタムです"
 	}
 }

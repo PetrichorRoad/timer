@@ -8,13 +8,6 @@
         <chat-item :message="item" :index="item.msg_id" />
       </div>
     </div>
-    <!-- <n-virtual-list :style="{maxHeight:`${height}px`}" item-resizable :item-size="70" :items="talkRecords" ref="virtualListInstRef">
-      <template #default="{ item }">
-        <div class="item">
-          <chat-item :message="item" :index="item.msg_id" />
-        </div>
-      </template>
-    </n-virtual-list> -->
   </div>
 </template>
 
