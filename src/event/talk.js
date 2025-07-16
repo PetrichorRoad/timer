@@ -208,6 +208,8 @@ class Talk extends Base {
    * 更新对话列表记录
    */
   updateTalkItem() {
+    let { extra } = this.body
+    const record = { ...this.body, extra: JSON.stringify(extra) }
     useAsyncMessageStore().saveChatOtherToIndexDB(record)
   }
 }
