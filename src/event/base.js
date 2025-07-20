@@ -20,7 +20,6 @@ class Base {
 
     const { conversation } = talkStore
     const { talk_mode, to_from_id } = conversation
-    console.log(conversation);
     return {
       talk_mode,
       to_from_id,

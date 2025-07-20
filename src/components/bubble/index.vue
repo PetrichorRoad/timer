@@ -110,6 +110,7 @@ const props = defineProps({
   },
 });
 const messageComponent = computed(() => {
+  console.log(props.message.msg_type,MESSAGE_TYPE[props.message.msg_type]);
   return MESSAGE_TYPE[props.message.msg_type].component;
 });
 onMounted(() => {});

@@ -26,6 +26,7 @@ let formatContent = [null,textRenderEmoji,null,textRenderImage];
 const content = computed(() => {
   let { extra } = props.message;
   let { items } = JSON.parse(extra);
+  console.log(items);
   return items.map((item) => {
     let  {type,content} = item;
     return formatContent[type](content);

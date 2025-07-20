@@ -89,6 +89,7 @@ class Talk extends Base {
   }
 
   handle() {
+    console.log('出发');
     const findIndex = useSessionStore().findIndex(this.getIndexName())
 
     const { msgIdsCache } = useAsyncMessageStore()

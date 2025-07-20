@@ -118,6 +118,14 @@ export const saveOrUpdateNotice = (data) => {
     data
   })
 }
+// 发送消息
+export const sendMessage = (data) => {
+  return request({
+    url: '/timer/message/send',
+    method: 'post',
+    data
+  })
+}
 export default {
-  login, getTaskList, createTask, updateTask, removeTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, saveOrUpdateNotice, createProject, getRecords
+  login, getTaskList, createTask, updateTask, removeTask, getOrganizationTree, getPositionList, getUserList, getProjectList, updateProject, saveOrUpdateNotice, createProject, getRecords, sendMessage
 }

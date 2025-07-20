@@ -23,7 +23,8 @@
 import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import {storeToRefs } from 'pinia'
 import ws from '@/plugins/connect'
-import { ServTalkMessageSend } from '@/api/modules/chat.js'
+// import { ServTalkMessageSend } from '@/api/modules/chat.js'
+import {sendMessage} from "@/api/base"
 import { ServGroupVoteCreate } from '@/api/modules/group.js'
 import { throttle } from 'lodash'
 import { getVideoImage } from '@/utils/file'
@@ -87,16 +88,16 @@ const onSendMessage = async (data= {}) => {
     talk_mode: talkMode,
     to_from_id
   }
-
   // 异步发送
   if (['text', 'mixed', 'image', 'video', 'code'].includes(params.type)) {
     addAsyncMessage(params)
+    // 同步发送
+    const { code } = await sendMessage(params)
     return true
   }
 
-  // 同步发送
-  const { code } = await ServTalkMessageSend(params)
-  return code == 200
+  
+  return true
 }
 
 // 发送文本消息

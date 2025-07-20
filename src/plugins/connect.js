@@ -11,8 +11,10 @@ const urlCallback = () => {
   if (!getIMToken()) {
     window.location.reload()
   }
-
-  return `${import.meta.env.VITE_SOCKET_API}/wss/default.io?token=${getIMToken()}`
+  let userInfo = JSON.parse(localStorage.getItem('userInfo') || {})
+  let clientId = userInfo.accountId
+  // return `${import.meta.env.VITE_SOCKET_API}/wss/default.io?token=${getIMToken()}`
+  return `${import.meta.env.VITE_SOCKET_API}/timer/ws/${clientId}`
 }
 
 class Connect {
@@ -72,6 +74,7 @@ class Connect {
   }
 
   onImMessage() {
+    console.log('收到消息');
     this.conn.on('im.message', (data) => new EventTalk(data))
   }
 

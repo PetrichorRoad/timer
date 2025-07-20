@@ -83,6 +83,7 @@ class WsSocket {
   }
 
   onParse(evt) {
+    console.log("onParse", evt.data);
     return JSON.parse(evt.data);
   }
 

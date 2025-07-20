@@ -87,7 +87,7 @@ const onToTopTalk = (index) => {};
 onBeforeMount(async () => {
   await getChatList();
   // await saveSession(
-  //   "2055",
+  //   "1hSYn21quJCLYYTVa9QGLoS8hC",
   //   [
   //     {
   //       msg_id: "3d0ab105604943df95678ffc78135631",
