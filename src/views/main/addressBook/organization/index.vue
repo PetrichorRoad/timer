@@ -1,157 +1,3 @@
-<script setup lang="js">
-// import { useUserStore, useTalkStore } from '@/store'
-import { ServOrganizeDepartmentList, ServOrganizePersonnelAll } from '@/api/modules/organize'
-import { Female, MaleOutline,TerminalSharp } from "@vicons/ionicons5";
-import { useRouter } from 'vue-router'
-import { computed,ref,onMounted,h } from 'vue'
-// import { useInject } from '@/hooks'
-import { NTag } from 'naive-ui'
-
-const router = useRouter()
-// const userStore = useUserStore()
-// const talkStore = useTalkStore()
-// const { toShowUserInfo, message } = useInject()
-
-const ancestors = ref('')
-const keywords = ref('')
-const items = ref([])
-
-const filter = computed(() => {
-  return items.value.filter((item) => {
-    return (
-      item.nickname.match(keywords.value) != null &&
-      (ancestors.value == '' || item.ancestors.indexOf(ancestors.value) > -1)
-    )
-  })
-})
-
-const tree = ref([])
-const breadcrumb =([{ name: '企业成员', dept_id: -1 }])
-
-const onToTalk = (item) => {
-  // if (userStore.uid != item.user_id) {
-  //   talkStore.toTalk(1, item.user_id, router)
-  // } else {
-  //   message.info('禁止给自己发送消息!')
-  // }
-}
-
-function toTree(list) {
-  const map = {}
-
-  list.forEach((item) => {
-    map[item.dept_id] = item
-  })
-
-  const ancestors = (value) => {
-    const list = []
-
-    value.split(',').forEach((id) => {
-      const item = map[parseInt(id)]
-
-      item && list.push(item.dept_name)
-    })
-
-    return list
-  }
-
-  const tree = []
-
-  for (const item of list) {
-    item.breadcrumb = ancestors(item.ancestors || '').join(' / ')
-
-    const parent = map[item.parent_id]
-    if (parent) {
-      if (parent.children == undefined) parent.children = []
-      parent.children.push(item)
-    } else {
-      tree.push(item)
-    }
-  }
-
-  return tree
-}
-
-const onInfo = (item) => {
-  // toShowUserInfo(item.user_id)
-}
-
-const onNodeProps = ({ option }) => {
-  return {
-    onClick() {
-      if (option.breadcrumb == '') {
-        breadcrumb.value = [{ name: '企业成员', dept_id: -1 }]
-      } else {
-        breadcrumb.value = option.breadcrumb.split('/').map((name) => {
-          return {
-            name: name,
-            dept_id: option.dept_id
-          }
-        })
-      }
-
-      ancestors.value = option.ancestors
-
-      console.log(option.ancestors)
-    }
-  }
-}
-
-const tag = () => {
-  return h(NTag, {
-    type: 'info',
-    size: 'small',
-    bordered: false,
-    style: {
-      margin: '5px 0px 5px 0px'
-    },
-    innerHTML: '全员'
-  })
-}
-
-async function onLoadDepartment() {
-  const { code, data } = await ServOrganizeDepartmentList()
-  if (code != 200) return
-
-  let items = data.items || []
-  items = items.map((item) => {
-    return {
-      parent_id: item.parent_id,
-      dept_id: item.dept_id,
-      dept_name: item.dept_name,
-      ancestors: item.dept_id > 0 ? `${item.ancestors},${item.dept_id}` : '',
-      prefix: item.dept_id == -1 ? tag : null,
-      suffix: item.count
-    }
-  })
-
-  tree.value = toTree(items)
-}
-
-async function onLoadData() {
-  const { code, data } = await ServOrganizePersonnelAll()
-  if (code != 200) return
-
-  const users = data.items || []
-
-  users.map((item) => {
-    item.position_items.sort((a, b) => a.sort - b.sort)
-    item.ancestors = `${item.dept_item.ancestors},${item.dept_item.dept_id}`
-
-    item.position = item.position_items.map((item) => item.name).join('、')
-
-    return item
-  })
-
-  items.value = users.sort((a, b) => a.nickname.localeCompare(b.nickname, 'zh-CN'))
-}
-
-onMounted(() => {
-  onLoadData()
-  onLoadDepartment()
-})
-</script>
-
 <template>
   <section class="el-container is-vertical w-full h-full">
     <header class="el-header me-view-header border-bottom flex justify-between items-center p-4 border-solid border-[1px] border-my-border-1">
@@ -193,14 +39,16 @@ onMounted(() => {
             key: 'aside-organize'
           }"
         >
+        <!--  -->
+         <!--  -->
           <n-tree
-            key-field="dept_id"
-            label-field="dept_name"
+            key-field="value"
+            label-field="label"
             :data="tree"
             :default-expand-all="true"
             :cancelable="true"
-            :default-selected-keys="[-1]"
             :node-props="onNodeProps"
+            :default-selected-keys="[-1]"
             block-node
             block-line
             :show-line="true"
@@ -230,7 +78,7 @@ onMounted(() => {
                     >
                   </div>
                   <div class="content-text text-ellipsis">
-                    个性签名: {{ item.motto ? item.motto : '暂无' }}
+                    个性签名: {{ item.signature ? item.signature : '暂无' }}
                   </div>
                 </div>
                 <div class="tool">
@@ -251,6 +99,102 @@ onMounted(() => {
   </section>
 </template>
 
+
+<script setup lang="js">
+// import { useUserStore, useTalkStore } from '@/store'
+import { ServOrganizeDepartmentList, ServOrganizePersonnelAll } from '@/api/modules/organize'
+import { getUserInfo } from '@/utils/lib'
+import { saveSession } from "@/database/data.js";
+import { Female, MaleOutline,TerminalSharp } from "@vicons/ionicons5";
+import { useRouter } from 'vue-router'
+import { computed,ref,onMounted,h } from 'vue'
+import { useMessage } from "naive-ui";
+import { NTag } from 'naive-ui'
+import request from "@/api/base";
+import { useSessionStore } from "@/store/session.js";
+const talkStore = useSessionStore();
+const router = useRouter()
+const message = useMessage();
+// const userStore = useUserStore()
+// const talkStore = useTalkStore()
+// const { toShowUserInfo, message } = useInject()
+
+const ancestors = ref('')
+const keywords = ref('')
+const items = ref([])
+
+const filter = ref([])
+
+const tree = ref([])
+const breadcrumb =([{ name: '企业成员', dept_id: -1 }])
+
+const onToTalk = async (item) => {
+  let { chatList } = talkStore
+  let { accountId } = item
+  let chat = chatList.find(item => item.id === accountId)
+  if (chat){
+    router.push({ name: 'address-book' })
+  }else{
+    await saveSession(accountId, []);
+    router.push({ name: 'address-book' })
+  }
+}
+
+
+const onInfo = (item) => {
+  // toShowUserInfo(item.user_id)
+}
+
+const onNodeProps = ({ option }) => {
+  return {
+    async onClick() {
+      let { depId } = option
+      let { data } = await request.getUserLists({ depId })
+      filter.value = data
+    }
+  }
+}
+
+const tag = () => {
+  return h(NTag, {
+    type: 'info',
+    size: 'small',
+    bordered: false,
+    style: {
+      margin: '5px 0px 5px 0px'
+    },
+    innerHTML: '全员'
+  })
+}
+
+async function onLoadDepartment() {
+  const {data} = await request.getOrganizationTree({companyId:1})
+  tree.value = [data]
+}
+
+async function onLoadData() {
+  const { code, data } = await ServOrganizePersonnelAll()
+  if (code != 200) return
+
+  const users = data.items || []
+
+  users.map((item) => {
+    item.position_items.sort((a, b) => a.sort - b.sort)
+    item.ancestors = `${item.dept_item.ancestors},${item.dept_item.dept_id}`
+
+    item.position = item.position_items.map((item) => item.name).join('、')
+
+    return item
+  })
+
+  items.value = users.sort((a, b) => a.nickname.localeCompare(b.nickname, 'zh-CN'))
+}
+
+onMounted(() => {
+  onLoadData()
+  onLoadDepartment()
+})
+</script>
 <style lang="less" scoped>
 .aside {
   width: 250px;

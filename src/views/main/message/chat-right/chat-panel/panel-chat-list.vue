@@ -19,13 +19,15 @@ const virtualListInstRef = ref(null);
 const dialogueStore = useDialogueStore();
 
 const records = computed(() => {
-  let userInfo = localStorage.getItem("user");
-  let { uid } = JSON.parse(userInfo);
+  let userInfo = localStorage.getItem("userInfo");
+  let { accountId } = JSON.parse(userInfo);
   return dialogueStore.records.map((item) => {
     let { from_id } = item;
+    console.log(accountId, from_id);
+    console.log(item);
     return {
       ...item,
-      position: uid === from_id,
+      position: accountId === from_id,
     };
   });
 });

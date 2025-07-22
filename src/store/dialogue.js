@@ -180,10 +180,10 @@ export const useDialogueStore = defineStore("dialogue", {
     // 转发聊天记录
     async forwardRecord(params = {}) {
       // @ts-ignore
-      await ServTalkMessageSend({
-        ...params,
-        type: "forward",
-      });
+      // await ServTalkMessageSend({
+      //   ...params,
+      //   type: "forward",
+      // });
     },
 
     async collectImage(params = {}) {

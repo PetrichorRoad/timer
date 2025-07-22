@@ -93,6 +93,7 @@ const onSendMessage = async (data= {}) => {
     addAsyncMessage(params)
     // 同步发送
     const { code } = await sendMessage(params)
+    
     return true
   }
 

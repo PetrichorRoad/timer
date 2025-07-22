@@ -18,7 +18,7 @@ const MAX_RETRIES = 6
 
 // 编辑器草稿
 export const useAsyncMessageStore = defineStore('async-message', () => {
-  const { uid, nickname, avatar } = getUserInfo()
+  const { accountId, nickname, avatar } = getUserInfo()
   const sessionStore = useSessionStore()
   const dialogueStore = useDialogueStore()
 
@@ -30,7 +30,6 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
   const msgIdsSet = new Set()
   // 添加待推送消息
   function addAsyncMessage(data) {
-    
     data.msg_id = uuid()
     items.push(data)
 
@@ -38,43 +37,43 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     // 内存聊天列表里添加一份
     addRecordList(data)
     // 推送至服务器发给别人
-    // sendMessage(data)
+    sendMessage(data)
     // 在indexDB里保存聊天数据
     saveSelfChatToIndexDB(data)
     
   }
 
   async function sendMessage(message, retryCount = 0) {
-    try {
-      const { code } = await ServTalkMessageSend(message)
-      if (code !== 200) {
-        if (retryCount < MAX_RETRIES) {
-          await delay(delayStrategy(retryCount))
-          await sendMessage(message, retryCount + 1)
-        } else {
-          console.error(`Failed to send message after ${MAX_RETRIES} retries`, message)
-          updateMessageStatus(message.msg_id, MESSAGE_STATUS_FAILED)
-          msgIdsSet.delete(message.msg_id)
-        }
-        return
-      }
+    // try {
+    //   const { code } = await ServTalkMessageSend(message)
+    //   if (code !== 200) {
+    //     if (retryCount < MAX_RETRIES) {
+    //       await delay(delayStrategy(retryCount))
+    //       await sendMessage(message, retryCount + 1)
+    //     } else {
+    //       console.error(`Failed to send message after ${MAX_RETRIES} retries`, message)
+    //       updateMessageStatus(message.msg_id, MESSAGE_STATUS_FAILED)
+    //       msgIdsSet.delete(message.msg_id)
+    //     }
+    //     return
+    //   }
 
-      // 更新对话记录状态
-      updateMessageStatus(message.msg_id, MESSAGE_STATUS_SENT)
+    //   // 更新对话记录状态
+    //   updateMessageStatus(message.msg_id, MESSAGE_STATUS_SENT)
 
-      // 发送成功后将消息从待推送列表中移除
-      items = items.filter((item) => item.msg_id !== message.msg_id)
-    } catch (error) {
-      console.error('Error sending message', error, message)
-    }
+    //   // 发送成功后将消息从待推送列表中移除
+    //   items = items.filter((item) => item.msg_id !== message.msg_id)
+    // } catch (error) {
+    //   console.error('Error sending message', error, message)
+    // }
   }
 
   async function saveSelfChatToIndexDB(data){
     let { conversation } = sessionStore
-    let { body, msg_id, type } = data
+    let { body, msg_id, type, to_from_id } = data
     let { avatar, name, id } = conversation
     let msg_type = msgTypeMap[type]
-    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence: dataValue() }
+    let params = { avatar, extra: JSON.stringify(body), from_id: accountId, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence: dataValue() }
     saveChat(id, params)
   }
   async function saveChatOtherToIndexDB(data) {
@@ -88,7 +87,7 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
       msg_id: data.msg_id,
       sequence: 0,
       msg_type: msgTypeMap[data.type],
-      from_id: uid,
+      from_id: accountId,
       nickname: nickname,
       avatar: avatar,
       is_revoked: 2,
@@ -117,7 +116,7 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     let { body, msg_id, type } = data
     let { avatar, name, id } = conversation
     let msg_type = msgTypeMap[type]
-    let params = { avatar, extra: JSON.stringify(body), from_id: 2054, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
+    let params = { avatar, extra: JSON.stringify(body), from_id: accountId, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence:dataValue()}
     saveChat(id, params)
   }
 

@@ -39,6 +39,7 @@ export default class conversation {
     });
   }
   async saveChatMessage(key, session) {
+    console.log(session);
     if (!this.db) await this.open();
 
     return new Promise((resolve, reject) => {
@@ -48,18 +49,17 @@ export default class conversation {
       // 1. 先获取当前 key 对应的数据
       const getRequest = store.get(key);
 
-      getRequest.onsuccess = () => {
+      getRequest.onsuccess = async  () => {
         const existingData = getRequest.result;
         if (!existingData) {
-          reject(new Error(`Key ${key} does not exist`));
-          return;
+          await this.saveSession(key,[])
         }
 
         // 2. 检查是否存在 value 数组（根据图片，value 是数组形式）
-        if (!Array.isArray(existingData)) {
-          reject(new Error('Value is not an array'));
-          return;
-        }
+        // if (!Array.isArray(existingData)) {
+        //   reject(new Error('Value is not an array'));
+        //   return;
+        // }
 
         // 3. 插入新数据到数组（插入到开头）
         existingData.unshift(session);

@@ -8,6 +8,6 @@ export const getIMToken = (params) => {
   return value;
 }
 export const getUserInfo = (params) => {
-  let userInfo = localStorage.getItem('user');
+  let userInfo = localStorage.getItem('userInfo');
   return JSON.parse(userInfo);
 }

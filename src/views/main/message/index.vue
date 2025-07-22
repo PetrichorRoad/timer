@@ -1,7 +1,7 @@
 <template>
   <div class="page relative flex">
     <div
-      class="left-chat-list flex flex-col w-[300px] border-solid border-r-[1px] border-my-border-1"
+      class="left-chat-list flex flex-col w-[340px] border-solid border-r-[1px] border-my-border-1"
     >
       <search-header
         :options="options"
@@ -39,7 +39,6 @@
 </template>
 
 <script setup>
-import { saveSession } from "@/database/data.js";
 import { computed, onBeforeMount, ref, markRaw } from "vue";
 import { storeToRefs } from "pinia";
 import searchHeader from "./chat-left/search-header.vue";
@@ -86,24 +85,6 @@ const onTabTalk = async (talk) => {
 const onToTopTalk = (index) => {};
 onBeforeMount(async () => {
   await getChatList();
-  // await saveSession(
-  //   "1hSYn21quJCLYYTVa9QGLoS8hC",
-  //   [
-  //     {
-  //       msg_id: "3d0ab105604943df95678ffc78135631",
-  //       sequence: 1941802657589018600,
-  //       msg_type: 1,
-  //       from_id: 2054,
-  //       nickname: "泥嚎",
-  //       avatar:
-  //         "https://im-static.gzydong.com/public/media/image/202507/93dc6429-3cc9-438c-b4fb-4b7bd7f47d71_500x500.png",
-  //       is_revoked: 2,
-  //       send_time: "2025-07-06 18:13:25",
-  //       extra: '{"content": "[笑啥]"}',
-  //       quote: "{}",
-  //     },
-  //   ]
-  // );
 });
 </script>
 

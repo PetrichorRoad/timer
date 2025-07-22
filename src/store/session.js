@@ -36,7 +36,7 @@ export const useSessionStore = defineStore("chat-list", {
           is_robot: 2,
           is_top: 2,
           msg_text: "...",
-          name: "索滢",
+          name: `${key}`,
           remark: "",
           talk_mode: 1,
           to_from_id: key,
@@ -44,6 +44,7 @@ export const useSessionStore = defineStore("chat-list", {
           updated_at: "2025-07-07 21:52:38",
         };
       });
+      console.log(this.chatList);
     },
     async setConversation(talk) {
       const dialogueStore = useDialogueStore();
@@ -54,6 +55,7 @@ export const useSessionStore = defineStore("chat-list", {
     async loadChatRecord() {
       let { id } = this.conversation
       let result = await getSession(id);
+      console.log(result);
       const dialogueStore = useDialogueStore();
       dialogueStore.unshiftDialogueRecord(result.reverse());
     },
