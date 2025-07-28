@@ -1,6 +1,6 @@
 import '../lang/index'
 import '@/assets/css/style.css'
-import '@/assets/css/common.css'
+import '@/assets/css/common.less'
 import '@/assets/css/calendar.less'
 // main.ts
 import 'virtual:uno.css'

@@ -4,7 +4,7 @@
     <n-layout-sider bordered show-trigger collapse-mode="width" :collapsed-width="64" :width="240"
       :native-scrollbar="false" style="height: 100%">
       <!-- :inverted="inverted" -->
-      <n-menu :indent="12" :collapsed-width="64" :collapsed-icon-size="22" :options="menuOptions" :value="routeName"
+      <n-menu :indent="24" :collapsed-width="64" :collapsed-icon-size="22" :options="menuOptions" :value="routeName"
         :render-label="renderLabel" @update:value="handleUpdateValue" />
     </n-layout-sider>
     <div class="flex-1 box-border overflow-hidden">
