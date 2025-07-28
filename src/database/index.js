@@ -1,3 +1,4 @@
+import { useSessionStore } from '@/store/session'
 export default class conversation {
   constructor(dbName = "conversation") {
     this.dbName = dbName;
@@ -39,7 +40,6 @@ export default class conversation {
     });
   }
   async saveChatMessage(key, session) {
-    console.log(session);
     if (!this.db) await this.open();
 
     return new Promise((resolve, reject) => {
@@ -52,7 +52,9 @@ export default class conversation {
       getRequest.onsuccess = async  () => {
         const existingData = getRequest.result;
         if (!existingData) {
-          await this.saveSession(key,[])
+          await this.saveSession(key, [session])
+          resolve() 
+          return
         }
 
         // 2. 检查是否存在 value 数组（根据图片，value 是数组形式）
@@ -60,14 +62,12 @@ export default class conversation {
         //   reject(new Error('Value is not an array'));
         //   return;
         // }
-
         // 3. 插入新数据到数组（插入到开头）
-        existingData.unshift(session);
+        existingData&&existingData.unshift(session);
 
         // 4. 更新回数据库
-        const putRequest = store.put(existingData, key);
-
-        putRequest.onsuccess = () => resolve();
+        const putRequest = await store.put(existingData, key);
+        putRequest.onsuccess = () => resolve( );
         putRequest.onerror = (event) => reject(event.target.error);
       };
       getRequest.onerror = (event) => reject(event.target.error);

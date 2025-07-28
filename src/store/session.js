@@ -28,6 +28,7 @@ export const useSessionStore = defineStore("chat-list", {
     async getChatList() {
 
       let result = await getSessionList();
+      console.log('有这种事',result);
       this.chatList = Object.entries(result).map(([key, value]) => {
         return {
           id: key,

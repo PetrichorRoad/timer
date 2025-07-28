@@ -89,7 +89,6 @@ class Talk extends Base {
   }
 
   handle() {
-    console.log('出发');
     const findIndex = useSessionStore().findIndex(this.getIndexName())
 
     const { msgIdsCache } = useAsyncMessageStore()
@@ -105,11 +104,13 @@ class Talk extends Base {
       if (isCache) {
         msgIdsCache.clear(this.body.msg_id)
       }
+      console.log('走上面');
       this.insertTalkRecord(!isCache)
     } else {
+      console.log('走下面');
       this.updateTalkItem()
-      this.play()
-      this.showMessageNocice()
+      // this.play()
+      // this.showMessageNocice()
     }
   }
 
@@ -149,7 +150,7 @@ class Talk extends Base {
   /**
    * 插入对话记录
    */
-  insertTalkRecord(addRecord = true) {
+  async insertTalkRecord(addRecord = true) {
     let {extra} = this.body
     const record = { ...this.body, extra: JSON.stringify(extra)}
 
@@ -159,8 +160,9 @@ class Talk extends Base {
     }
 
     if (addRecord) {
-      useDialogueStore().addDialogueRecord(record)
-      useAsyncMessageStore().saveChatOtherToIndexDB(record)
+      await useDialogueStore().addDialogueRecord(record)
+      await useAsyncMessageStore().saveChatOtherToIndexDB(record)
+      // useSessionStore.getChatList()
     }
 
     // useSessionStore().updateMessage(
@@ -208,10 +210,12 @@ class Talk extends Base {
   /**
    * 更新对话列表记录
    */
-  updateTalkItem() {
+  async updateTalkItem() {
     let { extra } = this.body
     const record = { ...this.body, extra: JSON.stringify(extra) }
-    useAsyncMessageStore().saveChatOtherToIndexDB(record)
+    await useDialogueStore().addDialogueRecord(record)
+    await useAsyncMessageStore().saveChatOtherToIndexDB(record)
+    useSessionStore().getChatList()
   }
 }
 

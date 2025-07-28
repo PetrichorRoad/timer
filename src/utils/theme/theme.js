@@ -2,8 +2,8 @@ export const myTheme = {
     light: {
         colors: {
             myBg: {
-                1: '#eaf7f7',
-                2: '#CCFFFF',
+                1: '#F2F2FD',
+                2: '#FFFFFF',
                 3: '#99CCFF',
                 4: '#3399CC',
             },

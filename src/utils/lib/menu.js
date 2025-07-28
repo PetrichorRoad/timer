@@ -3,13 +3,13 @@ import { h, ref, computed } from "vue";
 import { NIcon, NEllipsis } from "naive-ui";
 import { RouterLink } from "vue-router";
 import { useStore } from "@/store/setting";
-import { BookOutline, PersonOutline, WineOutline, ChatbubbleEllipsesSharp, Aperture } from "@vicons/ionicons5";
+import { BookOutline, PersonOutline, WineOutline, ChatbubbleEllipsesSharp, Aperture, DesktopSharp, PeopleSharp, RocketSharp, Grid, CalendarSharp, FolderOpen, Bookmarks } from "@vicons/ionicons5";
 import { router } from "@/router/index";
 export const iconMap = {
     BookOutline,
     PersonOutline,
     WineOutline,
-    ChatbubbleEllipsesSharp, Aperture
+    ChatbubbleEllipsesSharp, Aperture, DesktopSharp, PeopleSharp, RocketSharp, Grid, CalendarSharp, Bookmarks, FolderOpen
 };
 const renderIcon = (icon) => {
     return () => h(NIcon, null, { default: () => h(icon) });
@@ -45,7 +45,7 @@ export const menuListByOther = [
     {
         path: "report",
         name: "report",
-        icon: "BookOutline",
+        icon: "Bookmarks",
         label: "公司热点",
         component: () => import("@/views/main/report/index.vue"),
         meta: {
@@ -143,7 +143,7 @@ export const menuListByOther = [
     {
         path: "document",
         name: "document",
-        icon: "BookOutline",
+        icon: "FolderOpen",
         label: "文档",
         meta: {
             Auth: true,
@@ -193,7 +193,7 @@ export const menuListBySelf = [
     {
         path: "data",
         name: "data",
-        icon: "BookOutline",
+        icon: "DesktopSharp",
         label: "数据看板",
         component: () => import("@/views/main/test/test1.vue"),
         meta: {
@@ -204,7 +204,7 @@ export const menuListBySelf = [
     {
         path: "user",
         name: "user",
-        icon: "BookOutline",
+        icon: "PeopleSharp",
         label: "用户管理",
         component: () => import("@/views/main/test/test2.vue"),
         meta: {
@@ -215,27 +215,27 @@ export const menuListBySelf = [
     {
         path: 'power',
         name: 'power',
-        icon: "BookOutline", label: '权限管理',
+        icon: "RocketSharp", label: '权限管理',
         component: () => import("@/views/main/setting/power.vue"),
         meta: {
-            Auth: true, title: '首页', icon: BookOutline
+            Auth: true, title: '首页', icon: RocketSharp
         }
     },
     {
         path: 'menu',
-        name: 'menu', icon: "BookOutline", label: '菜单管理',
+        name: 'menu', icon: "Grid", label: '菜单管理',
         component: () => import("@/views/main/setting/menu.vue"),
         meta: {
-            Auth: true, title: '菜单管理', icon: BookOutline
+            Auth: true, title: '菜单管理', icon: Grid
         }
     },
     {
         path: 'task',
         name: 'task',
-        icon: "BookOutline", label: '日程待办',
+        icon: "CalendarSharp", label: '日程待办',
         component: () => import("@/views/main/task/work.vue"),
         meta: {
-            Auth: true, title: '首页', icon: BookOutline
+            Auth: true, title: '首页', icon: CalendarSharp
         }
     },
 ];

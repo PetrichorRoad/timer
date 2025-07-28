@@ -4,7 +4,7 @@ import { router } from '@/router'
 export const useStore = defineStore('storeId', {
     state: () => {
         return {
-            theme:'overrides1',
+            theme:'light',
             lang:'zh-CN',
             activeMenu: null,
             tabList:[]

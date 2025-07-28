@@ -1,26 +1,11 @@
 <template>
   <div class="page flex">
     <web-socket-container />
-    <n-layout-sider
-      bordered
-      show-trigger
-      collapse-mode="width"
-      :collapsed-width="64"
-      :width="240"
-      :native-scrollbar="false"
-      :inverted="inverted"
-      style="height: 100%"
-    >
-      <n-menu
-        :indent="12"
-        :inverted="inverted"
-        :collapsed-width="64"
-        :collapsed-icon-size="22"
-        :options="menuOptions"
-        :value="routeName"
-        :render-label="renderLabel"
-        @update:value="handleUpdateValue"
-      />
+    <n-layout-sider bordered show-trigger collapse-mode="width" :collapsed-width="64" :width="240"
+      :native-scrollbar="false" style="height: 100%">
+      <!-- :inverted="inverted" -->
+      <n-menu :indent="12" :collapsed-width="64" :collapsed-icon-size="22" :options="menuOptions" :value="routeName"
+        :render-label="renderLabel" @update:value="handleUpdateValue" />
     </n-layout-sider>
     <div class="flex-1 box-border overflow-hidden">
       <!-- 组件自己的路由入口 -->

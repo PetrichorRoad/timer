@@ -74,11 +74,11 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
     let { avatar, name, id } = conversation
     let msg_type = msgTypeMap[type]
     let params = { avatar, extra: JSON.stringify(body), from_id: accountId, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence: dataValue() }
-    saveChat(id, params)
+    await saveChat(id, params)
   }
   async function saveChatOtherToIndexDB(data) {
     let { from_id } = data
-    saveChat(from_id.toString(), data)
+    await saveChat(from_id.toString(), data)
   }
 
   // 推送到会话记录中

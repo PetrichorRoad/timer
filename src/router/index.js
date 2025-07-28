@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { BookOutline, PersonOutline, WineOutline } from "@vicons/ionicons5";
+import { BookOutline, PersonOutline, WineOutline, DesktopSharp } from "@vicons/ionicons5";
 import { getToken } from "@/utils/lib";
 import { menuListByOther } from "@/utils/lib/menu";
 
@@ -64,11 +64,11 @@ export const routes = [
           },
           {
             path: 'data',
-            name: 'data', icon: "BookOutline", label: '数据看板',
+            name: 'data', icon: "DesktopSharp", label: '数据看板',
             component: () => import("@/views/main/test/test1.vue"),
             meta: {
               Auth: true,
-              title: '数据看板', icon: BookOutline
+              title: '数据看板', icon: DesktopSharp
             }
           },
           {

@@ -18,14 +18,17 @@ import { computed} from "vue";
 import hljs from 'highlight.js/lib/core'
 import { zhCN, dateZhCN,zhTW,dateZhTW } from 'naive-ui'
 import Header from "@/components/header/index.vue";
-import { darkTheme, lightTheme } from "naive-ui";
+// import { darkTheme, lightTheme } from "naive-ui";
+// console.log(darkTheme);
+import { lightThemes } from "@/utils/theme/lightTheme";
+import { darkThemes } from "@/utils/theme/darkTheme";
 import { overrides1 } from "@/utils/theme/overrides1";
 import { useStore } from "@/store/setting";
 // console.log(dateZhCN);
 
 const store = useStore();
 let lang = computed(() => store.lang);
-const themeMap = { light: lightTheme  , dark:darkTheme , overrides1 };
+const themeMap = { light: lightThemes, dark: darkThemes , overrides1 };
 
 const themeOverrides = computed(() => {
   const { theme } = store;

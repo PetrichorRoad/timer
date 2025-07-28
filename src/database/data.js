@@ -1,5 +1,5 @@
 import { conversationDB } from "@/database/index";
-
+import { useSessionStore } from '@/store/session'
 export const getSessionList = async (lang) => {
     return new Promise(async (resolve, reject) => {
         const sessionList = await conversationDB.getAll();
@@ -13,10 +13,7 @@ export const saveSession = async (key, session) => {
     });
 }
 export const saveChat = async (key,chatMessage) => {
-    return new Promise(async (resolve, reject) => {
-        const session = await conversationDB.saveChatMessage(key, chatMessage);
-        resolve(session);
-    });
+    await conversationDB.saveChatMessage(key, chatMessage);
 }
 export const deleteSession = async (key) => {
     return new Promise(async (resolve, reject) => {

@@ -2668,5 +2668,83 @@
 		"en": "\"Deleted successfully",
 		"ko": "성공적으로 삭제했습니다.",
 		"ja": "削除成功です"
+	},
+	"g7k2n4": {
+		"zh-cn": "[微笑]",
+		"en": "[Smile",
+		"ko": "[웃음]",
+		"ja": "[笑います]"
+	},
+	"njz00rb": {
+		"zh-cn": "处理群消息 342 条",
+		"en": "Processed 342 group messages",
+		"ko": "342개의 그룹 메시지를 처리한다",
+		"ja": "グループメッセージ342件を処理します"
+	},
+	"46tfix8": {
+		"zh-cn": "被 @ 58 次",
+		"en": "@58 times",
+		"ko": "58번을 당하다",
+		"ja": "@ 58回です"
+	},
+	"tg6ybz8": {
+		"zh-cn": "加入群 17 个",
+		"en": "17 people joined the group",
+		"ko": "가입 그룹 17개",
+		"ja": "群に17個入ります"
+	},
+	"nfpdsya": {
+		"zh-cn": "2021年 第36周",
+		"en": "Week 36, 2021",
+		"ko": "2021년 36번째 주",
+		"ja": "2021年第36週です"
+	},
+	"euv4y3": {
+		"zh-cn": "打工仔",
+		"en": "\"Wage earner",
+		"ko": "아르바이트 청년",
+		"ja": "フリーター"
+	},
+	"rxw9vsf": {
+		"zh-cn": "毫无疑问，你是办公室里最亮的星",
+		"en": "There is no doubt that you are the brightest star in the office",
+		"ko": "당신이 사무실에서 가장 밝은 별이라는 것은 의심할 여지가 없습니다",
+		"ja": "間違いなくあなたはオフィスで一番明るい星です"
+	},
+	"ogvk2": {
+		"zh-cn": "设置",
+		"en": "\"Settings",
+		"ko": "설정",
+		"ja": "設置します"
+	},
+	"c6gpp3": {
+		"zh-cn": "主题:",
+		"en": "Subject",
+		"ko": "테마:",
+		"ja": "主題:"
+	},
+	"dure2": {
+		"zh-cn": "中文",
+		"en": "Chinese",
+		"ko": "중국어",
+		"ja": "中文"
+	},
+	"mtva2": {
+		"zh-cn": "英文",
+		"en": "English",
+		"ko": "영어",
+		"ja": "英語です"
+	},
+	"i3l42": {
+		"zh-cn": "日语",
+		"en": "\"Japanese",
+		"ko": "일본어",
+		"ja": "日本語"
+	},
+	"bldsy44": {
+		"zh-cn": "国际化:",
+		"en": "Internationalization",
+		"ko": "국제화:",
+		"ja": "国際化です。"
 	}
 }
