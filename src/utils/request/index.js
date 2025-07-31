@@ -2,6 +2,7 @@
 
 import axios from 'axios';
 import {router} from '@/router';
+import { useMessage } from "naive-ui";
 // 创建axios实例
 const service = axios.create({
     // baseURL: import.meta.env.VITE_API_BASE_URL || 'https://restapi.amap.com/v3/', // 设置请求的基地址
@@ -28,16 +29,19 @@ service.interceptors.request.use(
 // 响应拦截器
 service.interceptors.response.use(
     response => {
+        let { code, msg } = response.data;
+        if(code !== 1){
+            useMessage().error(msg);
+        }
         // 对响应数据做些什么
         return response.data;
+        
     },
     error => {
         // 对响应错误做些什么
         if (error.response) {
             switch (error.response.status) {
                 case 401:
-                    // 处理未授权的错误
-                    console.error('未授权，请重新登录');
                     console.log(router);
                     router.push('/login');
                     break;

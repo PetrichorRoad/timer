@@ -2,9 +2,10 @@ import { defineStore } from "pinia";
 import { router } from "@/router";
 import { getSessionList } from "../database/data";
 import { getSession } from "../database/data";
-
+import { getUserInfo } from '@/utils/lib'
 import user from "../api/modules/user";
 import { useDialogueStore } from "@/store/dialogue.js";
+import request from "@/api/base";
 // 第一个参数 storeId 是仓库的key 必须独一无二
 export const useSessionStore = defineStore("chat-list", {
   state: () => {
@@ -26,18 +27,20 @@ export const useSessionStore = defineStore("chat-list", {
   },
   actions: {
     async getChatList() {
-
+      const { deptId } = getUserInfo()
+      let { data } = await request.getUserLists({ depId:deptId })
       let result = await getSessionList();
-      console.log('有这种事',result);
       this.chatList = Object.entries(result).map(([key, value]) => {
+        const { nickname, signature, avatar, accountId } = data.find(item => item.accountId === key)
         return {
+          nickname, signature, avatar, accountId,
           id: key,
           avatar: `https://picsum.photos/200/300?${key}`,
           is_disturb: 2,
           is_robot: 2,
           is_top: 2,
           msg_text: "...",
-          name: `${key}`,
+          name: nickname,
           remark: "",
           talk_mode: 1,
           to_from_id: key,
@@ -45,7 +48,6 @@ export const useSessionStore = defineStore("chat-list", {
           updated_at: "2025-07-07 21:52:38",
         };
       });
-      console.log(this.chatList);
     },
     async setConversation(talk) {
       const dialogueStore = useDialogueStore();

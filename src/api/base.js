@@ -8,6 +8,13 @@ export const login = (data) => {
     data,
   });
 };
+export const register = (data) => {
+  return request({
+    url: "/timer/user/register",
+    method: "post",
+    data,
+  });
+};
 export const getTaskList = (data) => {
   return request({
     url: "/timer/task/list",
@@ -136,6 +143,7 @@ export const sendMessage = (data) => {
 };
 export default {
   login,
+  register,
   getTaskList,
   createTask,
   updateTask,

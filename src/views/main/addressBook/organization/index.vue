@@ -60,7 +60,7 @@
             <template #default="{ item }">
               <div :key="item.user_id" class="item-box hover:border-my-border-2 pointer border-my-border-1">
                 <div class="avatar" @click="onInfo(item)">
-                  <im-avatar :src="item.avatar" :size="40" :username="item.nickname" />
+                  <n-avatar :src="item.avatar" :size="40" :username="item.nickname" />
                 </div>
                 <div class="content" @click="onInfo(item)">
                   <div class="content-title">

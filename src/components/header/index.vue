@@ -15,12 +15,12 @@
         </div>
 
         <div>
-          <n-dropdown trigger="hover" :options="options" @select="handleSelect">
+          <n-dropdown trigger="hover" :options="options">
             <div class="flex items-center p-[8px]">
-              <NAvatar round src="https://07akioni.oss-cn-beijing.aliyuncs.com/demo1.JPG" class="mr-[12px]" />
+              <NAvatar round :src="`https://picsum.photos/200/300?${userInfo.accountId}`" class="mr-[12px]" />
               <div class="flex flex-col gap-2">
-                <NText depth="2" class="text-[14px]">打工仔</NText>
-                <NText depth="3" class="text-[12px]">毫无疑问，你是办公室里最亮的星</NText>
+                <NText depth="2" class="text-[14px]">{{ userInfo.nickname }}</NText>
+                <NText depth="3" class="text-[12px]">{{ userInfo.signature }}</NText>
               </div>
             </div>
           </n-dropdown>
@@ -40,6 +40,10 @@ import { RouterLink, useRoute, useRouter } from "vue-router";
 import { useStore } from "@/store/setting";
 const store = useStore();
 let router = useRouter();
+const userInfo = computed(() => {
+  let info = JSON.parse(localStorage.getItem("userInfo"))
+  return info;
+});
 const setting = () => {
   router.push({
     path: "/index/main/setting",
@@ -51,10 +55,10 @@ const goHomePage = () => {
 const renderCustomHeader = () => {
   return (
     <div class="flex items-center p-[8px]">
-      <NAvatar round src="https://07akioni.oss-cn-beijing.aliyuncs.com/demo1.JPG" class="mr-[12px]" />
+      <NAvatar round src={`https://picsum.photos/200/300?${userInfo.value.accountId}`} class="mr-[12px]" />
       <div class="flex flex-col gap-2">
-        <NText depth="2" class="text-[14px]">打工仔</NText>
-        <NText depth="3" class="text-[12px]">毫无疑问，你是办公室里最亮的星</NText>
+        <NText depth="2" class="text-[14px]">{userInfo.value.nickname}</NText>
+        <NText depth="3" class="text-[12px]">{userInfo.value.signature}</NText>
       </div>
     </div>
   )
@@ -74,6 +78,16 @@ const renderLanguageSetting = () => {
       <theme-lang></theme-lang>
     </div>
   )
+}
+const renderLogout = () => { 
+  return (
+    <div class="flex items-center p-[8px] gap-2">
+      <button class="n-button n-button--primary" onClick={logout}>退出登录</button>
+    </div>
+  )
+}
+const logout = () => { 
+  router.push('/login')
 }
 const options = computed(() => {
   return [
@@ -95,6 +109,11 @@ const options = computed(() => {
       type: 'render',
       key: 'language',
       render: renderLanguageSetting
+    },
+    {
+      type: 'render',
+      key: 'logout',
+      render: renderLogout
     },
   ];
 });

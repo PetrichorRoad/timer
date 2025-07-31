@@ -62,7 +62,6 @@ const panelComponent = computed(() => {
   return talkMode.value ? markRaw(talkPanel) : markRaw(empty);
 });
 const talkList = computed(() => {
-  // return allChatList.value;
   let talksList = [allChatList, friendChatList, groupChatList, talkUnreadNum];
   return talksList[selectIndex.value];
 });

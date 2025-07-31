@@ -2746,5 +2746,41 @@
 		"en": "Internationalization",
 		"ko": "국제화:",
 		"ja": "国際化です。"
+	},
+	"91oknj6": {
+		"zh-cn": "尼克·卡拉威",
+		"en": "Nick Calaway",
+		"ko": "닉 캘러웨이",
+		"ja": "ニック・キャラウェイです"
+	},
+	"cx2z2k4": {
+		"zh-cn": "推出登录",
+		"en": "Launch login",
+		"ko": "로그인 푸시",
+		"ja": "ログインします"
+	},
+	"iifi5w4": {
+		"zh-cn": "退出登录",
+		"en": "Log out",
+		"ko": "로그아웃",
+		"ja": "ログアウトします"
+	},
+	"2j9vj05": {
+		"zh-cn": "请输入密码",
+		"en": "Please enter the password.",
+		"ko": "비밀번호를 입력하십시오.",
+		"ja": "パスワードをお願いします"
+	},
+	"57u0485": {
+		"zh-cn": "请确认密码",
+		"en": "Please confirm the password.",
+		"ko": "비밀번호 확인",
+		"ja": "パスワードの確認をお願いします。"
+	},
+	"iyzo2": {
+		"zh-cn": "注册",
+		"en": "\"Register",
+		"ko": "등록",
+		"ja": "登録します"
 	}
 }
