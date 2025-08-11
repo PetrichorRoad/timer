@@ -2,11 +2,19 @@
   <div class="bg-my-bg-1 h-full flex flex-col gap-4 box-border p-4 w-full border-box">
     <div class="flex gap-4 flex-1">
       <div class="flex-1 flex flex-col gap-4">
-        <div class="bg-my-bg-3 rounded-md p-6 text-my-text-1 flex flex-col">
-          <div class="text-sm font-extrabold">访问量</div>
-          <n-statistic tabular-nums class="text-5xl">
-            <n-number-animation ref="numberAnimationInstRef" show-separator :from="0" :to="100000000" :active="false" />
-          </n-statistic>
+        <div class="bg-my-bg-3 rounded-md p-6 text-my-text-1 flex flex-col relative">
+          <div>
+            <div class="text-sm font-extrabold">访问量</div>
+            <div class="flex items-center ">
+              <n-statistic tabular-nums class="text-5xl">
+                <n-number-animation ref="numberAnimationInstRef" show-separator :from="0" :to="100000000"
+                  :active="false" />
+              </n-statistic>
+            </div>
+          </div>
+          <div class="absolute top-[50%] right-0 h-[200px] transform translate-x-[10%] translate-y-[-50%]" ref="catRef">
+
+          </div>
         </div>
         <div class="flex-1 flex flex-col gap-4">
           <div class="flex gap-4 flex-1">
@@ -35,8 +43,9 @@
                 <span class="p-1 rounded-md">风向 ： {{ weather?.winddirection }}</span>
               </div>
             </div>
-            <div class="flex-1 bg-my-bg-4 rounded-md">
-              <weather-icon :weather="Math.floor(Math.random() * 10)" />
+            <div class="flex-1 bg-my-bg-4 rounded-md" ref="animationRef">
+
+              <!-- <weather-icon :weather="Math.floor(Math.random() * 10)" /> -->
             </div>
           </div>
           <div class="bg-my-bg-4 h-[200px] rounded-md flex justify-around gap-2 px-2 items-center">
@@ -113,12 +122,16 @@ import {
   ChevronForwardSharp,
   CloudyOutline,
 } from "@vicons/ionicons5";
+import aiAnimationData from '@/assets/animation/work-AI.json';
+import catAnimationDate from '@/assets/animation/cat.json';
 import { weatherImagesList } from "@/utils/assets/index";
 import { option } from "@/utils/mock/data";
 import { ref, h, onMounted, computed } from "vue";
 import { getWeather } from "@/api/index";
 import * as echarts from "echarts";
 import moment from "moment";
+let animationRef = ref();
+let catRef = ref();
 let numberAnimationInstRef = ref();
 let numberAnimationInstRef1 = ref();
 let numberAnimationInstRef2 = ref();
@@ -193,7 +206,24 @@ const reportTime = computed(() => {
 const reportWeek = computed(() => {
   return moment(weather.value?.reporttime).format("dddd");
 });
+const loadAnimation = (callback) => {
+  lottie.loadAnimation({
+    container: animationRef.value,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    animationData: aiAnimationData,
+  });
+  lottie.loadAnimation({
+    container: catRef.value,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    animationData: catAnimationDate,
+  });
+}
 const playNumber = () => {
+  loadAnimation()
   numberAnimationInstRef.value?.play();
   numberAnimationInstRef1.value?.play();
   numberAnimationInstRef2.value?.play();

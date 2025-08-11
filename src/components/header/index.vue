@@ -34,7 +34,8 @@
 <script setup lang="jsx">
 import themeColor from "@/components/theme-color/theme-color.vue";
 import themeLang from "@/components/theme-color/theme-lang.vue";
-import { SettingsOutline, TrailSignSharp } from "@vicons/ionicons5";
+import { closeDB } from  "@/database/data.js"
+import { SettingsOutline, TrailSignSharp, Enter } from "@vicons/ionicons5";
 import { computed, h } from "vue";
 import { RouterLink, useRoute, useRouter } from "vue-router";
 import { useStore } from "@/store/setting";
@@ -82,11 +83,17 @@ const renderLanguageSetting = () => {
 const renderLogout = () => { 
   return (
     <div class="flex items-center p-[8px] gap-2">
-      <button class="n-button n-button--primary" onClick={logout}>退出登录</button>
+      
+      <button class="n-button n-button--primary flex items-center gap-2 px-2" onClick={logout}>
+        <n-icon component={Enter} size="16" depth="1" />
+        退出登录
+      </button>
     </div>
   )
 }
 const logout = () => { 
+  localStorage.clear()
+  // closeDB()
   router.push('/login')
 }
 const options = computed(() => {

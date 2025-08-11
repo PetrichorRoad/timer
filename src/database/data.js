@@ -1,14 +1,25 @@
 import { conversationDB } from "@/database/index";
 import { useSessionStore } from '@/store/session'
+export const closeDB = async () => { 
+    await conversationDB.closeDB();
+}
 export const getSessionList = async (lang) => {
     return new Promise(async (resolve, reject) => {
+        // const result = await conversationDB.createSchema()
         const sessionList = await conversationDB.getAll();
+        
         resolve(sessionList);
     });
 }
 export const saveSession = async (key, session) => {
     return new Promise(async (resolve, reject) => {
         await conversationDB.saveSession(key, session);
+        resolve();
+    });
+}
+export const checkAndCreateTable = async (accountId) => {
+    return new Promise(async (resolve, reject) => {
+        await conversationDB.checkAndCreateTable(accountId);
         resolve();
     });
 }

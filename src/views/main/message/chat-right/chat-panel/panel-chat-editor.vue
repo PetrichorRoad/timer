@@ -78,6 +78,7 @@ const props = defineProps({
 const isShowHistory = ref(false)
 
 const onSendMessage = async (data= {}) => {
+  console.log(ws.isConnect());
   if (!ws.isConnect()) {
     return Promise.resolve(false)
   }
@@ -252,6 +253,7 @@ onMounted(() => {
 
 const onEditorEvent = async (event, data) => {
   console.log(event, data);
+  console.log(evnets[event]);
   if (!evnets[event]) return false
 
   let ok = await evnets[event](data)

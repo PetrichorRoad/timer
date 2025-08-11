@@ -1,13 +1,14 @@
 import { useSessionStore } from '@/store/session'
+import { getUserInfo } from '@/utils/lib'
 export default class conversation {
-  constructor(dbName = "conversation") {
-    this.dbName = dbName;
+  constructor() {
     this.db = null;
   }
 
   async open() {
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open(this.dbName, 1);
+      let { accountId  } = getUserInfo();
+      const request = indexedDB.open(accountId);
       request.onerror = () => reject(request.error);
       request.onsuccess = () => {
         this.db = request.result;

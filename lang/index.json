@@ -2782,5 +2782,47 @@
 		"en": "\"Register",
 		"ko": "등록",
 		"ja": "登録します"
+	},
+	"diq53x8": {
+		"zh-cn": "欢迎使用IM系统",
+		"en": "Welcome to use the IM system",
+		"ko": "im 시스템 사용을 환영합니다",
+		"ja": "IMシステムの利用を歓迎します"
+	},
+	"jfayxt6": {
+		"zh-cn": "请确认验证码",
+		"en": "Please confirm the verification code",
+		"ko": "인증번호를 확인해주세요",
+		"ja": "captchaの確認をお願いします。"
+	},
+	"7b32n16": {
+		"zh-cn": "请输入验证码",
+		"en": "Please enter the verification code",
+		"ko": "인증번호를 입력해주세요",
+		"ja": "captcha入力をお願いします。"
+	},
+	"t09mz15": {
+		"zh-cn": "获取验证码",
+		"en": "Get the verification code",
+		"ko": "인증 코드 가져오기",
+		"ja": "認証コードを取得します"
+	},
+	"qy01": {
+		"zh-cn": "表",
+		"en": "table",
+		"ko": "표",
+		"ja": "時計です"
+	},
+	"ar737y4": {
+		"zh-cn": "创建成功",
+		"en": "\"Created successfully",
+		"ko": "성공적으로 만들었습니다",
+		"ja": "成功しました"
+	},
+	"e7dxe3": {
+		"zh-cn": "已存在",
+		"en": "Already exists",
+		"ko": "이미 존재함",
+		"ja": "すでに存在しています"
 	}
 }

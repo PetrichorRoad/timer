@@ -71,10 +71,11 @@ export const useAsyncMessageStore = defineStore('async-message', () => {
   async function saveSelfChatToIndexDB(data){
     let { conversation } = sessionStore
     let { body, msg_id, type, to_from_id } = data
-    let { avatar, name, id } = conversation
+    let { id } = conversation
+    let { accountId, nickname, avatar } = getUserInfo()
     let msg_type = msgTypeMap[type]
-    let params = { avatar, extra: JSON.stringify(body), from_id: accountId, is_revoked: 0, msg_id, msg_type, nickname: name, quote: {}, send_time: datetime(), sequence: dataValue() }
-    await saveChat(id, params)
+    let params = { avatar, extra: JSON.stringify(body), from_id: accountId, is_revoked: 0, msg_id, msg_type, nickname, quote: {}, send_time: datetime(), sequence: dataValue() }
+     saveChat(id, params)
   }
   async function saveChatOtherToIndexDB(data) {
     let { from_id } = data

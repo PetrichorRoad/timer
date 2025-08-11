@@ -43,7 +43,6 @@ class Talk extends Base {
     const { to_from_id, from_id, talk_mode, body } = data
 
     Object.assign(this, { from_id, to_from_id, talk_mode, body })
-
     body.extra = JSON.parse(body.extra)
     body.quote = JSON.parse(body.quote)
     this.handle()
@@ -162,17 +161,8 @@ class Talk extends Base {
     if (addRecord) {
       await useDialogueStore().addDialogueRecord(record)
       await useAsyncMessageStore().saveChatOtherToIndexDB(record)
-      // useSessionStore.getChatList()
+      console.log(record);
     }
-
-    // useSessionStore().updateMessage(
-    //   {
-    //     index_name: this.getIndexName(),
-    //     msg_text: this.getTalkText(),
-    //     updated_at: datetime()
-    //   },
-    //   this.isCurrSender()
-    // )
 
     if (this.getAccountId() !== this.from_id) {
       // 这里需要做节流操作

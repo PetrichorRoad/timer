@@ -141,6 +141,22 @@ export const sendMessage = (data) => {
     data,
   });
 };
+// 拉取消息
+export const getMessage = (params) => {
+  return request({
+    url: "/timer/message/list",
+    method: "get",
+    params,
+  });
+};
+// 邮件
+export const sendEmail = (params) => {
+  return request({
+    url: "/timer/email/sendEmail",
+    method: "get",
+    params,
+  });
+};
 export default {
   login,
   register,
@@ -158,4 +174,6 @@ export default {
   createProject,
   getRecords,
   sendMessage,
+  sendEmail,
+  getMessage
 };

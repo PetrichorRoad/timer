@@ -74,7 +74,6 @@ class Connect {
   }
 
   onImMessage() {
-    console.log('收到消息');
     this.conn.on('im.message', (data) => new EventTalk(data))
   }
 
