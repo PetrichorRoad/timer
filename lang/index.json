@@ -2824,5 +2824,23 @@
 		"en": "Already exists",
 		"ko": "이미 존재함",
 		"ja": "すでに存在しています"
+	},
+	"q5xyg65": {
+		"zh-cn": "用户账号:",
+		"en": "User Account",
+		"ko": "사용자 계정 번호:",
+		"ja": "ユーザーアカウントです。"
+	},
+	"ashlqm5": {
+		"zh-cn": "绑定邮箱:",
+		"en": "Bound email address",
+		"ko": "편지함 바인딩:",
+		"ja": "メールアドレスを結びつけます。"
+	},
+	"ajkttz5": {
+		"zh-cn": "绑定号码:",
+		"en": "Binding number",
+		"ko": "바인딩 번호:",
+		"ja": "バインディング番号です"
 	}
 }

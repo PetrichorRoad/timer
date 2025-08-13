@@ -8,6 +8,7 @@ export default class conversation {
   async open() {
     return new Promise((resolve, reject) => {
       let { accountId  } = getUserInfo();
+      console.log('独到的accountId', accountId);
       const request = indexedDB.open(accountId);
       request.onerror = () => reject(request.error);
       request.onsuccess = () => {
@@ -130,6 +131,12 @@ export default class conversation {
 
       request.onerror = () => resolve({});
     });
+  }
+
+  async closeDB(){
+    console.log('关闭连接', this.db);
+    // await this.db.close();
+    this.db = null;
   }
 }
 

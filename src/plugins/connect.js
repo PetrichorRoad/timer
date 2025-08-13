@@ -30,6 +30,8 @@ class Connect {
         // useTalkStore().loadTalkList()
       },
       onClose: () => {
+        // console.log('WebSocket 断开连接', WsSocket.onClose);
+        // WsSocket.onClose()
         // useUserStore().updateSocketStatus(false)
       }
     })

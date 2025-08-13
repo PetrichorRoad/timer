@@ -11,13 +11,12 @@ import 'vfonts/FiraCode.css'
 import lottie from 'lottie-web';
 import { createApp } from 'vue'
 import App from './App.vue'
-import { createPinia } from 'pinia'
 import { router } from "./router/index";
 import naive from 'naive-ui'
 import { loading } from './utils/lib/loading'
 import { context } from './directive/context'  
 import { useMessage } from "naive-ui";
-
+import pinia from './store/pinia'
 
 // import { myLightTheme } from './utils/theme/overwiter'
 import '@/plugins/highlight.js'
@@ -26,7 +25,6 @@ window.lottie = lottie;
 window.$Message = useMessage();
 console.log(window.$Message, useMessage);
 const app = createApp(App)
-const pinia = createPinia()
 // window.$t = $t;
 
 

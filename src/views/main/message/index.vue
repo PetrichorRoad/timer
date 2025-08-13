@@ -32,7 +32,7 @@
         </n-virtual-list>
       </main>
     </div>
-    <div class="left-chat-list flex-1">
+    <div class="left-chat-list flex-1" v-if="conversation.id">
       <component :is="panelComponent"></component>
     </div>
   </div>

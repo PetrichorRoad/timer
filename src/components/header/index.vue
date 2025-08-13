@@ -39,6 +39,8 @@ import { SettingsOutline, TrailSignSharp, Enter } from "@vicons/ionicons5";
 import { computed, h } from "vue";
 import { RouterLink, useRoute, useRouter } from "vue-router";
 import { useStore } from "@/store/setting";
+import { resetPinia } from "@/store/pinia.js";
+import ws from '@/plugins/connect.js'
 const store = useStore();
 let router = useRouter();
 const userInfo = computed(() => {
@@ -67,7 +69,7 @@ const renderCustomHeader = () => {
 const renderThemeSetting = () => { 
   return (
     <div class="flex items-center p-[8px] gap-2">
-      <label depth="2" class="text-[14px] w-[50px]">主题:</label>
+      <label depth="2" class="text-[14px] w-[70px]">主题:</label>
       <theme-color></theme-color>
     </div>
   )
@@ -75,9 +77,28 @@ const renderThemeSetting = () => {
 const renderLanguageSetting = () => { 
   return (
     <div class="flex items-center p-[8px] gap-2">
-      <label depth="2" class="text-[14px] w-[50px]">国际化:</label>
+      <label depth="2" class="text-[14px] w-[70px]">国际化:</label>
       <theme-lang></theme-lang>
     </div>
+  )
+}
+const renderAccountSetting = () => {
+  return (
+    <div class="flex flex-col gap-2"> 
+      <div class="flex items-center p-[8px] gap-2">
+        <label depth="2" class="text-[14px] w-[70px]">用户账号:</label>
+        <span class="text-[12px]">{userInfo.value.accountId}</span>
+      </div>
+      <div class="flex items-center p-[8px] gap-2">
+        <label depth="2" class="text-[14px] w-[70px]">绑定邮箱:</label>
+        <span class="text-[12px]">{userInfo.value.email}</span>
+      </div>
+      <div class="flex items-center p-[8px] gap-2">
+        <label depth="2" class="text-[14px] w-[70px]">绑定号码:</label>
+        <span class="text-[12px]">{userInfo.value.phone}</span>
+      </div>
+    </div>
+    
   )
 }
 const renderLogout = () => { 
@@ -93,7 +114,9 @@ const renderLogout = () => {
 }
 const logout = () => { 
   localStorage.clear()
-  // closeDB()
+  closeDB()
+  resetPinia()
+  ws.disconnect()
   router.push('/login')
 }
 const options = computed(() => {
@@ -116,6 +139,11 @@ const options = computed(() => {
       type: 'render',
       key: 'language',
       render: renderLanguageSetting
+    },
+    {
+      type: 'render',
+      key: 'accountId',
+      render: renderAccountSetting
     },
     {
       type: 'render',

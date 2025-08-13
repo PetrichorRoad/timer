@@ -166,10 +166,10 @@ class Talk extends Base {
 
     if (this.getAccountId() !== this.from_id) {
       // 这里需要做节流操作
-      ServTalkClearUnread({
-        talk_mode: this.talk_mode,
-        to_from_id: this.to_from_id
-      })
+      // ServTalkClearUnread({
+      //   talk_mode: this.talk_mode,
+      //   to_from_id: this.to_from_id
+      // })
     }
 
     this.scrollToBottom()
